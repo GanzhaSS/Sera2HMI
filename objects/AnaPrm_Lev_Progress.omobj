@@ -1,0 +1,128 @@
+<type access-modifier="private" name="AnaPrm_Lev_Progress" display-name="AnaPrm_Lev_Progress" uuid="aa499b1e-cbdf-4d63-a939-0334156c3c8a" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="15" ver="5"/>
+	<designed target="Height" value="100" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="47d0769a-a23d-4d96-926e-b585ac3afd1a" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_NameEn" display-name="_init_NameEn" uuid="85190a6c-6e33-48cc-b566-c4159be87e08" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_NameEn" ver="5" value="AnaPrmTest"/>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="389945ec-0efc-4049-84e9-98ea7749ec50" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="Path" ver="5" ref="_init_NameEn"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="ApValue" display-name="ApValue" uuid="9001fe94-d566-4230-be37-cb28888947a0" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="Value"/>
+	</object>
+	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="f0cf537c-7c19-4d61-b425-771f71512ddc" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="Status"/>
+	</object>
+	<designed target="MinLimit" value="0" ver="5"/>
+	<designed target="MaxLimit" value="100" ver="5"/>
+	<designed target="LowValue" value="0" ver="5"/>
+	<designed target="HighValue" value="100" ver="5"/>
+	<designed target="Value" value="0" ver="5"/>
+	<designed target="Orientation" value="2" ver="5"/>
+	<designed target="BarBrushColor" value="0xff00ff00" ver="5"/>
+	<designed target="BarBrushStyle" value="1" ver="5"/>
+	<designed target="BarLowBrushColor" value="4294967040" ver="5"/>
+	<designed target="BarLowBrushStyle" value="0" ver="5"/>
+	<designed target="BarHighBrushColor" value="4294901760" ver="5"/>
+	<designed target="BarHighBrushStyle" value="0" ver="5"/>
+	<do-trace access-modifier="private" target="Value" ver="5">
+		<body>
+			<![CDATA[ApValue.Value]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="BarBrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApValue.Quality < 192]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff666666]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[(ApStatus & 64) > 0]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff666666]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[(ApStatus & 33) > 0]]>
+			</condition>
+			<expr>
+				<![CDATA[0xffff0000]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[(ApStatus & 18) > 0]]>
+			</condition>
+			<expr>
+				<![CDATA[0xffffff00]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[unit.Global_ColorSettings.ColorLevelColumn]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<object access-modifier="private" name="ApScaleMax" display-name="ApScaleMax" uuid="767609de-b4d4-4cf7-b096-03461858bef7" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="OutCfg.ScaleMax"/>
+	</object>
+	<object access-modifier="private" name="ApScaleMin" display-name="ApScaleMin" uuid="08e7c293-1598-4777-ac71-34bd989ef1df" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="OutCfg.ScaleMin"/>
+	</object>
+	<do-trace access-modifier="private" target="MinLimit" ver="5">
+		<body>
+			<![CDATA[here.ApScaleMin]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="MaxLimit" ver="5">
+		<body>
+			<![CDATA[here.ApScaleMax]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="LowValue" ver="5">
+		<body>
+			<![CDATA[here.ApScaleMin]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="HighValue" ver="5">
+		<body>
+			<![CDATA[here.ApScaleMax]]>
+		</body>
+	</do-trace>
+</type>
+

@@ -1,0 +1,441 @@
+<type access-modifier="private" name="03. Схема 03" display-name="03. Схема 03" uuid="a3085819-8719-48c5-86ad-b1afd67b4437" base-type="TypeFormIK" base-type-id="776690f6-d033-44fe-a695-fcd55837ecdb" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="90" ver="5"/>
+	<designed target="ShowWindowCaption" value="false" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="0" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="2" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="frame02_1" display-name="frame02_1" uuid="2b64e7d1-f2cb-489b-9bdf-a23d854462e1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="870" ver="5"/>
+		<designed target="Y" value="110" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="RoundingRadius" value="8" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Lines01" display-name="Lines01" uuid="8e4c547f-e0d8-48fc-9e6c-12caf2fe2e2b" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="5" description="" cardinal="1">
+		<designed target="X" value="-63.333333333332916" ver="5"/>
+		<designed target="Y" value="-210.66666666666652" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Lines02" display-name="Lines02" uuid="357e55c7-5fe7-42ad-aa96-30e70e5cce1c" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="-80" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Lines03" display-name="Lines03" uuid="b9bf6ef4-7910-4f07-aff1-d1f401e7462c" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="0.5" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text" display-name="Text" uuid="6b190774-db25-4a24-91c7-d370e676f370" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+	</object>
+	<init target="WindowNum" ver="5" value="3"/>
+	<designed target="Width" value="1920" ver="5"/>
+	<designed target="Height" value="990" ver="5"/>
+	<init target="_init_FormNameEn" ver="5" value="Ik03Scheme"/>
+	<param access-modifier="private" name="_init_AnaPrmPrePos1" display-name="_init_AnaPrmPrePos1" uuid="144db318-18cd-41fe-aecb-53cac2b4b5d8" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_AnaPrmPrePos1" ver="5" value="xx"/>
+	<param access-modifier="private" name="_init_AnaPrmPrePos2" display-name="_init_AnaPrmPrePos2" uuid="be7dd93d-c135-46ce-a51d-cbb32ce7717c" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_AnaPrmPrePos2" ver="5" value="xx"/>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="1e6b09a6-bf07-44d6-9b48-b10a33cef4d8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="710.66666666666708" ver="5"/>
+		<designed target="Y" value="10.333333333333485" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="500" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<designed target="Text" value="Шкафы / щиты" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff2a2a2a" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnaPrmPosition_151" display-name="AnaPrmPosition_151" uuid="61aa28c9-610b-4edc-97b6-cbc05b959745" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
+		<designed target="X" value="875" ver="5"/>
+		<designed target="Y" value="110" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="249.99999999999977" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Text" value="Шкаф РСУ" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
+	</object>
+	<object access-modifier="private" name="frame02_2" display-name="frame02_2" uuid="486b1839-de6e-4193-8c6e-f855c6acb63f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="560" ver="5"/>
+		<designed target="Y" value="280" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="140" ver="5"/>
+		<designed target="RoundingRadius" value="8" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnaPrmPosition_152" display-name="AnaPrmPosition_152" uuid="1afd587f-41df-4593-80c0-152fc920f98a" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
+		<designed target="X" value="565" ver="5"/>
+		<designed target="Y" value="280" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="249.99999999999977" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Text" value="Щит 3-1AM панель 1" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
+	</object>
+	<object access-modifier="private" name="frame02_6" display-name="frame02_6" uuid="11940be3-bb38-44ec-bd2c-3aa05d2c4808" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="870" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="160" ver="5"/>
+		<designed target="RoundingRadius" value="8" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnaPrmPosition_156" display-name="AnaPrmPosition_156" uuid="b73b66d0-7e43-49b3-a23d-b4ad56c480c1" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
+		<designed target="X" value="875" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="249.99999999999977" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Text" value="Щит 3-2АМ		" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
+	</object>
+	<object access-modifier="private" name="frame02_7" display-name="frame02_7" uuid="ae98ce9f-c22b-4212-a2d3-cc0996b39f41" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1180" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="160" ver="5"/>
+		<designed target="RoundingRadius" value="8" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnaPrmPosition_157" display-name="AnaPrmPosition_157" uuid="4fc716c4-2d3f-44f8-89e2-d3a3780a4952" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
+		<designed target="X" value="1185" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="249.99999999999977" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Text" value="Щит 3-4АМ		" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
+	</object>
+	<object access-modifier="private" name="DPanelAlr_1" display-name="DPanelAlr_1" uuid="967c802d-af16-498b-bdc4-5720953e371f" base-type="DPanelAlr" base-type-id="b2ef45c5-c50e-4e68-8fa8-2809eafe3941" ver="5" description="" cardinal="1">
+		<designed target="X" value="880" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="244" ver="5"/>
+		<designed target="Height" value="80" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="PowerErr"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="Panel3_1_1" display-name="Panel3_1_1" uuid="7021b92c-8ce3-423d-a440-47dae7f2296c" base-type="Panel3_1" base-type-id="b47d6ece-532c-4d67-8dbf-1024ec357961" ver="5" description="" cardinal="1">
+		<designed target="X" value="570" ver="5"/>
+		<designed target="Y" value="310" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="240" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="Panel3_1AM1"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="frame02_8" display-name="frame02_8" uuid="500ba598-3b91-4dc9-933e-b1a8d43457da" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="870" ver="5"/>
+		<designed target="Y" value="280" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="140" ver="5"/>
+		<designed target="RoundingRadius" value="8" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnaPrmPosition_158" display-name="AnaPrmPosition_158" uuid="4aeb1c0a-7fa3-4b98-84e1-baed42c5c7a8" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
+		<designed target="X" value="875" ver="5"/>
+		<designed target="Y" value="280" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="249.99999999999977" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Text" value="Щит 3-1AM панель 2" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
+	</object>
+	<object access-modifier="private" name="Panel3_1_2" display-name="Panel3_1_2" uuid="29c8cee4-047b-4f2c-9e16-2a5abfff62a6" base-type="Panel3_1" base-type-id="b47d6ece-532c-4d67-8dbf-1024ec357961" ver="5" description="" cardinal="1">
+		<designed target="X" value="880" ver="5"/>
+		<designed target="Y" value="310" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="240" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="Panel3_1AM2"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="frame02_9" display-name="frame02_9" uuid="cd876ea6-174a-4e4c-b558-3d939841c90a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1180" ver="5"/>
+		<designed target="Y" value="280" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="140" ver="5"/>
+		<designed target="RoundingRadius" value="8" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnaPrmPosition_159" display-name="AnaPrmPosition_159" uuid="2e6f6769-d224-4904-884c-cb4753d5f82f" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
+		<designed target="X" value="1185" ver="5"/>
+		<designed target="Y" value="280" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="249.99999999999977" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Text" value="Щит 3-1AM панель 3" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
+	</object>
+	<object access-modifier="private" name="Panel3_1_3" display-name="Panel3_1_3" uuid="e2d85b6d-7ec1-4691-9d06-b5998c2c9def" base-type="Panel3_1" base-type-id="b47d6ece-532c-4d67-8dbf-1024ec357961" ver="5" description="" cardinal="1">
+		<designed target="X" value="1190" ver="5"/>
+		<designed target="Y" value="310" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="240" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="Panel3_1AM3"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="frame02_10" display-name="frame02_10" uuid="bb4831d9-c5a2-475f-ab7d-f6298c18e13e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="560" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="140" ver="5"/>
+		<designed target="RoundingRadius" value="8" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnaPrmPosition_160" display-name="AnaPrmPosition_160" uuid="497708eb-e5d8-4c38-bc0e-ee2ae084bb2a" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
+		<designed target="X" value="565" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="249.99999999999977" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Text" value="Щит 3-1AM панель 4" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
+	</object>
+	<object access-modifier="private" name="Panel3_1_4" display-name="Panel3_1_4" uuid="72df3903-cba4-4b9a-ae7a-895ea1f06009" base-type="Panel3_1" base-type-id="b47d6ece-532c-4d67-8dbf-1024ec357961" ver="5" description="" cardinal="1">
+		<designed target="X" value="570" ver="5"/>
+		<designed target="Y" value="510" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="240" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="Panel3_1AM4"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="Panel3_2_1" display-name="Panel3_2_1" uuid="a884fbcf-d237-41b6-948c-4702bca6c1fd" base-type="Panel3_2" base-type-id="ff638238-9668-4693-9299-f5580f0deefc" ver="5" description="" cardinal="1">
+		<designed target="X" value="880" ver="5"/>
+		<designed target="Y" value="510" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="Panel3_2AM"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="Panel3_4_1" display-name="Panel3_4_1" uuid="126a6731-6a40-4d91-8a78-e1adb8fc615a" base-type="Panel3_4" base-type-id="1ca37441-bf9e-49ed-9171-a6e2f493bf36" ver="5" description="" cardinal="1">
+		<designed target="X" value="1190" ver="5"/>
+		<designed target="Y" value="510" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="Panel3_4AM"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+</type>
+

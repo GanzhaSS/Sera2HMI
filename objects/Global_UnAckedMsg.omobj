@@ -1,0 +1,84 @@
+<object access-modifier="private" name="Global_UnAckedMsg" display-name="Global_UnAckedMsg" uuid="0325a64f-f2f0-4b6e-86ee-0508c40c9f16" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="FlagEnableButtonMsgBlink" display-name="FlagEnableButtonMsgBlink" uuid="6b9c1c22-04d5-4ade-8566-e8952b335905" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="FlagExistUnAckedMsg" display-name="FlagExistUnAckedMsg" uuid="5beba4b6-36fc-4565-9656-8af98ae7a8be" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="NumberUnAckedMsg" display-name="NumberUnAckedMsg" uuid="ade8f292-3397-4e2c-8772-5979d2ec6947" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApAlarmQuery" display-name="ApAlarmQuery" uuid="132c4ac4-153a-4a89-b726-6eb267f749b6" base-type="ApAlarmQuery" base-type-id="f66d4d41-8e9d-4eee-8b83-702143b5768d" ver="5" description="" cardinal="1">
+		<designed target="Mode" value="1" ver="5"/>
+		<designed target="HistoricalRangeStart" value="0" ver="5"/>
+		<designed target="HistoricalRangeEnd" value="0" ver="5"/>
+		<designed target="Filter" value='{"&gt;":{"severity":1}}' ver="5"/>
+		<designed target="HistoricalFilter" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="RemoveAckedInactive" value="true" ver="5"/>
+		<designed target="RefreshAtStart" value="true" ver="5"/>
+		<designed target="HistoryPreloadInterval" value="0" ver="5"/>
+		<designed target="HistoryExpandInterval" value="0" ver="5"/>
+		<designed target="HistoricalEventsChronology" value="0" ver="5"/>
+		<object access-modifier="private" name="ApAlarmQueue" display-name="ApAlarmQueue" uuid="3d0ea58a-ebda-4c7a-a3a1-8c6075d73d05" base-type="ApAlarmQueue" base-type-id="040615c1-78b9-4f5b-8201-607d29656aca" ver="5" description="" cardinal="1">
+			<designed target="JsonFilter" value="" ver="5"/>
+			<init target="Query" ver="5" ref="here.ApAlarmQuery"/>
+		</object>
+		<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="af2b2ac2-423a-4587-beea-a68c0c3c6602" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+				<body kind="om">
+					<![CDATA[here.ApAlarmQuery.Reload();
+here.ApAlarmQuery.ApAlarmQueue.Reload();
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Timer_1" display-name="Timer_1" uuid="695379d5-21ed-48f7-b140-91dee6f15af5" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+			<designed target="Period" value="1500" ver="5"/>
+			<designed target="Active" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+				<body kind="om">
+					<![CDATA[len : uint4 = here.ApAlarmQuery.ApAlarmQueue.Length;    // Число неквитированных алармов
+here.NumberUnAckedMsg = len;      // Переменная "Число неквитированных алармов" для отладки
+
+if (here.ApAlarmQuery.FlagReloadRunning) {    // Если запущено обновление очереди алармов
+   // Ожидание завершения обновления очереди алармов
+	if (here.ApAlarmQuery.Count >= 1) {         // завершено
+			here.ApAlarmQuery.Count = 0;                  // Сброс счетчика
+			here.ApAlarmQuery.FlagReloadRunning = false;  // Считаем, что обновление очереди алармов уже не выполняется
+	} else                                      // продолжается
+			here.ApAlarmQuery.Count = here.ApAlarmQuery.Count + 1;
+} else {                                      // Считаем, что обновление очереди алармов уже не выполняется
+	here.FlagExistUnAckedMsg = (len > 0);      // Установка флага "Есть неквитированные активные аварии" для мигания кнопки "Сообщения"
+   if (len > 0) {     // Очередь алармов не пуста
+   	// Ожидание до запроса на обновление очереди алармов
+		if (here.ApAlarmQuery.Count >= 3) { 
+			here.ApAlarmQuery.Reload();        				 // !!!! Запрос алармов
+			here.ApAlarmQuery.ApAlarmQueue.Reload();     // Выдача запроса на обновление очереди алармов
+			here.ApAlarmQuery.Count = 0;                 // Сброс счетчика
+			here.ApAlarmQuery.FlagReloadRunning = true;  // Запущено обновление очереди алармов
+		} else                                     // Ожидание до запроса на обновление очереди алармов
+			here.ApAlarmQuery.Count = here.ApAlarmQuery.Count + 1;
+   } else            // Очередь алармов пуста
+   	here.ApAlarmQuery.Count = 0;    // Сброс счетчика ожидания до запроса на обновление очереди алармов
+}
+
+
+]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Active" ver="5">
+				<body>
+					<![CDATA[here.FlagEnableButtonMsgBlink]]>
+				</body>
+			</do-trace>
+		</object>
+		<init target="Source" ver="5" ref="unit.Global_ApSource.ApSourceMain"/>
+		<object access-modifier="private" name="Count" display-name="Count" uuid="31756539-0c08-4295-becf-516a3a8184a9" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="FlagReloadRunning" display-name="FlagReloadRunning" uuid="fe2b1e11-c797-41bf-8f11-4d587f76af94" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+		<init target="Count" ver="5" value="0"/>
+		<init target="FlagReloadRunning" ver="5" value="false"/>
+		<designed target="MergeMode" value="0" ver="5"/>
+		<designed target="OperativeBufferSize" value="0" ver="5"/>
+		<designed target="DataProcessing" value="" ver="5"/>
+		<designed target="CustomAttributes" value="" ver="5"/>
+	</object>
+	<init target="FlagExistUnAckedMsg" ver="5" value="false"/>
+	<init target="FlagEnableButtonMsgBlink" ver="5" value="true"/>
+	<init target="NumberUnAckedMsg" ver="5" value="0"/>
+</object>
+

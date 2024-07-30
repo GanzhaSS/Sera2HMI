@@ -1,0 +1,54 @@
+<type access-modifier="private" name="InputAnaPrm" display-name="InputAnaPrm" uuid="bd2742db-a4d6-4075-b314-7e3abe86f772" base-type="InputNumber" base-type-id="584a9a02-2489-4eb1-b336-97b8612b00f2" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="79" ver="5"/>
+	<designed target="Height" value="31" ver="5"/>
+	<object access-modifier="private" name="ApAnaPrmCfgNum" display-name="ApAnaPrmCfgNum" uuid="2d2fa684-ad8f-4e2e-8083-8b04a169e312" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_AnaPrmNameEn + ".OutCfg.Num"]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_init_AnaPrmNameEn" display-name="_init_AnaPrmNameEn" uuid="6ca20a72-e7d0-4aa2-88f7-89d63580c1cc" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_AnaPrmNameEn" ver="5" value="Для определения границ ввода и кол-ва зн.после запятой"/>
+	<do-trace access-modifier="private" target="_init_DigitsCount" ver="5">
+		<body>
+			<![CDATA[ApAnaPrmCfgNum]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="Text" ver="5">
+		<body kind="om">
+			<![CDATA[ApValueOut.OutputFormatter_1.OutValue]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="ApAnaPrmCfgScaleMin" display-name="ApAnaPrmCfgScaleMin" uuid="b91df466-7853-41c9-838e-47ec3dad1cbb" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_AnaPrmNameEn + ".OutCfg.ScaleMin"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApAnaPrmCfgScaleMax" display-name="ApAnaPrmCfgScaleMax" uuid="c244f0d0-273e-4916-8151-4b26e6fe7588" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_AnaPrmNameEn + ".OutCfg.ScaleMax"]]>
+			</expr>
+		</init>
+	</object>
+	<do-trace access-modifier="private" target="_init_Max" ver="5">
+		<body>
+			<![CDATA[ApAnaPrmCfgScaleMax]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="_init_Min" ver="5">
+		<body>
+			<![CDATA[ApAnaPrmCfgScaleMin]]>
+		</body>
+	</do-trace>
+</type>
+

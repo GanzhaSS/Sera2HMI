@@ -1,0 +1,19 @@
+<type access-modifier="private" name="Text" display-name="Комментарий" uuid="a85d8237-ff47-4c3e-9568-a62af2cb7356" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="60" ver="5"/>
+	<designed target="Height" value="20" ver="5"/>
+	<designed target="Text" value="TextText" ver="5"/>
+	<designed target="Font" value="Tahoma,11,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+	<designed target="FontColor" value="0xff0000ba" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+</type>
+

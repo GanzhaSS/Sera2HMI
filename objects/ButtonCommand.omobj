@@ -1,0 +1,62 @@
+<type access-modifier="private" name="ButtonCommand" display-name="ButtonCommand" uuid="437579ff-e75b-4449-bb2c-b400391f7906" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="110" ver="5"/>
+	<designed target="Height" value="26" ver="5"/>
+	<designed target="Checkable" value="false" ver="5"/>
+	<designed target="Checked" value="false" ver="5"/>
+	<designed target="Text" value="Включить" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+	<designed target="FontColor" value="0xff000000" ver="5"/>
+	<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+	<designed target="DisabledFontColor" value="0xff8c8c8c" ver="5"/>
+	<designed target="BrushColor" value="0xffe6e6e6" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="OnClickBrushColor" value="0xffc0c0c0" ver="5"/>
+	<designed target="OnClickBrushStyle" value="1" ver="5"/>
+	<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+	<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+	<designed target="DisabledBrushColor" value="0xffe6e6e6" ver="5"/>
+	<designed target="DisabledBrushStyle" value="1" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+	<designed target="OnClickPenStyle" value="1" ver="5"/>
+	<designed target="OnClickPenWidth" value="1" ver="5"/>
+	<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+	<designed target="OnHoverPenStyle" value="1" ver="5"/>
+	<designed target="OnHoverPenWidth" value="1" ver="5"/>
+	<designed target="DisabledPenColor" value="0xff8c8c8c" ver="5"/>
+	<designed target="DisabledPenStyle" value="1" ver="5"/>
+	<designed target="DisabledPenWidth" value="1" ver="5"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRelease">
+		<body kind="om">
+			<![CDATA[if (unit.Global_Security.PermitControlDevice)
+	_ApCtrlWord = _CtrlWordValue;
+else
+	ActionOpenWinNoPermit.Invoke();
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ActionOpenWinNoPermit" display-name="ActionOpenWinNoPermit" uuid="285b3d72-7381-4a9a-82b4-bb5fbaf3128b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="5529e7ec-bc65-47d9-9d7b-0a356e809e4f" base-type="Проверка прав" base-type-id="0d4ef371-2e10-427d-964b-754af7a7f920" ver="5"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="_ApCtrlWord" display-name="_ApCtrlWord" uuid="c7baa449-cf73-4284-8e43-b4322cd1065f" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="_CtrlWordValue" display-name="_CtrlWordValue" uuid="3fee116c-b200-4e80-a2a9-b9f36bfd7327" base-type="uint2" base-type-id="ae923ad8-8b75-4813-8121-36efe3cc8c12" ver="5" description="" cardinal="1"/>
+</type>
+

@@ -1,0 +1,1080 @@
+<type access-modifier="private" name="FormTrendSingle" display-name="FormTrendSingle" uuid="e00c7fdc-833d-4980-8903-2cf2d96c3eae" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1500" ver="5"/>
+	<designed target="Height" value="700" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffefebe7" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Form_1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="true" ver="5"/>
+	<designed target="WindowSizeMode" value="2" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Trend01" display-name="Trend01" uuid="2bb726d3-9562-422e-9a3b-020a3bda4f23" base-type="Trends" base-type-id="81673f92-ac48-4244-bfe3-ddbdcc98167a" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1300" ver="5"/>
+		<designed target="Height" value="600" ver="5"/>
+		<init target="int_AP" ver="5" ref="unit.Global_ApSource.ApSourceMain"/>
+		<init target="ShowLegend" ver="5" value="true"/>
+		<init target="ShowSources" ver="5" value="false"/>
+		<init target="ShowMiniTrends" ver="5" value="false"/>
+		<init target="ControlLineMultipleAdd" ver="5" value="false"/>
+		<init target="ConfigurationPath" ver="5" ref="unit.Global_Property.ProjectFolderTrends"/>
+		<init target="AccessSettings" ver="5" value="true"/>
+		<init target="ShowFullDescription" ver="5" value="false"/>
+		<do-trace access-modifier="private" target="AutoRange" ver="5">
+			<body>
+				<![CDATA[unit.Global_Trends.AutoRange]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="AccessSettings" ver="5">
+			<body>
+				<![CDATA[unit.Global_Trends.AccessSettings]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FileSystemAccess" ver="5">
+			<body>
+				<![CDATA[unit.Global_Trends.FileSystemAccess]]>
+			</body>
+		</do-trace>
+		<init target="LowRange" ver="5" value="0"/>
+		<init target="HighRange" ver="5" value="100"/>
+		<init target="ShowMarkerLabels" ver="5" value="false"/>
+		<init target="ShowEU" ver="5" value="false"/>
+		<init target="UseRedLine" ver="5" value="true"/>
+		<init target="GlobalRanges" ver="5" value="true"/>
+		<init target="ShowDataPoints" ver="5" value="false"/>
+		<init target="RedLineShift" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="LowRange" ver="5">
+			<body>
+				<![CDATA[ApScaleMin]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="HighRange" ver="5">
+			<body>
+				<![CDATA[ApScaleMax]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="OperativeDisplayedInterval" ver="5">
+			<body>
+				<![CDATA[unit.Global_Trends.OperativeDisplayedInterval]]>
+			</body>
+		</do-trace>
+		<init target="OperativeDisplayedInterval" ver="5" ref="unit.Global_Trends.OperativeDisplayedInterval"/>
+		<init target="OperativeStoredInterval" ver="5" value="1440"/>
+	</object>
+	<object access-modifier="private" name="_linkApValue" display-name="_linkApValue" uuid="d81d9e16-83a3-4de7-b276-dade3a93757a" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" base-const="true" base-ref="true" ver="5" description=""/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Trend01.ForcedAddItem(_linkApValue.Tag, _linkApValue.Units, _linkApValue.Description);
+
+unit.Global_WinCtrl.FlagWinOpening = false;
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="WindowThis" display-name="WindowThis" uuid="665967dd-32b4-4ff6-bc73-e3ee443c413a" base-type="Window" base-type-id="04615219-28bb-4a9a-bba4-50ac66972eb0" ver="5" description="" cardinal="1">
+		<init target="Group" ver="5" ref="unit.Global_WinCtrl.WindowGroupTrendSingle"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MessageReceived">
+			<body kind="om">
+				<![CDATA[if (messageType == "Close")
+   parent.Close();]]>
+			</body>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="WindowCaption" ver="5">
+		<body>
+			<![CDATA[_linkApValue.Description]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="d323f6ee-8f53-4357-9c16-0f81b760bd25" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_AnaPrmNameEn + ".Status"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApStatusIn" display-name="ApStatusIn" uuid="3aebc672-4be4-4da3-8535-4a7be2e2e72d" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_AnaPrmNameEn + ".InStatus"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApScaleMax" display-name="ApScaleMax" uuid="ae3a0e18-4966-4e1c-aa52-652ae6e0fd46" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_AnaPrmNameEn + ".OutCfg.ScaleMax"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApScaleMin" display-name="ApScaleMin" uuid="dfa82f12-929a-40d7-803b-45e34b31c0ff" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_AnaPrmNameEn + ".OutCfg.ScaleMin"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ButtonTrendInterval_1" display-name="ButtonTrendInterval_1" uuid="811da993-9b5e-492a-ae3b-9e60c3ba1385" base-type="ButtonTrendInterval" base-type-id="5cf88841-8258-499b-948f-3409415669cb" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="635" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<init target="_init_IntervalMinut" ver="5" value="5"/>
+		<init target="_init_Trends" ver="5" ref="Trend01"/>
+	</object>
+	<object access-modifier="private" name="ButtonTrendInterval_2" display-name="ButtonTrendInterval_2" uuid="85029233-a52a-49ee-8156-21cc96a53d0b" base-type="ButtonTrendInterval" base-type-id="5cf88841-8258-499b-948f-3409415669cb" ver="5" description="" cardinal="1">
+		<designed target="X" value="120" ver="5"/>
+		<designed target="Y" value="635" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<init target="_init_IntervalMinut" ver="5" value="10"/>
+		<init target="_init_Trends" ver="5" ref="Trend01"/>
+		<designed target="Text" value="10 минут" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ButtonTrendInterval_3" display-name="ButtonTrendInterval_3" uuid="41e5b586-4ef7-4fae-936d-bb49ae8aa64f" base-type="ButtonTrendInterval" base-type-id="5cf88841-8258-499b-948f-3409415669cb" ver="5" description="" cardinal="1">
+		<designed target="X" value="210" ver="5"/>
+		<designed target="Y" value="635" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<init target="_init_IntervalMinut" ver="5" value="30"/>
+		<init target="_init_Trends" ver="5" ref="Trend01"/>
+		<designed target="Text" value="30 минут" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ButtonTrendInterval_4" display-name="ButtonTrendInterval_4" uuid="7b4acace-6f14-4d7f-b708-3fe1a36bcb01" base-type="ButtonTrendInterval" base-type-id="5cf88841-8258-499b-948f-3409415669cb" ver="5" description="" cardinal="1">
+		<designed target="X" value="300" ver="5"/>
+		<designed target="Y" value="635" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<init target="_init_IntervalMinut" ver="5" value="60"/>
+		<init target="_init_Trends" ver="5" ref="Trend01"/>
+		<designed target="Text" value="Час" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ButtonTrendInterval_5" display-name="ButtonTrendInterval_5" uuid="2fd765da-231d-4e67-9824-f6318835cfc1" base-type="ButtonTrendInterval" base-type-id="5cf88841-8258-499b-948f-3409415669cb" ver="5" description="" cardinal="1">
+		<designed target="X" value="390" ver="5"/>
+		<designed target="Y" value="635" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<init target="_init_IntervalMinut" ver="5" value="360"/>
+		<init target="_init_Trends" ver="5" ref="Trend01"/>
+		<designed target="Text" value="6 часов" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ButtonTrendInterval_6" display-name="ButtonTrendInterval_6" uuid="0a149770-ebb5-46fc-a216-ad0b03d425af" base-type="ButtonTrendInterval" base-type-id="5cf88841-8258-499b-948f-3409415669cb" ver="5" description="" cardinal="1">
+		<designed target="X" value="480" ver="5"/>
+		<designed target="Y" value="635" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<init target="_init_IntervalMinut" ver="5" value="720"/>
+		<init target="_init_Trends" ver="5" ref="Trend01"/>
+		<designed target="Text" value="12 часов" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ButtonTrendInterval_7" display-name="ButtonTrendInterval_7" uuid="faab6b4f-0a0b-4246-8fee-ef1beedd7045" base-type="ButtonTrendInterval" base-type-id="5cf88841-8258-499b-948f-3409415669cb" ver="5" description="" cardinal="1">
+		<designed target="X" value="570" ver="5"/>
+		<designed target="Y" value="635" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<init target="_init_IntervalMinut" ver="5" value="1440"/>
+		<init target="_init_Trends" ver="5" ref="Trend01"/>
+		<designed target="Text" value="Сутки" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="d02c8136-611b-46e9-8ce9-c7bdfb8f6b3b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="270" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="78" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffababab" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="e0c19094-cc6d-4aaf-b4db-fa0703bb8743" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="78" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffababab" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffefebe7" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="2ddb4543-c2a2-4e39-b700-2b8b4bcab630" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="100" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="78" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffababab" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffefebe7" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="a7e8f332-84d1-4191-8956-248863349742" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="78" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffababab" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffefebe7" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="4fa3937d-d685-4164-951d-7ab650d88e43" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="180" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="78" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffababab" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffefebe7" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_HG" display-name="Text_HG" uuid="90fb4833-630a-4ac7-a52a-8f9b96b7d2a0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1334" ver="5"/>
+		<designed target="Y" value="28" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Верхняя граница" ver="5"/>
+		<designed target="Width" value="72" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="ВГ" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="34" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_LG" display-name="Text_LG" uuid="ebab3d3b-03e5-46c0-a945-67f62dc03507" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1334" ver="5"/>
+		<designed target="Y" value="228" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Нижняя граница" ver="5"/>
+		<designed target="Width" value="72" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="НГ" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="34" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_Inv_1" display-name="Text_Inv_1" uuid="e917316e-0620-4cfb-8978-33c43b991e30" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1311" ver="5"/>
+		<designed target="Y" value="269" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Инверсный" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="34" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_Inv_2" display-name="Text_Inv_2" uuid="22709408-4416-4d75-8dc9-caef90c3939c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1311" ver="5"/>
+		<designed target="Y" value="284" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="AI-вход" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="34" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_Num_1" display-name="Text_Num_1" uuid="badff76a-b0ba-4554-92df-ecfe65b94760" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1311" ver="5"/>
+		<designed target="Y" value="319" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Цифр после" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="34" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_Num_2" display-name="Text_Num_2" uuid="84481e6a-0d72-4de8-8bc7-9594d60a86b1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1311" ver="5"/>
+		<designed target="Y" value="334" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="запятой" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="34" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Checkbox_AH" display-name="Checkbox_AH" uuid="6c8dfb08-2a09-4713-99c6-a6f8074b7291" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1366" ver="5"/>
+		<designed target="Y" value="64" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Аварийное верхнее значение" ver="5"/>
+		<designed target="Width" value="42" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="АВ" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="State" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[here.ApStatusIn.Value = here.ReplaceBit(here.ApStatus.Value, 8, this.State);
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[((here.ApStatus.Value >> 8) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Checkbox_WH" display-name="Checkbox_WH" uuid="51975a7d-cf1d-4afd-8c70-8461b8b2e639" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1366" ver="5"/>
+		<designed target="Y" value="104" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Предупредительное верхнее значение" ver="5"/>
+		<designed target="Width" value="42" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="ПВ" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="State" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[here.ApStatusIn.Value = here.ReplaceBit(here.ApStatus.Value, 9, this.State);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[((here.ApStatus.Value >> 9) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Checkbox_WL" display-name="Checkbox_WL" uuid="1f2bedbd-40ab-4616-bf50-442cb58083d3" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1366" ver="5"/>
+		<designed target="Y" value="144" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Предупредительное нижнее значение" ver="5"/>
+		<designed target="Width" value="42" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="ПН" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="State" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[here.ApStatusIn.Value = here.ReplaceBit(here.ApStatus.Value, 12, this.State);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[((here.ApStatus.Value >> 12) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Checkbox_AL" display-name="Checkbox_AL" uuid="ae9296f3-0409-40cb-b484-0669e9f85856" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1366" ver="5"/>
+		<designed target="Y" value="184" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Аварийное нижнее значение" ver="5"/>
+		<designed target="Width" value="42" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="АН" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="State" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[here.ApStatusIn.Value = here.ReplaceBit(here.ApStatus.Value, 13, this.State);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[((here.ApStatus.Value >> 13) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InputNumber_HG" display-name="InputNumber_HG" uuid="5038f738-dcff-4ea0-be04-064be2978894" base-type="InputNumber" base-type-id="584a9a02-2489-4eb1-b336-97b8612b00f2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="79" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<init target="_init_ValueNameEn" ver="5" value="Cfg.ScaleMax"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<init target="_init_Max" ver="5" value="100000"/>
+		<init target="_init_Min" ver="5" value="-100000"/>
+		<designed target="Tooltip" value="Верхняя граница" ver="5"/>
+		<do-trace access-modifier="private" target="_init_Permit" ver="5">
+			<body kind="om">
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<init target="_init_ObjectNameEn" ver="5" ref="here._AnaPrmNameEn"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+		<init target="_init_DigitsCount" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_DigitsCount" ver="5">
+			<body>
+				<![CDATA[here.ApNum.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InputNumber_AH" display-name="InputNumber_AH" uuid="7d0aee21-526b-4d4f-b5fa-eebd0feb4a43" base-type="InputNumber" base-type-id="584a9a02-2489-4eb1-b336-97b8612b00f2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="79" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<init target="_init_ValueNameEn" ver="5" value="Cfg.AH_Lim"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Аварийное верхнее значение" ver="5"/>
+		<do-trace access-modifier="private" target="_init_Permit" ver="5">
+			<body kind="om">
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+		<init target="_init_ObjectNameEn" ver="5" ref="here._AnaPrmNameEn"/>
+		<init target="_init_DigitsCount" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_DigitsCount" ver="5">
+			<body>
+				<![CDATA[here.ApNum.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_init_Max" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMax.Value]]>
+			</body>
+		</do-trace>
+		<init target="_init_Max" ver="5" value="100"/>
+		<init target="_init_Min" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_Min" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMin.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[here.Checkbox_AH.State]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InputNumber_WH" display-name="InputNumber_WH" uuid="5af6a95b-5b2f-483b-bda9-47cb9989288c" base-type="InputNumber" base-type-id="584a9a02-2489-4eb1-b336-97b8612b00f2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="100" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="79" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<init target="_init_ValueNameEn" ver="5" value="Cfg.WH_Lim"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Предупредительное верхнее значение" ver="5"/>
+		<do-trace access-modifier="private" target="_init_Permit" ver="5">
+			<body kind="om">
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+		<init target="_init_ObjectNameEn" ver="5" ref="here._AnaPrmNameEn"/>
+		<init target="_init_DigitsCount" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_DigitsCount" ver="5">
+			<body>
+				<![CDATA[here.ApNum.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_init_Max" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMax.Value]]>
+			</body>
+		</do-trace>
+		<init target="_init_Max" ver="5" value="100"/>
+		<init target="_init_Min" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_Min" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMin.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[here.Checkbox_WH.State]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InputNumber_WL" display-name="InputNumber_WL" uuid="23cc6675-f5b9-4a00-8d92-352e28b934e8" base-type="InputNumber" base-type-id="584a9a02-2489-4eb1-b336-97b8612b00f2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="79" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<init target="_init_ValueNameEn" ver="5" value="Cfg.WL_Lim"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Предупредительное нижнее значение" ver="5"/>
+		<do-trace access-modifier="private" target="_init_Permit" ver="5">
+			<body kind="om">
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+		<init target="_init_ObjectNameEn" ver="5" ref="here._AnaPrmNameEn"/>
+		<init target="_init_DigitsCount" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_DigitsCount" ver="5">
+			<body>
+				<![CDATA[here.ApNum.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_init_Max" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMax.Value]]>
+			</body>
+		</do-trace>
+		<init target="_init_Max" ver="5" value="100"/>
+		<init target="_init_Min" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_Min" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMin.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[here.Checkbox_WL.State]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InputNumber_AL" display-name="InputNumber_AL" uuid="51114b7f-128f-4dfa-b04c-ecbe4eb33d53" base-type="InputNumber" base-type-id="584a9a02-2489-4eb1-b336-97b8612b00f2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="180" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="79" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<init target="_init_ValueNameEn" ver="5" value="Cfg.AL_Lim"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Аварийное нижнее значение" ver="5"/>
+		<do-trace access-modifier="private" target="_init_Permit" ver="5">
+			<body kind="om">
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+		<init target="_init_ObjectNameEn" ver="5" ref="here._AnaPrmNameEn"/>
+		<init target="_init_DigitsCount" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_DigitsCount" ver="5">
+			<body>
+				<![CDATA[here.ApNum.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_init_Max" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMax.Value]]>
+			</body>
+		</do-trace>
+		<init target="_init_Max" ver="5" value="100"/>
+		<init target="_init_Min" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_Min" ver="5">
+			<body>
+				<![CDATA[here.ApScaleMin.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[here.Checkbox_AL.State]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InputNumber_LG" display-name="InputNumber_LG" uuid="da4827cf-f8a7-40b0-a9d6-0ad71df5ecfb" base-type="InputNumber" base-type-id="584a9a02-2489-4eb1-b336-97b8612b00f2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="220" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="79" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<init target="_init_ValueNameEn" ver="5" value="Cfg.ScaleMin"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<init target="_init_Max" ver="5" value="100000"/>
+		<init target="_init_Min" ver="5" value="-100000"/>
+		<designed target="Tooltip" value="Нижняя граница" ver="5"/>
+		<do-trace access-modifier="private" target="_init_Permit" ver="5">
+			<body kind="om">
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+		<init target="_init_ObjectNameEn" ver="5" ref="here._AnaPrmNameEn"/>
+		<init target="_init_DigitsCount" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_DigitsCount" ver="5">
+			<body>
+				<![CDATA[here.ApNum.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InputNumber_NUM" display-name="InputNumber_NUM" uuid="67de3075-b134-49ff-ac0b-c65dbeb79d77" base-type="InputUINT1" base-type-id="3205a03c-5344-4b25-961a-ce0478187a07" ver="5" description="" cardinal="1">
+		<designed target="X" value="1414" ver="5"/>
+		<designed target="Y" value="320" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="79" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<init target="_init_ValueNameEn" ver="5" value="Cfg.Num"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<init target="_init_DigitsCount" ver="5" value="0"/>
+		<init target="_init_Max" ver="5" value="5"/>
+		<init target="_init_Min" ver="5" value="0"/>
+		<do-trace access-modifier="private" target="_init_Permit" ver="5">
+			<body kind="om">
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+		<init target="_init_ObjectNameEn" ver="5" ref="here._AnaPrmNameEn"/>
+	</object>
+	<object access-modifier="private" name="Checkbox_Inv" display-name="Checkbox_Inv" uuid="b0c5ed41-0b72-4af2-bde6-2d4324233e86" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1428" ver="5"/>
+		<designed target="Y" value="273" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="60" ver="5"/>
+		<designed target="Height" value="27" ver="5"/>
+		<designed target="Text" value="НЕТ" ver="5"/>
+		<designed target="Font" value="Roboto,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff2b2b2b" ver="5"/>
+		<designed target="State" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[here.ApInvIn.Value = this.State;
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Global_Security.PermitControlAnaPrm]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff2b2b2b]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff787878]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[here.ApInvOut.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.State]]>
+				</condition>
+				<expr>
+					<![CDATA["ДА"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["НЕТ"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_ApSourceForm" display-name="_ApSourceForm" uuid="33745254-5300-4523-b7bd-9d7230b7b1c4" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_AnaPrmNameEn" display-name="_AnaPrmNameEn" uuid="553368cd-6b1b-4c44-a022-cc91184b989c" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<object access-modifier="private" name="ApNum" display-name="ApNum" uuid="d2b91cb3-9f92-46a9-940f-b4a1d729552a" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_AnaPrmNameEn + ".OutCfg.Num"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApInvOut" display-name="ApInvOut" uuid="baf1c9b6-7b89-484a-915f-7d42069aeebd" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_AnaPrmNameEn + ".OutCfg.Inv"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApInvIn" display-name="ApInvIn" uuid="bd889084-5bc9-42ca-a0b5-17fc44f6be12" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_AnaPrmNameEn + ".InCfg.Inv"]]>
+			</expr>
+		</init>
+	</object>
+	<do access-modifier="private" name="ReplaceBit" display-name="ReplaceBit" ver="5" type="uint2" type-id="ae923ad8-8b75-4813-8121-36efe3cc8c12">
+		<body kind="om">
+			<![CDATA[// Функция ReplaceBit(sts u2, num u1, bit Bool)
+// Возвращает значение sts, в котором бит номер num
+// заменен на значение bit
+tmp1 : uint2 = 1;
+
+if (bit)
+   return sts | (tmp1 << num);    // Установка в sts бита с номером num
+else
+   return sts & ~(tmp1 << num);   // Сброс в sts бита с номером num
+]]>
+		</body>
+		<param access-modifier="private" name="sts" display-name="" uuid="e43f951d-5b62-4708-99f9-e8314f9855cd" base-type="uint2" base-type-id="ae923ad8-8b75-4813-8121-36efe3cc8c12" ver="5"/>
+		<param access-modifier="private" name="num" display-name="" uuid="de96bf3b-d8b8-40a4-9188-f5935393d02e" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="5"/>
+		<param access-modifier="private" name="bit" display-name="" uuid="a03b846d-2c56-4d51-bef5-9cfb0aa41755" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5"/>
+	</do>
+</type>
+

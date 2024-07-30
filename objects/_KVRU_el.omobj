@@ -1,0 +1,109 @@
+<type access-modifier="private" name="_KVRU_el" display-name="_KVRU_el" uuid="0a16e52e-b1f3-4d15-a1fa-547f8f6dc17c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="16" ver="5"/>
+	<designed target="Height" value="16" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff83ffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="txtKVRU" display-name="txtKVRU" uuid="24c7102b-b2f3-4d78-9830-1bef71b1fdc7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="16" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="А" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,11,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="0xff1b1b1b" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(here._Status & 12) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[""]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(here._Status & 12) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA["Д"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(here._Status & 12) == 8]]>
+				</condition>
+				<expr>
+					<![CDATA["Р"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(here._Status & 12) == 12]]>
+				</condition>
+				<expr>
+					<![CDATA["А"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[""]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="_Status" display-name="_Status" uuid="46118eb8-e9b0-415b-bc6e-e52c31314d32" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="PenStyle" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[(here._Status & 12) == 12]]>
+			</condition>
+			<expr>
+				<![CDATA[1]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[0]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="BrushStyle" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[(here._Status & 12) == 12]]>
+			</condition>
+			<expr>
+				<![CDATA[1]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[0]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+</type>
+

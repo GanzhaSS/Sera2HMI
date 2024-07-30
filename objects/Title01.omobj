@@ -1,0 +1,31 @@
+<type access-modifier="private" name="Title01" display-name="Title01" uuid="5ef100c8-abbe-4d7a-b305-a236e6afea5a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="60" ver="5"/>
+	<designed target="Height" value="20" ver="5"/>
+	<designed target="Text" value="Title01" ver="5"/>
+	<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+	<designed target="FontColor" value="0xff1b1b1b" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="ImageFile" value="" ver="5"/>
+	<designed target="Active" value="true" ver="5"/>
+	<designed target="CurrentFrameNumber" value="0" ver="5"/>
+	<designed target="Speed" value="1" ver="5"/>
+	<init target="FontColor" ver="5">
+		<expr>
+			<![CDATA[unit.Global_ColorSettings.ColorFontTitle01]]>
+		</expr>
+	</init>
+</type>
+

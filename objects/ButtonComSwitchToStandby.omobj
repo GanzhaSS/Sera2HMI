@@ -1,0 +1,115 @@
+<type access-modifier="private" name="ButtonComSwitchToStandby" display-name="ButtonComSwitchToStandby" uuid="844aefa4-0f12-41ac-ae26-2881c9391cca" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="220" ver="5"/>
+	<designed target="Height" value="26" ver="5"/>
+	<designed target="Checkable" value="false" ver="5"/>
+	<designed target="Checked" value="false" ver="5"/>
+	<designed target="Text" value="Перейти на резервный CPU" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+	<designed target="FontColor" value="0xff000000" ver="5"/>
+	<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+	<designed target="DisabledFontColor" value="0xff8c8c8c" ver="5"/>
+	<designed target="BrushColor" value="0xffe6e6e6" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="OnClickBrushColor" value="0xffc0c0c0" ver="5"/>
+	<designed target="OnClickBrushStyle" value="1" ver="5"/>
+	<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+	<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+	<designed target="DisabledBrushColor" value="0xffe6e6e6" ver="5"/>
+	<designed target="DisabledBrushStyle" value="1" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+	<designed target="OnClickPenStyle" value="1" ver="5"/>
+	<designed target="OnClickPenWidth" value="1" ver="5"/>
+	<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+	<designed target="OnHoverPenStyle" value="1" ver="5"/>
+	<designed target="OnHoverPenWidth" value="1" ver="5"/>
+	<designed target="DisabledPenColor" value="0xff8c8c8c" ver="5"/>
+	<designed target="DisabledPenStyle" value="1" ver="5"/>
+	<designed target="DisabledPenWidth" value="1" ver="5"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRelease">
+		<body kind="om">
+			<![CDATA[if (unit.Global_Security.PermitControlSettings)
+	ApComSwitchToStandby.Value = true;
+else {
+   // Сохраняем необходимые координаты (относительно монитора)
+   unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4( me.ScreenX(0,0));
+   unit.Global_WinCtrl.PanelY = TypeConvert.ToInt4( me.ScreenY(0,0) + me.Height + 5);
+	ActionOpenWinNoPermit.Invoke();
+}
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ActionOpenWinNoPermit" display-name="ActionOpenWinNoPermit" uuid="ca022c7c-7a3a-4705-8021-442fe27b37a2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="d518f77f-1792-47fb-af4b-f1746d06d209" base-type="Проверка прав" base-type-id="0d4ef371-2e10-427d-964b-754af7a7f920" ver="5"/>
+		</do-on>
+	</object>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="fe01cd4b-0e8c-4832-92b6-dcd853540af7" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_NameEn" display-name="_init_NameEn" uuid="fe808769-b5e5-4005-be20-677390d95e0a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_NameEn" ver="5" value="CpuActive"/>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="6b67f7db-7fca-4e53-a367-5437e05cc924" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="Path" ver="5" ref="_init_NameEn"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="ApComSwitchToStandby" display-name="ApComSwitchToStandby" uuid="46aff2da-ebb3-49ab-a7a0-f75f87c8f0fb" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="ComSwitchToStandby"/>
+	</object>
+	<object access-modifier="private" name="ApReturnComSwitchToStandby" display-name="ApReturnComSwitchToStandby" uuid="4519b8ff-e2a7-4ea9-abcf-9d43ad7e6af7" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="ReturnComSwitchToStandby"/>
+	</object>
+	<do-trace access-modifier="private" target="Enabled" ver="5">
+		<body>
+			<![CDATA[unit.Global_Security.PermitControlSettings]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="Text_10" display-name="Text_10" uuid="f445bbfd-c5a6-4b4d-9b90-e664973854d3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="230" ver="5"/>
+		<designed target="Y" value="3" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Возвращаемое значение: 0 - Ок" ver="5"/>
+		<designed target="Width" value="110" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="ret: 0" ver="5"/>
+		<designed target="Font" value="Tahoma,11,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		<designed target="FontColor" value="0xff323232" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA["ret: " + here.ApReturnComSwitchToStandby.ValueAsString]]>
+			</body>
+		</do-trace>
+	</object>
+</type>
+

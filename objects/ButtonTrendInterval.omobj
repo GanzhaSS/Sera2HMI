@@ -1,0 +1,65 @@
+<type access-modifier="private" name="ButtonTrendInterval" display-name="ButtonTrendInterval" uuid="5cf88841-8258-499b-948f-3409415669cb" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="80" ver="5"/>
+	<designed target="Height" value="35" ver="5"/>
+	<designed target="Checkable" value="true" ver="5"/>
+	<designed target="Checked" value="false" ver="5"/>
+	<designed target="Text" value="5 минут" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+	<designed target="FontColor" value="0xff000000" ver="5"/>
+	<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+	<designed target="DisabledFontColor" value="0xff000000" ver="5"/>
+	<designed target="BrushColor" value="0xffcccccc" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="OnClickBrushColor" value="0xff00be00" ver="5"/>
+	<designed target="OnClickBrushStyle" value="1" ver="5"/>
+	<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+	<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+	<designed target="DisabledBrushColor" value="0xff00be00" ver="5"/>
+	<designed target="DisabledBrushStyle" value="1" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+	<designed target="OnClickPenStyle" value="1" ver="5"/>
+	<designed target="OnClickPenWidth" value="1" ver="5"/>
+	<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverPenStyle" value="1" ver="5"/>
+	<designed target="OnHoverPenWidth" value="1" ver="5"/>
+	<designed target="DisabledPenColor" value="0xff000000" ver="5"/>
+	<designed target="DisabledPenStyle" value="1" ver="5"/>
+	<designed target="DisabledPenWidth" value="1" ver="5"/>
+	<object access-modifier="private" name="_init_IntervalMinut" display-name="_init_IntervalMinut" uuid="3487b048-af3c-40ac-b2c5-4d5d826519ea" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="5" description=""/>
+	<do-trace access-modifier="private" target="Enabled" ver="5">
+		<body>
+			<![CDATA[Global_Trends.OperativeDisplayedInterval != _init_IntervalMinut]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="Checked" ver="5">
+		<body>
+			<![CDATA[Global_Trends.OperativeDisplayedInterval == _init_IntervalMinut]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="_init_Trends" display-name="_init_Trends" uuid="51596b39-dd4f-4699-84b7-9366f5b0fcd4" base-type="Trends" base-type-id="81673f92-ac48-4244-bfe3-ddbdcc98167a" base-const="true" base-ref="true" ver="5" description=""/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRelease">
+		<body kind="om">
+			<![CDATA[unit.Global_Trends.OperativeDisplayedInterval = _init_IntervalMinut;
+_init_Trends.FitToScreen();
+_init_Trends.SetOperativInterval(unit.Global_Trends.OperativeDisplayedInterval,1000);
+_init_Trends.FitToScreen();
+]]>
+		</body>
+	</do-on>
+</type>
+

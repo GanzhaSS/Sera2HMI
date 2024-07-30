@@ -1,0 +1,182 @@
+<type access-modifier="private" name="InputUINT1" display-name="InputUINT1" uuid="3205a03c-5344-4b25-961a-ce0478187a07" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="79" ver="5"/>
+	<designed target="Height" value="31" ver="5"/>
+	<designed target="Text" value="255" ver="5"/>
+	<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0" ver="5"/>
+	<designed target="FontColor" value="0xff000000" ver="5"/>
+	<designed target="TextAlignment" value="130" ver="5"/>
+	<designed target="HideInput" value="false" ver="5"/>
+	<designed target="PlaceholderText" value="" ver="5"/>
+	<designed target="ReadOnly" value="false" ver="5"/>
+	<object access-modifier="private" name="_init_Permit" display-name="_init_Permit" uuid="a35c945e-0e32-471e-965e-8079d873bccf" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApValueIn" display-name="ApValueIn" uuid="c3ec624c-57a9-4725-b46f-32a98b92204a" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_ObjectNameEn + ".In" + _init_ValueNameEn]]>
+			</expr>
+		</init>
+		<object access-modifier="private" name="InputFormatter_1" display-name="InputFormatter_1" uuid="61ba16f5-5d61-441e-9658-1651098a46f6" base-type="InputFormatter" base-type-id="01ee9a1b-486d-4fb5-895a-82a979766d19" ver="5" description="" cardinal="1">
+			<designed target="InValue" value="" ver="5"/>
+			<init target="Format" ver="5" ref="here.FormatFloat_1"/>
+			<do-trace access-modifier="private" target="InValue" ver="5">
+				<body>
+					<![CDATA[String.Replace(here.Text, ".", ",")]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="17daaa66-7247-4516-a712-12c1e473fb1f" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_ObjectNameEn" display-name="_init_ObjectNameEn" uuid="417c19f5-ba00-4d37-bf89-4f9e63c4386b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_ObjectNameEn" ver="5" value="ValveNN, ConLoopNN, и т.п."/>
+	<param access-modifier="private" name="_init_ValueNameEn" display-name="_init_ValueNameEn" uuid="f5a9728c-d471-4ea7-8cf5-43e65a9fa8c9" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_ValueNameEn" ver="5" value="LocSet, AnaPrmSet, и т.п."/>
+	<object access-modifier="private" name="ApValueOut" display-name="ApValueOut" uuid="b9f2f4ba-03d7-4271-aefc-8b81a9ee8689" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_ObjectNameEn + ".Out" + _init_ValueNameEn]]>
+			</expr>
+		</init>
+		<object access-modifier="private" name="OutputFormatter_1" display-name="OutputFormatter_1" uuid="47520101-0fd3-4584-82ce-3b1fefc28d54" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="5" description="" cardinal="1">
+			<designed target="InValue" value="" ver="5"/>
+			<do-trace access-modifier="private" target="InValue" ver="5">
+				<body>
+					<![CDATA[ApValueOut.Value]]>
+				</body>
+			</do-trace>
+			<init target="Format" ver="5" ref="here.FormatFloat_1"/>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="KeyPress">
+		<body kind="om">
+			<![CDATA[tmpValue : uint1;  // float;
+
+// Если нажата клавиша Enter и нет ошибок ввода,то ...
+if ((event.KeyCode == 82) && !ApValueIn.InputFormatter_1.FormatError)
+   if (_init_Permit) {     // Если есть права доступа, то ...
+	   tmpValue = Variant.ToUint1(ApValueIn.InputFormatter_1.OutValue,0);        // ToFloat()
+	   if ((_init_Min <= tmpValue) && (tmpValue <= _init_Max)) {
+	      ApValueIn.Value = tmpValue;
+	      Focus = false;
+	   } else
+	      ActionOpenWinNoRange.Invoke();
+   } else
+   	 ActionOpenWinNoPermit.Invoke();
+
+// Если нажата клавиша Esc,то убрать фокус.
+// Далее, событие FocusChanged восстановит в поле ввода значение из PLC
+if (event.KeyCode == 75)
+   Focus = false;
+]]>
+		</body>
+	</do-on>
+	<init target="Focus" ver="5" value="false"/>
+	<object access-modifier="private" name="FormatFloat_1" display-name="FormatFloat_1" uuid="b7f00b28-cffe-41c0-8d87-7c67d87da92e" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="5" description="" cardinal="1">
+		<designed target="DigitsCount" value="0" ver="5"/>
+	</object>
+	<do-trace access-modifier="private" target="Text" ver="5">
+		<body>
+			<![CDATA[ApValueOut.OutputFormatter_1.OutValue]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="_init_Max" display-name="_init_Max" uuid="2aa01408-ba59-4134-abff-d0013f897ee3" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description=""/>
+	<object access-modifier="private" name="_init_Min" display-name="_init_Min" uuid="9560e876-5e29-4262-8316-2e6b2a3b5951" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description=""/>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="FocusChanged">
+		<body kind="om">
+			<![CDATA[// Если фокус ушёл с поля ввода, то "передергиваем" значение аналогового 
+// параметра, что заставляет повторно вычисляться компонент форматирования OutputFormatter_1,
+// и соответственно отображать в поле ввода старое значение
+
+str: string;
+
+if (!hasFocus) {
+   Ramka.Visible = false;
+   if (ApValueOut.AdviseState != 4) {  // Если нет ошибки подписки, т.е. сигнал существует
+   	str = ApValueOut.Path;
+   	ApValueOut.Path = "Test";
+   	ApValueOut.Path =str;
+   }
+} else
+   Ramka.Visible = true;
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Ramka" display-name="Ramka" uuid="08b31718-28f7-4be0-8ed0-6baae51ce5f8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="-2" ver="5"/>
+		<designed target="Y" value="-2" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="83" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff5682a3" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="5" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApValueIn.InputFormatter_1.FormatError]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff557f]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff5682a3]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ActionOpenWinNoRange" display-name="ActionOpenWinNoRange" uuid="d99ff9f0-bda0-4c40-9a1c-fdbaff885658" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
+			<object access-modifier="private" uuid="ca456a91-d91c-4153-8fb8-e077081203bb" base-type="MessageDialog" base-type-id="a468f863-f603-4768-ad4b-e16bc34ea78e" ver="5">
+				<designed target="WindowCaption" value="Недопустимое значение" ver="5"/>
+				<init target="Icon" ver="5" value="3"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="LineHeight" ver="5" value="11"/>
+				<init target="CharactersPerLine" ver="5" value="50"/>
+				<designed target="WindowPosition" value="2" ver="5"/>
+				<init target="Message" ver="5">
+					<expr>
+						<![CDATA["Введенное значение должно быть в диапазоне \n\r от  " + String.ToString(_init_Min) + "  до  " + String.ToString(_init_Max)]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ActionOpenWinNoPermit" display-name="ActionOpenWinNoPermit" uuid="2175edda-b18a-443c-ade4-d94bd47f69c5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="fe2fa7e0-f084-47ad-a180-a030b13bb6c0" base-type="Проверка прав" base-type-id="0d4ef371-2e10-427d-964b-754af7a7f920" ver="5"/>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="_init_Permit" ver="5">
+		<body>
+			<![CDATA[unit.Global_Security.PermitControlDevice]]>
+		</body>
+	</do-trace>
+</type>
+

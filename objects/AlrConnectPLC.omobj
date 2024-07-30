@@ -1,0 +1,85 @@
+<type access-modifier="private" name="AlrConnectPLC" display-name="AlrConnectPLC" uuid="4f1882e1-94df-484e-bf56-cec581cd875f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="190" ver="5"/>
+	<designed target="Height" value="25" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffffffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<param access-modifier="private" name="_init_ApSource" display-name="_init_ApSource" uuid="8c1c2ca6-f204-4795-89b8-fe820ae8448a" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_NameEn" display-name="_init_NameEn" uuid="18332a5f-dc11-40de-929b-6778df3bfd30" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="0cc06623-2adc-4a21-9891-74769130efaf" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="Path" ver="5" ref="_init_NameEn"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSource"/>
+	</object>
+	<object access-modifier="private" name="ApAlrConnect" display-name="ApAlrConnect" uuid="86960a27-70a5-41ca-b5a5-0a4506b0bf6a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="AlrConnect"/>
+	</object>
+	<init target="_init_NameEn" ver="5" value="ConnectPLCpaz"/>
+	<object access-modifier="private" name="TextMsg" display-name="TextMsg" uuid="1e8a8039-cd92-4794-9bec-2acf3a83aa36" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="170" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value=" Нет связи с ПЛК РСУ" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffff0000" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="a16ba764-279d-48b7-b292-f0986ede8184" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="5" description="" cardinal="1">
+			<designed target="Period" value="500" ver="5"/>
+			<designed target="Active" value="false" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="0xff000000" ver="5"/>
+			<designed target="FontColor" value="0xffdddddd" ver="5"/>
+			<do-trace access-modifier="private" target="Active" ver="5">
+				<body>
+					<![CDATA[! ApAlrConnectAcked]]>
+				</body>
+			</do-trace>
+		</object>
+		<init target="Text" ver="5" ref="here._init_Text"/>
+	</object>
+	<object access-modifier="private" name="TreeMapLayout_1" display-name="TreeMapLayout_1" uuid="c26e36e0-8af0-4f0a-977d-3e3c561abeb6" base-type="TreeMapLayout" base-type-id="abf2598f-0779-4d54-94e9-597b15cdb8e9" ver="5" description="" cardinal="1"/>
+	<init target="_init_ApSource" ver="5" ref="unit.Global_ApSource.ApSourceObjects"/>
+	<do-trace access-modifier="private" target="Visible" ver="5">
+		<body>
+			<![CDATA[(ApAlrConnect.Quality == 192) && ApAlrConnect]]>
+		</body>
+	</do-trace>
+	<init target="Visible" ver="5" value="false"/>
+	<object access-modifier="private" name="ApAlrConnectAcked" display-name="ApAlrConnectAcked" uuid="55d25d15-f82d-49e1-b932-f835c8e5ffaa" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="Agregator.AckedThis"/>
+	</object>
+	<param access-modifier="private" name="_init_Text" display-name="_init_Text" uuid="ba76ee3a-4fb5-4d14-8bb7-81158bb6ebdf" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_Text" ver="5" value=" Нет связи с ПЛК РСУ"/>
+</type>
+

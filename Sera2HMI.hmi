@@ -1,0 +1,99 @@
+<unit uuid="64230769-897b-467a-a306-4fa75804669a" name="Sera2HMI" display-name="Sera2HMI" description="" ver="5" main-form-id="777385c6-b223-42b5-8421-e04ed74cc752">
+	<object file="AnaPrm.omobj" filter="AnaPrm"/>
+	<object file="AnaPrm_Lev.omobj" filter="AnaPrm"/>
+	<object file="AnaPrm_Temp.omobj" filter="AnaPrm"/>
+	<object file="AnaPrmPosition.omobj" filter="Position"/>
+	<object file="Arrow.omobj" filter="Lines, Arrows, Text"/>
+	<object file="Text.omobj" filter="Lines, Arrows, Text"/>
+	<object file="Cross_Line.omobj" filter="Lines, Arrows, Text"/>
+	<object file="Header.omobj" filter=""/>
+	<object file="line.omobj" filter="Lines, Arrows, Text"/>
+	<object file="Global_Property.omobj" filter=""/>
+	<object file="ArrowEmpty.omobj" filter="Lines, Arrows, Text"/>
+	<object file="AnaPrm_pH.omobj" filter="AnaPrm"/>
+	<object file="Global_ApSource.omobj" filter=""/>
+	<unit-link name="Trends" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="Trends" ver="5"/>
+	<unit-link name="CommonLib" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="CommonLib" ver="5"/>
+	<unit-link name="Alarms" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="Alarms" ver="5"/>
+	<object file="Global_Security.omobj" filter=""/>
+	<object file="Global_WinCtrl.omobj" filter=""/>
+	<object file="TypeFormIK.omobj" filter="Типы форм"/>
+	<object file="ButtonMenu.omobj" filter="Buttons"/>
+	<object file="01. Схема 01.omobj" filter=""/>
+	<object file="02. Схема 02.omobj" filter=""/>
+	<object file="20. Сообщения.omobj" filter=""/>
+	<object file="30. Настройки.omobj" filter=""/>
+	<object file="Global_Alarms.omobj" filter=""/>
+	<object file="Pump_NoSts.omobj" filter="Pumps"/>
+	<object file="end_Line.omobj" filter="Lines, Arrows, Text"/>
+	<object file="_Tank_05.omobj" filter="Tanks"/>
+	<object file="Global_Trends.omobj" filter=""/>
+	<object file="ButtonTrendInterval.omobj" filter="Buttons"/>
+	<object file="LoginDialogLocal.omobj" filter="Парольный доступ"/>
+	<object file="LoginDialogServer.omobj" filter="Парольный доступ"/>
+	<object file="_Tank_01_hor.omobj" filter="Tanks"/>
+	<object file="TypeFormPanel.omobj" filter="Типы форм"/>
+	<object file="Проверка прав.omobj" filter="Парольный доступ"/>
+	<object file="TypeFormPanelBlock.omobj" filter="Типы форм"/>
+	<object file="CallPanelBlock.omobj" filter="Buttons"/>
+	<object file="ButtonCommand.omobj" filter="Buttons"/>
+	<object file="Global_ColorSettings.omobj" filter=""/>
+	<object file="UnitPosition.omobj" filter="Position"/>
+	<object file="Global_DataArray.omobj" filter=""/>
+	<object file="Valve_Reg_1_Block.omobj" filter="Панели управления/Block"/>
+	<object file="Error.omobj" filter="Панели управления"/>
+	<object file="Arrow_Level.omobj" filter="Lines, Arrows, Text"/>
+	<object file="DevicePosition.omobj" filter="Position"/>
+	<object file="Title01.omobj" filter="Lines, Arrows, Text"/>
+	<object file="DevicePosition_Pale.omobj" filter="Position"/>
+	<object file="Global_Debug.omobj" filter=""/>
+	<object file="AlrConnectAlphaServer.omobj" filter="Message"/>
+	<object file="AlrConnectPLC.omobj" filter="Message"/>
+	<object file="Box.omobj" filter="Panels"/>
+	<object file="ButtonComSwitchToStandby.omobj" filter="Buttons"/>
+	<object file="Flag.omobj" filter="Panels"/>
+	<object file="ThemeBlock.omobj" filter="Message"/>
+	<object file="DEBUG.omobj" filter="Тестовые формы"/>
+	<object file="TEST.omobj" filter="Тестовые формы"/>
+	<object file="_KVRU_el.omobj" filter="Units"/>
+	<object file="_Tank_1.omobj" filter="Tanks"/>
+	<object file="_Tank_01_hor2.omobj" filter="Tanks"/>
+	<object file="Valve_hor_Circle.omobj" filter="Valves"/>
+	<object file="Valve_ver_Circle.omobj" filter="Valves"/>
+	<object file="CallPanelCtrlValve.omobj" filter="Panels"/>
+	<object file="Управление_клапаном.omobj" filter="Панели управления"/>
+	<object file="Управление_насосом 1.omobj" filter="Панели управления"/>
+	<object file="CallPanelCtrlPump_1.omobj" filter="Panels"/>
+	<object file="Управление_вентсистемой.omobj" filter="Панели управления"/>
+	<object file="Fan.omobj" filter="Units"/>
+	<object file="CallPanelCtrlVent.omobj" filter="Panels"/>
+	<object file="AnaPrm_Lev_Progress.omobj" filter="AnaPrm"/>
+	<object file="MessageAlarm.omobj" filter=""/>
+	<object file="CircleAlarm.omobj" filter="CirclesAlarm"/>
+	<object file="Pump_1.omobj" filter="Pumps"/>
+	<object file="Управление_клапаном с уровнем.omobj" filter="Панели управления"/>
+	<object file="Drive_M.omobj" filter=""/>
+	<object file="FormTrendSingle.omobj" filter=""/>
+	<object file="InputNumber.omobj" filter=""/>
+	<object file="InputUINT1.omobj" filter=""/>
+	<object file="03. Схема 03.omobj" filter=""/>
+	<object file="Valve_ver_Circle_2.omobj" filter="Valves"/>
+	<object file="CallPanelCtrlValve_2.omobj" filter="Panels"/>
+	<object file="Управление_насосом 2.omobj" filter="Панели управления"/>
+	<object file="Pump_2.omobj" filter="Pumps"/>
+	<object file="CallPanelCtrlPump_2.omobj" filter="Panels"/>
+	<object file="CircleRedGrey.omobj" filter="CirclesAlarm"/>
+	<object file="CircleGreenGrey.omobj" filter="CirclesAlarm"/>
+	<object file="CircleRedGreen.omobj" filter="CirclesAlarm"/>
+	<object file="DLevel.omobj" filter=""/>
+	<object file="PowerErr.omobj" filter=""/>
+	<object file="Panel3_1.omobj" filter=""/>
+	<object file="Panel3_2.omobj" filter=""/>
+	<object file="Panel3_4.omobj" filter=""/>
+	<object file="PanelCPUs.omobj" filter="Panels"/>
+	<object file="Global_UnAckedMsg.omobj" filter=""/>
+	<object file="ButtonMenu_1.omobj" filter="Buttons"/>
+	<object file="Управление_насосом 2_1.omobj" filter="Панели управления"/>
+	<object file="Vent.omobj" filter="Pumps"/>
+</unit>
+

@@ -1,0 +1,103 @@
+{
+  "Version": 3,
+  "Table2": [
+    {
+      "activity": "Активные",
+      "subcondition": "",
+      "severity": "800",
+      "group": "",
+      "background": 4290822336,
+      "text": 4294901760,
+      "blinking": "0.5 сек",
+      "blinkingBackground": 4290822336,
+      "blinkingText": 4294967295,
+      "id": 0,
+      "ackBackground": 4290822336,
+      "ackText": 4294901760
+    },
+    {
+      "activity": "Неактивные",
+      "subcondition": "",
+      "severity": "800",
+      "group": "",
+      "background": 4290822336,
+      "text": 4294901760,
+      "blinking": "Нет",
+      "blinkingBackground": 4290822336,
+      "blinkingText": 4294967295,
+      "id": 1,
+      "ackBackground": 4290822336,
+      "ackText": 4294901760
+    },
+    {
+      "activity": "Все",
+      "subcondition": "",
+      "severity": "700",
+      "group": "",
+      "background": 4290822336,
+      "text": 4294967040,
+      "blinking": "Нет",
+      "blinkingBackground": 4290822336,
+      "blinkingText": 4294967295,
+      "id": 2,
+      "ackBackground": 4290822336,
+      "ackText": 4294967040
+    },
+    {
+      "activity": "Активные",
+      "subcondition": "",
+      "severity": "801",
+      "group": "",
+      "background": 4290822336,
+      "text": 4294901760,
+      "blinking": "0.5 сек",
+      "blinkingBackground": 4290822336,
+      "blinkingText": 4294967295,
+      "id": 3,
+      "ackBackground": 4290822336,
+      "ackText": 4294901760
+    },
+    {
+      "activity": "Неактивные",
+      "subcondition": "",
+      "severity": "801",
+      "group": "",
+      "background": 4290822336,
+      "text": 4294901760,
+      "blinking": "Нет",
+      "blinkingBackground": 4290822336,
+      "blinkingText": 4294967295,
+      "id": 4,
+      "ackBackground": 4290822336,
+      "ackText": 4294901760
+    },
+    {
+      "activity": "Все",
+      "subcondition": "",
+      "severity": "90",
+      "group": "",
+      "background": 4290822336,
+      "text": 4278222336,
+      "blinking": "Нет",
+      "blinkingBackground": 4290822336,
+      "blinkingText": 4294967295,
+      "id": 5,
+      "ackBackground": 4290822336,
+      "ackText": 4278222336
+    }
+  ],
+  "DefColBackground": 4290822336,
+  "DefColText": 4278190080,
+  "AckColBackground": 4290822336,
+  "AckColText": 4278190080,
+  "SelectEventsCol": 4278223103,
+  "AckStyleMode": true,
+  "BlinkingColumns": "[\"deactive_time\",\"message\",\"source\",\"severity\",\"ack\",\"actor_id\",\"active\",\"ack_required\"]",
+  "BlinkAllColumns": false,
+  "CustomColors": [
+    "0xffc0c0c0",
+    "0xffff0000",
+    "0xff0000ff",
+    "0xff007e00"
+  ]
+}

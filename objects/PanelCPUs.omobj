@@ -1,0 +1,274 @@
+<type access-modifier="private" name="PanelCPUs" display-name="PanelCPUs" uuid="7516e098-f435-4d66-a03d-240ba33c03ea" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="130" ver="5"/>
+	<designed target="Height" value="80" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4278190080" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="a5554d99-3c5b-4b03-b9c1-c371f3e42b1f" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="Path" ver="5" ref="_init_NameEn"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="ApIS_ACTIVE" display-name="ApIS_ACTIVE" uuid="3116ef87-c123-477c-b949-4494d64f4dfe" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="IS_ACTIVE"/>
+	</object>
+	<init target="_init_NameEn" ver="5" value="DiagnCPU_A"/>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="1954fd58-b171-4d68-ba0f-eeaf05d6e28e" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_NameEn" display-name="_init_NameEn" uuid="e8c33759-57ec-4c18-9ccb-96d64970cb65" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="PenStyle" ver="5" value="0"/>
+	<object access-modifier="private" name="ApIS_CPU_A" display-name="ApIS_CPU_A" uuid="a74b85fd-6a69-4d2e-827a-eb3a8c7e2a3c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="IS_CPU_A"/>
+	</object>
+	<object access-modifier="private" name="ApIS_CPU_B" display-name="ApIS_CPU_B" uuid="4db8a9f8-79f1-4071-a28c-34778ebda69f" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="IS_CPU_B"/>
+	</object>
+	<object access-modifier="private" name="ApRED_MODE" display-name="ApRED_MODE" uuid="60fd89c6-76d4-4089-b03e-8e231f98d925" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="RED_MODE"/>
+	</object>
+	<object access-modifier="private" name="FlagIS_ACTIVE" display-name="FlagIS_ACTIVE" uuid="4cd6b2a4-9380-4c51-a10f-9153a0c79230" base-type="Flag" base-type-id="8080b6f7-9e8c-48d5-a29e-9f1d09b026e9" ver="5" description="" cardinal="1">
+		<designed target="X" value="55" ver="5"/>
+		<designed target="Y" value="5" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApIS_ACTIVE.Quality == 192]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_State" ver="5">
+			<body>
+				<![CDATA[ApIS_ACTIVE.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextRuRED_MODE" display-name="TextRuRED_MODE" uuid="70cfa124-e5d5-4c43-9c33-c263bcccc669" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="129" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="Text" value="Критическая ошибка" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff323232" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApRED_MODE.Quality == 192]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == -3]]>
+				</condition>
+				<expr>
+					<![CDATA["Ошибка соединения"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == -2]]>
+				</condition>
+				<expr>
+					<![CDATA["Критическая ошибка"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == -1]]>
+				</condition>
+				<expr>
+					<![CDATA["Ошибка"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 0]]>
+				</condition>
+				<expr>
+					<![CDATA["Выключено"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 1]]>
+				</condition>
+				<expr>
+					<![CDATA["Инициализация"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA["Синхронизация"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 3]]>
+				</condition>
+				<expr>
+					<![CDATA["Ведомый"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA["Автономный"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 5]]>
+				</condition>
+				<expr>
+					<![CDATA["Активный"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["НЕОПР"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEnRED_MODE" display-name="TextEnRED_MODE" uuid="d813289e-5f78-46d6-b4e4-a9f7d5298f2d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="129" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="ACTIVE_STANDALONE" ver="5"/>
+		<designed target="Font" value="Roboto,9,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff323232" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApRED_MODE.Quality == 192]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == -3]]>
+				</condition>
+				<expr>
+					<![CDATA["CONN_ERROR"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == -2]]>
+				</condition>
+				<expr>
+					<![CDATA["CR_ERROR"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == -1]]>
+				</condition>
+				<expr>
+					<![CDATA["ERROR"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 0]]>
+				</condition>
+				<expr>
+					<![CDATA["DISABLED"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 1]]>
+				</condition>
+				<expr>
+					<![CDATA["BOOTUP"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA["SYNC"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 3]]>
+				</condition>
+				<expr>
+					<![CDATA["STANDBY"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA["ACTIVE_STANDALONE"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApRED_MODE.Value == 5]]>
+				</condition>
+				<expr>
+					<![CDATA["ACTIVE"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["НЕОПР"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+</type>
+

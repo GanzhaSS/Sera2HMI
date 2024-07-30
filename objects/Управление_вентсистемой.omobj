@@ -1,0 +1,140 @@
+<type access-modifier="private" name="Управление_вентсистемой" display-name="Управление_вентсистемой" uuid="e69e21bd-52a6-4721-a916-53845bc29980" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="320" ver="5"/>
+	<designed target="Height" value="180" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Form_1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="2" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="4" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<do-on access-modifier="private" name="SetFlagWinOpening" display-name="SetFlagWinOpening" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[
+unit.Global_WinCtrl.FlagWinOpening = false;
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="WindowThis" display-name="WindowThis" uuid="b296f0fc-59c8-4500-828f-a80dd8ef47b8" base-type="Window" base-type-id="04615219-28bb-4a9a-bba4-50ac66972eb0" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MessageReceived">
+			<body kind="om">
+				<![CDATA[if (messageType == "Close")
+   parent.Close();]]>
+			</body>
+		</do-on>
+		<init target="Group" ver="5" ref="unit.Global_WinCtrl.WindowGroupPanelCtrlDevice"/>
+	</object>
+	<init target="WindowX" ver="5" ref="unit.Global_WinCtrl.PanelX"/>
+	<init target="WindowY" ver="5" ref="unit.Global_WinCtrl.PanelY"/>
+	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="4148d283-122b-49b4-8f18-4a80df0deb9b" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_DeviceNameEn + ".Status"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApCtrlWord" display-name="ApCtrlWord" uuid="c8144039-df2f-44bd-83bc-e35de97569e3" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_DeviceNameEn + ".CtrlWord"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApNameRu" display-name="ApNameRu" uuid="feeeaa76-c340-4915-be75-983cad1985d2" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_DeviceNameEn + ".NameRu"]]>
+			</expr>
+		</init>
+	</object>
+	<init target="_init_DeviceNameEn" ver="5" value="VentNN"/>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="1b326e02-9a7b-4a95-9b5a-28b9c4d3c306" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_DeviceNameEn" display-name="_init_DeviceNameEn" uuid="2b88ff06-e72a-4ed7-97ac-abd64dcf63f4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<object access-modifier="private" name="ButtonON" display-name="ButtonON" uuid="e655849b-7d0c-4b83-a674-29df69071664" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="90" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="130" ver="5"/>
+		<designed target="Height" value="26" ver="5"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+		<init target="_CtrlWordValue" ver="5" value="2"/>
+		<designed target="Text" value="ВКЛЮЧИТЬ" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[((ApStatus >> 5) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ButtonOFF" display-name="ButtonOFF" uuid="b695efe1-c850-4514-a738-2dd007447199" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
+		<designed target="X" value="170" ver="5"/>
+		<designed target="Y" value="90" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="130" ver="5"/>
+		<designed target="Height" value="26" ver="5"/>
+		<designed target="Text" value="ВЫКЛЮЧИТЬ" ver="5"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+		<init target="_CtrlWordValue" ver="5" value="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[((ApStatus >> 6) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ButtonCLEAR" display-name="ButtonCLEAR" uuid="54168162-b7f1-42ab-8fbc-e3a317ea3811" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
+		<designed target="X" value="90" ver="5"/>
+		<designed target="Y" value="130" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="26" ver="5"/>
+		<designed target="Text" value="Сброс аварий" ver="5"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+		<init target="_CtrlWordValue" ver="5" value="1"/>
+	</object>
+	<do-trace access-modifier="private" target="WindowCaption" ver="5">
+		<body>
+			<![CDATA[here.ApNameRu]]>
+		</body>
+	</do-trace>
+	<init target="Focus" ver="5" value="false"/>
+	<object access-modifier="private" name="_Fan_1" display-name="_Fan_1" uuid="0f8a0ce5-53f9-495e-b410-2fdde652ec96" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
+		<designed target="X" value="140" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="40" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
+		<init target="_init_NameEn" ver="5" ref="here._init_DeviceNameEn"/>
+	</object>
+</type>
+

@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Content": [
+    {
+      "id": "operative",
+      "enabled": true
+    },
+    {
+      "id": "historical",
+      "enabled": true
+    },
+    {
+      "id": "ack",
+      "enabled": true
+    },
+    {
+      "id": "ackAll",
+      "enabled": true
+    },
+    {
+      "id": "addComment",
+      "enabled": false
+    },
+    {
+      "id": "snapshot",
+      "enabled": false
+    },
+    {
+      "id": "mute",
+      "enabled": false
+    },
+    {
+      "id": "skipSound",
+      "enabled": false
+    },
+    {
+      "id": "clearSoundQueue",
+      "enabled": false
+    },
+    {
+      "id": "clear",
+      "enabled": false
+    },
+    {
+      "id": "viewFilter",
+      "enabled": true
+    },
+    {
+      "id": "defaultSorting",
+      "enabled": false
+    },
+    {
+      "id": "sort",
+      "enabled": false
+    },
+    {
+      "id": "print",
+      "enabled": true
+    },
+    {
+      "id": "export",
+      "enabled": true
+    },
+    {
+      "id": "toolbar",
+      "enabled": false
+    },
+    {
+      "id": "statusbar",
+      "enabled": false
+    },
+    {
+      "id": "options",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<type access-modifier="private" name="Valve_Reg_1_Block" display-name="Valve_Reg_1_Block" uuid="2f963632-8f85-4e17-96b0-8f3cfb1c02b4" base-type="TypeFormBlock" base-type-id="a175b947-2eda-4e71-a612-2f36cd83e6d8" ver="5" description="">
+	<designed target="WindowCaption" value="TypeFormBlock_1" ver="5"/>
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="500" ver="5"/>
+	<designed target="Height" value="700" ver="5"/>
+</type>
+

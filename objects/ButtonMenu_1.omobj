@@ -1,0 +1,151 @@
+<type access-modifier="private" name="ButtonMenu_1" display-name="ButtonMenu_1" uuid="d24bbf0f-30b7-479a-825d-22e3e928d2b2" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="310" ver="5"/>
+	<designed target="Height" value="40" ver="5"/>
+	<designed target="Checkable" value="true" ver="5"/>
+	<designed target="Checked" value="false" ver="5"/>
+	<designed target="Text" value="Название ИК" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="Font" value="Tahoma,16,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+	<designed target="FontColor" value="0xff2a3950" ver="5"/>
+	<designed target="OnClickFontColor" value="0xffccd9e2" ver="5"/>
+	<designed target="OnHoverFontColor" value="0xff122b70" ver="5"/>
+	<designed target="DisabledFontColor" value="0xffccd9e2" ver="5"/>
+	<designed target="BrushColor" value="0xffccd9e2" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="OnClickBrushColor" value="0xff2a3950" ver="5"/>
+	<designed target="OnClickBrushStyle" value="1" ver="5"/>
+	<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+	<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+	<designed target="DisabledBrushColor" value="0xff2a3950" ver="5"/>
+	<designed target="DisabledBrushStyle" value="1" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+	<designed target="OnClickPenStyle" value="1" ver="5"/>
+	<designed target="OnClickPenWidth" value="1" ver="5"/>
+	<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverPenStyle" value="1" ver="5"/>
+	<designed target="OnHoverPenWidth" value="1" ver="5"/>
+	<designed target="DisabledPenColor" value="0xffb8b5b2" ver="5"/>
+	<designed target="DisabledPenStyle" value="1" ver="5"/>
+	<designed target="DisabledPenWidth" value="1" ver="5"/>
+	<object access-modifier="private" name="Disable" display-name="Disable" uuid="0d5e4c6f-ec30-4f87-aaac-345538f9c57c" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Blink" display-name="Blink" uuid="d7e5f641-075d-4882-abd7-0d06cf35048f" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="BtWindowCurr" display-name="BtWindowCurr" uuid="e9722adc-7098-4a1c-8f45-3a815e3f811c" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[if (BtWindowCurr == BtWindowNum) 
+   Disable = false;
+   ]]>
+			</body>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="Enabled" ver="5">
+		<body>
+			<![CDATA[(BtWindowCurr != BtWindowNum) && ! Disable]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="Checked" ver="5">
+		<body>
+			<![CDATA[BtWindowCurr == BtWindowNum]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="BtWindowNum" display-name="BtWindowNum" uuid="44159c5a-eb25-4aa7-8fb9-d525ad2faa7a" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+	<init target="BtWindowNum" ver="5" value="9999"/>
+	<object access-modifier="private" name="BtMonitorNum" display-name="BtMonitorNum" uuid="8d0a8f0c-3190-4fea-8d1f-1835b80bc6c7" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRelease">
+		<body kind="om">
+			<![CDATA[Disable = true;
+]]>
+		</body>
+	</do-on>
+	<init target="Disable" ver="5" value="false"/>
+	<param access-modifier="private" name="_init_FormNameEn" display-name="_init_FormNameEn" uuid="8f83d931-ff4f-461e-8576-64508a72d0ce" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<object access-modifier="private" name="ApSourceForm" display-name="ApSourceForm" uuid="5130eeaa-563e-4350-9975-592d08b8cd7e" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="unit.Global_ApSource.ApSourceObjects"/>
+		<init target="Path" ver="5" ref="_init_FormNameEn"/>
+	</object>
+	<object access-modifier="private" name="ApAlarm" display-name="ApAlarm" uuid="97f6bfea-7630-4bf7-943e-29801f42fb0f" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourceForm"/>
+		<init target="Path" ver="5" value="Agregator.Alarm"/>
+	</object>
+	<init target="_init_FormNameEn" ver="5" value=""/>
+	<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="174d0214-2ae9-49bb-9fdb-618ee4b811ca" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[BtWindowCurr == BtWindowNum]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff2a3950]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffccd9e2]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[BtWindowCurr == BtWindowNum]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[BtWindowCurr == BtWindowNum]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[here.Blink]]>
+			</body>
+		</do-trace>
+	</object>
+	<init target="Blink" ver="5" value="false"/>
+</type>
+

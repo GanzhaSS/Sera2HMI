@@ -1,0 +1,81 @@
+<type access-modifier="private" name="CallPanelCtrlPump_1" display-name="CallPanelCtrlPump_1" uuid="df7102d2-a9df-44cb-9401-0e81303969fc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="100" ver="5"/>
+	<designed target="Height" value="100" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffffffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="Action_PanOpen" display-name="Action_PanOpen" uuid="f9437154-f7bc-4e22-8a36-12a11e80854b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="d9568a9d-287d-446b-a797-306396506c08" base-type="Управление_насосом" base-type-id="893a3e2b-b08d-4423-a358-b4c2529ee48c" ver="5">
+				<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+				<init target="_init_DeviceNameEn" ver="5" ref="here._DeviceNameEn"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="_PanelDeltaX" display-name="_PanelDeltaX" uuid="43b04ce3-f113-48dc-b671-742d00acb077" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_PanelDeltaY" display-name="_PanelDeltaY" uuid="c0c8e0a7-3ec6-4c43-bac2-08ff8283beb9" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<init target="_PanelDeltaY" ver="5" value="20"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[// Visible = true;
+BrushStyle = 1;
+PenStyle = 1;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[// Visible = false;
+BrushStyle = 0;
+PenStyle = 0;]]>
+		</body>
+	</do-on>
+	<init target="BrushStyle" ver="5" value="0"/>
+	<init target="PenStyle" ver="5" value="0"/>
+	<init target="_DeviceNameEn" ver="5" value="PumpNN"/>
+	<object access-modifier="private" name="_FlagPaneEnable" display-name="_FlagPaneEnable" uuid="e29eff43-5870-4f9d-979e-9eefa5f29416" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_ApSourceForm" display-name="_ApSourceForm" uuid="47b8cac1-8aa6-467f-9f17-ac921cbc566e" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="_DeviceNameEn" display-name="_DeviceNameEn" uuid="bceaf822-3df1-49b7-8f5f-d8208bc7b83b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_PanelDeltaX" ver="5" value="0"/>
+	<init target="Enabled" ver="5" value="false"/>
+	<do-trace access-modifier="private" target="Enabled" ver="5">
+		<body>
+			<![CDATA[here._FlagPaneEnable]]>
+		</body>
+	</do-trace>
+	<init target="_FlagPaneEnable" ver="5" value="true"/>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseClick">
+		<body kind="om">
+			<![CDATA[// Сохраняем необходимые координаты (относительно монитора) для открытия панели управления
+unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4(me._PanelDeltaX + here.ScreenX(here.X,here.Y));
+unit.Global_WinCtrl.PanelY = TypeConvert.ToInt4(me._PanelDeltaY + here.ScreenY(here.X,here.Y) + here.Height);
+
+// Открытие панели управления ...
+if (! unit.Global_WinCtrl.FlagWinOpening) {
+   unit.Global_WinCtrl.FlagWinOpening = true;
+   if (unit.Global_WinCtrl.WindowGroupPanelCtrlDevice.WindowCount < 1)  // Если ни одна панель не открыта, то ...
+      Action_PanOpen.Invoke();
+   else {
+      unit.Global_WinCtrl.WindowGroupPanelCtrlDevice.SendToAll("Close","");
+      Action_PanOpen.Invoke();
+   }
+}
+]]>
+		</body>
+	</do-on>
+</type>
+

@@ -1,0 +1,67 @@
+{
+  "Columns": {
+    "Advise": {
+      "Index": 0,
+      "Width": 20
+    },
+    "AxisColor": {
+      "Index": 1,
+      "Width": 0,
+      "Hidden": true
+    },
+    "LineColor": {
+      "Index": 2,
+      "Width": 50
+    },
+    "LineStyle": {
+      "Index": 3,
+      "Width": 0,
+      "Hidden": true
+    },
+    "Marker": {
+      "Index": 4,
+      "Width": 0,
+      "Hidden": true
+    },
+    "Description": {
+      "Index": 5,
+      "Width": 746
+    },
+    "Tag": {
+      "Index": 6,
+      "Width": 0,
+      "Hidden": true
+    },
+    "Value": {
+      "Index": 7,
+      "Width": 75
+    },
+    "EU": {
+      "Index": 8,
+      "Width": 92
+    },
+    "Time": {
+      "Index": 9,
+      "Width": 130
+    },
+    "Quality": {
+      "Index": 10,
+      "Width": 113
+    },
+    "Minimum": {
+      "Index": 11,
+      "Width": 0,
+      "Hidden": true
+    },
+    "Maximum": {
+      "Index": 12,
+      "Width": 0,
+      "Hidden": true
+    },
+    "Quantity": {
+      "Index": 13,
+      "Width": 0,
+      "Hidden": true
+    }
+  }
+}

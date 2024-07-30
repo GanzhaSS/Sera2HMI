@@ -1,0 +1,19 @@
+<object access-modifier="private" name="Global_Alarms" display-name="Global_Alarms" uuid="3e6aa326-d5d2-471a-bb8d-1854eca27432" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="EnableSoundAlarm" display-name="EnableSoundAlarm" uuid="39858ca2-024e-4e94-ac1e-e3a1dd66ba58" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="EditingSettingsAvailable" display-name="EditingSettingsAvailable" uuid="2cb5e982-ec29-4be2-9c9a-fab56336c6ac" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ExportDataAvailability" display-name="ExportDataAvailability" uuid="b35f45fc-5a01-471d-8e7d-73449657ab02" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="EventTableSortAvailability" display-name="EventTableSortAvailability" uuid="7e330cae-ec6c-43f4-8951-c09dfa518fd3" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PrintingAvailable" display-name="PrintingAvailable" uuid="82517096-40fa-4fa2-b39d-4ebd235809df" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="FileSystemAccess" display-name="FileSystemAccess" uuid="4b18397a-60c5-4988-a2de-8f1edeff6877" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="EnableSortingOnGridHeader" display-name="EnableSortingOnGridHeader" uuid="38c13e07-bb46-40c9-99c7-be72484116f5" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<init target="EditingSettingsAvailable" ver="5" value="false"/>
+	<init target="ExportDataAvailability" ver="5" value="false"/>
+	<init target="EventTableSortAvailability" ver="5" value="false"/>
+	<init target="PrintingAvailable" ver="5" value="false"/>
+	<init target="FileSystemAccess" ver="5" value="false"/>
+	<init target="EnableSortingOnGridHeader" ver="5" value="false"/>
+	<object access-modifier="private" name="DisplayStatePanel" display-name="DisplayStatePanel" uuid="d8e38fd5-1422-4a2b-9c61-7d542f9414bd" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<init target="DisplayStatePanel" ver="5" value="true"/>
+	<init target="EnableSoundAlarm" ver="5" value="false"/>
+</object>
+

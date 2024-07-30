@@ -1,0 +1,89 @@
+<object access-modifier="private" name="Global_Security" display-name="Global_Security" uuid="7b789c73-d5aa-48b2-8130-97f1817218d2" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="SecurityContextMain" display-name="SecurityContextMain" uuid="e53f21f3-ffce-425b-be4c-6d866abba8f3" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TokenControlDevice" display-name="TokenControlDevice" uuid="881c2169-be81-4fab-891a-de30f9ca37e5" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="SecurityContext" ver="5" ref="SecurityContextMain"/>
+		<init target="Application" ver="5" value="ARM"/>
+		<init target="Right" ver="5" value="ControlDevice"/>
+	</object>
+	<object access-modifier="private" name="TokenControlAnaPrm" display-name="TokenControlAnaPrm" uuid="9e0b6ae1-59ba-417e-8282-870b26ea727c" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="SecurityContext" ver="5" ref="SecurityContextMain"/>
+		<init target="Application" ver="5" value="ARM"/>
+		<init target="Right" ver="5" value="ControlAnaPrm"/>
+	</object>
+	<object access-modifier="private" name="TokenControlSettings" display-name="TokenControlSettings" uuid="8d79d127-1288-40a7-9aba-ec45b3a909c3" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="SecurityContext" ver="5" ref="SecurityContextMain"/>
+		<init target="Application" ver="5" value="ARM"/>
+		<init target="Right" ver="5" value="ControlSettings"/>
+	</object>
+	<object access-modifier="private" name="TokenEnableChngPsw" display-name="TokenEnableChngPsw" uuid="dcfe48c1-2f60-4f19-84fe-ad71e554142d" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="SecurityContext" ver="5" ref="SecurityContextMain"/>
+		<init target="Application" ver="5" value="ARM"/>
+		<init target="Right" ver="5" value="EnableChngPsw"/>
+	</object>
+	<object access-modifier="private" name="PermitControlDevice" display-name="PermitControlDevice" uuid="9085cf2e-645f-4cc2-bc85-f3e1360c88a9" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<init target="PermitControlDevice" ver="5" value="false"/>
+	<object access-modifier="private" name="PermitControlAnaPrm" display-name="PermitControlAnaPrm" uuid="66a84409-c98e-4dd1-bf69-479a3d7c67b3" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<init target="PermitControlAnaPrm" ver="5" value="false"/>
+	<object access-modifier="private" name="PermitControlSettings" display-name="PermitControlSettings" uuid="1eb82c39-fe34-43ed-acd3-ceb1c37087a0" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<init target="PermitControlSettings" ver="5" value="false"/>
+	<object access-modifier="private" name="PermitEnableChngPsw" display-name="PermitEnableChngPsw" uuid="f391616b-119a-4850-800f-dfa90e021c36" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<init target="PermitEnableChngPsw" ver="5" value="false"/>
+	<object access-modifier="private" name="LocalCurrentUser" display-name="LocalCurrentUser" uuid="e8f211f6-2ee8-4990-9137-9057aeba2fb1" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApSourceLocalSecurity" display-name="ApSourceLocalSecurity" uuid="9b95aa82-4e99-4166-9c7e-c26a3b3fdaec" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="LocalSecurity" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="unit.Global_ApSource.ApSourceObjects"/>
+	</object>
+	<object access-modifier="private" name="ApTypeSecurityOpenLDAP" display-name="ApTypeSecurityOpenLDAP" uuid="41ff45c9-4ed9-4f4d-af06-ae33d3f63637" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourceLocalSecurity"/>
+		<init target="Path" ver="5" value="TypeSecurityOpenLDAP"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[   LocalCurrentUser = "guest";
+
+	PermitControlDevice = false;
+	PermitControlAnaPrm  = false;
+	PermitControlSettings  = false;
+	PermitEnableChngPsw  = false;
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApLocalAdministrator" display-name="ApLocalAdministrator" uuid="c47fcfb8-70bd-47e3-a239-00e618f2f36a" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourceLocalSecurity"/>
+		<init target="Path" ver="5" value="LocalAdministrator"/>
+	</object>
+	<object access-modifier="private" name="ApLocalMaster" display-name="ApLocalMaster" uuid="99f593d0-c094-4ec3-90fe-863792f87135" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourceLocalSecurity"/>
+		<init target="Path" ver="5" value="LocalMaster"/>
+	</object>
+	<object access-modifier="private" name="ApLocalOperator" display-name="ApLocalOperator" uuid="033cbbc9-6aae-4472-8b05-e715df5ce5b3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourceLocalSecurity"/>
+		<init target="Path" ver="5" value="LocalOperator"/>
+	</object>
+	<init target="LocalCurrentUser" ver="5" value="guest"/>
+	<object access-modifier="private" name="Timer_1" display-name="Timer_1" uuid="7e3b1a46-8789-4242-9184-5a9826b29f4b" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="1000" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (ApTypeSecurityOpenLDAP) {
+	PermitControlDevice = TokenControlDevice.Value;
+	PermitControlAnaPrm = TokenControlAnaPrm.Value;
+	PermitControlSettings = TokenControlSettings.Value;
+	PermitEnableChngPsw = TokenEnableChngPsw.Value;
+	
+	// DebugTool_1.Log("ControlDevice = " + String.ToString(TokenControlDevice.Value));
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+</object>
+

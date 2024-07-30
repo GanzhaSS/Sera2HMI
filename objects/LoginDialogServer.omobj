@@ -1,0 +1,11 @@
+<type access-modifier="private" name="LoginDialogServer" display-name="LoginDialogServer" uuid="c7207d37-9fb1-4a03-895b-08ac18ddd039" base-type="LoginDialog" base-type-id="eb8d4a9b-7cd2-4fcf-81e1-67eed3b5c0d4" ver="5" description="">
+	<designed target="WindowCaption" value="Авторизация пользователя" ver="5"/>
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="400" ver="5"/>
+	<designed target="Height" value="205" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowPosition" value="4" ver="5"/>
+</type>
+

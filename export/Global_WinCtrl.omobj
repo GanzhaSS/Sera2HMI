@@ -1,0 +1,13 @@
+<object access-modifier="private" name="Global_WinCtrl" display-name="Global_WinCtrl" uuid="d75adac8-f176-4c7b-b9ea-6f0d2d261139" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="WindowGroupTrendSingle" display-name="WindowGroupTrendSingle" uuid="7fcaf728-5351-4433-a958-532ee5261574" base-type="WindowGroup" base-type-id="854fabd1-f7b5-4958-a934-ffd0b5d1a7e4" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="FlagWinOpening" display-name="FlagWinOpening" uuid="e08f46fa-e228-4a95-9b19-a0fa3ca03dbc" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<init target="FlagWinOpening" ver="5" value="false"/>
+	<object access-modifier="private" name="WindowGroupTitle" display-name="WindowGroupTitle" uuid="bd7a1016-b367-403c-bdfa-392c1b3d92a6" base-type="WindowGroup" base-type-id="854fabd1-f7b5-4958-a934-ffd0b5d1a7e4" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="WindowGroupIK" display-name="WindowGroupIK" uuid="ba533821-9610-4b11-af4d-5d9623afc325" base-type="WindowGroup" base-type-id="854fabd1-f7b5-4958-a934-ffd0b5d1a7e4" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="WindowGroupPanel" display-name="WindowGroupPanel" uuid="4da64669-4636-4e02-8a89-75bb63148f11" base-type="WindowGroup" base-type-id="854fabd1-f7b5-4958-a934-ffd0b5d1a7e4" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PanelX" display-name="X для открытия панели упр." uuid="94e3dbbc-9bec-4346-ab85-95f48f140b8d" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PanelY" display-name="Y для открытия панели упр." uuid="ae19eaf7-6191-4a7c-b08c-737996eb57e1" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<init target="PanelX" ver="5" value="0"/>
+	<init target="PanelY" ver="5" value="0"/>
+</object>
+
