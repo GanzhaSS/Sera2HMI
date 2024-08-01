@@ -811,7 +811,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="Valve2VP5p2"/>
-		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-300"/>
 		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_238" display-name="line_238" uuid="b401c28f-b525-4cc3-94df-0ea90e9a853d" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
@@ -1133,6 +1133,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP2p3"/>
+		<init target="_init_PanelDeltaX" ver="5" value="50"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
 	<object access-modifier="private" name="line_248" display-name="line_248" uuid="7fcad2bd-8269-48f8-b75e-0e2deba04079" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="1180" ver="5"/>
@@ -1182,6 +1184,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP2p4"/>
+		<init target="_init_PanelDeltaX" ver="5" value="50"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
 	<object access-modifier="private" name="line_250" display-name="line_250" uuid="1374ee1d-004d-45fc-9b19-ce9e88cb78a3" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="1250" ver="5"/>
@@ -1216,6 +1220,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP2p2"/>
+		<init target="_init_PanelDeltaX" ver="5" value="50"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
 	<object access-modifier="private" name="line_251" display-name="line_251" uuid="e5082c39-5515-4e2d-a61b-824a9203f529" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="1180" ver="5"/>
@@ -1636,8 +1642,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="Valve2VP5p1"/>
-		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
-		<init target="_init_PanelDeltaY" ver="5" value="-300"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-300"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
 	<object access-modifier="private" name="lineName03" display-name="lineName03" uuid="f77cc879-f488-4188-b486-702d681cdeb8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="1500" ver="5"/>
@@ -2060,8 +2066,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="Valve2VP4"/>
-		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
-		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-200"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-300"/>
 	</object>
 	<object access-modifier="private" name="line_295" display-name="line_295" uuid="896c56dd-e7af-46f6-ba1c-b13fd129acdd" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="1470" ver="5"/>
@@ -2427,7 +2433,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="Valve2VP5p3"/>
-		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-300"/>
 		<init target="_init_PanelDeltaY" ver="5" value="-50"/>
 	</object>
 	<object access-modifier="private" name="line_312" display-name="line_312" uuid="4dc7a4fc-0877-4f7f-abfe-20d365b02b41" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
@@ -2644,6 +2650,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP2p1"/>
+		<init target="_init_PanelDeltaX" ver="5" value="50"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
 	<object access-modifier="private" name="line_326" display-name="line_326" uuid="cb93b675-156d-46d3-afce-b0ecafd43633" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="630" ver="5"/>
@@ -2934,134 +2942,6 @@
 			<designed target="FontColor" value="0xff00557f" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="gAlrSens_14" display-name="gAlrSens_14" uuid="764d0b39-31a1-426a-a580-2c256aedafda" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="348" ver="5"/>
-		<designed target="Y" value="250" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Неисправность датчика" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="14" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff00ff00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="8de079f0-1e8d-4356-9795-1c377e4aef23" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="-47" ver="5"/>
-			<designed target="Y" value="15" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A18-02" ver="5"/>
-			<designed target="TextAlignment" value="130" ver="5"/>
-			<designed target="FontColor" value="0xff5500ff" ver="5"/>
-		</object>
-	</object>
-	<object access-modifier="private" name="gAlrSens_15" display-name="gAlrSens_15" uuid="6af70ace-2961-4fea-934c-3375d23b174b" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="528" ver="5"/>
-		<designed target="Y" value="250.33333333333348" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Неисправность датчика" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="14" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff00ff00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="437d15b9-d42a-4f26-a5e4-d8447e1b3181" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="-47" ver="5"/>
-			<designed target="Y" value="15" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A17-02" ver="5"/>
-			<designed target="TextAlignment" value="130" ver="5"/>
-			<designed target="FontColor" value="0xff5500ff" ver="5"/>
-		</object>
-	</object>
-	<object access-modifier="private" name="gAlrSens_16" display-name="gAlrSens_16" uuid="b93516ab-67c1-4a60-821d-ede5f2af8cf7" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="888" ver="5"/>
-		<designed target="Y" value="250.33333333333348" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Неисправность датчика" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="14" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff00ff00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="10540f1b-0f36-4fd9-8ef2-d9acce73c651" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="-47" ver="5"/>
-			<designed target="Y" value="15" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A22-02" ver="5"/>
-			<designed target="TextAlignment" value="130" ver="5"/>
-			<designed target="FontColor" value="0xff5500ff" ver="5"/>
-		</object>
-	</object>
-	<object access-modifier="private" name="gAlrSens_17" display-name="gAlrSens_17" uuid="a12be4ea-544f-4988-8d54-b2d13a2b2c15" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="1028" ver="5"/>
-		<designed target="Y" value="250" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Неисправность датчика" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="14" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff00ff00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="25baffec-17c2-40a1-8c95-c15e28d25ca9" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="-47" ver="5"/>
-			<designed target="Y" value="15" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A21-02" ver="5"/>
-			<designed target="TextAlignment" value="130" ver="5"/>
-			<designed target="FontColor" value="0xff5500ff" ver="5"/>
-		</object>
-	</object>
 	<object access-modifier="private" name="arrow_66" display-name="arrow_66" uuid="23bbcde7-e9f1-45e8-aca0-c6684f454f70" base-type="Arrow" base-type-id="2baae300-54c0-4093-a06c-8b2ea408b1ce" ver="5" description="" cardinal="1">
 		<designed target="X" value="147" ver="5"/>
 		<designed target="Y" value="845" ver="5"/>
@@ -3140,7 +3020,7 @@
 		<designed target="Height" value="11" ver="5"/>
 	</object>
 	<object access-modifier="private" name="_Fan_1" display-name="_Fan_1" uuid="7767d241-ddf5-426f-8e28-2d2825858e85" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
-		<designed target="X" value="1601" ver="5"/>
+		<designed target="X" value="1580" ver="5"/>
 		<designed target="Y" value="75" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="40" ver="5"/>
@@ -3156,7 +3036,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="VentV1"/>
-		<init target="_init_PanelDeltaY" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="80"/>
 		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="AnaPrmPosition_151" display-name="AnaPrmPosition_151" uuid="cd73d8ec-36bb-4a9a-9030-63ec3f44c1af" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
@@ -3211,6 +3091,16 @@
 			<designed target="TextAlignment" value="132" ver="5"/>
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
+		<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="c4d5b17d-357f-4ff9-b20d-cf2df218f0f8" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+			<designed target="X" value="-12" ver="5"/>
+			<designed target="Y" value="-25" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="60" ver="5"/>
+			<designed target="Height" value="16" ver="5"/>
+			<designed target="Text" value="A18-02" ver="5"/>
+			<designed target="TextAlignment" value="130" ver="5"/>
+			<designed target="FontColor" value="0xff5500ff" ver="5"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="line_334" display-name="line_334" uuid="29fb999b-7b32-4e17-a837-800cfd8150bb" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="470" ver="5"/>
@@ -3258,6 +3148,16 @@
 			<designed target="Height" value="16" ver="5"/>
 			<designed target="Text" value="1-1" ver="5"/>
 			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="FontColor" value="0xff5500ff" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="29a1d3eb-6bf1-452a-81bf-8b528f84990c" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+			<designed target="X" value="-12" ver="5"/>
+			<designed target="Y" value="-24.666666666666515" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="60" ver="5"/>
+			<designed target="Height" value="16" ver="5"/>
+			<designed target="Text" value="A17-02" ver="5"/>
+			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
 	</object>
@@ -3310,6 +3210,16 @@
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
 		<init target="_init_ApSourceForm_01Scheme1" ver="5" ref="here.ApSourceForm_01Scheme1"/>
+		<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="2ba72dfb-782f-4f66-b11b-889340baa483" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+			<designed target="X" value="-12" ver="5"/>
+			<designed target="Y" value="-24.666666666666515" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="60" ver="5"/>
+			<designed target="Height" value="16" ver="5"/>
+			<designed target="Text" value="A22-02" ver="5"/>
+			<designed target="TextAlignment" value="130" ver="5"/>
+			<designed target="FontColor" value="0xff5500ff" ver="5"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="line_340" display-name="line_340" uuid="38c31ee1-3989-47c9-88c3-e0d201c915dc" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="970" ver="5"/>
@@ -3360,6 +3270,16 @@
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
 		<init target="_init_ApSourceForm_01Scheme1" ver="5" ref="here.ApSourceForm_01Scheme1"/>
+		<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="ecd48a93-6cf2-4465-a1d6-c6e654acc6a8" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+			<designed target="X" value="-12" ver="5"/>
+			<designed target="Y" value="-25" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="60" ver="5"/>
+			<designed target="Height" value="16" ver="5"/>
+			<designed target="Text" value="A21-02" ver="5"/>
+			<designed target="TextAlignment" value="130" ver="5"/>
+			<designed target="FontColor" value="0xff5500ff" ver="5"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="anaPrm_200_4a_6" display-name="anaPrm_200_4a_6" uuid="68e2c829-c09d-49f7-b02f-f2fbc93ed439" base-type="AnaPrm_Temp" base-type-id="ff6fc2d6-bc7a-4b2d-a949-b77543d77cd8" ver="5" description="" cardinal="1">
 		<designed target="X" value="1155" ver="5"/>
@@ -3572,7 +3492,7 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="_Fan_2" display-name="_Fan_2" uuid="b9d1e0ab-7a14-46e4-94fa-ece1693089fa" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
-		<designed target="X" value="1681" ver="5"/>
+		<designed target="X" value="1670" ver="5"/>
 		<designed target="Y" value="75" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="40" ver="5"/>
@@ -3589,10 +3509,10 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="VentV2"/>
 		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
-		<init target="_init_PanelDeltaY" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="80"/>
 	</object>
 	<object access-modifier="private" name="_Fan_3" display-name="_Fan_3" uuid="eb0085c3-b186-4b2e-ba19-2976e322549d" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
-		<designed target="X" value="1761" ver="5"/>
+		<designed target="X" value="1760" ver="5"/>
 		<designed target="Y" value="75" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="40" ver="5"/>
@@ -3608,8 +3528,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="VentV3"/>
-		<init target="_init_PanelDeltaX" ver="5" value="-150"/>
-		<init target="_init_PanelDeltaY" ver="5" value="100"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-200"/>
+		<init target="_init_PanelDeltaY" ver="5" value="80"/>
 	</object>
 	<object access-modifier="private" name="ApSourceForm_01Scheme1" display-name="ApSourceForm_01Scheme1" uuid="606dd721-e8d3-4994-b71f-c21176e75142" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
 		<designed target="Location" value="" ver="5"/>

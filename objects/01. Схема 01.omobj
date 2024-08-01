@@ -2472,6 +2472,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP90"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Valve_hor_Circle_14" display-name="Valve_hor_Circle_14" uuid="f71f65c0-d984-4ace-bd9c-e9cc8a9eb99b" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="318" ver="5"/>
@@ -2490,6 +2492,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP33"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_243" display-name="line_243" uuid="3a3a9de2-f68a-41f6-baf7-9d8cf13ddf76" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="300" ver="5"/>
@@ -2758,6 +2762,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP86"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Valve_hor_Circle_16" display-name="Valve_hor_Circle_16" uuid="3f9de0e2-8ff4-4bf5-acf4-d05be1a1fd76" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="818" ver="5"/>
@@ -2776,6 +2782,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP31"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_252" display-name="line_252" uuid="22653fd2-c2a1-431b-af8e-eac00c1ef809" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="800" ver="5"/>
@@ -3005,6 +3013,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP82"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Valve_hor_Circle_18" display-name="Valve_hor_Circle_18" uuid="2319b269-a84c-4b8e-9869-9fdda7695007" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="1318" ver="5"/>
@@ -3023,6 +3033,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP29"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_261" display-name="line_261" uuid="f2a2d8da-233c-467b-9c4e-841066c529bf" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="1300" ver="5"/>
@@ -3193,6 +3205,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP114"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-200"/>
 	</object>
 	<object access-modifier="private" name="Tank_05_2" display-name="Tank_05_2" uuid="d380c1f0-3c66-4d03-a047-eae486582cf9" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="1620" ver="5"/>
@@ -3874,6 +3887,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP113"/>
+		<init target="_init_PanelDeltaY" ver="5" value="20"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-150"/>
 	</object>
 	<object access-modifier="private" name="line_301" display-name="line_301" uuid="c4597a19-ea64-4339-9488-778b486dccbf" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="-271" ver="5"/>
@@ -3958,6 +3973,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP55"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_305" display-name="line_305" uuid="8a93bebc-1fc5-4248-a586-7b807fedaa3a" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="630" ver="5"/>
@@ -3992,6 +4009,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP53"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_308" display-name="line_308" uuid="df9137b9-1a0a-4cb4-8a5f-0d54ad4650d0" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="90" ver="5"/>
@@ -4070,6 +4089,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP52"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Valve_hor_Circle_23" display-name="Valve_hor_Circle_23" uuid="b719f8cc-65ac-4a5b-8f05-19677363c625" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="48" ver="5"/>
@@ -4088,6 +4109,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP48"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_316" display-name="line_316" uuid="cea0e42a-06a4-4ff1-b770-8a2a33fc344e" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="90" ver="5"/>
@@ -4151,6 +4174,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP50"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_328" display-name="line_328" uuid="447a2d6a-e2fa-432b-9faf-ded6bef725e1" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="90" ver="5"/>
@@ -4214,6 +4239,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP51"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Valve_hor_Circle_24" display-name="Valve_hor_Circle_24" uuid="d4d209a4-781d-4705-9156-5b5ad273b55d" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="48" ver="5"/>
@@ -4232,6 +4259,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP47"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Valve_hor_Circle_26" display-name="Valve_hor_Circle_26" uuid="8e6499c1-ca4b-48e1-9ce7-f8d24223d76e" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="48" ver="5"/>
@@ -4250,6 +4279,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP49"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Valve_hor_Circle_21" display-name="Valve_hor_Circle_21" uuid="a490ef6b-9ef0-4be3-ab82-a375eb437888" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="48" ver="5"/>
@@ -4268,6 +4299,8 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP54"/>
+		<init target="_init_PanelDeltaX" ver="5" value="100"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="line_332" display-name="line_332" uuid="6cf655b5-1aaa-4793-8786-b3a0b969ba3d" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="940" ver="5"/>
@@ -4776,6 +4809,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP112"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
 	</object>
 	<object access-modifier="private" name="Text_45" display-name="Text_45" uuid="dee3f9dd-2ec3-4679-9692-5971a1354790" base-type="Comment01" base-type-id="a85d8237-ff47-4c3e-9568-a62af2cb7356" ver="5" description="" cardinal="1">
 		<designed target="X" value="1442" ver="5"/>
@@ -5159,6 +5193,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP111"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-200"/>
 	</object>
 	<object access-modifier="private" name="valve_127" display-name="valve_127" uuid="21023cff-0524-44dd-a4c3-50b06e6bdb56" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="1783" ver="5"/>
@@ -5178,6 +5213,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP110"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-200"/>
 	</object>
 	<object access-modifier="private" name="DLevel_2" display-name="DLevel_2" uuid="98c8497f-e076-40b7-8d71-174880d92473" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
 		<designed target="X" value="1713" ver="5"/>

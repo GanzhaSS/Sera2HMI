@@ -243,5 +243,63 @@
 		</do-trace>
 		<init target="Visible" ver="5" value="false"/>
 	</object>
+	<object access-modifier="private" name="gAlrSens_14" display-name="gAlrSens_14" uuid="9ba2f2f1-75e0-4b87-a9fd-a73013ae872b" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="33" ver="5"/>
+		<designed target="Y" value="-40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Неисправность датчика" ver="5"/>
+		<designed target="Width" value="14" ver="5"/>
+		<designed target="Height" value="14" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 9) & 1) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 9) & 1) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[Global_ColorSettings.ColorAlr]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 9) & 1) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA["Давление НОРМА"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 9) & 1) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA["Давление НЕ НОРМА"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
 </type>
 

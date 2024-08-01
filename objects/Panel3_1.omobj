@@ -38,7 +38,7 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
@@ -72,6 +72,24 @@
 				</expr>
 			</default-expr>
 		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 1) & 1) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA["Не в работе"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA["В работе"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="Circle_4" display-name="Circle_4" uuid="fc5abba8-bfaf-4ba9-933e-cb499fe7ed53" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="0" ver="5"/>
@@ -83,7 +101,7 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
@@ -116,6 +134,24 @@
 					<![CDATA[0]]>
 				</expr>
 			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 2) & 1) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA["Не в работе"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 2) & 1) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA["В работе"]]>
+				</expr>
+			</conditional-expr>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="82ef7c02-4c85-4315-bc83-774d6bcb601e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
@@ -290,7 +326,7 @@
 		<do-trace access-modifier="private" target="BrushColor" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
 				</condition>
 				<expr>
 					<![CDATA[Global_ColorSettings.ColorOn]]>
@@ -298,7 +334,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
 				</condition>
 				<expr>
 					<![CDATA[Global_ColorSettings.ColorAlr]]>
@@ -308,7 +344,7 @@
 		<do-trace access-modifier="private" target="Tooltip" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
 				</condition>
 				<expr>
 					<![CDATA["Норма"]]>
@@ -316,7 +352,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
 				</condition>
 				<expr>
 					<![CDATA["Неисправность"]]>
@@ -348,7 +384,7 @@
 		<do-trace access-modifier="private" target="BrushColor" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 3) & 1) == 1]]>
 				</condition>
 				<expr>
 					<![CDATA[Global_ColorSettings.ColorOn]]>
@@ -356,7 +392,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 3) & 1) == 0]]>
 				</condition>
 				<expr>
 					<![CDATA[Global_ColorSettings.ColorAlr]]>
@@ -366,7 +402,7 @@
 		<do-trace access-modifier="private" target="Tooltip" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 3) & 1) == 1]]>
 				</condition>
 				<expr>
 					<![CDATA["Норма"]]>
@@ -374,7 +410,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 3) & 1) == 0]]>
 				</condition>
 				<expr>
 					<![CDATA["Неисправность"]]>
