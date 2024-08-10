@@ -79,7 +79,6 @@
 	<object file="03. Схема 03.omobj" filter=""/>
 	<object file="Valve_ver_Circle_2.omobj" filter="Valves"/>
 	<object file="CallPanelCtrlValve_2.omobj" filter="Panels"/>
-	<object file="Управление_насосом 2.omobj" filter="Панели управления"/>
 	<object file="Pump_2.omobj" filter="Pumps"/>
 	<object file="CallPanelCtrlPump_2.omobj" filter="Panels"/>
 	<object file="CircleRedGrey.omobj" filter="CirclesAlarm"/>
@@ -93,7 +92,7 @@
 	<object file="PanelCPUs.omobj" filter="Panels"/>
 	<object file="Global_UnAckedMsg.omobj" filter=""/>
 	<object file="ButtonMenu_1.omobj" filter="Buttons"/>
-	<object file="Управление_насосом 2_1.omobj" filter="Панели управления"/>
+	<object file="Управление_насосом 2.omobj" filter="Панели управления"/>
 	<object file="Vent.omobj" filter="Pumps"/>
 </unit>
 

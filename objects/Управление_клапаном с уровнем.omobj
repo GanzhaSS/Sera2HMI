@@ -137,7 +137,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_init_NameEn" ver="5" ref="here._init_DeviceNameEn"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 	</object>
-	<object access-modifier="private" name="_Tank_01_hor_1" display-name="_Tank_01_hor_1" uuid="342fd81d-0040-4883-b582-46aeed0c28f9" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="TankProliv" display-name="TankProliv" uuid="342fd81d-0040-4883-b582-46aeed0c28f9" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
 		<designed target="X" value="50.666666666667197" ver="5"/>
 		<designed target="Y" value="20.333333333333485" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -152,34 +152,34 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="Резервуар  (аварийный)" ver="5"/>
 		</object>
-	</object>
-	<object access-modifier="private" name="anaPrm_10" display-name="anaPrm_10" uuid="37dde81d-53f4-420b-a9b2-05c2a5ba7ea2" base-type="AnaPrm_Lev" base-type-id="48a52665-29cc-4bef-ba5a-e60ad859ee2c" ver="5" description="" cardinal="1">
-		<designed target="X" value="95" ver="5"/>
-		<designed target="Y" value="30" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="65" ver="5"/>
-		<designed target="Height" value="18" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_2" display-name="AnaPrmPosition_2" uuid="be071975-cf76-46e0-a6c1-86fb3c42181d" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="20" ver="5"/>
+		<object access-modifier="private" name="AnaPrm1" display-name="AnaPrm1" uuid="4da05406-8a46-4b41-b8a9-d68bbcb298f2" base-type="AnaPrm_Lev" base-type-id="48a52665-29cc-4bef-ba5a-e60ad859ee2c" ver="5" description="" cardinal="1">
+			<designed target="X" value="44.333333333332803" ver="5"/>
+			<designed target="Y" value="9.6666666666665151" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="70" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
 			<designed target="Height" value="18" ver="5"/>
-			<designed target="Text" value="A14-02" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
+			<object access-modifier="private" name="AnaPrmPosition_2" display-name="AnaPrmPosition_2" uuid="6b2f5edf-8ded-45ee-be4a-54d714e1cc2d" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="20" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="70" ver="5"/>
+				<designed target="Height" value="18" ver="5"/>
+				<designed target="Text" value="A14-02" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
+			<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
-	</object>
-	<object access-modifier="private" name="AnaPrm_Lev_Progress_7" display-name="AnaPrm_Lev_Progress_7" uuid="09de1417-c3aa-4850-b708-a9a951864c4d" base-type="AnaPrm_Lev_Progress" base-type-id="aa499b1e-cbdf-4d63-a939-0334156c3c8a" ver="5" description="" cardinal="1">
-		<designed target="X" value="76" ver="5"/>
-		<designed target="Y" value="30" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="15" ver="5"/>
-		<designed target="Height" value="80" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
-		<init target="_height" ver="5" value="100"/>
-		<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
+		<object access-modifier="private" name="AnaPrm1_Progress" display-name="AnaPrm1_Progress" uuid="28ce73f9-cda6-4089-8cfe-57c74e43067e" base-type="AnaPrm_Lev_Progress" base-type-id="aa499b1e-cbdf-4d63-a939-0334156c3c8a" ver="5" description="" cardinal="1">
+			<designed target="X" value="25.333333333332803" ver="5"/>
+			<designed target="Y" value="9.6666666666665151" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="15" ver="5"/>
+			<designed target="Height" value="80" ver="5"/>
+			<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
+			<init target="_height" ver="5" value="100"/>
+			<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
+		</object>
 	</object>
 </type>
 

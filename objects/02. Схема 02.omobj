@@ -27,9 +27,24 @@
 	<designed target="WindowScalingMode" value="2" ver="5"/>
 	<designed target="WindowCloseMode" value="0" ver="5"/>
 	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="line_342" display-name="line_342" uuid="09539b82-74f5-4a3b-9575-51ade14c636a" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1150" ver="5"/>
+		<designed target="Y" value="790" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="0" ver="5"/>
+		<designed target="Height" value="160" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="4314b701-6868-48fd-9a37-4d3d5a255701" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="9584d6c0-30ac-4d81-8824-9a254aba61dd" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="160" ver="5"/>
+		</object>
+	</object>
 	<object access-modifier="private" name="frame03" display-name="frame03" uuid="5ce6f25f-b54d-43bf-a36a-1a9ed3197120" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="20" ver="5"/>
-		<designed target="Y" value="640" ver="5"/>
+		<designed target="Y" value="620" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -39,7 +54,7 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="880" ver="5"/>
-		<designed target="Height" value="320" ver="5"/>
+		<designed target="Height" value="300" ver="5"/>
 		<designed target="RoundingRadius" value="8" ver="5"/>
 		<designed target="PenColor" value="0xff484848" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
@@ -88,7 +103,7 @@
 		<designed target="BrushStyle" value="0" ver="5"/>
 	</object>
 	<object access-modifier="private" name="frame02" display-name="frame02" uuid="97c6bf87-4444-462f-b46e-d5fbe40e99e0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
-		<designed target="X" value="1550" ver="5"/>
+		<designed target="X" value="1620" ver="5"/>
 		<designed target="Y" value="670" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -98,8 +113,8 @@
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="310" ver="5"/>
-		<designed target="Height" value="300" ver="5"/>
+		<designed target="Width" value="270" ver="5"/>
+		<designed target="Height" value="290" ver="5"/>
 		<designed target="RoundingRadius" value="8" ver="5"/>
 		<designed target="PenColor" value="0xff484848" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
@@ -117,23 +132,23 @@
 	<init target="_init_AnaPrmPrePos2" ver="5" value="xx"/>
 	<object access-modifier="private" name="line_244" display-name="line_244" uuid="50281e76-65ab-46db-bbbe-cbef5b42a6ad" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="380" ver="5"/>
-		<designed target="Y" value="740" ver="5"/>
+		<designed target="Y" value="710" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="1070" ver="5"/>
+		<designed target="Width" value="1100" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="dba4a243-9e21-480b-9b34-313fd50e8779" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="51110521-c0c3-46cd-8c4c-4b93f79c6f1b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="1070" ver="5"/>
+			<designed target="X" value="1100" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<designed target="PenColor" value="0xff55ff00" ver="5"/>
 	</object>
 	<object access-modifier="private" name="cross_72" display-name="cross_72" uuid="79bc98a8-5948-4fe6-bdad-a86ea845c3dc" base-type="Cross_Line" base-type-id="581ad67b-0dee-45d1-91dc-3350c86fc350" ver="5" description="" cardinal="1">
 		<designed target="X" value="1085" ver="5"/>
-		<designed target="Y" value="735" ver="5"/>
+		<designed target="Y" value="705" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="10" ver="5"/>
 		<designed target="Height" value="10" ver="5"/>
@@ -161,22 +176,22 @@
 		<designed target="Height" value="10" ver="5"/>
 	</object>
 	<object access-modifier="private" name="line_294" display-name="line_294" uuid="dc7fb495-5597-49cc-aac7-15815f4b7d9e" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1470" ver="5"/>
+		<designed target="X" value="1510" ver="5"/>
 		<designed target="Y" value="880" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="220" ver="5"/>
+		<designed target="Width" value="210" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="467aac6e-44af-48b9-bc1b-62da0961114e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="4475a19a-9b9b-44b0-a41b-031da29b4d8f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="220" ver="5"/>
+			<designed target="X" value="210" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="cross_70" display-name="cross_70" uuid="718aaa64-b839-430b-b316-9402bd476a04" base-type="Cross_Line" base-type-id="581ad67b-0dee-45d1-91dc-3350c86fc350" ver="5" description="" cardinal="1">
-		<designed target="X" value="1565" ver="5"/>
+		<designed target="X" value="1635" ver="5"/>
 		<designed target="Y" value="875" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="10" ver="5"/>
@@ -184,51 +199,51 @@
 	</object>
 	<object access-modifier="private" name="line_253" display-name="line_253" uuid="0269e67b-8680-4ca7-b9e5-8f8284b686ab" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="610" ver="5"/>
-		<designed target="Y" value="690" ver="5"/>
+		<designed target="Y" value="660" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="860" ver="5"/>
+		<designed target="Width" value="900" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="a991ba7c-8d9f-4621-bf8e-e563f609de5d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="66f0f426-c82b-4e84-b848-a2fff3819c1a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="860.00000000000011" ver="5"/>
+			<designed target="X" value="900" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="line_242" display-name="line_242" uuid="8131af05-bc75-4619-adf4-6d5a17f5e453" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="950" ver="5"/>
-		<designed target="Y" value="640" ver="5"/>
+		<designed target="Y" value="610" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="540" ver="5"/>
+		<designed target="Width" value="590" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="e20fc069-cf99-421f-9e53-10136a8a6eaf" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="ec702347-660d-41ca-986c-899ae5d11aea" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="540" ver="5"/>
+			<designed target="X" value="590" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="cross_68" display-name="cross_68" uuid="42749e13-9878-4d3e-9c47-c2e6e84d9971" base-type="Cross_Line" base-type-id="581ad67b-0dee-45d1-91dc-3350c86fc350" ver="5" description="" cardinal="1">
 		<designed target="X" value="1085" ver="5"/>
-		<designed target="Y" value="635" ver="5"/>
+		<designed target="Y" value="605" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="10" ver="5"/>
 		<designed target="Height" value="10" ver="5"/>
 	</object>
 	<object access-modifier="private" name="cross_69" display-name="cross_69" uuid="9ac1e4e8-1897-4a00-bfb1-ae5da06fb20f" base-type="Cross_Line" base-type-id="581ad67b-0dee-45d1-91dc-3350c86fc350" ver="5" description="" cardinal="1">
 		<designed target="X" value="1085" ver="5"/>
-		<designed target="Y" value="685" ver="5"/>
+		<designed target="Y" value="655" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="10" ver="5"/>
 		<designed target="Height" value="10" ver="5"/>
 	</object>
 	<object access-modifier="private" name="cross_67" display-name="cross_67" uuid="4982c58e-9893-40da-99ea-af45c2399db9" base-type="Cross_Line" base-type-id="581ad67b-0dee-45d1-91dc-3350c86fc350" ver="5" description="" cardinal="1">
 		<designed target="X" value="645" ver="5"/>
-		<designed target="Y" value="735" ver="5"/>
+		<designed target="Y" value="705" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="10" ver="5"/>
 		<designed target="Height" value="10" ver="5"/>
@@ -327,7 +342,7 @@
 		</object>
 	</object>
 	<object access-modifier="private" name="line_292" display-name="line_292" uuid="138682a7-a3d6-429f-b148-ae35ff6b936d" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1450" ver="5"/>
+		<designed target="X" value="1480" ver="5"/>
 		<designed target="Y" value="930" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="240" ver="5"/>
@@ -438,7 +453,7 @@
 		</object>
 		<designed target="PenColor" value="0xff55ff00" ver="5"/>
 	</object>
-	<object access-modifier="private" name="valve_75" display-name="valve_75" uuid="88706b45-918e-4e9e-9e72-355b730672ff" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP5p2" display-name="ValveVP5p2" uuid="88706b45-918e-4e9e-9e72-355b730672ff" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="413" ver="5"/>
 		<designed target="Y" value="130" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -472,7 +487,7 @@
 			<designed target="Y" value="90" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_76" display-name="valve_76" uuid="c99367d9-0edf-442a-b6f7-43f387670bf2" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP5p1" display-name="ValveVP5p1" uuid="c99367d9-0edf-442a-b6f7-43f387670bf2" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="493" ver="5"/>
 		<designed target="Y" value="130" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -506,7 +521,7 @@
 			<designed target="Y" value="140" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_77" display-name="valve_77" uuid="2929f9fa-1e8e-434e-836f-fea0bcc3157c" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP6p2" display-name="ValveVP6p2" uuid="2929f9fa-1e8e-434e-836f-fea0bcc3157c" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="303" ver="5"/>
 		<designed target="Y" value="440" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -530,18 +545,18 @@
 		<designed target="Y" value="410" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="330" ver="5"/>
+		<designed target="Height" value="300" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="23cbea71-b8dc-44f3-9a91-d52ad99824e1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="6145aeb3-e011-4041-ac42-49b72df840ff" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="330" ver="5"/>
+			<designed target="Y" value="300" ver="5"/>
 		</object>
 		<designed target="PenColor" value="0xff55ff00" ver="5"/>
 	</object>
-	<object access-modifier="private" name="valve_78" display-name="valve_78" uuid="b606f951-4b2a-4acd-b7e3-6b819b1f901b" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP6p1" display-name="ValveVP6p1" uuid="b606f951-4b2a-4acd-b7e3-6b819b1f901b" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="373" ver="5"/>
 		<designed target="Y" value="440" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -575,7 +590,7 @@
 			<designed target="Y" value="100" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_79" display-name="valve_79" uuid="3a6ca573-a243-4987-ae7e-c87291f81154" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP4p1" display-name="ValveVP4p1" uuid="3a6ca573-a243-4987-ae7e-c87291f81154" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="443" ver="5"/>
 		<designed target="Y" value="440" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -594,7 +609,7 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP4p1"/>
 	</object>
-	<object access-modifier="private" name="AnaPrm_pH_1" display-name="AnaPrm_pH_1" uuid="fca24652-4985-4de2-8147-c85832000ee5" base-type="AnaPrm_pH" base-type-id="b997109f-1443-41f8-b2f3-4282ee230211" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="vpH_A19_01" display-name="vpH_A19_01" uuid="fca24652-4985-4de2-8147-c85832000ee5" base-type="AnaPrm_pH" base-type-id="b997109f-1443-41f8-b2f3-4282ee230211" ver="5" description="" cardinal="1">
 		<designed target="X" value="327" ver="5"/>
 		<designed target="Y" value="391" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -622,7 +637,7 @@
 		<designed target="TextAlignment" value="130" ver="5"/>
 	</object>
 	<object access-modifier="private" name="AnaPrmPosition_148" display-name="AnaPrmPosition_148" uuid="3859db07-7b4c-4380-bb7b-a137ebc23425" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
-		<designed target="X" value="1553" ver="5"/>
+		<designed target="X" value="1623" ver="5"/>
 		<designed target="Y" value="670" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="220" ver="5"/>
@@ -640,8 +655,8 @@
 		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
 		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
 	</object>
-	<object access-modifier="private" name="Tank_05_1" display-name="Tank_05_1" uuid="8c6a7ac9-b2ab-4ac0-abba-879f6351b61d" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
-		<designed target="X" value="1680" ver="5"/>
+	<object access-modifier="private" name="Pallet4" display-name="Pallet4" uuid="8c6a7ac9-b2ab-4ac0-abba-879f6351b61d" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<designed target="X" value="1730" ver="5"/>
 		<designed target="Y" value="720" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="100" ver="5"/>
@@ -656,146 +671,146 @@
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="4" ver="5"/>
 		</object>
-	</object>
-	<object access-modifier="private" name="Tank_05_2" display-name="Tank_05_2" uuid="c846af65-1253-4b74-a033-d80570ddde5b" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
-		<designed target="X" value="1695" ver="5"/>
-		<designed target="Y" value="725" ver="5"/>
-		<designed target="Rotation" value="270" ver="5"/>
-		<designed target="Width" value="20" ver="5"/>
-		<designed target="Height" value="30" ver="5"/>
-		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="4ea15f0e-0602-46f3-a283-392d0979b94f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-			<designed target="ZValue" value="0" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Scale" value="1" ver="5"/>
-			<designed target="Flip" value="0" ver="5"/>
-			<designed target="Visible" value="true" ver="5"/>
-			<designed target="Opacity" value="1" ver="5"/>
-			<designed target="Enabled" value="true" ver="5"/>
-			<designed target="Tooltip" value="" ver="5"/>
-			<designed target="Width" value="19.600000000000136" ver="5"/>
-			<designed target="Height" value="29.500000000000004" ver="5"/>
-			<designed target="PenColor" value="0xff484848" ver="5"/>
-			<designed target="PenStyle" value="1" ver="5"/>
-			<designed target="PenWidth" value="1" ver="5"/>
-			<designed target="BrushColor" value="4278190080" ver="5"/>
-			<designed target="BrushStyle" value="0" ver="5"/>
-			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="e9e35876-aeb3-423c-a337-ed0f0d053798" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="0.1999999999998181" ver="5"/>
-				<designed target="Y" value="0.39999999999997726" ver="5"/>
+		<object access-modifier="private" name="Pallet4_1" display-name="Pallet4_1" uuid="bb0eb130-240e-42c7-b5d9-b5379c8e76e3" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="Rotation" value="270" ver="5"/>
+			<designed target="Width" value="20" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="999b148e-e4f9-4de1-9053-0a17933c654b" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="19.600000000000136" ver="5"/>
+				<designed target="Height" value="29.500000000000004" ver="5"/>
+				<designed target="PenColor" value="0xff484848" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="970446bc-7947-478a-b04c-f4b6d0301391" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0.1999999999998181" ver="5"/>
+					<designed target="Y" value="0.39999999999997726" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="944e1cfa-4371-41aa-a161-940c08182536" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="19.799999999999955" ver="5"/>
+					<designed target="Y" value="29.899999999999981" ver="5"/>
+				</object>
 			</object>
-			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="6dec5cff-7b45-4c9a-b13d-70a44fcc8c71" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="19.799999999999955" ver="5"/>
-				<designed target="Y" value="29.899999999999981" ver="5"/>
-			</object>
-		</object>
-		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="eaae90b4-00bc-45f8-9058-ad5781bec930" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
-			<designed target="X" value="10" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-			<designed target="ZValue" value="0" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Scale" value="1" ver="5"/>
-			<designed target="Flip" value="0" ver="5"/>
-			<designed target="Visible" value="true" ver="5"/>
-			<designed target="Opacity" value="1" ver="5"/>
-			<designed target="Enabled" value="true" ver="5"/>
-			<designed target="Tooltip" value="" ver="5"/>
-			<designed target="Width" value="9.8999999999998636" ver="5"/>
-			<designed target="Height" value="14.5" ver="5"/>
-			<designed target="PenColor" value="0xff484848" ver="5"/>
-			<designed target="PenStyle" value="1" ver="5"/>
-			<designed target="PenWidth" value="1" ver="5"/>
-			<designed target="BrushColor" value="4278190080" ver="5"/>
-			<designed target="BrushStyle" value="0" ver="5"/>
-			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="51c64333-37c3-4812-add0-d0506286db90" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="9.9009900990099897" ver="5"/>
-				<designed target="Y" value="0.20270270270269103" ver="5"/>
-			</object>
-			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="28e78d24-5d4d-4da2-bef4-5ca84e7eafad" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="0.00099009901012657442" ver="5"/>
-				<designed target="Y" value="14.702702702702691" ver="5"/>
-			</object>
-		</object>
-	</object>
-	<object access-modifier="private" name="Tank_05_3" display-name="Tank_05_3" uuid="a5816d42-267d-484a-a252-da4ab41081dc" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
-		<designed target="X" value="1695" ver="5"/>
-		<designed target="Y" value="785" ver="5"/>
-		<designed target="Rotation" value="270" ver="5"/>
-		<designed target="Width" value="20" ver="5"/>
-		<designed target="Height" value="30" ver="5"/>
-		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="e701a290-ae44-452c-a288-f47745f268d7" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-			<designed target="ZValue" value="0" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Scale" value="1" ver="5"/>
-			<designed target="Flip" value="0" ver="5"/>
-			<designed target="Visible" value="true" ver="5"/>
-			<designed target="Opacity" value="1" ver="5"/>
-			<designed target="Enabled" value="true" ver="5"/>
-			<designed target="Tooltip" value="" ver="5"/>
-			<designed target="Width" value="19.600000000000136" ver="5"/>
-			<designed target="Height" value="29.500000000000004" ver="5"/>
-			<designed target="PenColor" value="0xff484848" ver="5"/>
-			<designed target="PenStyle" value="1" ver="5"/>
-			<designed target="PenWidth" value="1" ver="5"/>
-			<designed target="BrushColor" value="4278190080" ver="5"/>
-			<designed target="BrushStyle" value="0" ver="5"/>
-			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="fad97b3b-f511-4d76-9d2e-afea49c00ae6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="0.1999999999998181" ver="5"/>
-				<designed target="Y" value="0.39999999999997726" ver="5"/>
-			</object>
-			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="e3e0a717-02be-46cd-8438-b58960a445d5" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="19.799999999999955" ver="5"/>
-				<designed target="Y" value="29.899999999999981" ver="5"/>
+			<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="599b990c-8ba8-4ca9-9a92-eee037d2b40e" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="9.8999999999998636" ver="5"/>
+				<designed target="Height" value="14.5" ver="5"/>
+				<designed target="PenColor" value="0xff484848" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="3b09262e-4d5a-44ad-94ee-f346b9a0c21f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="9.9009900990099897" ver="5"/>
+					<designed target="Y" value="0.20270270270269103" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="66daa733-d5c2-48fc-8a66-0113adc9f395" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0.00099009901012657442" ver="5"/>
+					<designed target="Y" value="14.702702702702691" ver="5"/>
+				</object>
 			</object>
 		</object>
-		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="1099c45f-a397-4c49-8cbd-abbe31df1890" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
-			<designed target="X" value="10" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-			<designed target="ZValue" value="0" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Scale" value="1" ver="5"/>
-			<designed target="Flip" value="0" ver="5"/>
-			<designed target="Visible" value="true" ver="5"/>
-			<designed target="Opacity" value="1" ver="5"/>
-			<designed target="Enabled" value="true" ver="5"/>
-			<designed target="Tooltip" value="" ver="5"/>
-			<designed target="Width" value="9.8999999999998636" ver="5"/>
-			<designed target="Height" value="14.5" ver="5"/>
-			<designed target="PenColor" value="0xff484848" ver="5"/>
-			<designed target="PenStyle" value="1" ver="5"/>
-			<designed target="PenWidth" value="1" ver="5"/>
-			<designed target="BrushColor" value="4278190080" ver="5"/>
-			<designed target="BrushStyle" value="0" ver="5"/>
-			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="cff992a2-0552-4eca-899d-76262c8a5175" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="9.9009900990099897" ver="5"/>
-				<designed target="Y" value="0.20270270270269103" ver="5"/>
+		<object access-modifier="private" name="Pallet4_2" display-name="Pallet4_2" uuid="64026602-7c8a-4370-9ce9-3a30eddd1724" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="Rotation" value="270" ver="5"/>
+			<designed target="Width" value="20" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="d472bf7a-df47-44b2-989b-24ea35165da4" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="19.600000000000136" ver="5"/>
+				<designed target="Height" value="29.500000000000004" ver="5"/>
+				<designed target="PenColor" value="0xff484848" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="a588ebcb-d190-43e3-bc45-738cf77ff04b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0.1999999999998181" ver="5"/>
+					<designed target="Y" value="0.39999999999997726" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="9cd8dfd0-ec9e-466b-89bd-7720d839074a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="19.799999999999955" ver="5"/>
+					<designed target="Y" value="29.899999999999981" ver="5"/>
+				</object>
 			</object>
-			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="a0753c45-bbc2-49b6-82a3-5ef7635f4da6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="0.00099009901012657442" ver="5"/>
-				<designed target="Y" value="14.702702702702691" ver="5"/>
+			<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="dda0a376-852b-4798-835b-b954bd20334d" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="9.8999999999998636" ver="5"/>
+				<designed target="Height" value="14.5" ver="5"/>
+				<designed target="PenColor" value="0xff484848" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="68ce35c0-5fdd-43c5-a706-71dd01607dcd" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="9.9009900990099897" ver="5"/>
+					<designed target="Y" value="0.20270270270269103" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="c3c3e29f-7ff7-434c-a0b0-198138cc4635" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0.00099009901012657442" ver="5"/>
+					<designed target="Y" value="14.702702702702691" ver="5"/>
+				</object>
 			</object>
 		</object>
 	</object>
 	<object access-modifier="private" name="line_232" display-name="line_232" uuid="fa296ff1-d659-4f28-8e1a-6936303542e1" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1570" ver="5"/>
+		<designed target="X" value="1640" ver="5"/>
 		<designed target="Y" value="800" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="120" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="334a0189-3554-453d-83bc-023d7d4e7a1d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="8c5de567-d43a-41a2-8749-adb96ae318f0" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="120" ver="5"/>
+			<designed target="X" value="100" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Valve_hor_Circle_4" display-name="Valve_hor_Circle_4" uuid="04306045-26ce-4549-831b-b1846e295c66" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
-		<designed target="X" value="1620" ver="5"/>
+	<object access-modifier="private" name="Valve2VP5p2" display-name="Valve2VP5p2" uuid="04306045-26ce-4549-831b-b1846e295c66" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+		<designed target="X" value="1670" ver="5"/>
 		<designed target="Y" value="778" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
@@ -844,7 +859,7 @@
 			<designed target="Y" value="140" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_82" display-name="valve_82" uuid="3295c3c9-b54f-4d3e-9787-48a38d107fbc" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP4p3" display-name="ValveVP4p3" uuid="3295c3c9-b54f-4d3e-9787-48a38d107fbc" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="843" ver="5"/>
 		<designed target="Y" value="440" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -868,17 +883,17 @@
 		<designed target="Y" value="410" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="230" ver="5"/>
+		<designed target="Height" value="200" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="7a868dde-bb4c-43b4-84e5-6686818d58c2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="d2134604-7eef-49f6-ae70-ba0f55ae2cb6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="230" ver="5"/>
+			<designed target="Y" value="200" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_84" display-name="valve_84" uuid="6d178592-502a-4336-bafc-5ea372586778" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP4p2" display-name="ValveVP4p2" uuid="6d178592-502a-4336-bafc-5ea372586778" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="943" ver="5"/>
 		<designed target="Y" value="440" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -898,7 +913,7 @@
 		<init target="_init_NameEn" ver="5" value="ValveVP4p2"/>
 	</object>
 	<object access-modifier="private" name="Tank_05_4" display-name="Tank_05_4" uuid="f6b1ea3d-8621-4b09-86cb-027007dbff54" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
-		<designed target="X" value="1695" ver="5"/>
+		<designed target="X" value="1745" ver="5"/>
 		<designed target="Y" value="915" ver="5"/>
 		<designed target="Rotation" value="270" ver="5"/>
 		<designed target="Width" value="20" ver="5"/>
@@ -1022,8 +1037,8 @@
 			<designed target="Y" value="750" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Tank_05_7" display-name="Tank_05_7" uuid="49ac0c14-f086-4cbd-9566-84bfa78b5c50" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
-		<designed target="X" value="1300" ver="5"/>
+	<object access-modifier="private" name="Pallet7" display-name="Pallet7" uuid="49ac0c14-f086-4cbd-9566-84bfa78b5c50" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<designed target="X" value="1310" ver="5"/>
 		<designed target="Y" value="860" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="100" ver="5"/>
@@ -1038,85 +1053,85 @@
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="7" ver="5"/>
 		</object>
-	</object>
-	<object access-modifier="private" name="Tank_05_8" display-name="Tank_05_8" uuid="52c17456-17b5-4fb2-a824-f1887ee7a50a" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
-		<designed target="X" value="1320" ver="5"/>
-		<designed target="Y" value="870" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="20" ver="5"/>
-		<designed target="Height" value="30" ver="5"/>
-		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="e430503a-636e-4b49-8893-58ca22b2ef6c" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-			<designed target="ZValue" value="0" ver="5"/>
+		<object access-modifier="private" name="Tank_05_8" display-name="Tank_05_8" uuid="6e8dfb27-40b9-4708-919d-09724c7d7b57" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Scale" value="1" ver="5"/>
-			<designed target="Flip" value="0" ver="5"/>
-			<designed target="Visible" value="true" ver="5"/>
-			<designed target="Opacity" value="1" ver="5"/>
-			<designed target="Enabled" value="true" ver="5"/>
-			<designed target="Tooltip" value="" ver="5"/>
 			<designed target="Width" value="20" ver="5"/>
 			<designed target="Height" value="30" ver="5"/>
-			<designed target="PenColor" value="0xff484848" ver="5"/>
-			<designed target="PenStyle" value="1" ver="5"/>
-			<designed target="PenWidth" value="1" ver="5"/>
-			<designed target="BrushColor" value="4278190080" ver="5"/>
-			<designed target="BrushStyle" value="0" ver="5"/>
-			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="d4f0f933-5478-4468-aec8-ede63dfc6a33" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="0.20408163265287413" ver="5"/>
-				<designed target="Y" value="0.40677966101692603" ver="5"/>
+			<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="e660fba5-1ea8-4546-96bb-3f0f65fb0e5e" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="20" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="PenColor" value="0xff484848" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="36320af8-7f57-483d-b2f9-6fd34ae930fc" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0.20408163265287413" ver="5"/>
+					<designed target="Y" value="0.40677966101692603" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="b09421ba-2d9d-41cd-9584-625a52bfa840" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="20.204081632652873" ver="5"/>
+					<designed target="Y" value="30.406779661016927" ver="5"/>
+				</object>
 			</object>
-			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="8efb7715-9d00-4a60-be46-4f3b4f54e7c7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="20.204081632652873" ver="5"/>
-				<designed target="Y" value="30.406779661016927" ver="5"/>
-			</object>
-		</object>
-		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="a462859a-9efe-470a-9bd8-c6e62ead8167" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
-			<designed target="X" value="10" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-			<designed target="ZValue" value="0" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Scale" value="1" ver="5"/>
-			<designed target="Flip" value="0" ver="5"/>
-			<designed target="Visible" value="true" ver="5"/>
-			<designed target="Opacity" value="1" ver="5"/>
-			<designed target="Enabled" value="true" ver="5"/>
-			<designed target="Tooltip" value="" ver="5"/>
-			<designed target="Width" value="9.8999999999998636" ver="5"/>
-			<designed target="Height" value="14.5" ver="5"/>
-			<designed target="PenColor" value="0xff484848" ver="5"/>
-			<designed target="PenStyle" value="1" ver="5"/>
-			<designed target="PenWidth" value="1" ver="5"/>
-			<designed target="BrushColor" value="4278190080" ver="5"/>
-			<designed target="BrushStyle" value="0" ver="5"/>
-			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="a23c69c5-6097-4889-ba52-1194f2c730ac" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="9.9009900990099897" ver="5"/>
-				<designed target="Y" value="0.20270270270269103" ver="5"/>
-			</object>
-			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="3579566c-03b4-4750-afe6-4960126e4251" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-				<designed target="X" value="0.00099009901012657442" ver="5"/>
-				<designed target="Y" value="14.702702702702691" ver="5"/>
+			<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="68c5e650-c5eb-4d27-9b6b-db82cd52977d" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="9.8999999999998636" ver="5"/>
+				<designed target="Height" value="14.5" ver="5"/>
+				<designed target="PenColor" value="0xff484848" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="715b9e13-a1df-4cc1-ad1e-2b0d9be31d24" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="9.9009900990099897" ver="5"/>
+					<designed target="Y" value="0.20270270270269103" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="cd55fdcf-aec2-42ba-8c40-b2244b88b1ad" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0.00099009901012657442" ver="5"/>
+					<designed target="Y" value="14.702702702702691" ver="5"/>
+				</object>
 			</object>
 		</object>
 	</object>
 	<object access-modifier="private" name="line_247" display-name="line_247" uuid="83cd9d45-e85a-45f6-8f08-905ec4ccf7ac" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1180" ver="5"/>
+		<designed target="X" value="1230" ver="5"/>
 		<designed target="Y" value="790" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="190" ver="5"/>
+		<designed target="Height" value="160" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="873ffcdb-35a8-4901-be4e-73cd20eb961c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="e2f846c8-7c28-459f-8711-57c55442adc0" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="190" ver="5"/>
+			<designed target="Y" value="160" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_86" display-name="valve_86" uuid="5e456fda-6945-4307-adfa-de5c9d632686" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
-		<designed target="X" value="1173" ver="5"/>
+	<object access-modifier="private" name="ValveVP2p3" display-name="ValveVP2p3" uuid="5e456fda-6945-4307-adfa-de5c9d632686" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+		<designed target="X" value="1223" ver="5"/>
 		<designed target="Y" value="810" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
@@ -1137,22 +1152,22 @@
 		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
 	<object access-modifier="private" name="line_248" display-name="line_248" uuid="7fcad2bd-8269-48f8-b75e-0e2deba04079" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1180" ver="5"/>
+		<designed target="X" value="1150" ver="5"/>
 		<designed target="Y" value="790" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="150" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="e9134348-cc3c-4f58-b54b-edd667fcce61" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="67ae5d29-b643-4b20-ad54-c30554b5459d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="150" ver="5"/>
+			<designed target="X" value="80" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="line_249" display-name="line_249" uuid="75fd0118-c537-488a-8553-3a990bff439a" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1330" ver="5"/>
+		<designed target="X" value="1340" ver="5"/>
 		<designed target="Y" value="790" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
@@ -1166,8 +1181,8 @@
 			<designed target="Y" value="80" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_87" display-name="valve_87" uuid="93c9a0e6-3383-4971-828a-061ca956ea6e" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
-		<designed target="X" value="1323" ver="5"/>
+	<object access-modifier="private" name="ValveVP2p4" display-name="ValveVP2p4" uuid="93c9a0e6-3383-4971-828a-061ca956ea6e" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+		<designed target="X" value="1333" ver="5"/>
 		<designed target="Y" value="810" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
@@ -1187,62 +1202,26 @@
 		<init target="_init_PanelDeltaX" ver="5" value="50"/>
 		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
-	<object access-modifier="private" name="line_250" display-name="line_250" uuid="1374ee1d-004d-45fc-9b19-ce9e88cb78a3" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1250" ver="5"/>
-		<designed target="Y" value="790" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="190" ver="5"/>
-		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="2a8f7152-a6c3-4b47-b66e-b6dff62f0332" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-		</object>
-		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="b72ed87a-3769-4d85-8791-dbaaca1006b7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="190" ver="5"/>
-		</object>
-	</object>
-	<object access-modifier="private" name="valve_88" display-name="valve_88" uuid="9454980d-c5ce-4961-b84f-8039e2a3146a" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
-		<designed target="X" value="1243" ver="5"/>
-		<designed target="Y" value="810" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="30" ver="5"/>
-		<designed target="Height" value="30" ver="5"/>
-		<object access-modifier="private" name="DevicePosition" display-name="DevicePosition" uuid="d229e734-7087-4cd7-b3c6-b77faea7006a" base-type="DevicePosition" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
-			<designed target="X" value="17" ver="5"/>
-			<designed target="Y" value="20" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="50" ver="5"/>
-			<designed target="Height" value="20" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-			<designed target="Text" value="ВП2.2" ver="5"/>
-			<designed target="FontColor" value="0xff5500ff" ver="5"/>
-		</object>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_NameEn" ver="5" value="ValveVP2p2"/>
-		<init target="_init_PanelDeltaX" ver="5" value="50"/>
-		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
-	</object>
 	<object access-modifier="private" name="line_251" display-name="line_251" uuid="e5082c39-5515-4e2d-a61b-824a9203f529" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1180" ver="5"/>
-		<designed target="Y" value="980" ver="5"/>
+		<designed target="X" value="1150" ver="5"/>
+		<designed target="Y" value="950" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="70" ver="5"/>
+		<designed target="Width" value="129.99999999999977" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="4365139a-243a-4659-81a0-769497b94bb5" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="9f090420-f572-44de-a721-66cb0c78a55c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="70" ver="5"/>
+			<designed target="X" value="129.99999999999977" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="_Tank_01_hor_1" display-name="_Tank_01_hor_1" uuid="1534a668-1b2a-45b8-804c-be388b033df2" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
-		<designed target="X" value="970" ver="5"/>
-		<designed target="Y" value="860" ver="5"/>
+	<object access-modifier="private" name="TankProliv" display-name="TankProliv" uuid="1534a668-1b2a-45b8-804c-be388b033df2" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
+		<designed target="X" value="1000" ver="5"/>
+		<designed target="Y" value="830" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="240" ver="5"/>
+		<designed target="Width" value="190" ver="5"/>
 		<designed target="Height" value="100" ver="5"/>
 		<object access-modifier="private" name="DevicePosition" display-name="DevicePosition" uuid="263883f6-6465-4234-b53a-253d89bc5f77" base-type="DevicePosition" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
 			<designed target="X" value="84" ver="5"/>
@@ -1253,37 +1232,37 @@
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="Резервуар  (аварийный)" ver="5"/>
 		</object>
-	</object>
-	<object access-modifier="private" name="anaPrm_9" display-name="anaPrm_9" uuid="75c191db-5a1d-4744-b48b-2c0f10934980" base-type="AnaPrm_Lev" base-type-id="48a52665-29cc-4bef-ba5a-e60ad859ee2c" ver="5" description="" cardinal="1">
-		<designed target="X" value="1015" ver="5"/>
-		<designed target="Y" value="870" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="65" ver="5"/>
-		<designed target="Height" value="18" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_2" display-name="AnaPrmPosition_2" uuid="9b0cfc9c-b4d0-4a63-b970-548ecf92dc2c" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="20" ver="5"/>
+		<object access-modifier="private" name="AnaPrm1" display-name="AnaPrm1" uuid="db4e6ac4-1cb1-454a-8e5c-1f5531480345" base-type="AnaPrm_Lev" base-type-id="48a52665-29cc-4bef-ba5a-e60ad859ee2c" ver="5" description="" cardinal="1">
+			<designed target="X" value="45" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="70" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
 			<designed target="Height" value="18" ver="5"/>
-			<designed target="Text" value="A14-02" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
+			<object access-modifier="private" name="AnaPrmPosition_2" display-name="AnaPrmPosition_2" uuid="a922ae45-616f-4744-b976-76937947c2d3" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="20" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="70" ver="5"/>
+				<designed target="Height" value="18" ver="5"/>
+				<designed target="Text" value="A14-02" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+			<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
 		</object>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
-	</object>
-	<object access-modifier="private" name="AnaPrm_Lev_Progress_6" display-name="AnaPrm_Lev_Progress_6" uuid="2f7158ed-a34f-43b0-8060-fa34a5353544" base-type="AnaPrm_Lev_Progress" base-type-id="aa499b1e-cbdf-4d63-a939-0334156c3c8a" ver="5" description="" cardinal="1">
-		<designed target="X" value="996" ver="5"/>
-		<designed target="Y" value="870" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="15" ver="5"/>
-		<designed target="Height" value="80" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="ApSourceForm"/>
-		<init target="_height" ver="5" value="100"/>
-		<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
+		<object access-modifier="private" name="AnaPrm1_Progress" display-name="AnaPrm1_Progress" uuid="7949267a-3f59-420c-8eba-dce7ba12e1a8" base-type="AnaPrm_Lev_Progress" base-type-id="aa499b1e-cbdf-4d63-a939-0334156c3c8a" ver="5" description="" cardinal="1">
+			<designed target="X" value="26" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="15" ver="5"/>
+			<designed target="Height" value="80" ver="5"/>
+			<init target="_init_ApSourceForm" ver="5" ref="ApSourceForm"/>
+			<init target="_height" ver="5" value="100"/>
+			<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="line_252" display-name="line_252" uuid="840b912b-8a15-4e95-be9d-a9a8f18e9f01" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1570" ver="5"/>
+		<designed target="X" value="1640" ver="5"/>
 		<designed target="Y" value="800" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
@@ -1298,7 +1277,7 @@
 		</object>
 	</object>
 	<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="e7fc5e8c-494f-46c3-9dd3-0304ac33eaf5" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
-		<designed target="X" value="1690" ver="5"/>
+		<designed target="X" value="1740" ver="5"/>
 		<designed target="Y" value="890" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -1352,19 +1331,19 @@
 		<designed target="Y" value="100" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="590" ver="5"/>
+		<designed target="Height" value="560" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="f2af8c9d-840b-43d4-96fc-863116b7e722" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="7934194b-3cba-42a9-8ea5-ac0cf7ef5375" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="590" ver="5"/>
+			<designed target="Y" value="560" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Valve_hor_Circle_7" display-name="Valve_hor_Circle_7" uuid="e8a7dfcd-e1ef-47c4-a961-5428f6c3c739" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP159" display-name="ValveVP159" uuid="e8a7dfcd-e1ef-47c4-a961-5428f6c3c739" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="780" ver="5"/>
-		<designed target="Y" value="668" ver="5"/>
+		<designed target="Y" value="638" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
 		<designed target="Height" value="30" ver="5"/>
@@ -1383,21 +1362,21 @@
 	</object>
 	<object access-modifier="private" name="line_256" display-name="line_256" uuid="b2312001-61eb-4dce-9f5b-3816f74d504a" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="650" ver="5"/>
-		<designed target="Y" value="690" ver="5"/>
+		<designed target="Y" value="660" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="160" ver="5"/>
+		<designed target="Height" value="190" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="9c6793e9-7fd6-42b4-8f81-e9f66781f0b6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="dd8d6819-2e37-4b2c-83e3-aad15b46a03a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="160" ver="5"/>
+			<designed target="Y" value="190" ver="5"/>
 		</object>
 		<designed target="PenColor" value="0xff55ff00" ver="5"/>
 	</object>
-	<object access-modifier="private" name="valve_90" display-name="valve_90" uuid="2e222cb5-cd46-4104-8cbd-e5774e881d3e" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP157" display-name="ValveVP157" uuid="2e222cb5-cd46-4104-8cbd-e5774e881d3e" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="643" ver="5"/>
 		<designed target="Y" value="800" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -1419,20 +1398,20 @@
 	</object>
 	<object access-modifier="private" name="line_257" display-name="line_257" uuid="070689df-74a6-48b8-b372-a588875038f8" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="720" ver="5"/>
-		<designed target="Y" value="750" ver="5"/>
+		<designed target="Y" value="720" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="120" ver="5"/>
+		<designed target="Height" value="150" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c860e2a3-0088-464d-a4a4-fcd18ff00e35" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="773a7339-6f67-41ca-b00a-afc1d9731286" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="120" ver="5"/>
+			<designed target="Y" value="150" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_91" display-name="valve_91" uuid="9ab771ca-1e10-42c2-8ce6-3d1a79077a5b" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP156" display-name="ValveVP156" uuid="9ab771ca-1e10-42c2-8ce6-3d1a79077a5b" base-type="Valve_ver_Circle_4" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
 		<designed target="X" value="713" ver="5"/>
 		<designed target="Y" value="800" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -1452,9 +1431,9 @@
 		<init target="_init_NameEn" ver="5" value="ValveVP156"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 	</object>
-	<object access-modifier="private" name="Valve_hor_Circle_8" display-name="Valve_hor_Circle_8" uuid="76626447-393a-4a15-ba2e-0554e7a2dc5d" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP158" display-name="ValveVP158" uuid="76626447-393a-4a15-ba2e-0554e7a2dc5d" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="780" ver="5"/>
-		<designed target="Y" value="718" ver="5"/>
+		<designed target="Y" value="688" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
 		<designed target="Height" value="30" ver="5"/>
@@ -1567,21 +1546,6 @@
 			<designed target="FontColor" value="0xff00557f" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="line_261" display-name="line_261" uuid="bee2de97-54ed-4400-932f-e6e847125f07" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="150" ver="5"/>
-		<designed target="Y" value="930" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="160" ver="5"/>
-		<designed target="Height" value="0" ver="5"/>
-		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="befcd5e2-fc39-4e01-aedf-f06c15d34b68" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-		</object>
-		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="75094642-33c6-4764-9976-89bb46f4f18a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="160" ver="5"/>
-			<designed target="Y" value="0" ver="5"/>
-		</object>
-	</object>
 	<object access-modifier="private" name="lineName02" display-name="lineName02" uuid="d3f6d15c-b5be-4f81-8298-55caabfcfd8b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="180" ver="5"/>
 		<designed target="Y" value="520" ver="5"/>
@@ -1625,8 +1589,8 @@
 парка №2" ver="5"/>
 		<designed target="TextAlignment" value="130" ver="5"/>
 	</object>
-	<object access-modifier="private" name="Valve_hor_Circle_5" display-name="Valve_hor_Circle_5" uuid="82f62a0d-49e5-4da6-818a-fe1672d5f910" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
-		<designed target="X" value="1620" ver="5"/>
+	<object access-modifier="private" name="Valve2VP5p1" display-name="Valve2VP5p1" uuid="82f62a0d-49e5-4da6-818a-fe1672d5f910" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+		<designed target="X" value="1670" ver="5"/>
 		<designed target="Y" value="908" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
@@ -1646,7 +1610,7 @@
 		<init target="_init_PanelDeltaY" ver="5" value="-250"/>
 	</object>
 	<object access-modifier="private" name="lineName03" display-name="lineName03" uuid="f77cc879-f488-4188-b486-702d681cdeb8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
-		<designed target="X" value="1500" ver="5"/>
+		<designed target="X" value="1570" ver="5"/>
 		<designed target="Y" value="920" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -1709,7 +1673,7 @@
 	</object>
 	<object access-modifier="private" name="line_263" display-name="line_263" uuid="3f6af5a4-635f-4bf9-b67f-99edb2f9f342" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="870" ver="5"/>
-		<designed target="Y" value="790" ver="5"/>
+		<designed target="Y" value="760" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="220" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
@@ -1724,20 +1688,20 @@
 	</object>
 	<object access-modifier="private" name="line_264" display-name="line_264" uuid="315a83af-aecb-4271-80c5-6920a82bedf1" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="870" ver="5"/>
-		<designed target="Y" value="790" ver="5"/>
+		<designed target="Y" value="760" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="100" ver="5"/>
+		<designed target="Height" value="130" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="a3f73d3b-85c7-4d8c-a05e-143d0f0bfa51" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="16b0a52b-655a-4414-aaea-c20e71d2e380" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="100" ver="5"/>
+			<designed target="Y" value="130" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="_Tank_01_hor_2" display-name="_Tank_01_hor_2" uuid="ef160fa5-e911-493a-b0df-dc52857fb98c" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="TankProizv3" display-name="TankProizv3" uuid="ef160fa5-e911-493a-b0df-dc52857fb98c" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
 		<designed target="X" value="1580" ver="5"/>
 		<designed target="Y" value="190" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -1752,8 +1716,37 @@
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="Резервуар для производ.нужд №3" ver="5"/>
 		</object>
+		<object access-modifier="private" name="DLevel_3" display-name="DLevel_3" uuid="5dd52c59-3e7e-4bd1-94e3-2b4d10651ced" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
+			<designed target="X" value="25" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="90" ver="5"/>
+			<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="33fe6ded-53fb-4ad3-83fe-a3d5245ed6ab" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="12" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="16" ver="5"/>
+				<designed target="Text" value="A9-30" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="FontColor" value="0xff00aa00" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="2ee79216-0c69-43d4-9601-861a8d5c8418" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="61" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="16" ver="5"/>
+				<designed target="Text" value="A9-29" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="FontColor" value="0xff00aa00" ver="5"/>
+			</object>
+			<init target="_init_NameEn" ver="5" value="TankProizv3"/>
+			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		</object>
 	</object>
-	<object access-modifier="private" name="_Tank_01_hor_3" display-name="_Tank_01_hor_3" uuid="39779fc2-69bd-48ad-a029-d6f0ac63731c" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="TankPozh2" display-name="TankPozh2" uuid="39779fc2-69bd-48ad-a029-d6f0ac63731c" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
 		<designed target="X" value="1580" ver="5"/>
 		<designed target="Y" value="340" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -1768,8 +1761,37 @@
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="Пожарный резервуар №2" ver="5"/>
 		</object>
+		<object access-modifier="private" name="DLevel_4" display-name="DLevel_4" uuid="50ed19ee-82a3-494a-89e7-111418ef44e8" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
+			<designed target="X" value="25" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="90" ver="5"/>
+			<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="d27ebf3e-b0fb-4aa7-a352-9b30e5d491cf" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="12" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="16" ver="5"/>
+				<designed target="Text" value="A9-32" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="FontColor" value="0xff00aa00" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="cdda7b2d-6a5f-49fb-ba53-ad547a70d176" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="61" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="16" ver="5"/>
+				<designed target="Text" value="A9-31" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="FontColor" value="0xff00aa00" ver="5"/>
+			</object>
+			<init target="_init_NameEn" ver="5" value="TankPozh2"/>
+			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		</object>
 	</object>
-	<object access-modifier="private" name="_Tank_01_hor_4" display-name="_Tank_01_hor_4" uuid="0295fc90-f5f7-42ec-a82e-adc6ab7a479f" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="TankPozh1" display-name="TankPozh1" uuid="0295fc90-f5f7-42ec-a82e-adc6ab7a479f" base-type="_Tank_01_hor" base-type-id="db452f17-038c-420a-a69f-fea16dd235ff" ver="5" description="" cardinal="1">
 		<designed target="X" value="1580" ver="5"/>
 		<designed target="Y" value="490" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -1783,6 +1805,35 @@
 			<designed target="Height" value="35" ver="5"/>
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="Пожарный резервуар №1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DLevel_5" display-name="DLevel_5" uuid="c647489b-69b5-4981-8d71-9746432a8042" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
+			<designed target="X" value="25" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="90" ver="5"/>
+			<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="166130f0-2a55-4f79-abf4-d1fc0926d761" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="12" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="16" ver="5"/>
+				<designed target="Text" value="A10-2" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="FontColor" value="0xff00aa00" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="4a6f29df-811c-430d-abb8-a51f7221de34" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="61" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="16" ver="5"/>
+				<designed target="Text" value="A10-1" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="FontColor" value="0xff00aa00" ver="5"/>
+			</object>
+			<init target="_init_NameEn" ver="5" value="TankPozh1"/>
+			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="line_265" display-name="line_265" uuid="fe02b6af-3a5e-4b44-b6a9-9b754eab4580" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
@@ -2034,23 +2085,23 @@
 		</object>
 	</object>
 	<object access-modifier="private" name="line_293" display-name="line_293" uuid="4446e00d-0314-466d-a505-6090789841d8" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1450" ver="5"/>
-		<designed target="Y" value="740" ver="5"/>
+		<designed target="X" value="1480" ver="5"/>
+		<designed target="Y" value="710" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="190" ver="5"/>
+		<designed target="Height" value="220" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="e739153f-1792-468b-95a0-1d336afb1b76" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="913890b6-5198-4b41-a406-0ef73a164fd3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="190" ver="5"/>
+			<designed target="Y" value="220" ver="5"/>
 		</object>
 		<designed target="PenColor" value="0xff55ff00" ver="5"/>
 	</object>
-	<object access-modifier="private" name="Valve_hor_Circle_6" display-name="Valve_hor_Circle_6" uuid="9aeca7cf-283a-4e3f-8316-383317f49eec" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
-		<designed target="X" value="1620" ver="5"/>
+	<object access-modifier="private" name="Valve2VP4" display-name="Valve2VP4" uuid="9aeca7cf-283a-4e3f-8316-383317f49eec" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+		<designed target="X" value="1670" ver="5"/>
 		<designed target="Y" value="858" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
@@ -2070,22 +2121,22 @@
 		<init target="_init_PanelDeltaX" ver="5" value="-300"/>
 	</object>
 	<object access-modifier="private" name="line_295" display-name="line_295" uuid="896c56dd-e7af-46f6-ba1c-b13fd129acdd" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1470" ver="5"/>
-		<designed target="Y" value="690" ver="5"/>
+		<designed target="X" value="1510" ver="5"/>
+		<designed target="Y" value="660" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="190" ver="5"/>
+		<designed target="Height" value="220" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c8dee609-5ee3-4a5e-a478-2b9380b0dea2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="7191f152-1a3d-4c27-8185-fe72ca509931" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="190" ver="5"/>
+			<designed target="Y" value="220" ver="5"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="lineName05" display-name="lineName05" uuid="94a19eca-08b3-4ecd-9dfc-545e8b8d8288" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
-		<designed target="X" value="1500" ver="5"/>
+		<designed target="X" value="1570" ver="5"/>
 		<designed target="Y" value="870" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -2116,37 +2167,37 @@
 		</object>
 	</object>
 	<object access-modifier="private" name="line_296" display-name="line_296" uuid="fbdf4481-808a-4943-b05c-6028470f3465" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1490" ver="5"/>
-		<designed target="Y" value="640" ver="5"/>
+		<designed target="X" value="1540" ver="5"/>
+		<designed target="Y" value="610" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="0" ver="5"/>
-		<designed target="Height" value="100" ver="5"/>
+		<designed target="Height" value="130" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="6e9886d8-ccd6-4b7d-a063-42158bb51ce1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="059edc15-8a68-40a7-8ac1-682a6de8e2a6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="100" ver="5"/>
+			<designed target="Y" value="130" ver="5"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="line_297" display-name="line_297" uuid="f110d21a-e87d-4084-8667-d497f88f29ad" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
-		<designed target="X" value="1490" ver="5"/>
+		<designed target="X" value="1540" ver="5"/>
 		<designed target="Y" value="740" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="200" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
 		<designed target="Height" value="0" ver="5"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="71c49b79-1e34-41b6-a53f-6f2773726871" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="be3583b5-225e-4793-9ce5-a10d2719482d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
-			<designed target="X" value="200" ver="5"/>
+			<designed target="X" value="180" ver="5"/>
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="lineName06" display-name="lineName06" uuid="144b2fdd-8669-4e19-93c1-14f008f94dd1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
-		<designed target="X" value="1500" ver="5"/>
+		<designed target="X" value="1570" ver="5"/>
 		<designed target="Y" value="730" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -2295,7 +2346,7 @@
 		<designed target="PenColor" value="0xff5555ff" ver="5"/>
 		<designed target="PenWidth" value="4" ver="5"/>
 	</object>
-	<object access-modifier="private" name="pump_201_8" display-name="pump_201_8" uuid="0e98793e-0bc1-48a0-855a-9a7d6fc81aa9" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump3_2_2" display-name="Pump3_2_2" uuid="0e98793e-0bc1-48a0-855a-9a7d6fc81aa9" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
 		<designed target="X" value="1485" ver="5"/>
 		<designed target="Y" value="425" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -2311,7 +2362,7 @@
 			<designed target="Text" value="В3.2.2" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="pump_201_9" display-name="pump_201_9" uuid="369bf75d-0601-455d-b7bb-3efb99dd7db8" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump3_2_1" display-name="Pump3_2_1" uuid="369bf75d-0601-455d-b7bb-3efb99dd7db8" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
 		<designed target="X" value="1405" ver="5"/>
 		<designed target="Y" value="425" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -2416,8 +2467,8 @@
 			<designed target="Y" value="150" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Valve_hor_Circle_3" display-name="Valve_hor_Circle_3" uuid="563eb965-1341-43e4-908f-d227bb54ef56" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
-		<designed target="X" value="1620" ver="5"/>
+	<object access-modifier="private" name="Valve2VP5p3" display-name="Valve2VP5p3" uuid="563eb965-1341-43e4-908f-d227bb54ef56" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+		<designed target="X" value="1670" ver="5"/>
 		<designed target="Y" value="718" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
@@ -2511,7 +2562,7 @@
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="pump_201_10" display-name="pump_201_10" uuid="c5a82b95-c1e8-4aca-bdd5-24a0e4ae3d1c" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump3_1_2" display-name="Pump3_1_2" uuid="c5a82b95-c1e8-4aca-bdd5-24a0e4ae3d1c" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
 		<designed target="X" value="1485" ver="5"/>
 		<designed target="Y" value="205" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -2527,7 +2578,7 @@
 			<designed target="Text" value="В3.1.2" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="pump_201_11" display-name="pump_201_11" uuid="69b3cc97-a48a-4c79-83ea-0b40134a8f35" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump3_1_1" display-name="Pump3_1_1" uuid="69b3cc97-a48a-4c79-83ea-0b40134a8f35" base-type="Pump_NoSts" base-type-id="05f76f60-811e-4eb9-a975-749f99de6773" ver="5" description="" cardinal="1">
 		<designed target="X" value="1405" ver="5"/>
 		<designed target="Y" value="205" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -2632,9 +2683,9 @@
 			<designed target="Y" value="20" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="valve_85" display-name="valve_85" uuid="a3db3361-4ea4-4de5-80b9-6008f0028dea" base-type="Valve_ver_Circle" base-type-id="89cee21b-370e-41e8-b9d9-ed063a408e8c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP2p1" display-name="ValveVP2p1" uuid="a3db3361-4ea4-4de5-80b9-6008f0028dea" base-type="Valve_ver_Circle_2" base-type-id="4a9b6751-e8b9-41d7-a500-7dd447683f23" ver="5" description="" cardinal="1">
 		<designed target="X" value="1083" ver="5"/>
-		<designed target="Y" value="810" ver="5"/>
+		<designed target="Y" value="780" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="30" ver="5"/>
 		<designed target="Height" value="30" ver="5"/>
@@ -2770,7 +2821,7 @@
 	</object>
 	<object access-modifier="private" name="AnaPrmPosition_150" display-name="AnaPrmPosition_150" uuid="0e7d4893-cbec-434c-b16a-217417a4fdef" base-type="Title01" base-type-id="5ef100c8-abbe-4d7a-b305-a236e6afea5a" ver="5" description="" cardinal="1">
 		<designed target="X" value="24" ver="5"/>
-		<designed target="Y" value="640" ver="5"/>
+		<designed target="Y" value="620" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="230" ver="5"/>
 		<designed target="Height" value="40" ver="5"/>
@@ -2882,7 +2933,7 @@
 	</object>
 	<object access-modifier="private" name="lineName02_2" display-name="lineName02_2" uuid="065968f2-b8fd-469f-aef3-c23820a95c99" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="670" ver="5"/>
-		<designed target="Y" value="730" ver="5"/>
+		<designed target="Y" value="700" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -2913,7 +2964,7 @@
 	</object>
 	<object access-modifier="private" name="lineName02_3" display-name="lineName02_3" uuid="afce84c2-476f-480e-a84b-3eab8d8ad253" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="670" ver="5"/>
-		<designed target="Y" value="680" ver="5"/>
+		<designed target="Y" value="650" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -2951,14 +3002,14 @@
 	</object>
 	<object access-modifier="private" name="arrow_67" display-name="arrow_67" uuid="8925fb41-7ead-4591-9ccc-863197a6531e" base-type="Arrow" base-type-id="2baae300-54c0-4093-a06c-8b2ea408b1ce" ver="5" description="" cardinal="1">
 		<designed target="X" value="714" ver="5"/>
-		<designed target="Y" value="740" ver="5"/>
+		<designed target="Y" value="710" ver="5"/>
 		<designed target="Rotation" value="180" ver="5"/>
 		<designed target="Width" value="11" ver="5"/>
 		<designed target="Height" value="11" ver="5"/>
 	</object>
 	<object access-modifier="private" name="arrow_68" display-name="arrow_68" uuid="c97cd1e2-f2f5-47c0-9097-d8dd812a769f" base-type="Arrow" base-type-id="2baae300-54c0-4093-a06c-8b2ea408b1ce" ver="5" description="" cardinal="1">
 		<designed target="X" value="1080" ver="5"/>
-		<designed target="Y" value="784" ver="5"/>
+		<designed target="Y" value="754" ver="5"/>
 		<designed target="Rotation" value="270" ver="5"/>
 		<designed target="Width" value="11" ver="5"/>
 		<designed target="Height" value="11" ver="5"/>
@@ -2985,7 +3036,7 @@
 		<designed target="Height" value="11" ver="5"/>
 	</object>
 	<object access-modifier="private" name="arrow_72" display-name="arrow_72" uuid="7b070b25-877b-44f2-afa5-b63b7616288b" base-type="Arrow" base-type-id="2baae300-54c0-4093-a06c-8b2ea408b1ce" ver="5" description="" cardinal="1">
-		<designed target="X" value="1680" ver="5"/>
+		<designed target="X" value="1730" ver="5"/>
 		<designed target="Y" value="874" ver="5"/>
 		<designed target="Rotation" value="270" ver="5"/>
 		<designed target="Width" value="11" ver="5"/>
@@ -3007,19 +3058,19 @@
 	</object>
 	<object access-modifier="private" name="arrow_75" display-name="arrow_75" uuid="5fe570cb-94b0-4129-9508-cf781a92fdf1" base-type="Arrow" base-type-id="2baae300-54c0-4093-a06c-8b2ea408b1ce" ver="5" description="" cardinal="1">
 		<designed target="X" value="1085" ver="5"/>
-		<designed target="Y" value="850" ver="5"/>
+		<designed target="Y" value="820" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="11" ver="5"/>
 		<designed target="Height" value="11" ver="5"/>
 	</object>
 	<object access-modifier="private" name="arrow_76" display-name="arrow_76" uuid="84be8e96-a071-4b92-bda0-b6dfa69b4e44" base-type="Arrow" base-type-id="2baae300-54c0-4093-a06c-8b2ea408b1ce" ver="5" description="" cardinal="1">
-		<designed target="X" value="1175" ver="5"/>
+		<designed target="X" value="1225" ver="5"/>
 		<designed target="Y" value="850" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="11" ver="5"/>
 		<designed target="Height" value="11" ver="5"/>
 	</object>
-	<object access-modifier="private" name="_Fan_1" display-name="_Fan_1" uuid="7767d241-ddf5-426f-8e28-2d2825858e85" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="VentV1" display-name="VentV1" uuid="7767d241-ddf5-426f-8e28-2d2825858e85" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
 		<designed target="X" value="1580" ver="5"/>
 		<designed target="Y" value="75" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3073,7 +3124,7 @@
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Pump_1" display-name="Pump_1" uuid="7d180b61-521b-434e-993e-5c3622843f74" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump1_2" display-name="Pump1_2" uuid="7d180b61-521b-434e-993e-5c3622843f74" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
 		<designed target="X" value="313" ver="5"/>
 		<designed target="Y" value="290" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3132,7 +3183,7 @@
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Pump_2" display-name="Pump_2" uuid="22d90cf2-0c19-4e68-b01a-2853c2e689fa" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump1_1" display-name="Pump1_1" uuid="22d90cf2-0c19-4e68-b01a-2853c2e689fa" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
 		<designed target="X" value="493" ver="5"/>
 		<designed target="Y" value="290" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3191,7 +3242,7 @@
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Pump_3" display-name="Pump_3" uuid="d0fd51ab-f1ec-485b-a563-0b906147d094" base-type="Pump_2" base-type-id="1066602c-6a53-496c-a451-ff859d84752d" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump2_2" display-name="Pump2_2" uuid="d0fd51ab-f1ec-485b-a563-0b906147d094" base-type="Pump_2" base-type-id="1066602c-6a53-496c-a451-ff859d84752d" ver="5" description="" cardinal="1">
 		<designed target="X" value="853" ver="5"/>
 		<designed target="Y" value="290" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3251,7 +3302,7 @@
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Pump_4" display-name="Pump_4" uuid="3034c82b-2006-45af-8aa3-e6b792985360" base-type="Pump_2" base-type-id="1066602c-6a53-496c-a451-ff859d84752d" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump2_1" display-name="Pump2_1" uuid="3034c82b-2006-45af-8aa3-e6b792985360" base-type="Pump_2" base-type-id="1066602c-6a53-496c-a451-ff859d84752d" ver="5" description="" cardinal="1">
 		<designed target="X" value="993" ver="5"/>
 		<designed target="Y" value="290" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3281,7 +3332,7 @@
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="anaPrm_200_4a_6" display-name="anaPrm_200_4a_6" uuid="68e2c829-c09d-49f7-b02f-f2fbc93ed439" base-type="AnaPrm_Temp" base-type-id="ff6fc2d6-bc7a-4b2d-a949-b77543d77cd8" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="AirTemp" display-name="AirTemp" uuid="68e2c829-c09d-49f7-b02f-f2fbc93ed439" base-type="AnaPrm_Temp" base-type-id="ff6fc2d6-bc7a-4b2d-a949-b77543d77cd8" ver="5" description="" cardinal="1">
 		<designed target="X" value="1155" ver="5"/>
 		<designed target="Y" value="80" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3299,7 +3350,7 @@
 		</object>
 		<init target="_init_NameEn" ver="5" value="AirTemp"/>
 	</object>
-	<object access-modifier="private" name="AnaPrm_pH_2" display-name="AnaPrm_pH_2" uuid="c2553210-0136-4b8c-8db8-1eca722f8d8e" base-type="AnaPrm_pH" base-type-id="b997109f-1443-41f8-b2f3-4282ee230211" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="pH_A23_01" display-name="pH_A23_01" uuid="c2553210-0136-4b8c-8db8-1eca722f8d8e" base-type="AnaPrm_pH" base-type-id="b997109f-1443-41f8-b2f3-4282ee230211" ver="5" description="" cardinal="1">
 		<designed target="X" value="865" ver="5"/>
 		<designed target="Y" value="391" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3347,7 +3398,7 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="DLevel_2" display-name="DLevel_2" uuid="cb7c9d4d-d780-46f6-b758-a9fe075dfabf" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1403" ver="5"/>
+		<designed target="X" value="1413" ver="5"/>
 		<designed target="Y" value="865" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
@@ -3375,95 +3426,8 @@
 		<init target="_init_NameEn" ver="5" value="Pallet7"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="DLevel_3" display-name="DLevel_3" uuid="4f41ddee-e217-4d1c-a8b2-b87545eb08cc" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1605" ver="5"/>
-		<designed target="Y" value="195" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="90" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="1bda06bc-1a9b-45ea-84e0-18af1b62ee1c" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="12" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A9-30" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-			<designed target="FontColor" value="0xff00aa00" ver="5"/>
-		</object>
-		<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="2c8026e7-86cf-4416-8721-488e5de43347" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="61" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A9-29" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-			<designed target="FontColor" value="0xff00aa00" ver="5"/>
-		</object>
-		<init target="_init_NameEn" ver="5" value="TankProizv3"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-	</object>
-	<object access-modifier="private" name="DLevel_4" display-name="DLevel_4" uuid="cb55886d-1f50-40ce-8b70-861ddc28f2df" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1605" ver="5"/>
-		<designed target="Y" value="345" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="90" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="843b952a-b406-44b8-b254-01974a639752" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="12" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A9-32" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-			<designed target="FontColor" value="0xff00aa00" ver="5"/>
-		</object>
-		<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="7d87995b-f731-45b8-b6d9-7405e65e8aff" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="61" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A9-31" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-			<designed target="FontColor" value="0xff00aa00" ver="5"/>
-		</object>
-		<init target="_init_NameEn" ver="5" value="TankPozh2"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-	</object>
-	<object access-modifier="private" name="DLevel_5" display-name="DLevel_5" uuid="6ba63e3e-7739-47bb-a3ed-bcd0dd2cc79e" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1605" ver="5"/>
-		<designed target="Y" value="495" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="90" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_12" display-name="AnaPrmPosition_12" uuid="8aeff9bf-e4d9-4ba9-a825-32ffc11f08c7" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="12" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A10-2" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-			<designed target="FontColor" value="0xff00aa00" ver="5"/>
-		</object>
-		<object access-modifier="private" name="AnaPrmPosition_13" display-name="AnaPrmPosition_13" uuid="a98e974c-7c3b-4ede-8919-9c23a3e6aa6c" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="61" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="60" ver="5"/>
-			<designed target="Height" value="16" ver="5"/>
-			<designed target="Text" value="A10-1" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-			<designed target="FontColor" value="0xff00aa00" ver="5"/>
-		</object>
-		<init target="_init_NameEn" ver="5" value="TankPozh1"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-	</object>
 	<object access-modifier="private" name="DLevel_6" display-name="DLevel_6" uuid="95b6678c-1637-4f31-a5cd-ddc50dfccc64" base-type="DLevel" base-type-id="dcd0c6c0-2458-4d23-acf5-69fb20c63d4f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1783" ver="5"/>
+		<designed target="X" value="1833" ver="5"/>
 		<designed target="Y" value="725" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
@@ -3491,7 +3455,7 @@
 		<init target="_init_NameEn" ver="5" value="Pallet4"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="_Fan_2" display-name="_Fan_2" uuid="b9d1e0ab-7a14-46e4-94fa-ece1693089fa" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="VentV2" display-name="VentV2" uuid="b9d1e0ab-7a14-46e4-94fa-ece1693089fa" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
 		<designed target="X" value="1670" ver="5"/>
 		<designed target="Y" value="75" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3511,7 +3475,7 @@
 		<init target="_init_PanelDeltaX" ver="5" value="-100"/>
 		<init target="_init_PanelDeltaY" ver="5" value="80"/>
 	</object>
-	<object access-modifier="private" name="_Fan_3" display-name="_Fan_3" uuid="eb0085c3-b186-4b2e-ba19-2976e322549d" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="VentV3" display-name="VentV3" uuid="eb0085c3-b186-4b2e-ba19-2976e322549d" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
 		<designed target="X" value="1760" ver="5"/>
 		<designed target="Y" value="75" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3541,6 +3505,55 @@
 		<designed target="ClientDisplayName" value="HMI" ver="5"/>
 		<designed target="ClientId" value="HMI" ver="5"/>
 		<init target="ParentSource" ver="5" ref="unit.Global_ApSource.ApSourceObjects"/>
+	</object>
+	<object access-modifier="private" name="ValveVP2p2" display-name="ValveVP2p2" uuid="1febd6d7-2313-4fe7-b4a4-20b0bac91b71" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+		<designed target="X" value="1180" ver="5"/>
+		<designed target="Y" value="928" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="30" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<object access-modifier="private" name="UnitPositionExtra_1" display-name="UnitPositionExtra_1" uuid="744a233c-1f83-4fde-ad65-42a9b55442d4" base-type="UnitPositionExtra" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
+			<designed target="X" value="-15" ver="5"/>
+			<designed target="Y" value="27" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="60" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="ВП2.2" ver="5"/>
+			<designed target="FontColor" value="0xff5500ff" ver="5"/>
+		</object>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_NameEn" ver="5" value="ValveVP2p2"/>
+		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="line_343" display-name="line_343" uuid="e864c7c4-aa00-4c25-9278-b76ad7e4e92c" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1280" ver="5"/>
+		<designed target="Y" value="790" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="0" ver="5"/>
+		<designed target="Height" value="160" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="e99ab449-35a9-42bb-af96-3046c5408f6a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="c4d01a98-1a85-4b45-85fc-488845ad61d6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="160" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="line_344" display-name="line_344" uuid="5a7e3321-bf92-463b-97f9-e8f9d145583f" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1280" ver="5"/>
+		<designed target="Y" value="790" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="60" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="ef91e48d-1cfb-490c-b2fd-bc56495193cf" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="f39ac7c6-65f8-4a3a-b4bb-5270733093a8" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="60" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
 	</object>
 </type>
 
