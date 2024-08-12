@@ -134,8 +134,8 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="65" ver="5"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" ref="here._init_DeviceNameEn"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="Pallet13_2" display-name="Pallet13_2" uuid="a9f6c816-1747-47e3-940f-e98f296c79b0" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="340.66666666666708" ver="5"/>
@@ -634,7 +634,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		</object>
 		<init target="_init_NameEn" ver="5" value="Pallet4"/>
 		<init target="visibleLow" ver="5" value="false"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm_1"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="Pallet7" display-name="Pallet7" uuid="42462ec9-2614-4c45-86b2-9e693ac4d4f7" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="490.66666666666708" ver="5"/>
@@ -732,7 +732,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		</object>
 		<init target="_init_NameEn" ver="5" value="Pallet7"/>
 		<init target="visibleLow" ver="5" value="false"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm_1"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 	</object>
 	<param access-modifier="private" name="_init_ApSourceForm_1" display-name="_init_ApSourceForm_1" uuid="adf5dbb7-f8fd-410c-a8e2-2401f3e44667" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 </type>

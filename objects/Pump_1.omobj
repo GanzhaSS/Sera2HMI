@@ -267,36 +267,36 @@
 		<do-trace access-modifier="private" target="BrushColor" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorOn]]>
+					<![CDATA[Global_ColorSettings.ColorOff]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorAlr]]>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
 		<do-trace access-modifier="private" target="Tooltip" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA["Давление НОРМА"]]>
+					<![CDATA["Нет давления"]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA["Давление НЕ НОРМА"]]>
+					<![CDATA["Давление НОРМА"]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>

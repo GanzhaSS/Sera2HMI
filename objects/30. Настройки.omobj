@@ -618,7 +618,7 @@
 	</object>
 	<object access-modifier="private" name="Checkbox_16" display-name="Checkbox_16" uuid="9c0b5895-a381-424b-a446-b5e3f0e16fb2" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
 		<designed target="X" value="30" ver="5"/>
-		<designed target="Y" value="440" ver="5"/>
+		<designed target="Y" value="120" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -660,30 +660,6 @@
 				</expr>
 			</default-expr>
 		</do-trace>
-	</object>
-	<object access-modifier="private" name="Checkbox_17" display-name="Checkbox_17" uuid="c84d0c40-e6db-43c9-8bbc-43385d09a6f4" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
-		<designed target="X" value="30" ver="5"/>
-		<designed target="Y" value="120" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="450" ver="5"/>
-		<designed target="Height" value="23" ver="5"/>
-		<designed target="Text" value="Показывать позиции приводов мешалок и вентиляторов" ver="5"/>
-		<designed target="Font" value="Tahoma,11,-1,5,50,0,0,0,0,0" ver="5"/>
-		<designed target="FontColor" value="0xff000000" ver="5"/>
-		<designed target="State" value="true" ver="5"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
-			<body kind="om">
-				<![CDATA[unit.Global_Property.VisibleDriveMixerPosition = this.State;]]>
-			</body>
-		</do-on>
-		<init target="State" ver="5" ref="unit.Global_Property.VisibleDriveMixerPosition"/>
 	</object>
 	<init target="_init_FormNameEn" ver="5" value="Ik30Settings"/>
 	<object access-modifier="private" name="Button_13" display-name="Button_13" uuid="d4ec60de-bfe6-4c33-9ec9-c2ed61ab7fb2" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
@@ -1048,33 +1024,9 @@
 		</do-on>
 		<init target="State" ver="5" ref="unit.Global_Property.VisibleIKnumber"/>
 	</object>
-	<object access-modifier="private" name="Checkbox_23" display-name="Checkbox_23" uuid="e7793d9b-70bb-466f-9b27-4c0bf4597b7d" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Checkbox_24" display-name="Checkbox_24" uuid="88cda827-0f52-4953-8f62-79feae982100" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
 		<designed target="X" value="490" ver="5"/>
 		<designed target="Y" value="120" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="340" ver="5"/>
-		<designed target="Height" value="23" ver="5"/>
-		<designed target="Text" value="Показывать номера панелей управления" ver="5"/>
-		<designed target="Font" value="Tahoma,11,-1,5,50,0,0,0,0,0" ver="5"/>
-		<designed target="FontColor" value="0xff000000" ver="5"/>
-		<designed target="State" value="true" ver="5"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
-			<body kind="om">
-				<![CDATA[unit.Global_Property.FlagDebug_1 = this.State;]]>
-			</body>
-		</do-on>
-		<init target="State" ver="5" ref="unit.Global_Property.FlagDebug_1"/>
-	</object>
-	<object access-modifier="private" name="Checkbox_24" display-name="Checkbox_24" uuid="88cda827-0f52-4953-8f62-79feae982100" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
-		<designed target="X" value="30" ver="5"/>
-		<designed target="Y" value="470" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>

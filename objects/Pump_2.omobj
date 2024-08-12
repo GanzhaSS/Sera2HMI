@@ -245,7 +245,7 @@
 		<init target="Visible" ver="5" value="false"/>
 	</object>
 	<param access-modifier="private" name="_init_ApSourceForm_01Scheme1" display-name="_init_ApSourceForm_01Scheme1" uuid="246370d0-1078-4001-a1f8-05f01c6971df" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
-	<object access-modifier="private" name="gAlrSens_14" display-name="gAlrSens_14" uuid="ac486902-53c9-4406-8ff9-9924d43f8bd1" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="gAlrSens_14" display-name="gAlrSens_14" uuid="3d4ebda7-8859-4ef3-9388-b353117e9501" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="33" ver="5"/>
 		<designed target="Y" value="-40" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
@@ -269,36 +269,36 @@
 		<do-trace access-modifier="private" target="BrushColor" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorOn]]>
+					<![CDATA[Global_ColorSettings.ColorOff]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorAlr]]>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
 		<do-trace access-modifier="private" target="Tooltip" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA["Давление НОРМА"]]>
+					<![CDATA["Нет давления"]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 9) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA["Давление НЕ НОРМА"]]>
+					<![CDATA["Давление НОРМА"]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>

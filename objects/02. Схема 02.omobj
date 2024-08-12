@@ -3523,7 +3523,9 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="ValveVP2p2"/>
-		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_init_FlagPaneEnable" ver="5" value="true"/>
+		<init target="_init_PanelDeltaY" ver="5" value="-200"/>
+		<init target="_init_PanelDeltaX" ver="5" value="50"/>
 	</object>
 	<object access-modifier="private" name="line_343" display-name="line_343" uuid="e864c7c4-aa00-4c25-9278-b76ad7e4e92c" base-type="Line_Hor" base-type-id="33da4a6d-a4fd-4114-835a-3ad4f24b21a0" ver="5" description="" cardinal="1">
 		<designed target="X" value="1280" ver="5"/>

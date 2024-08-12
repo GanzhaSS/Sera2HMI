@@ -179,34 +179,6 @@
 			</expr>
 		</init>
 	</object>
-	<object access-modifier="private" name="Alarm" display-name="Alarm" uuid="b3f02d6a-121a-42c8-ad7f-58f2533e373c" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="2" ver="5"/>
-		<designed target="Y" value="10.5" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Есть авария (см. сообщения)" ver="5"/>
-		<designed target="Width" value="10" ver="5"/>
-		<designed target="Height" value="10" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<do-trace access-modifier="private" target="Visible" ver="5">
-			<body>
-				<![CDATA[here.ApAlarm]]>
-			</body>
-		</do-trace>
-		<init target="Visible" ver="5" value="false"/>
-	</object>
 	<init target="_init_FlagPaneEnable" ver="5" value="true"/>
 	<object access-modifier="private" name="ApAlarm" display-name="ApAlarm" uuid="013a5214-7253-4cee-be9c-d9e104691dbb" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
 		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
@@ -218,5 +190,79 @@
 	</object>
 	<init target="_init_PanelDeltaX" ver="5" value="0"/>
 	<init target="_init_PanelDeltaY" ver="5" value="20"/>
+	<object access-modifier="private" name="Alarm_1" display-name="Alarm_1" uuid="40e1b09b-993d-492d-bce4-452d410eebe6" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="-2" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Есть авария (см. сообщения)" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[here.ApAlarm]]>
+			</body>
+		</do-trace>
+		<init target="Visible" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="Work" display-name="Work" uuid="6f38ada4-b5ab-4798-805e-19142fa39f01" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="14" ver="5"/>
+		<designed target="Y" value="8.5" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Есть авария (см. сообщения)" ver="5"/>
+		<designed target="Width" value="15" ver="5"/>
+		<designed target="Height" value="15" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[(ApStatus & 16) == 16]]>
+			</body>
+		</do-trace>
+		<init target="Visible" ver="5" value="false"/>
+		<object access-modifier="private" name="txtKVRU" display-name="txtKVRU" uuid="2ebe1763-a24f-4798-a0e0-f56e29a88506" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="0.5" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="15" ver="5"/>
+			<designed target="Height" value="15" ver="5"/>
+			<designed target="Text" value="Р" ver="5"/>
+			<designed target="Font" value="Verdana,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xff484848" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+	</object>
 </type>
 
