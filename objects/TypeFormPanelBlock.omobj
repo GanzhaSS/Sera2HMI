@@ -9,7 +9,7 @@
 	<designed target="Opacity" value="1" ver="5"/>
 	<designed target="Enabled" value="true" ver="5"/>
 	<designed target="Tooltip" value="" ver="5"/>
-	<designed target="Width" value="500" ver="5"/>
+	<designed target="Width" value="380" ver="5"/>
 	<designed target="Height" value="700" ver="5"/>
 	<designed target="PenColor" value="4278190080" ver="5"/>
 	<designed target="PenStyle" value="0" ver="5"/>
@@ -34,20 +34,22 @@
 	<designed target="WindowPosition" value="4" ver="5"/>
 	<designed target="WindowCloseMode" value="0" ver="5"/>
 	<designed target="WindowIconPath" value="" ver="5"/>
-	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="3a2327f6-34a9-4029-9a5b-961f6d852ce4" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
-	<param access-modifier="private" name="_init_NameEn" display-name="_init_NameEn" uuid="1930ba1d-d88d-4cfd-92ca-7946bd3f1037" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
-	<init target="_init_NameEn" ver="5" value="AnaPrmTest"/>
-	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="37c55b7e-fffa-4027-ade1-8f0f1eb976cc" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
-		<designed target="Location" value="" ver="5"/>
-		<designed target="Port" value="4388" ver="5"/>
-		<designed target="HistoryPort" value="4950" ver="5"/>
-		<designed target="Path" value="" ver="5"/>
-		<designed target="Active" value="true" ver="5"/>
-		<designed target="ReAdvise" value="0" ver="5"/>
-		<designed target="ClientDisplayName" value="HMI" ver="5"/>
-		<designed target="ClientId" value="HMI" ver="5"/>
-		<init target="Path" ver="5" ref="_init_NameEn"/>
-		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+	<param access-modifier="private" name="_init_ApSourceConLoop" display-name="_init_ApSourceConLoop" uuid="2b71df84-f2ac-4792-b7f4-5fa27e201dd7" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_PanelWindowCaption" display-name="_init_PanelWindowCaption" uuid="1930ba1d-d88d-4cfd-92ca-7946bd3f1037" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="WindowX" ver="5" ref="unit.Global_WinCtrl.PanelX"/>
+	<init target="WindowY" ver="5" ref="unit.Global_WinCtrl.PanelY"/>
+	<init target="_init_ApSourceConLoop" ver="5" ref="unit.Global_ApSource.ApSourceMain"/>
+	<init target="_init_PanelWindowCaption" ver="5" value="ПАЗ NN"/>
+	<object access-modifier="private" name="ApBlocking" display-name="ApBlocking" uuid="08fa17d3-c3d3-4e3f-bac7-35d85852980a" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Blocking"/>
+		<init target="Source" ver="5" ref="_init_ApSourceConLoop"/>
 	</object>
+	<init target="_init_PanelNum" ver="5" value="1"/>
+	<object access-modifier="private" name="_init_PanelNum" display-name="_init_PanelNum" uuid="14d59a2a-d0e0-48ae-a599-e0b6b711e863" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
+	<init target="WindowCaption" ver="5">
+		<expr>
+			<![CDATA[here._init_PanelWindowCaption + " Блокировки"]]>
+		</expr>
+	</init>
 </type>
 

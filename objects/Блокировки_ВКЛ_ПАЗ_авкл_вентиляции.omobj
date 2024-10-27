@@ -1,0 +1,1004 @@
+<type access-modifier="private" name="Блокировки_ВКЛ_ПАЗ_авкл_вентиляции" display-name="Блокировки_ВКЛ_ПАЗ_авкл_вентиляции" uuid="2d642916-5603-4cb6-88f1-ccb0adddfcbf" base-type="TypeFormPanelBlock" base-type-id="a175b947-2eda-4e71-a612-2f36cd83e6d8" ver="5" description="">
+	<designed target="WindowCaption" value="TypeFormPanelBlock_1" ver="5"/>
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="380" ver="5"/>
+	<designed target="Height" value="415" ver="5"/>
+	<object access-modifier="private" name="Title" display-name="Title" uuid="d165a894-5128-437d-9a44-217cff7799b5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="370" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value='Блокировки кнопки "Включить" ПАЗ' ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="FontColor" value="0xff151515" ver="5"/>
+		<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.TitleColor"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.TitleFont"/>
+	</object>
+	<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+	<object access-modifier="private" name="Text_0" display-name="Text_0" uuid="434dbfee-d550-4a9b-ae7d-9b42d705b1b5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="ПАЗ включена" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_0" display-name="CircleBack_0" uuid="9a069684-a298-4503-b86b-25f2bb5c783f" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_0" display-name="CircleFore_0" uuid="29a4e45c-8484-4165-88ad-81f57e16679e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 0) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="a4a8fc2b-1485-4084-b728-b57fce00dc62" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="65" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Газоанализатор 17а неисправен" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_1" display-name="CircleBack_1" uuid="e6269109-64c9-4838-bcad-7babbf6c4ecc" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="65" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_1" display-name="CircleFore_1" uuid="dbdd11b3-6d28-42d9-b23c-2100fa07b3e1" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="65" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 1) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="53686f65-d1fd-4e01-81f6-5704344dd786" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="90" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="АВ значение концентрации 17а" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_2" display-name="CircleBack_2" uuid="7739eeb3-0608-499a-a7fa-7800c971a907" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="90" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_2" display-name="CircleFore_2" uuid="cf9f0862-9d4a-4d35-accf-6d2c5eb2751d" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="90" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 2) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="4bbe68bb-24f2-4603-9a9a-17023f509f14" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="115" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Газоанализатор 17б неисправен" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_3" display-name="CircleBack_3" uuid="19946930-908a-4ca3-ac1f-5b020ff08075" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="115" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_3" display-name="CircleFore_3" uuid="3db898c2-d2f0-4bc7-839f-a2ff63c85103" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="115" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 3) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="59a74ea2-b472-4e69-bfda-1e824e49596e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="АВ значение концентрации 17б" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_4" display-name="CircleBack_4" uuid="87b6f028-fcb1-4d18-b462-8cd0d5d93a61" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_4" display-name="CircleFore_4" uuid="780ca734-8f5d-41e0-b7ed-d323fbd496ba" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 4) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="f271880c-b059-4bd7-a785-0b49ab09367d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="165" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Газоанализатор 17в неисправен" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_5" display-name="CircleBack_5" uuid="0a6f3f23-4b53-425c-9b1b-ad705c6e01c3" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="165" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_5" display-name="CircleFore_5" uuid="b6f18b4e-b26d-4618-814c-14e6a1465fe0" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="165" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 5) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="b3a0e068-fc05-471a-9591-25f146ead2ca" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="190" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="АВ значение концентрации 17в" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_6" display-name="CircleBack_6" uuid="45faadd0-2f3e-4856-a608-20c6ce59f6fc" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="190" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_6" display-name="CircleFore_6" uuid="2b68513a-a41f-4047-bf06-7bed697508ee" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="190" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 6) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_7" display-name="Text_7" uuid="0ee0d1f2-0618-4e49-87c6-7d3e190a9257" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="215" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Газоанализатор 17г неисправен" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_7" display-name="CircleBack_7" uuid="4be63021-4bb6-4234-a62a-afb084bea057" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="215" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_7" display-name="CircleFore_7" uuid="f25cd4cf-c25a-4200-8b2b-3be3cf5c08c9" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="215" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 7) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="770db27f-bb77-44e0-b7d0-fc32e311a92c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="240" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="АВ значение концентрации 17г" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_8" display-name="CircleBack_8" uuid="fd455683-43bf-437b-babb-68cb32c1f877" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="240" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_8" display-name="CircleFore_8" uuid="b29baa17-9a4b-4a80-ae9e-6d6aaa1c5dc1" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="240" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 8) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Panel" display-name="Panel" uuid="b8fd8493-363f-46f0-a0b4-f4394574fbe2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="275" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TitlePanel" display-name="TitlePanel" uuid="74b03afb-6307-411b-a0c6-0d84e91b29c9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="106" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="138" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="TextTitle" display-name="TextTitle" uuid="2e7cfce9-8d34-4740-92d4-e6bd985a1658" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="140" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value=" Вентсистема АВ1" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="FontColor" value="0xff151515" ver="5"/>
+				<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+				<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.TitleColor"/>
+			</object>
+			<object access-modifier="private" name="TreeMapLayout_1" display-name="TreeMapLayout_1" uuid="5824d90d-8b6a-4c81-b6d4-6dd57f73b178" base-type="TreeMapLayout" base-type-id="abf2598f-0779-4d54-94e9-597b15cdb8e9" ver="5" description="" cardinal="1"/>
+			<object access-modifier="private" name="LayoutSizeLimits_1" display-name="LayoutSizeLimits_1" uuid="6b681204-8538-495c-afa5-a8a5a454b0a6" base-type="LayoutSizeLimits" base-type-id="10342c1f-560b-4160-9de5-7e2c08026f47" ver="5" description="" cardinal="1">
+				<designed target="MinWidth" value="120" ver="5"/>
+				<designed target="MinHeight" value="20" ver="5"/>
+				<designed target="MaxWidth" value="140" ver="5"/>
+				<designed target="MaxHeight" value="20" ver="5"/>
+			</object>
+			<object access-modifier="private" name="LayoutMargins_1" display-name="LayoutMargins_1" uuid="db63d5f7-41f4-4459-9276-14ebfeaac926" base-type="LayoutMargins" base-type-id="d86ce751-1ea7-42c6-8d4b-10c651a2727d" ver="5" description="" cardinal="1">
+				<designed target="Top" value="-10" ver="5"/>
+				<designed target="Bottom" value="0" ver="5"/>
+				<designed target="Left" value="0" ver="5"/>
+				<designed target="Right" value="0" ver="5"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="483232d3-9ae9-4074-b464-efd3f614e0bf" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718" ver="5" description="" cardinal="1">
+			<designed target="Orientation" value="2" ver="5"/>
+			<designed target="Gap" value="0" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_9" display-name="Text_9" uuid="4fb14472-6e13-49d0-a711-9e7f0801f645" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="55" ver="5"/>
+		<designed target="Y" value="340" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="310" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value='Авария: "Не выключается"' ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_9" display-name="CircleBack_9" uuid="1cf6ed58-19ed-4f6b-a19d-856932bb14f5" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="290" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_9" display-name="CircleFore_9" uuid="03d12d54-6919-4640-922d-b182141cd3e2" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="290" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 9) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_10" display-name="Text_10" uuid="b9255ad9-a987-413c-9d0b-49fff9749867" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="55" ver="5"/>
+		<designed target="Y" value="365" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="310" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value='Авария: "Самопроизвольное включение"' ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_10" display-name="CircleBack_10" uuid="b5121c2b-bed2-4159-9919-a4b00940ffab" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="315" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_10" display-name="CircleFore_10" uuid="dceb4fe9-f528-419a-8fe8-e87ed01f21ed" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="315" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 10) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CircleBack_11" display-name="CircleBack_11" uuid="87ac348f-a90b-42e3-9e9a-a34f7beea833" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="340" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_11" display-name="CircleFore_11" uuid="32648f86-dd94-45f9-bf98-c9a06e70bc9e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="340" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 11) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CircleBack_12" display-name="CircleBack_12" uuid="a6681117-f22c-40e5-a06c-ad95e424cb06" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="365" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_12" display-name="CircleFore_12" uuid="e0ee34b1-b2de-4cf5-8238-894f6dc37230" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="365" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 12) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_13" display-name="Text_13" uuid="d9ce370d-5922-4303-934c-0ef561760fd8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="55" ver="5"/>
+		<designed target="Y" value="290" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="310" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Включена" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+	<object access-modifier="private" name="Text_14" display-name="Text_14" uuid="ad6b70af-ee7c-415e-ba56-ab3caa767461" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="55" ver="5"/>
+		<designed target="Y" value="315" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="310" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value='Авария: "Не включается"' ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+	</object>
+</type>
+

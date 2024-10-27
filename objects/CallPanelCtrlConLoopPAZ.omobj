@@ -1,0 +1,307 @@
+<type access-modifier="private" name="CallPanelCtrlConLoopPAZ" display-name="CallPanelCtrlConLoopPAZ" uuid="b766565a-f932-4854-b7bc-2f6434cbd216" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="60" ver="5"/>
+	<designed target="Height" value="18" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffffaaff" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="ActionPanelOpen" display-name="ActionPanelOpen" uuid="1909879c-eddf-4c56-b557-ab6ace286144" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-by-id="true" form-action="open-new">
+			<object access-modifier="private" uuid="cf41f764-1d89-416a-a000-02070c8a5ca6" base-type="ObjectId" base-type-id="f02463da-66e4-4383-a2e6-c9005bc87adc" ver="5"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="e3995b46-ba24-42a6-a299-c4a751aa52eb" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[here.PAZ.Width = here.Width;
+here.PAZ.Height = here.Height;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="12438cff-bafb-4727-b5d4-950bdcc73159" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["PAZ_ConLoop" + ((here._init_PanelNum<10)?"0":"") + String.ToString(here._init_PanelNum)]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="703bfee1-7d58-41cb-b047-32239329774f" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSource_This"/>
+		<init target="Path" ver="5" value="Status"/>
+	</object>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[(ApStatus & 0x0100) == 0x0100]]>
+			</condition>
+			<expr>
+				<![CDATA[0xffff0000]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[(ApStatus & 0x0010) == 0x0000]]>
+			</condition>
+			<expr>
+				<![CDATA[0xffd0d0d0]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[(ApStatus & 0x0010) == 0x0010]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff83ffff]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+	<do-on access-modifier="private" name="UnsetSelectAndWidth" display-name="UnsetSelectAndWidth" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[PenWidth = 1;
+PenStyle = TypeConvert.ToUint2(here._init_Visible);
+unit.Global_Property.PanelNumHover = -10;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="PAZ" display-name="PAZ" uuid="78698941-f536-4081-9bb6-bf72d4998778" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="60" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="Text" value="NN" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Font" value="Roboto,11,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(ApStatus & 0x0100) == 0x0100]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffffff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(ApStatus & 0x0100) == 0x0000]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[here.Width > 51]]>
+				</condition>
+				<expr>
+					<![CDATA["ПАЗ " + String.ToString(here._init_PanelNum)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[here.Width < 50]]>
+				</condition>
+				<expr>
+					<![CDATA[String.ToString(here._init_PanelNum)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[here._init_Visible]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-trace access-modifier="private" target="PenWidth" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Global_Property.PanelNumHover == here._init_PanelNum || unit.Global_Property.PanelNumActive == here._init_PanelNum]]>
+			</condition>
+			<expr>
+				<![CDATA[4]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Global_Property.PanelNumHover != here._init_PanelNum && unit.Global_Property.PanelNumActive != here._init_PanelNum]]>
+			</condition>
+			<expr>
+				<![CDATA[1]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+	<do-on access-modifier="private" name="SetSelectAndWidth" display-name="SetSelectAndWidth" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[PenWidth = 4;
+PenStyle = 1;
+unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="_init_PanelDeltaX" display-name="_init_PanelDeltaX" uuid="99a94ecf-2300-47b1-9a79-2c2607e067b7" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_init_PanelDeltaY" display-name="_init_PanelDeltaY" uuid="06586e8b-d014-4af0-ace0-47301d963d80" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_init_Visible" display-name="_init_Visible" uuid="c3effe17-ca5b-4685-81db-7c5fc925d851" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="2560" ver="5"/>
+	<designed target="WindowHeight" value="1440" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<init target="_init_Visible" ver="5" value="true"/>
+	<do-trace access-modifier="private" target="BrushStyle" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[here._init_Visible]]>
+			</condition>
+			<expr>
+				<![CDATA[1]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[! here._init_Visible]]>
+			</condition>
+			<expr>
+				<![CDATA[0]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="PenStyle" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[here._init_Visible || unit.Global_Property.PanelNumHover == here._init_PanelNum]]>
+			</condition>
+			<expr>
+				<![CDATA[1]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[! here._init_Visible]]>
+			</condition>
+			<expr>
+				<![CDATA[0]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA[unit.Global_DataArray.PAZName[ here._init_PanelNum]]]>
+		</body>
+	</do-trace>
+	<init target="_init_PanelNum" ver="5" value="1"/>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Global_Property.PanelNumActive == here._init_PanelNum && unit.Global_Property.PanelNumHover != here._init_PanelNum]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff9d9d9d]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Global_Property.PanelNumHover == here._init_PanelNum || unit.Global_Property.PanelNumActive != here._init_PanelNum]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff000000]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="fde4a6c0-56bd-4c2c-a80a-c037f6a8084d" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="AlrOut" display-name="AlrOut" uuid="e7bfcbe8-3975-456a-bbf6-0e0497871c81" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="-18" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Аварийное выключение ПАЗ" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<init target="Visible" ver="5" value="false"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[(ApStatus & 0x0002) == 0x0002]]>
+			</body>
+		</do-trace>
+		<init target="BrushColor" ver="5" ref="unit.Global_ColorSettings.ColorAlr"/>
+	</object>
+	<object access-modifier="private" name="_init_PanelNum" display-name="_init_PanelNum" uuid="c8666e8c-eeba-4a29-a0a3-7d7ae32b0ae5" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="OpenPanel_1" display-name="OpenPanel_1" ver="5" event="MouseClick">
+		<body kind="om">
+			<![CDATA[// Сохраняем необходимые координаты (относительно монитора) для открытия панели управления
+unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4(me._init_PanelDeltaX + here.ScreenX(0,0));
+unit.Global_WinCtrl.PanelY = TypeConvert.ToInt4(me._init_PanelDeltaY + here.ScreenY(0,0) + here.Height);
+
+// Открытие панели упрвления ...
+if (! unit.Global_WinCtrl.FlagWinOpening) {
+   unit.Global_WinCtrl.FlagWinOpening = true;
+   if (unit.Global_WinCtrl.WindowGroupPanel.WindowCount < 1){  // Если ни одна панель не открыта, то ...
+      here.ActionPanelOpen.Invoke();
+   } else {
+      unit.Global_WinCtrl.WindowGroupPanel.SendToAll("Close","");
+      here.ActionPanelOpen.Invoke();
+   }  
+}
+]]>
+		</body>
+	</do-on>
+	<init target="_init_PanelDeltaX" ver="5" value="90"/>
+	<init target="_init_PanelDeltaY" ver="5" value="-110"/>
+</type>
+

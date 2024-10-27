@@ -247,7 +247,7 @@
 	<param access-modifier="private" name="_init_ApSourceForm_01Scheme1" display-name="_init_ApSourceForm_01Scheme1" uuid="246370d0-1078-4001-a1f8-05f01c6971df" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 	<object access-modifier="private" name="gAlrSens_14" display-name="gAlrSens_14" uuid="3d4ebda7-8859-4ef3-9388-b353117e9501" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="33" ver="5"/>
-		<designed target="Y" value="-40" ver="5"/>
+		<designed target="Y" value="-50" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>

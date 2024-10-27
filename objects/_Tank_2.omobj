@@ -1,0 +1,117 @@
+<type access-modifier="private" name="_Tank_2" display-name="_Tank_2" uuid="e703c1dc-8b59-4ae8-8436-6a20e3794bc2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<param access-modifier="private" name="_init_Pos" display-name="Позиция" uuid="a60bf609-48a1-45d1-891e-95c47080c845" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<designed target="Width" value="120" ver="5"/>
+	<designed target="Height" value="120" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4278190080" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="50e2f943-ac26-4b56-beb3-744362ccd49f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="180" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="10" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffb9b9b9" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="d2c34e01-ed44-442b-8312-1d0a55ceb65e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="8a30b541-dfdf-48b5-89b9-325a6dc6898f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="75" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="632ef103-b20d-435d-949c-1132e7a50c78" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="150" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="cc7df0b3-2b4f-48b9-9c7c-b173f48946d1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="d3fba1cb-d1c3-43b4-9b07-f3e80c2307ab" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="95" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffb9b9b9" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<init target="BrushColor" ver="5">
+			<expr>
+				<![CDATA[unit.Global_ColorSettings.ColorNoSts]]>
+			</expr>
+		</init>
+		<init target="PenStyle" ver="5">
+			<expr>
+				<![CDATA[unit.Global_ColorSettings.ColorLine]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="1a0d555e-665f-4513-a986-5fd5d55dbaa3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="105" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="15" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff484848" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffb9b9b9" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<init target="BrushColor" ver="5">
+			<expr>
+				<![CDATA[unit.Global_ColorSettings.ColorNoSts]]>
+			</expr>
+		</init>
+		<init target="PenStyle" ver="5">
+			<expr>
+				<![CDATA[unit.Global_ColorSettings.ColorLine]]>
+			</expr>
+		</init>
+	</object>
+</type>
+

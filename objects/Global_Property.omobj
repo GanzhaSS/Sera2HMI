@@ -16,8 +16,9 @@
 	<object access-modifier="private" name="KVRUDebug" display-name="KVRUDebug" uuid="2b91489a-720d-48ee-90d6-611ef88bf1d3" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="FlagDebug_1" display-name="FlagDebug_1" uuid="17a9ee85-8b93-4bdf-9a45-8165f8fe6a1a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="FlagDebug_2" display-name="FlagDebug_2" uuid="bf7e596f-077b-4409-a0eb-e0ece05ec307" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="PanelNumHover" display-name="Номер панели над которой курсор" uuid="ed09f850-6da9-4871-bdf5-5a9f7a20c006" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PanelNumHover" display-name="Номер панели над которой курсор" uuid="ed09f850-6da9-4871-bdf5-5a9f7a20c006" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
 	<init target="VisibleDriveMixerPosition" ver="5" value="true"/>
 	<init target="VisibleIKnumber" ver="5" value="false"/>
+	<object access-modifier="private" name="PanelNumActive" display-name="PanelNumActive" uuid="5ed61ea6-bdff-4d14-bf84-9012aa04ddd0" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
 </object>
 

@@ -245,7 +245,7 @@
 	</object>
 	<object access-modifier="private" name="gAlrSens_14" display-name="gAlrSens_14" uuid="9ba2f2f1-75e0-4b87-a9fd-a73013ae872b" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="33" ver="5"/>
-		<designed target="Y" value="-40" ver="5"/>
+		<designed target="Y" value="-50" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
