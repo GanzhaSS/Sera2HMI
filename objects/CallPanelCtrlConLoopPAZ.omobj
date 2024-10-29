@@ -20,8 +20,11 @@
 	<object access-modifier="private" name="ActionPanelOpen" display-name="ActionPanelOpen" uuid="1909879c-eddf-4c56-b557-ab6ace286144" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
-		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-by-id="true" form-action="open-new">
-			<object access-modifier="private" uuid="cf41f764-1d89-416a-a000-02070c8a5ca6" base-type="ObjectId" base-type-id="f02463da-66e4-4383-a2e6-c9005bc87adc" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="13f17120-ee45-4608-9d0e-20e0f73fb478" base-type="Управление_контуром_ПАЗ" base-type-id="700fa42d-399f-475f-b78f-ca2b2dbcbdc6" ver="5">
+				<init target="_PanelNum" ver="5" ref="here._init_PanelNum"/>
+				<init target="_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
+			</object>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="e3995b46-ba24-42a6-a299-c4a751aa52eb" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">

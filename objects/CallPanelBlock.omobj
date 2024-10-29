@@ -9,18 +9,18 @@
 	<designed target="Opacity" value="1" ver="5"/>
 	<designed target="Enabled" value="true" ver="5"/>
 	<designed target="Tooltip" value="" ver="5"/>
-	<designed target="Width" value="110" ver="5"/>
-	<designed target="Height" value="26" ver="5"/>
+	<designed target="Width" value="95" ver="5"/>
+	<designed target="Height" value="22" ver="5"/>
 	<designed target="Checkable" value="false" ver="5"/>
 	<designed target="Checked" value="false" ver="5"/>
 	<designed target="Text" value="Блокировки" ver="5"/>
 	<designed target="TextAlignment" value="132" ver="5"/>
-	<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+	<designed target="Font" value="Tahoma,11,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
 	<designed target="FontColor" value="0xff000000" ver="5"/>
 	<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
 	<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
 	<designed target="DisabledFontColor" value="0xff000000" ver="5"/>
-	<designed target="BrushColor" value="0xffe6e6e6" ver="5"/>
+	<designed target="BrushColor" value="0xffccd9e2" ver="5"/>
 	<designed target="BrushStyle" value="1" ver="5"/>
 	<designed target="OnClickBrushColor" value="0xffc0c0c0" ver="5"/>
 	<designed target="OnClickBrushStyle" value="1" ver="5"/>

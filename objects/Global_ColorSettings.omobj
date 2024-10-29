@@ -28,6 +28,6 @@
 	<object access-modifier="private" name="ColorReady" display-name="ColorReady" uuid="0a09ec2d-0d9e-46d0-89b0-87dbbc2e5976" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
 	<init target="ColorReady" ver="5" value="0xffaaff7f"/>
 	<object access-modifier="private" name="ColorFontMain" display-name="ColorFontMain" uuid="061dad45-d290-4494-9b9d-7e0e191c731c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
-	<init target="ColorFontMain" ver="5" value="0xffaaff7f"/>
+	<init target="ColorFontMain" ver="5" value="0xff2a2a2a"/>
 </object>
 

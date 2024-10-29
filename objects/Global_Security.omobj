@@ -85,5 +85,7 @@
 			</body>
 		</do-on>
 	</object>
+	<object access-modifier="private" name="PermitControlPAZ" display-name="PermitControlPAZ" uuid="f50fc1e0-670d-4f20-bcc2-d451fe1913a5" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<init target="PermitControlPAZ" ver="5" value="false"/>
 </object>
 

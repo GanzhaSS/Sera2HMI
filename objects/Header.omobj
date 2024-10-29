@@ -127,8 +127,8 @@ else
 		</object>
 	</object>
 	<object access-modifier="private" name="Checkbox2mon" display-name="Checkbox2mon" uuid="4d6b1749-94cf-4da5-8987-c5642dffe22e" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1770" ver="5"/>
-		<designed target="Y" value="47" ver="5"/>
+		<designed target="X" value="1550" ver="5"/>
+		<designed target="Y" value="7" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -807,113 +807,24 @@ unit.Global_Security.PermitEnableChngPsw  = false;
 	<do-on access-modifier="private" name="SetArrayCaption" display-name="SetArrayCaption" ver="5" event="Opened">
 		<body kind="om">
 			<![CDATA[// Заголовок окна (то что в синей рамке наверху)
-// Массив с 0 - то есть 1-й контур = [0]
 
-unit.Global_DataArray.PanelCaption[0] = "Клапан ВП2.2";
-unit.Global_DataArray.PanelCaption[1] = "Клапан ВП2.3";
-unit.Global_DataArray.PanelCaption[2] = "Клапан ВП2.4";
-unit.Global_DataArray.PanelCaption[3] = "Клапан ВП4.1";
-unit.Global_DataArray.PanelCaption[4] = "Клапан ВП4.2";
-unit.Global_DataArray.PanelCaption[5] = "Клапан ВП4.3";
-unit.Global_DataArray.PanelCaption[6] = "Клапан ВП5.1";
-unit.Global_DataArray.PanelCaption[7] = "Клапан ВП5.2";
-unit.Global_DataArray.PanelCaption[8] = "Клапан ВП6.1";
-unit.Global_DataArray.PanelCaption[9] = "Клапан ВП6.2";
-unit.Global_DataArray.PanelCaption[10] = "Клапан ВП20";
-unit.Global_DataArray.PanelCaption[11] = "Клапан ВП21";
-unit.Global_DataArray.PanelCaption[12] = "Клапан ВП22";
-unit.Global_DataArray.PanelCaption[13] = "Клапан ВП23";
-unit.Global_DataArray.PanelCaption[14] = "Клапан ВП24";
-unit.Global_DataArray.PanelCaption[15] = "Клапан ВП25";
-unit.Global_DataArray.PanelCaption[16] = "Клапан ВП26";
-unit.Global_DataArray.PanelCaption[17] = "Клапан ВП27";
-unit.Global_DataArray.PanelCaption[18] = "Клапан ВП28";
-unit.Global_DataArray.PanelCaption[19] = "Клапан ВП29";
-unit.Global_DataArray.PanelCaption[20] = "Клапан ВП31";
-unit.Global_DataArray.PanelCaption[21] = "Клапан ВП33";
-unit.Global_DataArray.PanelCaption[22] = "Клапан ВП35";
-unit.Global_DataArray.PanelCaption[23] = "Клапан ВП37";
-unit.Global_DataArray.PanelCaption[24] = "Клапан ВП39";
-unit.Global_DataArray.PanelCaption[25] = "Клапан ВП41";
-unit.Global_DataArray.PanelCaption[26] = "Клапан ВП43";
-unit.Global_DataArray.PanelCaption[27] = "Клапан ВП45";
-unit.Global_DataArray.PanelCaption[28] = "Клапан ВП47";
-unit.Global_DataArray.PanelCaption[29] = "Клапан ВП48";
-unit.Global_DataArray.PanelCaption[30] = "Клапан ВП49";
-unit.Global_DataArray.PanelCaption[31] = "Клапан ВП50";
-unit.Global_DataArray.PanelCaption[32] = "Клапан ВП51";
-unit.Global_DataArray.PanelCaption[33] = "Клапан ВП52";
-unit.Global_DataArray.PanelCaption[34] = "Клапан ВП53";
-unit.Global_DataArray.PanelCaption[35] = "Клапан ВП54";
-unit.Global_DataArray.PanelCaption[36] = "Клапан ВП55";
-unit.Global_DataArray.PanelCaption[37] = "Клапан ВП56";
-unit.Global_DataArray.PanelCaption[38] = "Клапан ВП58";
-unit.Global_DataArray.PanelCaption[39] = "Клапан ВП59";
-unit.Global_DataArray.PanelCaption[40] = "Клапан ВП60";
-unit.Global_DataArray.PanelCaption[41] = "Клапан ВП62";
-unit.Global_DataArray.PanelCaption[42] = "Клапан ВП63";
-unit.Global_DataArray.PanelCaption[43] = "Клапан ВП64";
-unit.Global_DataArray.PanelCaption[44] = "Клапан ВП66";
-unit.Global_DataArray.PanelCaption[45] = "Клапан ВП67";
-unit.Global_DataArray.PanelCaption[46] = "Клапан ВП68";
-unit.Global_DataArray.PanelCaption[47] = "Клапан ВП70";
-unit.Global_DataArray.PanelCaption[48] = "Клапан ВП71";
-unit.Global_DataArray.PanelCaption[49] = "Клапан ВП72";
-unit.Global_DataArray.PanelCaption[50] = "Клапан ВП74";
-unit.Global_DataArray.PanelCaption[51] = "Клапан ВП75";
-unit.Global_DataArray.PanelCaption[52] = "Клапан ВП76";
-unit.Global_DataArray.PanelCaption[53] = "Клапан ВП78";
-unit.Global_DataArray.PanelCaption[54] = "Клапан ВП79";
-unit.Global_DataArray.PanelCaption[55] = "Клапан ВП80";
-unit.Global_DataArray.PanelCaption[56] = "Клапан ВП83";
-unit.Global_DataArray.PanelCaption[57] = "Клапан ВП82";
-unit.Global_DataArray.PanelCaption[58] = "Клапан ВП84";
-unit.Global_DataArray.PanelCaption[59] = "Клапан ВП86";
-unit.Global_DataArray.PanelCaption[60] = "Клапан ВП87";
-unit.Global_DataArray.PanelCaption[61] = "Клапан ВП88";
-unit.Global_DataArray.PanelCaption[62] = "Клапан ВП90";
-unit.Global_DataArray.PanelCaption[63] = "Клапан ВП91";
-unit.Global_DataArray.PanelCaption[64] = "Клапан ВП92";
-unit.Global_DataArray.PanelCaption[65] = "Клапан ВП93";
-unit.Global_DataArray.PanelCaption[66] = "Клапан ВП94";
-unit.Global_DataArray.PanelCaption[67] = "Клапан ВП95";
-unit.Global_DataArray.PanelCaption[68] = "Клапан ВП96";
-unit.Global_DataArray.PanelCaption[69] = "Клапан ВП97";
-unit.Global_DataArray.PanelCaption[70] = "Клапан ВП98";
-unit.Global_DataArray.PanelCaption[71] = "Клапан ВП99";
-unit.Global_DataArray.PanelCaption[72] = "Клапан ВП100";
-unit.Global_DataArray.PanelCaption[73] = "Клапан ВП101";
-unit.Global_DataArray.PanelCaption[74] = "Клапан ВП102";
-unit.Global_DataArray.PanelCaption[75] = "Клапан ВП103";
-unit.Global_DataArray.PanelCaption[76] = "Клапан ВП104";
-unit.Global_DataArray.PanelCaption[77] = "Клапан ВП105";
-unit.Global_DataArray.PanelCaption[78] = "Клапан ВП106";
-unit.Global_DataArray.PanelCaption[79] = "Клапан ВП107";
-unit.Global_DataArray.PanelCaption[80] = "Клапан ВП108";
-unit.Global_DataArray.PanelCaption[81] = "Клапан ВП109";
-unit.Global_DataArray.PanelCaption[82] = "Клапан ВП110";
-unit.Global_DataArray.PanelCaption[83] = "Клапан ВП111";
-unit.Global_DataArray.PanelCaption[84] = "Клапан ВП112";
-unit.Global_DataArray.PanelCaption[85] = "Клапан ВП113";
-unit.Global_DataArray.PanelCaption[86] = "Клапан ВП114";
-unit.Global_DataArray.PanelCaption[87] = "Клапан 2ВП4";
-unit.Global_DataArray.PanelCaption[88] = "Клапан 2ВП5.1";
-unit.Global_DataArray.PanelCaption[89] = "Клапан 2ВП5.2";
-unit.Global_DataArray.PanelCaption[90] = "Клапан 2ВП5.3";
-unit.Global_DataArray.PanelCaption[91] = "Клапан ВП2.1";
-unit.Global_DataArray.PanelCaption[92] = "Насос 1-1";
-unit.Global_DataArray.PanelCaption[93] = "Насос 1-2";
-unit.Global_DataArray.PanelCaption[94] = "Насос 2-1";
-unit.Global_DataArray.PanelCaption[95] = "Насос 2-2";
-unit.Global_DataArray.PanelCaption[96] = "Вентилятор В1";
-unit.Global_DataArray.PanelCaption[97] = "Вентилятор В2";
-unit.Global_DataArray.PanelCaption[98] = "Вентилятор В3";
+// unit.Global_DataArray.PanelCaption[0] - не используется
+unit.Global_DataArray.PanelCaption[1] = "ПАЗ 1";
+unit.Global_DataArray.PanelCaption[2] = "ПАЗ 2";
+unit.Global_DataArray.PanelCaption[3] = "ПАЗ 3";
+unit.Global_DataArray.PanelCaption[4] = "ПАЗ 4";
+unit.Global_DataArray.PanelCaption[5] = "ПАЗ 5";
+unit.Global_DataArray.PanelCaption[6] = "ПАЗ 6";
+unit.Global_DataArray.PanelCaption[7] = "ПАЗ 7";
+unit.Global_DataArray.PanelCaption[8] = "ПАЗ 8";
+unit.Global_DataArray.PanelCaption[9] = "ПАЗ 9";
+unit.Global_DataArray.PanelCaption[10] = "ПАЗ 10";
 ]]>
 		</body>
 	</do-on>
 	<object access-modifier="private" name="Button_2" display-name="Button_2" uuid="ad5f3df3-8de0-40f7-b1ce-fb04c52a3d8f" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
-		<designed target="X" value="1579" ver="5"/>
-		<designed target="Y" value="6" ver="5"/>
+		<designed target="X" value="1509" ver="5"/>
+		<designed target="Y" value="58" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -1018,8 +929,8 @@ unit.Global_DataArray.PanelCaption[98] = "Вентилятор В3";
 		<designed target="Width" value="190" ver="5"/>
 	</object>
 	<object access-modifier="private" name="Box_1" display-name="Box_1" uuid="a1ee8b86-d20c-4d20-aa1d-3939ee1ebbb5" base-type="Box" base-type-id="c725a6da-5745-4495-938e-67d39c7c2814" ver="5" description="" cardinal="1">
-		<designed target="X" value="670" ver="5"/>
-		<designed target="Y" value="1" ver="5"/>
+		<designed target="X" value="1386" ver="5"/>
+		<designed target="Y" value="46" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="110" ver="5"/>
 		<designed target="Height" value="35" ver="5"/>
@@ -1059,6 +970,62 @@ unit.Global_DataArray.PanelCaption[98] = "Вентилятор В3";
 			</object>
 		</do-on>
 		<init target="_init_FormNameEn" ver="5" value="Ik03Scheme"/>
+	</object>
+	<do-on access-modifier="private" name="SetArrayName" display-name="SetArrayName" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[// Название панели ПАЗа (наверху под заголовком панели)
+
+// unit.Global_DataArray.PAZName[0] - не используется
+unit.Global_DataArray.PAZName[1] = "Контур аварийного закрытия клапана ВП83о";
+unit.Global_DataArray.PAZName[2] = "Контур аварийного закрытия клапана ВП87о";
+unit.Global_DataArray.PAZName[3] = "Контур аварийного закрытия клапана ВП91о";
+unit.Global_DataArray.PAZName[4] = "Контур аварийного закрытия клапана ВП71о";
+unit.Global_DataArray.PAZName[5] = "Контур аварийного закрытия клапана ВП75о";
+unit.Global_DataArray.PAZName[6] = "Контур аварийного закрытия клапана ВП79о";
+unit.Global_DataArray.PAZName[7] = "Контур аварийного закрытия клапана ВП59о";
+unit.Global_DataArray.PAZName[8] = "Контур аварийного закрытия клапана ВП63о";
+unit.Global_DataArray.PAZName[9] = "Контур аварийного закрытия клапана ВП67о";
+unit.Global_DataArray.PAZName[10] = "Контур аварийного выключения насоса 1-1";
+unit.Global_DataArray.PAZName[11] = "Контур аварийного выключения насоса 1-2";
+unit.Global_DataArray.PAZName[12] = "Контур аварийного выключения насоса 2-1";
+unit.Global_DataArray.PAZName[13] = "Контур аварийного выключения насоса 2-2";
+unit.Global_DataArray.PAZName[14] = "Контур включения светозвуковой сигнализации А11-02";
+unit.Global_DataArray.PAZName[15] = "Контур включения светозвуковой сигнализации А11-04";
+unit.Global_DataArray.PAZName[16] = "Контур включения светозвуковой сигнализации А11-06";
+unit.Global_DataArray.PAZName[17] = "Контур включения светозвуковой сигнализации А11-08";
+unit.Global_DataArray.PAZName[18] = "Контур включения светозвуковой сигнализации А11-10";
+unit.Global_DataArray.PAZName[19] = "Контур включения светозвуковой сигнализации А11-12";
+unit.Global_DataArray.PAZName[20] = "Контур включения светозвуковой сигнализации А11-14";
+unit.Global_DataArray.PAZName[21] = "Контур включения светозвуковой сигнализации А11-16";
+unit.Global_DataArray.PAZName[22] = "Контур включения светозвуковой сигнализации А11-18";
+unit.Global_DataArray.PAZName[23] = "Контур включения светозвуковой сигнализации А24-02";
+unit.Global_DataArray.PAZName[24] = "Контур включения светозвуковой сигнализации А24-04";
+unit.Global_DataArray.PAZName[25] = "Контур включения светозвуковой сигнализации А16-02";
+unit.Global_DataArray.PAZName[26] = "Контур включения светозвуковой сигнализации А16-04";
+unit.Global_DataArray.PAZName[27] = "Контур включения светозвуковой сигнализации А13-02";
+unit.Global_DataArray.PAZName[28] = "Контур аварийного включения вентилятора В4";
+unit.Global_DataArray.PAZName[29] = "Контур включения светозвуковой сигнализации HL1, HL2, HA1";
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="AlrConnectPLC_RSU" display-name="AlrConnectPLC_RSU" uuid="c038043e-ab23-4c7a-aa93-62f7a541165b" base-type="AlrConnectPLC" base-type-id="4f1882e1-94df-484e-bf56-cec581cd875f" ver="5" description="" cardinal="1">
+		<designed target="X" value="643" ver="5"/>
+		<designed target="Y" value="7" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="190" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_NameRu" ver="5" value="Нет связи с контроллером РСУ"/>
+		<init target="_init_NameEn" ver="5" value="General.RSU_Connect"/>
+	</object>
+	<object access-modifier="private" name="AlrConnectPLC_PAZ" display-name="AlrConnectPLC_PAZ" uuid="a6d76d34-5e18-45f1-b12f-3ab174874f6e" base-type="AlrConnectPLC" base-type-id="4f1882e1-94df-484e-bf56-cec581cd875f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1083" ver="5"/>
+		<designed target="Y" value="7" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="190" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_NameRu" ver="5" value="Нет связи с контроллером ПАЗ"/>
+		<init target="_init_NameEn" ver="5" value="General.PAZ_Connect"/>
 	</object>
 </type>
 

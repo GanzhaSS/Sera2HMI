@@ -7662,7 +7662,7 @@
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="60" ver="5"/>
 			<designed target="Height" value="20" ver="5"/>
-			<designed target="Text" value="ВП75" ver="5"/>
+			<designed target="Text" value="ВП75о" ver="5"/>
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
@@ -7764,7 +7764,7 @@
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="60" ver="5"/>
 			<designed target="Height" value="20" ver="5"/>
-			<designed target="Text" value="ВП63а" ver="5"/>
+			<designed target="Text" value="ВП63о" ver="5"/>
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
 		<init target="_init_NameEn" ver="5" value="ValveVP63"/>

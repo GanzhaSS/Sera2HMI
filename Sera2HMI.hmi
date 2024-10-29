@@ -109,5 +109,6 @@
 	<object file="Управление_контуром_HLA3.omobj" filter=""/>
 	<object file="DLevel_High.omobj" filter=""/>
 	<object file="HLA4.omobj" filter=""/>
+	<object file="Panel_Alr.omobj" filter=""/>
 </unit>
 
