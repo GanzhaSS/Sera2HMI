@@ -231,7 +231,7 @@
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="100" ver="5"/>
 			<designed target="Height" value="22" ver="5"/>
-			<object access-modifier="private" name="ActionOpenPanelBlockPump" display-name="ActionOpenPanelBlockPump" uuid="e0480554-46ad-4061-b330-f398d14d1fd0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<object access-modifier="private" name="ActionOpenPanelBlockPump_1" display-name="ActionOpenPanelBlockPump_1" uuid="e0480554-46ad-4061-b330-f398d14d1fd0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
 				<designed target="Enabled" value="true" ver="5"/>
 				<designed target="InvokeTrigger" value="false" ver="5"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
@@ -275,14 +275,27 @@ if (here.WindowY + 430 > 990)
 else
 	unit.Global_WinCtrl.PanelY = here.WindowY;
 
-if ((1 <= here._PanelNum) && (here._PanelNum <= 2))
-   me.ActionOpenPanelBlockPump.Invoke();
-else if ((3 <= here._PanelNum) && (here._PanelNum <= 9))
+if ((1 <= here._PanelNum) && (here._PanelNum <= 9))
    me.ActionOpenPanelBlockValve.Invoke();
-else
+else if ((10 <= here._PanelNum) && (here._PanelNum <= 11))
+   me.ActionOpenPanelBlockPump_1.Invoke();
+else if ((12 <= here._PanelNum) && (here._PanelNum <= 13))
+   me.ActionOpenPanelBlockPump_2.Invoke();   
+else if (here._PanelNum == 14)
    me.ActionOpenPanelBlockVent.Invoke();]]>
 				</body>
 			</do-on>
+			<object access-modifier="private" name="ActionOpenPanelBlockPump_2" display-name="ActionOpenPanelBlockPump_2" uuid="cee84da8-0b10-40db-b432-3afe6f41d7bf" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="InvokeTrigger" value="false" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+					<object access-modifier="private" uuid="c3c94f9e-78a0-494f-b6bc-b39e163263c4" base-type="Блокировки_ВКЛ_ПАЗ_авыкл_насоса_2" base-type-id="794119e8-88c2-4923-ac47-2e9d65a64d5c" ver="5">
+						<init target="_init_PanelNum" ver="5" ref="here._PanelNum"/>
+						<init target="_init_PanelWindowCaption" ver="5" ref="here.WindowCaption"/>
+						<init target="_init_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
+					</object>
+				</do-on>
+			</object>
 		</object>
 		<object access-modifier="private" name="AlrOut" display-name="AlrOut" uuid="4cb07210-b22a-4a88-825c-0fda857178d2" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 			<designed target="X" value="132" ver="5"/>
@@ -412,5 +425,22 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	<object access-modifier="private" name="_PanelNum" display-name="_PanelNum" uuid="e909022d-bf24-498c-ba6f-526538d505a4" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
 	<init target="_ApSourceConLoop" ver="5" ref="unit.Global_ApSource.ApSourceMain"/>
 	<init target="_PanelNum" ver="5" value="1"/>
+	<object access-modifier="private" name="ActionPanelOpenPump" display-name="ActionPanelOpenPump" uuid="53496ad9-eea8-43df-9bd2-cf537380edd5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="f1507495-5ea2-4390-b1ae-00d2f97e5e97" base-type="Управление_насосом ПАЗ" base-type-id="25f60aca-5928-4e3c-beec-9bef05f90303" ver="5">
+				<init target="WindowY" ver="5" ref="unit.Global_WinCtrl.PanelPumpY"/>
+				<init target="_PanelNum" ver="5" ref="here._PanelNum"/>
+			</object>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="OpenPumpPanel" display-name="OpenPumpPanel" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[if ((10 <= here._PanelNum) && (here._PanelNum <= 13))
+   here.ActionPanelOpenPump.Invoke();
+]]>
+		</body>
+	</do-on>
 </type>
 

@@ -136,6 +136,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" ref="here._init_DeviceNameEn"/>
+		<init target="_init_FlagVisibleDAlr" ver="5" value="false"/>
 	</object>
 	<object access-modifier="private" name="Pallet3" display-name="Pallet3" uuid="0d17b863-c69f-4075-a0ca-b03eaebc2c10" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="380.66666666666708" ver="5"/>

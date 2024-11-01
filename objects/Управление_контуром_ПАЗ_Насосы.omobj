@@ -1,0 +1,528 @@
+<type access-modifier="private" name="Управление_контуром_ПАЗ_Насосы" display-name="Управление_контуром_ПАЗ_Насосы" uuid="f0e0b4aa-7b1e-476c-b906-15ada094f12a" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="380" ver="5"/>
+	<designed target="Height" value="400" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Form_1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="2" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="4" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<do-on access-modifier="private" name="SetFlagWinOpening" display-name="SetFlagWinOpening" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[unit.Global_WinCtrl.FlagWinOpening = false;
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="0a00c1a7-7acb-4fb9-9f3b-237546c271d0" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="_ApSourceConLoop"/>
+	</object>
+	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="83665457-4b86-4214-9dec-3e0f2acee80e" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Status"/>
+		<init target="Source" ver="5" ref="here._ApSourceConLoop"/>
+	</object>
+	<object access-modifier="private" name="ApCtrlWord" display-name="ApCtrlWord" uuid="2fd49ee0-8e4e-4dae-8f02-daa468994b00" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="CtrlWord"/>
+		<init target="Source" ver="5" ref="here._ApSourceConLoop"/>
+	</object>
+	<object access-modifier="private" name="WindowThis" display-name="WindowThis" uuid="c2a9164e-6dd3-4ca1-843a-97f3603f9adf" base-type="Window" base-type-id="04615219-28bb-4a9a-bba4-50ac66972eb0" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MessageReceived">
+			<body kind="om">
+				<![CDATA[if (messageType == "Close")
+   parent.Close();]]>
+			</body>
+		</do-on>
+		<init target="Group" ver="5" ref="unit.Global_WinCtrl.WindowGroupPanel"/>
+	</object>
+	<init target="WindowX" ver="5" ref="unit.Global_WinCtrl.PanelX"/>
+	<object access-modifier="private" name="PaneManage" display-name="PaneManage" uuid="de2cb5f7-e35a-4c06-97cd-db337d1590ce" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff787878" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Title" display-name="Title" uuid="6541125d-043f-46c0-8f36-3afbf33e881c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="151" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="38" ver="5"/>
+			<designed target="Height" value="18" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="TitleText" display-name="TitleText" uuid="ac18616e-03ee-4887-8f2b-10630396c504" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="1" ver="5"/>
+				<designed target="Y" value="2" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="36" ver="5"/>
+				<designed target="Height" value="14" ver="5"/>
+				<designed target="Text" value="ПАЗ" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Font" value="Roboto,11,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+				<designed target="FontColor" value="0xff000000" ver="5"/>
+				<do-trace access-modifier="private" target="FontColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[(ApStatus & 0x0100) == 0x0100]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffffffff]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[(ApStatus & 0x0100) == 0x0000]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff000000]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(ApStatus & 0x0100) == 0x0100]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[(ApStatus & 0x0010) == 0x0000]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffd0d0d0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[(ApStatus & 0x0010) == 0x0010]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff83ffff]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Button_ON" display-name="Button_ON" uuid="d39d7330-28d9-42ad-8a3f-4f394cc6f5ce" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="26" ver="5"/>
+			<designed target="Text" value="ВКЛЮЧИТЬ" ver="5"/>
+			<init target="_CtrlWordValue" ver="5" value="0x0010"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<do-trace access-modifier="private" target="Enabled" ver="5">
+				<body>
+					<![CDATA[(ApStatus & 1) == 1 ]]>
+				</body>
+			</do-trace>
+			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+			<do-trace access-modifier="private" target="_PermitControl" ver="5">
+				<body kind="om">
+					<![CDATA[unit.Global_Security.PermitControlPAZ]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Button_OFF" display-name="Button_OFF" uuid="5f3eb733-c3cd-4009-a8a6-94dd40c02f2f" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="26" ver="5"/>
+			<designed target="Text" value="ВЫКЛЮЧИТЬ" ver="5"/>
+			<init target="_CtrlWordValue" ver="5" value="0x0008"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+			<do-trace access-modifier="private" target="_PermitControl" ver="5">
+				<body kind="om">
+					<![CDATA[unit.Global_Security.PermitControlPAZ]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="5">
+				<body>
+					<![CDATA[(ApStatus & 16) == 16]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Button_CLOSE" display-name="Button_CLOSE" uuid="43590d8a-0f48-429d-8a7d-fe386fdf5309" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
+			<designed target="X" value="100" ver="5"/>
+			<designed target="Y" value="280" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="26" ver="5"/>
+			<designed target="Text" value="Сброс аварий" ver="5"/>
+			<init target="_CtrlWordValue" ver="5" value="0x0001"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+			<do-trace access-modifier="private" target="_PermitControl" ver="5">
+				<body kind="om">
+					<![CDATA[unit.Global_Security.PermitControlPAZ]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Button_ BLOCK" display-name="Button_ BLOCK" uuid="848cf1ee-d78e-466b-adf9-e1ad2664cca6" base-type="CallPanelBlock" base-type-id="d8667e0c-9c47-4b8a-b9cb-d47b702d6bc5" ver="5" description="" cardinal="1">
+			<designed target="X" value="235" ver="5"/>
+			<designed target="Y" value="73" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="100" ver="5"/>
+			<designed target="Height" value="22" ver="5"/>
+			<object access-modifier="private" name="ActionOpenPanelBlockPump_1" display-name="ActionOpenPanelBlockPump_1" uuid="7840f4b7-055c-4cc8-9578-b89e1353bcc6" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="InvokeTrigger" value="false" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+					<object access-modifier="private" uuid="15ff80fd-e439-4901-af74-8c5fb19aa5f8" base-type="Блокировки_ВКЛ_ПАЗ_авыкл_насоса" base-type-id="ba5caaf4-00b9-4c75-a81b-4e2411000836" ver="5">
+						<init target="_init_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
+						<init target="_init_PanelWindowCaption" ver="5" ref="here.WindowCaption"/>
+						<init target="_init_PanelNum" ver="5" ref="here._PanelNum"/>
+					</object>
+				</do-on>
+			</object>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseClick">
+				<body kind="om">
+					<![CDATA[if (TypeConvert.ToInt4(here.WindowX + here.Width) + 380 > 1920) 
+	unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4(here.WindowX - 380);
+else
+	unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4(here.WindowX + here.Width);
+if (here.WindowY + 430 > 990)
+   unit.Global_WinCtrl.PanelY = 560;
+else
+	unit.Global_WinCtrl.PanelY = here.WindowY;
+
+
+if ((10 <= here._PanelNum) && (here._PanelNum <= 11))
+   me.ActionOpenPanelBlockPump_1.Invoke();
+else if ((12 <= here._PanelNum) && (here._PanelNum <= 13))
+   me.ActionOpenPanelBlockPump_2.Invoke();   
+]]>
+				</body>
+			</do-on>
+			<object access-modifier="private" name="ActionOpenPanelBlockPump_2" display-name="ActionOpenPanelBlockPump_2" uuid="773b7395-9e07-4635-b405-7c815f7580ba" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="InvokeTrigger" value="false" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+					<object access-modifier="private" uuid="a5373246-fe87-4e1a-92cf-4d75d78a67db" base-type="Блокировки_ВКЛ_ПАЗ_авыкл_насоса_2" base-type-id="794119e8-88c2-4923-ac47-2e9d65a64d5c" ver="5">
+						<init target="_init_PanelNum" ver="5" ref="here._PanelNum"/>
+						<init target="_init_PanelWindowCaption" ver="5" ref="here.WindowCaption"/>
+						<init target="_init_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
+					</object>
+				</do-on>
+			</object>
+		</object>
+		<object access-modifier="private" name="AlrOut" display-name="AlrOut" uuid="3e4108db-7666-47c9-b055-d977c4e5d133" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+			<designed target="X" value="132" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="Аварийное выключение ПАЗ" ver="5"/>
+			<designed target="Width" value="18" ver="5"/>
+			<designed target="Height" value="18" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xffff0000" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="PieAngle" value="360" ver="5"/>
+			<designed target="PieAngleStart" value="360" ver="5"/>
+			<designed target="HoleSize" value="0" ver="5"/>
+			<init target="Visible" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<body>
+					<![CDATA[(ApStatus & 0x0002) == 0x0002]]>
+				</body>
+			</do-trace>
+			<init target="BrushColor" ver="5" ref="unit.Global_ColorSettings.ColorAlr"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="PanelHeader" display-name="PanelHeader" uuid="46e9d043-81b7-4995-9e03-029ea710bffd" base-type="PanelHeader" base-type-id="d793c023-9a1c-4d72-9671-d4ec562aba76" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="450" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="Visible" ver="5" value="true"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="_PazNum" ver="5">
+			<body>
+				<![CDATA[here._PanelNum]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="SetHeaderAndFooter" display-name="SetHeaderAndFooter" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[here.PanelHeader.Width = Width;
+here.PanelHeader.X = 0;
+here.PanelHeader.Y = 0;
+here.PanelHeader.Comment.Text = unit.Global_DataArray.PAZName[here._PanelNum];
+
+here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="PanelHeaderHelp" display-name="PanelHeaderHelp" uuid="1f5884e9-a425-4203-8747-56f3dc59d63a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="379" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffaaff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="59856bd7-a044-47bb-b35c-34a52c702de7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="429" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Полоса для заголовка (сверху 40px)" ver="5"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<init target="Visible" ver="5" value="false"/>
+		<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="da4c5da0-cf2f-4f13-8426-289bbc451045" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="17" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="342" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+			<designed target="Text" value='Название панели, заголовок - все из массивов, которые инициализируются по событию Opened окна "Title")' ver="5"/>
+			<designed target="Font" value="Sans Serif,6,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+	<init target="WindowY" ver="5" ref="unit.Global_WinCtrl.PanelY"/>
+	<do-on access-modifier="private" name="UnsetPanelNumActive" display-name="UnsetPanelNumActive" ver="5" event="Closed">
+		<body kind="om">
+			<![CDATA[unit.Global_Property.PanelNumActive = 0;
+]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="SetPanelNumActive" display-name="SetPanelNumActive" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[unit.Global_Property.PanelNumActive = _PanelNum;
+]]>
+		</body>
+	</do-on>
+	<param access-modifier="private" name="_ApSourceConLoop" display-name="_ApSourceConLoop" uuid="1fefeb60-6b51-44e6-962d-ef50a0d9f526" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="_PanelNum" display-name="_PanelNum" uuid="926646db-61e1-4eee-a0c0-c59a48d93643" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
+	<init target="_ApSourceConLoop" ver="5" ref="unit.Global_ApSource.ApSourceMain"/>
+	<init target="_PanelNum" ver="5" value="1"/>
+	<object access-modifier="private" name="ActionPanelOpenPump" display-name="ActionPanelOpenPump" uuid="3dd4651a-27a8-4248-b628-c5d1804e3288" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="cfb6fb8d-44a2-4492-90c3-5499649f122c" base-type="Управление_насосом ПАЗ" base-type-id="25f60aca-5928-4e3c-beec-9bef05f90303" ver="5">
+				<init target="WindowY" ver="5" ref="unit.Global_WinCtrl.PanelPumpY"/>
+				<init target="_PanelNum" ver="5" ref="here._PanelNum"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Panel" display-name="Panel" uuid="14d69d86-5bdd-4694-9311-4271991f4683" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="175" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="145" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TitlePanel" display-name="TitlePanel" uuid="9856d270-d528-47cc-a3b4-7ab29d5cd2d4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="125" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="TextTitle" display-name="TextTitle" uuid="c1b6d44e-ef91-491e-a514-1f412e1299f4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Насос 1-1" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="FontColor" value="0xff151515" ver="5"/>
+				<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+				<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.TitleColor"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[" Насос " + here.NumPump]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="TreeMapLayout_1" display-name="TreeMapLayout_1" uuid="bddfe4da-f4b9-4849-a99b-141522a13c3a" base-type="TreeMapLayout" base-type-id="abf2598f-0779-4d54-94e9-597b15cdb8e9" ver="5" description="" cardinal="1"/>
+			<object access-modifier="private" name="LayoutSizeLimits_1" display-name="LayoutSizeLimits_1" uuid="5e45dbc4-bb80-4b97-99f9-fcb4de55e397" base-type="LayoutSizeLimits" base-type-id="10342c1f-560b-4160-9de5-7e2c08026f47" ver="5" description="" cardinal="1">
+				<designed target="MinWidth" value="90" ver="5"/>
+				<designed target="MinHeight" value="20" ver="5"/>
+				<designed target="MaxWidth" value="90" ver="5"/>
+				<designed target="MaxHeight" value="20" ver="5"/>
+			</object>
+			<object access-modifier="private" name="LayoutMargins_1" display-name="LayoutMargins_1" uuid="639debe3-c8c5-45bd-a401-f1ffa4e3039a" base-type="LayoutMargins" base-type-id="d86ce751-1ea7-42c6-8d4b-10c651a2727d" ver="5" description="" cardinal="1">
+				<designed target="Top" value="-10" ver="5"/>
+				<designed target="Bottom" value="0" ver="5"/>
+				<designed target="Left" value="0" ver="5"/>
+				<designed target="Right" value="0" ver="5"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="5f8fedea-f613-4e18-836d-59e39d4d1200" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718" ver="5" description="" cardinal="1">
+			<designed target="Orientation" value="2" ver="5"/>
+			<designed target="Gap" value="0" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="ButtonOFF" display-name="ButtonOFF" uuid="6a1426f4-74ea-4272-a26e-3a61884bcb5d" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
+		<designed target="X" value="125" ver="5"/>
+		<designed target="Y" value="275" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="130" ver="5"/>
+		<designed target="Height" value="26" ver="5"/>
+		<designed target="Text" value="ВЫКЛЮЧИТЬ" ver="5"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+		<init target="_CtrlWordValue" ver="5" value="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[((ApStatus >> 6) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pump" display-name="Pump" uuid="f102961b-f51f-47da-a228-69ffedc21d3d" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
+		<designed target="X" value="160" ver="5"/>
+		<designed target="Y" value="195" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="60" ver="5"/>
+		<designed target="Height" value="65" ver="5"/>
+		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
+		<init target="_init_NameEn" ver="5" ref="here._init_DeviceNameEn"/>
+		<init target="_init_FlagVisibleDAlr" ver="5" value="false"/>
+	</object>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="54ab3427-b3ac-4736-907f-32138ff94949" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_DeviceNameEn" display-name="_init_DeviceNameEn" uuid="65788d3e-24ed-4738-b912-ffd6bdb06e92" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_DeviceNameEn" ver="5" value="PumpNN"/>
+	<object access-modifier="private" name="NumPump" display-name="NumPump" uuid="b54fe2e1-a121-4a9c-8379-cac073a49492" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<init target="NumPump" ver="5" value="???"/>
+</type>
+

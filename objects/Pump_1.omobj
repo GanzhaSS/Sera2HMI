@@ -300,6 +300,9 @@
 				</expr>
 			</conditional-expr>
 		</do-trace>
+		<init target="Visible" ver="5" ref="here._init_FlagVisibleDAlr"/>
 	</object>
+	<param access-modifier="private" name="_init_FlagVisibleDAlr" display-name="_init_FlagVisibleDAlr" uuid="f0fb4a92-916e-457d-8222-e3bf9cbce95a" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description=""/>
+	<init target="_init_FlagVisibleDAlr" ver="5" value="true"/>
 </type>
 

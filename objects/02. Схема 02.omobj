@@ -1664,7 +1664,7 @@
 				<designed target="TextAlignment" value="129" ver="5"/>
 			</object>
 			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-			<init target="_init_NameEn" ver="5" value="TankProlivLev"/>
+			<init target="_init_NameEn" ver="5" value="PAZ_TankProlivLev"/>
 		</object>
 		<object access-modifier="private" name="AnaPrm1_Progress" display-name="AnaPrm1_Progress" uuid="7949267a-3f59-420c-8eba-dce7ba12e1a8" base-type="AnaPrm_Lev_Progress" base-type-id="aa499b1e-cbdf-4d63-a939-0334156c3c8a" ver="5" description="" cardinal="1">
 			<designed target="X" value="26" ver="5"/>
@@ -3778,12 +3778,11 @@
 		</object>
 	</object>
 	<object access-modifier="private" name="AirTemp" display-name="AirTemp" uuid="68e2c829-c09d-49f7-b02f-f2fbc93ed439" base-type="AnaPrm_Temp" base-type-id="ff6fc2d6-bc7a-4b2d-a949-b77543d77cd8" ver="5" description="" cardinal="1">
-		<designed target="X" value="1155" ver="5"/>
+		<designed target="X" value="1160" ver="5"/>
 		<designed target="Y" value="80" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="70" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<object access-modifier="private" name="AnaPrmPosition_3" display-name="AnaPrmPosition_3" uuid="b20257ef-91a5-4d3d-a9b4-ecf23684afbf" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="18" ver="5"/>
@@ -3793,7 +3792,8 @@
 			<designed target="Text" value="A25-01" ver="5"/>
 			<designed target="TextAlignment" value="129" ver="5"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="AirTemp"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_SigA25_01"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="pH_A23_01" display-name="pH_A23_01" uuid="c2553210-0136-4b8c-8db8-1eca722f8d8e" base-type="AnaPrm_pH" base-type-id="b997109f-1443-41f8-b2f3-4282ee230211" ver="5" description="" cardinal="1">
 		<designed target="X" value="865" ver="5"/>
@@ -4002,7 +4002,7 @@
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_1" display-name="CallPanelCtrlConLoopPAZ_1" uuid="9a2396fa-984a-46b6-a6a1-b95299e00f91" base-type="CallPanelCtrlConLoopPAZ" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_1" display-name="CallPanelCtrlConLoopPAZ_1" uuid="9a2396fa-984a-46b6-a6a1-b95299e00f91" base-type="CallPanelCtrlConLoopPAZ_Pumps" base-type-id="efa22260-1a2b-4a6e-8ab9-1af4b732f157" ver="5" description="" cardinal="1">
 		<designed target="X" value="285" ver="5"/>
 		<designed target="Y" value="277" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -4054,7 +4054,7 @@
 			<designed target="Text" value="В4" ver="5"/>
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_NameEn" ver="5" value="VentV3"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_VentV4"/>
 		<init target="_init_PanelDeltaX" ver="5" value="-200"/>
 		<init target="_init_PanelDeltaY" ver="5" value="80"/>
 	</object>
@@ -4073,7 +4073,6 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="70" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<object access-modifier="private" name="AnaPrmPosition_3" display-name="AnaPrmPosition_3" uuid="9de6731b-b405-47cd-a3b5-068313f07c49" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="18" ver="5"/>
@@ -4083,7 +4082,8 @@
 			<designed target="Text" value="A24-01" ver="5"/>
 			<designed target="TextAlignment" value="129" ver="5"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="Tank3Temp"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_ConcSO2A24_01"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="HLA4_2" display-name="HLA4_2" uuid="a069b80a-60f9-431f-aed7-3d0ccb84a089" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="50" ver="5"/>
@@ -4091,6 +4091,10 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA24_02"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelDeltaY" ver="5" value="50"/>
+		<init target="_init_PanelDeltaX" ver="5" value="0"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_2" display-name="AnaPrm2_2" uuid="4832e985-dcfc-4ee0-8714-ab46e9f697cd" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="795" ver="5"/>
@@ -4098,7 +4102,6 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="70" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<object access-modifier="private" name="AnaPrmPosition_3" display-name="AnaPrmPosition_3" uuid="1d6cb220-bee7-4333-933e-893f66de3fc0" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="18" ver="5"/>
@@ -4108,7 +4111,8 @@
 			<designed target="Text" value="A24-03" ver="5"/>
 			<designed target="TextAlignment" value="129" ver="5"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="Tank3Temp"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_ConcSO2A24_03"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="HLA4_3" display-name="HLA4_3" uuid="66fa832c-4299-457c-bc0c-4fb9611109d5" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="740" ver="5"/>
@@ -4116,6 +4120,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA24_04"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelDeltaY" ver="5" value="50"/>
 	</object>
 	<object access-modifier="private" name="Spline_14" display-name="Spline_14" uuid="1597b524-96d0-4fb7-a670-1a7f34cac445" base-type="Spline" base-type-id="6f0ee94e-e217-41a0-978b-c65da315607c" ver="5" description="" cardinal="1">
 		<designed target="X" value="954.02957930693469" ver="5"/>
@@ -4185,7 +4192,7 @@
 			<designed target="TextAlignment" value="34" ver="5"/>
 			<designed target="FontColor" value="0xff00aa00" ver="5"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="Pallet13_2"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_TankProliv"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="visibleLow" ver="5" value="false"/>
 	</object>
@@ -4195,7 +4202,6 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="70" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<object access-modifier="private" name="AnaPrmPosition_3" display-name="AnaPrmPosition_3" uuid="5784dabd-a95f-4f64-be87-8520e93eac00" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="18" ver="5"/>
@@ -4205,7 +4211,8 @@
 			<designed target="Text" value="A16-01" ver="5"/>
 			<designed target="TextAlignment" value="129" ver="5"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="Tank3Temp"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_ConcSO2A16_01"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="HLA4_4" display-name="HLA4_4" uuid="b6325656-1ebd-4b1a-a75d-e68437a054ff" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="1120" ver="5"/>
@@ -4213,6 +4220,8 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA16_02"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_4" display-name="AnaPrm2_4" uuid="c3a29aaa-a874-4975-9b79-d94e498bd72f" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="1365" ver="5"/>
@@ -4220,7 +4229,6 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="70" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<object access-modifier="private" name="AnaPrmPosition_3" display-name="AnaPrmPosition_3" uuid="f22bd661-6eb0-4830-b649-0c65afc26fa2" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="18" ver="5"/>
@@ -4230,7 +4238,8 @@
 			<designed target="Text" value="A16-03" ver="5"/>
 			<designed target="TextAlignment" value="129" ver="5"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="Tank3Temp"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_ConcSO2A16_03"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="HLA4_5" display-name="HLA4_5" uuid="d55af235-7b18-4385-90e7-3fb9ddc434aa" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="1310" ver="5"/>
@@ -4238,6 +4247,8 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA16_04"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_5" display-name="AnaPrm2_5" uuid="26915386-72bb-42c3-9168-96d759f42567" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="1745" ver="5"/>
@@ -4245,7 +4256,6 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="70" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<object access-modifier="private" name="AnaPrmPosition_3" display-name="AnaPrmPosition_3" uuid="64a5b2a1-64bf-4132-a680-31086190ac39" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
 			<designed target="X" value="0" ver="5"/>
 			<designed target="Y" value="18" ver="5"/>
@@ -4255,7 +4265,8 @@
 			<designed target="Text" value="A13-01" ver="5"/>
 			<designed target="TextAlignment" value="129" ver="5"/>
 		</object>
-		<init target="_init_NameEn" ver="5" value="Tank3Temp"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_SigA13_01"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="HLA4_6" display-name="HLA4_6" uuid="daf3ff6d-2f96-48a3-94e6-31e4a12f408f" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="1690" ver="5"/>
@@ -4263,6 +4274,21 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA13_02"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+	</object>
+	<object access-modifier="private" name="HLA4_7" display-name="HLA4_7" uuid="d7bd29ff-bca2-4fdc-80f6-cf0a6e9cd28d" base-type="HLA_2" base-type-id="a5c35f03-4278-403b-8268-8aaa5282ba5c" ver="5" description="" cardinal="1">
+		<designed target="X" value="1160" ver="5"/>
+		<designed target="Y" value="120" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA25_02"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_HlaNameEn_1" ver="5" value="PAZ_SigHL1"/>
+		<init target="_init_HlaNameEn_2" ver="5" value="PAZ_SigHL2"/>
+		<init target="_init_HaNameEn_1" ver="5" value="PAZ_SigHA1"/>
+		<init target="_init_PanelDeltaY" ver="5" value="50"/>
 	</object>
 </type>
 

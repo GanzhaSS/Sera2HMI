@@ -3,7 +3,7 @@
 	<designed target="X" value="0" ver="5"/>
 	<designed target="Y" value="0" ver="5"/>
 	<designed target="Rotation" value="0" ver="5"/>
-	<designed target="Width" value="380" ver="5"/>
+	<designed target="Width" value="400" ver="5"/>
 	<designed target="Height" value="340" ver="5"/>
 	<object access-modifier="private" name="Title" display-name="Title" uuid="303e7dd0-5d4c-4709-8e47-5b3f4306a171" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
 		<designed target="X" value="5" ver="5"/>
@@ -28,7 +28,7 @@
 	<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
 	<object access-modifier="private" name="Panel" display-name="Panel" uuid="789e7668-ffef-4a27-b324-851aad4a90d9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="20" ver="5"/>
-		<designed target="Y" value="125" ver="5"/>
+		<designed target="Y" value="150" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -38,7 +38,7 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="340" ver="5"/>
-		<designed target="Height" value="195" ver="5"/>
+		<designed target="Height" value="175" ver="5"/>
 		<designed target="RoundingRadius" value="0" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
@@ -70,7 +70,7 @@
 				<designed target="Rotation" value="0" ver="5"/>
 				<designed target="Width" value="120" ver="5"/>
 				<designed target="Height" value="20" ver="5"/>
-				<designed target="Text" value=" Клапан 3-1.1к" ver="5"/>
+				<designed target="Text" value="Клапан ВП83о" ver="5"/>
 				<designed target="TextAlignment" value="132" ver="5"/>
 				<designed target="FontColor" value="0xff151515" ver="5"/>
 				<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
@@ -112,7 +112,7 @@
 		<designed target="X" value="45" ver="5"/>
 		<designed target="Y" value="40" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="330" ver="5"/>
+		<designed target="Width" value="350" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
 		<designed target="Text" value="ПАЗ включена" ver="5"/>
 		<designed target="TextAlignment" value="129" ver="5"/>
@@ -181,9 +181,9 @@
 		<designed target="X" value="45" ver="5"/>
 		<designed target="Y" value="65" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="330" ver="5"/>
+		<designed target="Width" value="350" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<designed target="Text" value="Уровнемер 1в неисправен" ver="5"/>
+		<designed target="Text" value="Уровнемер 1в резервуаре 1 неисправен" ver="5"/>
 		<designed target="TextAlignment" value="129" ver="5"/>
 		<designed target="FontColor" value="0xff484848" ver="5"/>
 		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
@@ -198,7 +198,8 @@
 		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
 		<do-trace access-modifier="private" target="Text" ver="5">
 			<body>
-				<![CDATA["Уровнемер " + here.NumLev + " неисправен"]]>
+				<![CDATA["Уровнемер " + here.NumLev + " в резервуаре " + here.NumTank + " неисправен"
+]]>
 			</body>
 		</do-trace>
 	</object>
@@ -255,9 +256,9 @@
 		<designed target="X" value="45" ver="5"/>
 		<designed target="Y" value="90" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="330" ver="5"/>
+		<designed target="Width" value="350" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
-		<designed target="Text" value="АВ значение уровня 1в" ver="5"/>
+		<designed target="Text" value="АН значение уровня А01-01 в резервуаре 1" ver="5"/>
 		<designed target="TextAlignment" value="129" ver="5"/>
 		<designed target="FontColor" value="0xff484848" ver="5"/>
 		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
@@ -272,7 +273,8 @@
 		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
 		<do-trace access-modifier="private" target="Text" ver="5">
 			<body>
-				<![CDATA["АВ значение уровня " + here.NumLev]]>
+				<![CDATA["АН значение уровня " + here.NumLev + " в резервуаре " + here.NumTank
+]]>
 			</body>
 		</do-trace>
 	</object>
@@ -344,55 +346,6 @@
 		<designed target="Tooltip" value="" ver="5"/>
 		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
 		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
-	</object>
-	<object access-modifier="private" name="CircleBack_3" display-name="CircleBack_3" uuid="7a32a3ce-ba4b-4cb3-ad30-9109206bde53" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="30" ver="5"/>
-		<designed target="Y" value="140" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="18" ver="5"/>
-		<designed target="Height" value="18" ver="5"/>
-		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="2" ver="5"/>
-		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-	</object>
-	<object access-modifier="private" name="CircleFore_3" display-name="CircleFore_3" uuid="1b476d39-7d47-4e17-8a87-ee7beb948129" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="30" ver="5"/>
-		<designed target="Y" value="140" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="18" ver="5"/>
-		<designed target="Height" value="18" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="2" ver="5"/>
-		<designed target="BrushColor" value="0xffff0000" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<do-trace access-modifier="private" target="Visible" ver="5">
-			<body>
-				<![CDATA[((ApBlocking >> 3) & 1) == 1]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="8adb14f7-3871-406f-886e-9488e7a972a7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
 		<designed target="X" value="55" ver="5"/>
@@ -748,26 +701,6 @@
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="27d5cf04-b7cb-4d39-a958-43f19767a6ce" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
-		<designed target="X" value="55" ver="5"/>
-		<designed target="Y" value="140" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="310" ver="5"/>
-		<designed target="Height" value="20" ver="5"/>
-		<designed target="Text" value='Нет сигнала "Готовность"' ver="5"/>
-		<designed target="TextAlignment" value="129" ver="5"/>
-		<designed target="FontColor" value="0xff484848" ver="5"/>
-		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
-		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
-	</object>
 	<object access-modifier="private" name="Text_9" display-name="Text_9" uuid="20481fb1-61d2-437e-b658-7862dc08a86f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
 		<designed target="X" value="55" ver="5"/>
 		<designed target="Y" value="165" ver="5"/>
@@ -812,20 +745,26 @@
 	<object access-modifier="private" name="NumValve" display-name="NumValve" uuid="88015dff-086a-45a6-8de0-d9fe9f255090" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
 	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
 		<body kind="om">
-			<![CDATA[if (here._init_PanelNum == 3) { 
-	here.NumLev = "1в"; here.NumValve = "3-1.1к";
+			<![CDATA[if (here._init_PanelNum == 1) { 
+	here.NumLev = "А01-01"; here.NumValve = "ВП83о"; here.NumTank = "1";
+} else if (here._init_PanelNum == 2) {
+   here.NumLev = "А02-01"; here.NumValve = "ВП87о"; here.NumTank = "2";
+} else if (here._init_PanelNum == 3) {
+	here.NumLev = "А03-01"; here.NumValve = "ВП91о"; here.NumTank = "3";
+} else if (here._init_PanelNum == 3) {
+	here.NumLev = "А03-01"; here.NumValve = "ВП91о"; here.NumTank = "3";
 } else if (here._init_PanelNum == 4) {
-	here.NumLev = "2в"; here.NumValve = "3-2.1к";
+	here.NumLev = "А04-01"; here.NumValve = "ВП71о"; here.NumTank = "4";
 } else if (here._init_PanelNum == 5) {
-	here.NumLev = "3в"; here.NumValve = "3-3.1к";
+	here.NumLev = "А05-01"; here.NumValve = "ВП75о"; here.NumTank = "5";
 } else if (here._init_PanelNum == 6) {
-	here.NumLev = "4в"; here.NumValve = "3-4.1к";
+	here.NumLev = "А06-01"; here.NumValve = "ВП79о"; here.NumTank = "6";
 } else if (here._init_PanelNum == 7) {
-	here.NumLev = "5в"; here.NumValve = "3-5.1к";
+	here.NumLev = "А07-01"; here.NumValve = "ВП59о"; here.NumTank = "7";
 } else if (here._init_PanelNum == 8) {
-	here.NumLev = "6в"; here.NumValve = "3-6.1к";
+	here.NumLev = "А08-01"; here.NumValve = "ВП63о"; here.NumTank = "8";
 } else if (here._init_PanelNum == 9) {
-	here.NumLev = "7в"; here.NumValve = "3-7.1к";
+	here.NumLev = "А09-01"; here.NumValve = "ВП67о"; here.NumTank = "9";
 } else {
 	here.NumLev = "???"; here.NumValve = "??????";
 }]]>
@@ -833,5 +772,82 @@
 	</do-on>
 	<init target="NumLev" ver="5" value="???"/>
 	<init target="NumValve" ver="5" value="???"/>
+	<object access-modifier="private" name="Text_11" display-name="Text_11" uuid="2f0f6b67-207d-4b20-a096-01ed7741bc15" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="115" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="350" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="АВ значение уровня А01-03 в резервуаре 1" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="FontColor" value="0xff484848" ver="5"/>
+		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.Color"/>
+		<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA["АВ значение уровня " + here.NumLev + " в резервуаре " + here.NumTank
+]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CircleBack_10" display-name="CircleBack_10" uuid="56a4fae1-e3db-4328-aa89-b24567eef9b8" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="115" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleFore_10" display-name="CircleFore_10" uuid="8ec3f974-52ff-499f-981e-5404206a3b46" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="115" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((ApBlocking >> 3) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="NumTank" display-name="NumTank" uuid="f9ce9cf9-4908-483a-9a98-a77cc71b28a1" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<init target="NumTank" ver="5" value="???"/>
 </type>
 

@@ -95,20 +95,25 @@
 	<object file="Управление_насосом 2.omobj" filter="Панели управления"/>
 	<object file="Vent.omobj" filter="Pumps"/>
 	<object file="CallPanelCtrlConLoopPAZ.omobj" filter=""/>
-	<object file="Управление_контуром_ПАЗ.omobj" filter=""/>
+	<object file="Управление_контуром_ПАЗ.omobj" filter="Панели управления"/>
 	<object file="Блокировки_ВКЛ_ПАЗ_авкл_вентиляции.omobj" filter=""/>
-	<object file="Блокировки_ВКЛ_ПАЗ_авыкл_насоса.omobj" filter=""/>
+	<object file="Блокировки_ВКЛ_ПАЗ_авыкл_насоса_1.omobj" filter=""/>
 	<object file="Блокировки_ВКЛ_ПАЗ_азакр_клапана.omobj" filter=""/>
 	<object file="Global_Theme.omobj" filter=""/>
 	<object file="PanelHeader.omobj" filter=""/>
 	<object file="AnaPrmShort.omobj" filter="AnaPrm"/>
 	<object file="_Tank_2.omobj" filter="Tanks"/>
-	<object file="HLA3.omobj" filter=""/>
 	<object file="AnaPrm_ConcH2SO4.omobj" filter="AnaPrm"/>
-	<object file="CallPanelCtrlConLoopHLA3.omobj" filter=""/>
-	<object file="Управление_контуром_HLA3.omobj" filter=""/>
+	<object file="CallPanelCtrlConLoopHLA.omobj" filter=""/>
+	<object file="Управление_контуром_HLA.omobj" filter="Панели управления"/>
 	<object file="DLevel_High.omobj" filter=""/>
-	<object file="HLA4.omobj" filter=""/>
+	<object file="HLA.omobj" filter=""/>
 	<object file="Panel_Alr.omobj" filter=""/>
+	<object file="Блокировки_ВКЛ_ПАЗ_авыкл_насоса_2.omobj" filter=""/>
+	<object file="Управление_насосом ПАЗ.omobj" filter="Панели управления"/>
+	<object file="HLA_2.omobj" filter=""/>
+	<object file="Управление_контуром_HLA_2.omobj" filter="Панели управления"/>
+	<object file="Управление_контуром_ПАЗ_Насосы.omobj" filter="Панели управления"/>
+	<object file="CallPanelCtrlConLoopPAZ_Pumps.omobj" filter=""/>
 </unit>
 

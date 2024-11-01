@@ -809,6 +809,7 @@ unit.Global_Security.PermitEnableChngPsw  = false;
 			<![CDATA[// Заголовок окна (то что в синей рамке наверху)
 
 // unit.Global_DataArray.PanelCaption[0] - не используется
+
 unit.Global_DataArray.PanelCaption[1] = "ПАЗ 1";
 unit.Global_DataArray.PanelCaption[2] = "ПАЗ 2";
 unit.Global_DataArray.PanelCaption[3] = "ПАЗ 3";
@@ -819,6 +820,10 @@ unit.Global_DataArray.PanelCaption[7] = "ПАЗ 7";
 unit.Global_DataArray.PanelCaption[8] = "ПАЗ 8";
 unit.Global_DataArray.PanelCaption[9] = "ПАЗ 9";
 unit.Global_DataArray.PanelCaption[10] = "ПАЗ 10";
+unit.Global_DataArray.PanelCaption[11] = "ПАЗ 11";
+unit.Global_DataArray.PanelCaption[12] = "ПАЗ 12";
+unit.Global_DataArray.PanelCaption[13] = "ПАЗ 13";
+unit.Global_DataArray.PanelCaption[14] = "ПАЗ 14";
 ]]>
 		</body>
 	</do-on>
@@ -920,13 +925,13 @@ unit.Global_DataArray.PanelCaption[10] = "ПАЗ 10";
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRelease" form-action="close"/>
 	</object>
 	<object access-modifier="private" name="AlrConnectPLC_1" display-name="AlrConnectPLC_1" uuid="e93f2f2e-1de4-4cb6-9883-8aa652092c7f" base-type="AlrConnectPLC" base-type-id="4f1882e1-94df-484e-bf56-cec581cd875f" ver="5" description="" cardinal="1">
-		<designed target="X" value="370" ver="5"/>
+		<designed target="X" value="650" ver="5"/>
 		<designed target="Y" value="7" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_ApSource" ver="5" ref="unit.Global_ApSource.ApSourceObjectsGeneral"/>
 		<init target="_init_NameEn" ver="5" value="Connect"/>
 		<designed target="Width" value="190" ver="5"/>
+		<init target="_init_ApSource" ver="5" ref="unit.Global_ApSource.ApSourceObjectsGeneral"/>
 	</object>
 	<object access-modifier="private" name="Box_1" display-name="Box_1" uuid="a1ee8b86-d20c-4d20-aa1d-3939ee1ebbb5" base-type="Box" base-type-id="c725a6da-5745-4495-938e-67d39c7c2814" ver="5" description="" cardinal="1">
 		<designed target="X" value="1386" ver="5"/>
@@ -989,43 +994,25 @@ unit.Global_DataArray.PAZName[10] = "Контур аварийного выкл�
 unit.Global_DataArray.PAZName[11] = "Контур аварийного выключения насоса 1-2";
 unit.Global_DataArray.PAZName[12] = "Контур аварийного выключения насоса 2-1";
 unit.Global_DataArray.PAZName[13] = "Контур аварийного выключения насоса 2-2";
-unit.Global_DataArray.PAZName[14] = "Контур включения светозвуковой сигнализации А11-02";
-unit.Global_DataArray.PAZName[15] = "Контур включения светозвуковой сигнализации А11-04";
-unit.Global_DataArray.PAZName[16] = "Контур включения светозвуковой сигнализации А11-06";
-unit.Global_DataArray.PAZName[17] = "Контур включения светозвуковой сигнализации А11-08";
-unit.Global_DataArray.PAZName[18] = "Контур включения светозвуковой сигнализации А11-10";
-unit.Global_DataArray.PAZName[19] = "Контур включения светозвуковой сигнализации А11-12";
-unit.Global_DataArray.PAZName[20] = "Контур включения светозвуковой сигнализации А11-14";
-unit.Global_DataArray.PAZName[21] = "Контур включения светозвуковой сигнализации А11-16";
-unit.Global_DataArray.PAZName[22] = "Контур включения светозвуковой сигнализации А11-18";
-unit.Global_DataArray.PAZName[23] = "Контур включения светозвуковой сигнализации А24-02";
-unit.Global_DataArray.PAZName[24] = "Контур включения светозвуковой сигнализации А24-04";
-unit.Global_DataArray.PAZName[25] = "Контур включения светозвуковой сигнализации А16-02";
-unit.Global_DataArray.PAZName[26] = "Контур включения светозвуковой сигнализации А16-04";
-unit.Global_DataArray.PAZName[27] = "Контур включения светозвуковой сигнализации А13-02";
-unit.Global_DataArray.PAZName[28] = "Контур аварийного включения вентилятора В4";
-unit.Global_DataArray.PAZName[29] = "Контур включения светозвуковой сигнализации HL1, HL2, HA1";
+unit.Global_DataArray.PAZName[14] = "Контур аварийного включения вентилятора В4";
 
 ]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="AlrConnectPLC_RSU" display-name="AlrConnectPLC_RSU" uuid="c038043e-ab23-4c7a-aa93-62f7a541165b" base-type="AlrConnectPLC" base-type-id="4f1882e1-94df-484e-bf56-cec581cd875f" ver="5" description="" cardinal="1">
-		<designed target="X" value="643" ver="5"/>
+	<object access-modifier="private" name="AlrConnectPLC_2" display-name="AlrConnectPLC_2" uuid="9ba37395-6990-4da2-9a39-c60e78012355" base-type="AlrConnectPLC" base-type-id="4f1882e1-94df-484e-bf56-cec581cd875f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1070" ver="5"/>
 		<designed target="Y" value="7" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="190" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_NameRu" ver="5" value="Нет связи с контроллером РСУ"/>
-		<init target="_init_NameEn" ver="5" value="General.RSU_Connect"/>
-	</object>
-	<object access-modifier="private" name="AlrConnectPLC_PAZ" display-name="AlrConnectPLC_PAZ" uuid="a6d76d34-5e18-45f1-b12f-3ab174874f6e" base-type="AlrConnectPLC" base-type-id="4f1882e1-94df-484e-bf56-cec581cd875f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1083" ver="5"/>
-		<designed target="Y" value="7" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_Connect"/>
 		<designed target="Width" value="190" ver="5"/>
-		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_NameRu" ver="5" value="Нет связи с контроллером ПАЗ"/>
-		<init target="_init_NameEn" ver="5" value="General.PAZ_Connect"/>
+		<init target="_init_ApSource" ver="5" ref="unit.Global_ApSource.ApSourceObjectsGeneral"/>
+		<init target="_init_Text" ver="5" value=" Нет связи с ПЛК ПАЗ"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body kind="om">
+				<![CDATA[(ApAlrConnect.Quality == 192) && ApAlrConnect]]>
+			</body>
+		</do-trace>
 	</object>
 </type>
 

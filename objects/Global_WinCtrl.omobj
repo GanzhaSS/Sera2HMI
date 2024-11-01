@@ -10,5 +10,7 @@
 	<init target="PanelX" ver="5" value="0"/>
 	<init target="PanelY" ver="5" value="0"/>
 	<object access-modifier="private" name="WindowGroupPanelCtrlDevice" display-name="WindowGroupPanelCtrlDevice" uuid="cc2c9c05-afc1-451a-af86-74187b0fae64" base-type="WindowGroup" base-type-id="854fabd1-f7b5-4958-a934-ffd0b5d1a7e4" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PanelPumpY" display-name="PanelPumpY" uuid="a3c35df5-fa57-4861-b2bc-28ea48a781eb" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<init target="PanelPumpY" ver="5" value="0"/>
 </object>
 

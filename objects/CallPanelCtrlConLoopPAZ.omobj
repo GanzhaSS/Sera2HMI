@@ -290,6 +290,7 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 			<![CDATA[// Сохраняем необходимые координаты (относительно монитора) для открытия панели управления
 unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4(me._init_PanelDeltaX + here.ScreenX(0,0));
 unit.Global_WinCtrl.PanelY = TypeConvert.ToInt4(me._init_PanelDeltaY + here.ScreenY(0,0) + here.Height);
+unit.Global_WinCtrl.PanelPumpY = unit.Global_WinCtrl.PanelY + 230;
 
 // Открытие панели упрвления ...
 if (! unit.Global_WinCtrl.FlagWinOpening) {
