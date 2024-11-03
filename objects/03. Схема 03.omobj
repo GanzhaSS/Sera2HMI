@@ -528,13 +528,13 @@
 		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
 		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
 	</object>
-	<object access-modifier="private" name="DPanelAlr_2" display-name="DPanelAlr_2" uuid="e3bc64d9-8824-4312-85a4-9860e834b65b" base-type="DPanelAlr" base-type-id="b2ef45c5-c50e-4e68-8fa8-2809eafe3941" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="DPanelAlr_2" display-name="DPanelAlr_2" uuid="e3bc64d9-8824-4312-85a4-9860e834b65b" base-type="PowerPAZ" base-type-id="e11d954d-88d6-4e40-9f8f-a3973a77b833" ver="5" description="" cardinal="1">
 		<designed target="X" value="1230" ver="5"/>
 		<designed target="Y" value="140" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="244" ver="5"/>
 		<designed target="Height" value="80" ver="5"/>
-		<init target="_init_NameEn" ver="5" value="PowerErr"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_BoxPAZ"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="frame02_12" display-name="frame02_12" uuid="641f73d4-4b5f-4470-b504-96b26cb8915a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
@@ -582,7 +582,7 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="240" ver="5"/>
 		<designed target="Height" value="100" ver="5"/>
-		<init target="_init_NameEn" ver="5" value="Panel3_1AM4"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_Panel3_1AM5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="frame02_13" display-name="frame02_13" uuid="e2f56bee-0c8e-459a-b6a9-80886e4ab5b1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
@@ -624,13 +624,13 @@
 		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
 		<init target="FontColor" ver="5" ref="Global_ColorSettings.ColorFontPosition"/>
 	</object>
-	<object access-modifier="private" name="Panel3_4_2" display-name="Panel3_4_2" uuid="8584c9c2-dd63-4c67-9159-3628c6a2f80b" base-type="Panel3_4" base-type-id="1ca37441-bf9e-49ed-9171-a6e2f493bf36" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Panel3_4_2" display-name="Panel3_4_2" uuid="8584c9c2-dd63-4c67-9159-3628c6a2f80b" base-type="PanelAlrPAZ" base-type-id="c90f3367-e2af-4bdb-93cc-0179d510c510" ver="5" description="" cardinal="1">
 		<designed target="X" value="1390" ver="5"/>
 		<designed target="Y" value="310" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="250" ver="5"/>
 		<designed target="Height" value="120" ver="5"/>
-		<init target="_init_NameEn" ver="5" value="Panel3_4AM"/>
+		<init target="_init_NameEn" ver="5" value="PAZ_Alr"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="f7291a5a-2d9f-4a31-84b2-2efe8bd8b602" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">

@@ -219,7 +219,7 @@ if (MonitorNum==1)
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="350" ver="5"/>
 		<designed target="Height" value="40" ver="5"/>
-		<designed target="Text" value="Схема 01" ver="5"/>
+		<designed target="Text" value="Резервуарный парк" ver="5"/>
 		<init target="BtWindowNum" ver="5" value="1"/>
 		<do-trace access-modifier="private" target="BtWindowCurr" ver="5">
 			<body>
@@ -334,7 +334,7 @@ Text_Day.Text = DateTime.ToString(DateTime.Now(), "%d.%m.%y");]]>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="310" ver="5"/>
 		<designed target="Height" value="40" ver="5"/>
-		<designed target="Text" value="Схема 02" ver="5"/>
+		<designed target="Text" value="Насосная" ver="5"/>
 		<init target="BtWindowNum" ver="5" value="2"/>
 		<do-trace access-modifier="private" target="BtWindowCurr" ver="5">
 			<body>

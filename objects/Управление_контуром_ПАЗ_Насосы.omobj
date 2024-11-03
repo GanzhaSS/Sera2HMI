@@ -212,7 +212,7 @@
 		</object>
 		<object access-modifier="private" name="Button_CLOSE" display-name="Button_CLOSE" uuid="43590d8a-0f48-429d-8a7d-fe386fdf5309" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
 			<designed target="X" value="100" ver="5"/>
-			<designed target="Y" value="280" ver="5"/>
+			<designed target="Y" value="290" ver="5"/>
 			<designed target="Width" value="140" ver="5"/>
 			<designed target="Height" value="26" ver="5"/>
 			<designed target="Text" value="Сброс аварий" ver="5"/>
@@ -227,7 +227,7 @@
 		</object>
 		<object access-modifier="private" name="Button_ BLOCK" display-name="Button_ BLOCK" uuid="848cf1ee-d78e-466b-adf9-e1ad2664cca6" base-type="CallPanelBlock" base-type-id="d8667e0c-9c47-4b8a-b9cb-d47b702d6bc5" ver="5" description="" cardinal="1">
 			<designed target="X" value="235" ver="5"/>
-			<designed target="Y" value="73" ver="5"/>
+			<designed target="Y" value="63" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="100" ver="5"/>
 			<designed target="Height" value="22" ver="5"/>
@@ -413,7 +413,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	</object>
 	<object access-modifier="private" name="Panel" display-name="Panel" uuid="14d69d86-5bdd-4694-9311-4271991f4683" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="20" ver="5"/>
-		<designed target="Y" value="175" ver="5"/>
+		<designed target="Y" value="185" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -470,7 +470,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 				<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.TitleColor"/>
 				<do-trace access-modifier="private" target="Text" ver="5">
 					<body>
-						<![CDATA[" Насос " + here.NumPump]]>
+						<![CDATA[" Насос " + here._DeviceNameRu]]>
 					</body>
 				</do-trace>
 			</object>
@@ -495,7 +495,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	</object>
 	<object access-modifier="private" name="ButtonOFF" display-name="ButtonOFF" uuid="6a1426f4-74ea-4272-a26e-3a61884bcb5d" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
 		<designed target="X" value="125" ver="5"/>
-		<designed target="Y" value="275" ver="5"/>
+		<designed target="Y" value="285" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="130" ver="5"/>
 		<designed target="Height" value="26" ver="5"/>
@@ -510,7 +510,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	</object>
 	<object access-modifier="private" name="Pump" display-name="Pump" uuid="f102961b-f51f-47da-a228-69ffedc21d3d" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
 		<designed target="X" value="160" ver="5"/>
-		<designed target="Y" value="195" ver="5"/>
+		<designed target="Y" value="205" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="65" ver="5"/>
@@ -522,7 +522,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="54ab3427-b3ac-4736-907f-32138ff94949" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 	<param access-modifier="private" name="_init_DeviceNameEn" display-name="_init_DeviceNameEn" uuid="65788d3e-24ed-4738-b912-ffd6bdb06e92" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
 	<init target="_init_DeviceNameEn" ver="5" value="PumpNN"/>
-	<object access-modifier="private" name="NumPump" display-name="NumPump" uuid="b54fe2e1-a121-4a9c-8379-cac073a49492" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<init target="NumPump" ver="5" value="???"/>
+	<object access-modifier="private" name="_DeviceNameRu" display-name="_DeviceNameRu" uuid="b54fe2e1-a121-4a9c-8379-cac073a49492" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<init target="_DeviceNameRu" ver="5" value="???"/>
 </type>
 

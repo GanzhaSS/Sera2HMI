@@ -2386,7 +2386,7 @@
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="500" ver="5"/>
 		<designed target="Height" value="34" ver="5"/>
-		<designed target="Text" value="Схема 01" ver="5"/>
+		<designed target="Text" value="Резервуарный парк" ver="5"/>
 		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
 		<designed target="FontColor" value="0xff2a2a2a" ver="5"/>
 		<designed target="TextAlignment" value="132" ver="5"/>
@@ -6953,6 +6953,7 @@
 		<designed target="Height" value="18" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="3"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP91o"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_1" display-name="AnaPrm2_1" uuid="d02c8e08-953f-4512-9fa1-14f1caf8da9a" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="305" ver="5"/>
