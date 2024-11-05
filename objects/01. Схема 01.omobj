@@ -6944,6 +6944,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP91o"/>
+		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_1" display-name="CallPanelCtrlConLoopPAZ_1" uuid="a62a4c09-6faa-4a93-9576-08a1573bed9b" base-type="CallPanelCtrlConLoopPAZ" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="305" ver="5"/>
@@ -6951,9 +6952,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="3"/>
-		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP91o"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP87o"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_1" display-name="AnaPrm2_1" uuid="d02c8e08-953f-4512-9fa1-14f1caf8da9a" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="305" ver="5"/>
@@ -7010,6 +7011,7 @@
 		</object>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP87o"/>
+		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_2" display-name="CallPanelCtrlConLoopPAZ_2" uuid="899a289c-8abb-4304-a864-f151a4d6aa0c" base-type="CallPanelCtrlConLoopPAZ" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="805" ver="5"/>
@@ -7017,8 +7019,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="2"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP87o"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_2" display-name="AnaPrm2_2" uuid="1a5225bb-7c03-49c3-ac79-bb3ff9be1134" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="805" ver="5"/>
@@ -7075,6 +7078,7 @@
 		</object>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP83o"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_3" display-name="CallPanelCtrlConLoopPAZ_3" uuid="5fc93238-ba88-466e-9d9c-3bff45a6d003" base-type="CallPanelCtrlConLoopPAZ" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="1305" ver="5"/>
@@ -7082,8 +7086,10 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="1"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP83o"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_3" display-name="AnaPrm2_3" uuid="d3fd3f04-07cb-44a3-a41d-f1571bbd62c4" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="1305" ver="5"/>
@@ -7147,8 +7153,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="6"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP79o"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_4" display-name="AnaPrm2_4" uuid="859966b2-60f9-464f-9fd2-2f6e4eb67061" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="375" ver="5"/>
@@ -7194,8 +7201,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="5"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP75o"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_5" display-name="AnaPrm2_5" uuid="a50857fc-c980-48d6-85de-d3261da38bab" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="875" ver="5"/>
@@ -7298,8 +7306,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="4"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP71o"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_6" display-name="AnaPrm2_6" uuid="c41c3205-c517-44f0-91ba-a13cf8da9fc9" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="1375" ver="5"/>
@@ -7379,8 +7388,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="9"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP67o"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_7" display-name="AnaPrm2_7" uuid="d395b735-bd4f-4368-99c7-dbcb525a8a90" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="445" ver="5"/>
@@ -7406,8 +7416,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="8"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP63o"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_8" display-name="AnaPrm2_8" uuid="59a7d2a7-b4d9-4eb8-935f-ca6a44f485f9" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="945" ver="5"/>
@@ -7433,8 +7444,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="7"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_ValveVP59o"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_9" display-name="AnaPrm2_9" uuid="19d8f3d2-3144-49dc-9b34-efcc920865f8" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="1445" ver="5"/>

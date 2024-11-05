@@ -75,6 +75,7 @@
 			<body kind="om">
 				<![CDATA[if (ApTypeSecurityOpenLDAP) {
 	PermitControlDevice = TokenControlDevice.Value;
+	here.PermitControlPAZ = here.TokenControlPAZ.Value;
 	PermitControlAnaPrm = TokenControlAnaPrm.Value;
 	PermitControlSettings = TokenControlSettings.Value;
 	PermitEnableChngPsw = TokenEnableChngPsw.Value;
@@ -87,5 +88,10 @@
 	</object>
 	<object access-modifier="private" name="PermitControlPAZ" display-name="PermitControlPAZ" uuid="f50fc1e0-670d-4f20-bcc2-d451fe1913a5" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
 	<init target="PermitControlPAZ" ver="5" value="false"/>
+	<object access-modifier="private" name="TokenControlPAZ" display-name="TokenControlPAZ" uuid="f43a821e-ee37-4ad5-9ad2-93b068d8396b" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="SecurityContext" ver="5" ref="SecurityContextMain"/>
+		<init target="Application" ver="5" value="ARM"/>
+		<init target="Right" ver="5" value="ControlPAZ"/>
+	</object>
 </object>
 

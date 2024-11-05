@@ -24,8 +24,8 @@
 			<object access-modifier="private" uuid="13f17120-ee45-4608-9d0e-20e0f73fb478" base-type="Управление_контуром_ПАЗ" base-type-id="700fa42d-399f-475f-b78f-ca2b2dbcbdc6" ver="5">
 				<init target="_PanelNum" ver="5" ref="here._init_PanelNum"/>
 				<init target="_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
-				<init target="_init_ApSourceForm" ver="5" ref="_init_ApSourceForm"/>
-				<init target="_init_DeviceNameEn" ver="5" ref="_init_DeviceNameEn"/>
+				<init target="_init_DeviceNameEn" ver="5" ref="here._DeviceNameEn"/>
+				<init target="_init_ApSourceForm" ver="5" ref="_ApSourceForm"/>
 			</object>
 		</do-on>
 	</object>
@@ -46,12 +46,12 @@ here.PAZ.Height = here.Height;]]>
 		<designed target="ReAdvise" value="0" ver="5"/>
 		<designed target="ClientDisplayName" value="HMI" ver="5"/>
 		<designed target="ClientId" value="HMI" ver="5"/>
-		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
 		<do-trace access-modifier="private" target="Path" ver="5">
 			<body>
 				<![CDATA["PAZ_ConLoop" + ((here._init_PanelNum<10)?"0":"") + String.ToString(here._init_PanelNum)]]>
 			</body>
 		</do-trace>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="703bfee1-7d58-41cb-b047-32239329774f" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
 		<init target="Source" ver="5" ref="ApSource_This"/>
@@ -256,7 +256,6 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 			</expr>
 		</conditional-expr>
 	</do-trace>
-	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="fde4a6c0-56bd-4c2c-a80a-c037f6a8084d" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 	<object access-modifier="private" name="AlrOut" display-name="AlrOut" uuid="e7bfcbe8-3975-456a-bbf6-0e0497871c81" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="-18" ver="5"/>
 		<designed target="Y" value="0" ver="5"/>
@@ -309,7 +308,9 @@ if (! unit.Global_WinCtrl.FlagWinOpening) {
 	</do-on>
 	<init target="_init_PanelDeltaX" ver="5" value="90"/>
 	<init target="_init_PanelDeltaY" ver="5" value="-110"/>
-	<object access-modifier="private" name="_DeviceNameEn" display-name="_DeviceNameEn" uuid="75217783-8195-45f7-a72f-cccd6d964f89" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<object access-modifier="private" name="_DeviceNameEn" display-name="_DeviceNameEn" uuid="ee8fc2f4-52e7-45b3-805f-8ff153dfa336" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
 	<init target="_DeviceNameEn" ver="5" value="ValveNN"/>
+	<object access-modifier="private" name="_ApSourceForm" display-name="_ApSourceForm" uuid="70402128-3f23-4b8e-b314-5eb90be28ce6" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="08f707c5-ffd4-4982-8c85-7f3ec936962b" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 </type>
 

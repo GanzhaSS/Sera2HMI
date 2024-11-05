@@ -28,132 +28,6 @@
 			</expr>
 		</init>
 	</object>
-	<object access-modifier="private" name="Circle_3" display-name="Circle_3" uuid="5aca198b-c81e-42fa-823a-016c440824fb" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="0" ver="5"/>
-		<designed target="Y" value="20" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="14" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA[Global_ColorSettings.ColorOn]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 1) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA[Global_ColorSettings.ColorNoSts]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA[0]]>
-				</expr>
-			</default-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 1) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA["Не в работе"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA["В работе"]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
-	</object>
-	<object access-modifier="private" name="Circle_4" display-name="Circle_4" uuid="fc5abba8-bfaf-4ba9-933e-cb499fe7ed53" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="0" ver="5"/>
-		<designed target="Y" value="40" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="14" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 2) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA[Global_ColorSettings.ColorOn]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 2) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA[Global_ColorSettings.ColorNoSts]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA[0]]>
-				</expr>
-			</default-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 2) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA["Не в работе"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 2) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA["В работе"]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
-	</object>
 	<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="82ef7c02-4c85-4315-bc83-774d6bcb601e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
 		<designed target="X" value="20" ver="5"/>
 		<designed target="Y" value="-1" ver="5"/>
@@ -244,64 +118,6 @@
 		<designed target="FontColor" value="0xff000000" ver="5"/>
 		<designed target="TextAlignment" value="129" ver="5"/>
 	</object>
-	<object access-modifier="private" name="Circle_7" display-name="Circle_7" uuid="1d88b9f4-fa24-4571-8de1-5c7a9e652430" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
-		<designed target="X" value="0" ver="5"/>
-		<designed target="Y" value="0" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
-		<designed target="Width" value="14" ver="5"/>
-		<designed target="Height" value="14" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xffffaa00" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="PieAngle" value="360" ver="5"/>
-		<designed target="PieAngleStart" value="360" ver="5"/>
-		<designed target="HoleSize" value="0" ver="5"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 0) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA[Global_ColorSettings.ColorNoSts]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 0) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA[Global_ColorSettings.ColorAlr]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 0) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA[""]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 0) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA["Неисправность"]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
-	</object>
 	<object access-modifier="private" name="Circle_8" display-name="Circle_8" uuid="d0bcf0aa-510d-4823-a1f5-013db9151028" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="0" ver="5"/>
 		<designed target="Y" value="80" ver="5"/>
@@ -312,13 +128,13 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
 		<designed target="BrushStyle" value="1" ver="5"/>
 		<designed target="PieAngle" value="360" ver="5"/>
 		<designed target="PieAngleStart" value="360" ver="5"/>
@@ -338,24 +154,6 @@
 				</condition>
 				<expr>
 					<![CDATA[Global_ColorSettings.ColorAlr]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 4) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA["Норма"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 4) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA["Неисправность"]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
@@ -370,13 +168,13 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
 		<designed target="BrushStyle" value="1" ver="5"/>
 		<designed target="PieAngle" value="360" ver="5"/>
 		<designed target="PieAngleStart" value="360" ver="5"/>
@@ -399,24 +197,122 @@
 				</expr>
 			</conditional-expr>
 		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
+	</object>
+	<object access-modifier="private" name="Circle_1" display-name="Circle_1" uuid="a6f3fffb-20e8-4bb1-94d4-f16fa8fdbfaf" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="14" ver="5"/>
+		<designed target="Height" value="14" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 1]]>
+					<![CDATA[((here.ApStatus >> 0) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA["Норма"]]>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 0]]>
+					<![CDATA[((here.ApStatus >> 0) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA["Неисправность"]]>
+					<![CDATA[Global_ColorSettings.ColorAlr]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
+	</object>
+	<object access-modifier="private" name="Circle_3" display-name="Circle_3" uuid="53bce964-5b6e-41ab-bec4-36dfa5aa24d7" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Width" value="14" ver="5"/>
+		<designed target="Height" value="14" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushStyle" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[1]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<init target="BrushColor" ver="5" ref="Global_ColorSettings.ColorOn"/>
+	</object>
+	<object access-modifier="private" name="Circle_10" display-name="Circle_10" uuid="bd2d5a4c-5aaf-4a3f-b8fc-65ef8166eb20" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Width" value="14" ver="5"/>
+		<designed target="Height" value="14" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushStyle" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[((here.ApStatus >> 2) & 1) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[1]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<init target="BrushStyle" ver="5" ref="Global_ColorSettings.ColorOn"/>
 	</object>
 </type>
 

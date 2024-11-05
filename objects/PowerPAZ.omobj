@@ -27,13 +27,13 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xffffaa00" ver="5"/>
+		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
 		<designed target="BrushStyle" value="1" ver="5"/>
 		<designed target="PieAngle" value="360" ver="5"/>
 		<designed target="PieAngleStart" value="360" ver="5"/>
@@ -44,7 +44,7 @@
 					<![CDATA[((here.ApStatus >> 0) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorNoSts]]>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
@@ -53,24 +53,6 @@
 				</condition>
 				<expr>
 					<![CDATA[Global_ColorSettings.ColorAlr]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 0) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA[""]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 0) & 1) == 1]]>
-				</condition>
-				<expr>
-					<![CDATA["Неисправность"]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
@@ -168,13 +150,13 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
 		<designed target="BrushStyle" value="1" ver="5"/>
 		<designed target="PieAngle" value="360" ver="5"/>
 		<designed target="PieAngleStart" value="360" ver="5"/>
@@ -185,33 +167,15 @@
 					<![CDATA[((here.ApStatus >> 1) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorOn]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
-				</condition>
-				<expr>
 					<![CDATA[Global_ColorSettings.ColorAlr]]>
 				</expr>
 			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 1) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA["Норма"]]>
-				</expr>
-			</conditional-expr>
 			<conditional-expr>
 				<condition>
 					<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA["Неисправность"]]>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
@@ -226,13 +190,13 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
 		<designed target="BrushStyle" value="1" ver="5"/>
 		<designed target="PieAngle" value="360" ver="5"/>
 		<designed target="PieAngleStart" value="360" ver="5"/>
@@ -243,33 +207,15 @@
 					<![CDATA[((here.ApStatus >> 2) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorOn]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 2) & 1) == 1]]>
-				</condition>
-				<expr>
 					<![CDATA[Global_ColorSettings.ColorAlr]]>
 				</expr>
 			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 2) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA["Норма"]]>
-				</expr>
-			</conditional-expr>
 			<conditional-expr>
 				<condition>
 					<![CDATA[((here.ApStatus >> 2) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA["Неисправность"]]>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
@@ -284,13 +230,13 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Верхний уровень" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
 		<designed target="BrushStyle" value="1" ver="5"/>
 		<designed target="PieAngle" value="360" ver="5"/>
 		<designed target="PieAngleStart" value="360" ver="5"/>
@@ -301,33 +247,15 @@
 					<![CDATA[((here.ApStatus >> 3) & 1) == 0]]>
 				</condition>
 				<expr>
-					<![CDATA[Global_ColorSettings.ColorOn]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 1]]>
-				</condition>
-				<expr>
 					<![CDATA[Global_ColorSettings.ColorAlr]]>
 				</expr>
 			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="Tooltip" ver="5">
-			<conditional-expr>
-				<condition>
-					<![CDATA[((here.ApStatus >> 3) & 1) == 0]]>
-				</condition>
-				<expr>
-					<![CDATA["Норма"]]>
-				</expr>
-			</conditional-expr>
 			<conditional-expr>
 				<condition>
 					<![CDATA[((here.ApStatus >> 3) & 1) == 1]]>
 				</condition>
 				<expr>
-					<![CDATA["Неисправность"]]>
+					<![CDATA[Global_ColorSettings.ColorOn]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
