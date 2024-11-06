@@ -30,7 +30,9 @@
 		<init target="_FlagPaneEnable" ver="5" ref="here._init_FlagPaneEnable"/>
 		<init target="_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_ConLoopNameEn" ver="5" ref="here._init_ConLoopNameEn"/>
-		<init target="_HlaNameEn" ver="5" ref="here._init_HlaNameEn_1"/>
+		<init target="_HlaNameEn_1" ver="5" ref="here._init_HlaNameEn_1"/>
+		<init target="_HlaNameEn_2" ver="5" ref="here._init_HlaNameEn_2"/>
+		<init target="_HaNameEn_1" ver="5" ref="here._init_HaNameEn_1"/>
 	</object>
 	<object access-modifier="private" name="CircleBack_1" display-name="CircleBack_1" uuid="ef5150a9-5f0c-4f7d-accc-ddf76a11260e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="3" ver="5"/>
@@ -150,7 +152,7 @@
 		<designed target="HoleSize" value="0" ver="5"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[((here.ApStatus_HL1 >> 0) & 1) == 1]]>
+				<![CDATA[((here.ApStatus_HL1 >> 1) & 1) == 1]]>
 			</body>
 		</do-trace>
 	</object>
@@ -177,7 +179,7 @@
 		<designed target="HoleSize" value="0" ver="5"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[((here.ApStatus_HL1 >> 1) & 1) == 1]]>
+				<![CDATA[((here.ApStatus_HL1 >> 0) & 1) == 1]]>
 			</body>
 		</do-trace>
 	</object>
@@ -223,7 +225,7 @@
 		<designed target="HoleSize" value="0" ver="5"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[((here.ApStatus_HL2 >> 0) & 1) == 1]]>
+				<![CDATA[((here.ApStatus_HL2 >> 1) & 1) == 1]]>
 			</body>
 		</do-trace>
 	</object>
@@ -250,7 +252,7 @@
 		<designed target="HoleSize" value="0" ver="5"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[((here.ApStatus_HL2 >> 1) & 1) == 1]]>
+				<![CDATA[((here.ApStatus_HL2 >> 0) & 1) == 1]]>
 			</body>
 		</do-trace>
 	</object>

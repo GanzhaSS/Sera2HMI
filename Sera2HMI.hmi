@@ -121,5 +121,8 @@
 	<object file="Управление_контуром_ПАЗ_Вентилятор.omobj" filter="Панели управления"/>
 	<object file="CallPanelCtrlConLoopPAZ_Vent.omobj" filter=""/>
 	<object file="Управление_клапаном_1.omobj" filter="Панели управления"/>
+	<object file="Управление_контуром_HLA_3.omobj" filter="Панели управления"/>
+	<object file="HLA_3.omobj" filter=""/>
+	<object file="CallPanelCtrlConLoopHLA_3.omobj" filter=""/>
 </unit>
 

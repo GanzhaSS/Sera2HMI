@@ -10,7 +10,7 @@
 	<designed target="Enabled" value="true" ver="5"/>
 	<designed target="Tooltip" value="" ver="5"/>
 	<designed target="Width" value="380" ver="5"/>
-	<designed target="Height" value="400" ver="5"/>
+	<designed target="Height" value="410" ver="5"/>
 	<designed target="PenColor" value="4278190080" ver="5"/>
 	<designed target="PenStyle" value="0" ver="5"/>
 	<designed target="PenWidth" value="1" ver="5"/>
@@ -51,11 +51,11 @@
 		<designed target="ClientId" value="HMI" ver="5"/>
 		<init target="ParentSource" ver="5" ref="_ApSourceConLoop"/>
 	</object>
-	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="5addbb5c-5854-44c8-accf-db07d55feefe" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ApStatusConLoop" display-name="ApStatusConLoop" uuid="5addbb5c-5854-44c8-accf-db07d55feefe" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
 		<init target="Path" ver="5" value="Status"/>
 		<init target="Source" ver="5" ref="here._ApSourceConLoop"/>
 	</object>
-	<object access-modifier="private" name="ApCtrlWord" display-name="ApCtrlWord" uuid="cf9f15bb-2a7c-47d4-8079-6ed6925f1bb8" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ApCtrlWordConLoop" display-name="ApCtrlWordConLoop" uuid="cf9f15bb-2a7c-47d4-8079-6ed6925f1bb8" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
 		<init target="Path" ver="5" value="CtrlWord"/>
 		<init target="Source" ver="5" ref="here._ApSourceConLoop"/>
 	</object>
@@ -81,7 +81,7 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="340" ver="5"/>
-		<designed target="Height" value="100" ver="5"/>
+		<designed target="Height" value="110" ver="5"/>
 		<designed target="RoundingRadius" value="0" ver="5"/>
 		<designed target="PenColor" value="0xff787878" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
@@ -127,7 +127,7 @@
 				<do-trace access-modifier="private" target="FontColor" ver="5">
 					<conditional-expr>
 						<condition>
-							<![CDATA[(ApStatus & 0x0100) == 0x0100]]>
+							<![CDATA[(ApStatusConLoop & 0x0100) == 0x0100]]>
 						</condition>
 						<expr>
 							<![CDATA[0xffffffff]]>
@@ -135,7 +135,7 @@
 					</conditional-expr>
 					<conditional-expr>
 						<condition>
-							<![CDATA[(ApStatus & 0x0100) == 0x0000]]>
+							<![CDATA[(ApStatusConLoop & 0x0100) == 0x0000]]>
 						</condition>
 						<expr>
 							<![CDATA[0xff000000]]>
@@ -146,7 +146,7 @@
 			<do-trace access-modifier="private" target="BrushColor" ver="5">
 				<conditional-expr>
 					<condition>
-						<![CDATA[(ApStatus & 0x0100) == 0x0100]]>
+						<![CDATA[(ApStatusConLoop & 0x0100) == 0x0100]]>
 					</condition>
 					<expr>
 						<![CDATA[0xffff0000]]>
@@ -154,7 +154,7 @@
 				</conditional-expr>
 				<conditional-expr>
 					<condition>
-						<![CDATA[(ApStatus & 0x0010) == 0x0000]]>
+						<![CDATA[(ApStatusConLoop & 0x0010) == 0x0000]]>
 					</condition>
 					<expr>
 						<![CDATA[0xffd0d0d0]]>
@@ -162,7 +162,7 @@
 				</conditional-expr>
 				<conditional-expr>
 					<condition>
-						<![CDATA[(ApStatus & 0x0010) == 0x0010]]>
+						<![CDATA[(ApStatusConLoop & 0x0010) == 0x0010]]>
 					</condition>
 					<expr>
 						<![CDATA[0xff83ffff]]>
@@ -180,10 +180,10 @@
 			<designed target="Rotation" value="0" ver="5"/>
 			<do-trace access-modifier="private" target="Enabled" ver="5">
 				<body>
-					<![CDATA[(ApStatus & 1) == 1 ]]>
+					<![CDATA[(ApStatusConLoop & 1) == 1 ]]>
 				</body>
 			</do-trace>
-			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordConLoop"/>
 			<do-trace access-modifier="private" target="_PermitControl" ver="5">
 				<body kind="om">
 					<![CDATA[unit.Global_Security.PermitControlPAZ]]>
@@ -198,7 +198,7 @@
 			<designed target="Text" value="ВЫКЛЮЧИТЬ" ver="5"/>
 			<init target="_CtrlWordValue" ver="5" value="0x0008"/>
 			<designed target="Rotation" value="0" ver="5"/>
-			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordConLoop"/>
 			<do-trace access-modifier="private" target="_PermitControl" ver="5">
 				<body kind="om">
 					<![CDATA[unit.Global_Security.PermitControlPAZ]]>
@@ -206,19 +206,19 @@
 			</do-trace>
 			<do-trace access-modifier="private" target="Enabled" ver="5">
 				<body>
-					<![CDATA[(ApStatus & 16) == 16]]>
+					<![CDATA[(ApStatusConLoop & 16) == 16]]>
 				</body>
 			</do-trace>
 		</object>
 		<object access-modifier="private" name="Button_CLOSE" display-name="Button_CLOSE" uuid="47f0dc5e-5f1e-47d4-8ce0-d45e029a78f3" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
 			<designed target="X" value="100" ver="5"/>
-			<designed target="Y" value="290" ver="5"/>
+			<designed target="Y" value="300" ver="5"/>
 			<designed target="Width" value="140" ver="5"/>
 			<designed target="Height" value="26" ver="5"/>
 			<designed target="Text" value="Сброс аварий" ver="5"/>
 			<init target="_CtrlWordValue" ver="5" value="0x0001"/>
 			<designed target="Rotation" value="0" ver="5"/>
-			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+			<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordConLoop"/>
 			<do-trace access-modifier="private" target="_PermitControl" ver="5">
 				<body kind="om">
 					<![CDATA[unit.Global_Security.PermitControlPAZ]]>
@@ -227,7 +227,7 @@
 		</object>
 		<object access-modifier="private" name="Button_ BLOCK" display-name="Button_ BLOCK" uuid="c0df00e1-8297-470a-9d31-44b3176701d6" base-type="CallPanelBlock" base-type-id="d8667e0c-9c47-4b8a-b9cb-d47b702d6bc5" ver="5" description="" cardinal="1">
 			<designed target="X" value="235" ver="5"/>
-			<designed target="Y" value="63" ver="5"/>
+			<designed target="Y" value="73" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="100" ver="5"/>
 			<designed target="Height" value="22" ver="5"/>
@@ -282,7 +282,7 @@ else
 			<init target="Visible" ver="5" value="false"/>
 			<do-trace access-modifier="private" target="Visible" ver="5">
 				<body>
-					<![CDATA[(ApStatus & 0x0002) == 0x0002]]>
+					<![CDATA[(ApStatusConLoop & 0x0002) == 0x0002]]>
 				</body>
 			</do-trace>
 			<init target="BrushColor" ver="5" ref="unit.Global_ColorSettings.ColorAlr"/>
@@ -398,7 +398,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	</object>
 	<object access-modifier="private" name="Panel" display-name="Panel" uuid="7502a915-c354-4387-937c-aaafe9fed368" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="20" ver="5"/>
-		<designed target="Y" value="185" ver="5"/>
+		<designed target="Y" value="195" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -440,7 +440,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 				<designed target="Rotation" value="0" ver="5"/>
 				<designed target="Width" value="110" ver="5"/>
 				<designed target="Height" value="20" ver="5"/>
-				<designed target="Text" value="Вентилятор 4" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
 				<designed target="TextAlignment" value="132" ver="5"/>
 				<designed target="FontColor" value="0xff151515" ver="5"/>
 				<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
@@ -453,12 +453,17 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 				<designed target="Tooltip" value="" ver="5"/>
 				<init target="Font" ver="5" ref="unit.Global_Theme.ThemeBlock.Font"/>
 				<init target="FontColor" ver="5" ref="unit.Global_Theme.ThemeBlock.TitleColor"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[here.ApNameRuDevice]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="TreeMapLayout_1" display-name="TreeMapLayout_1" uuid="44357dec-c7b2-447f-b21b-95c7cc8efe28" base-type="TreeMapLayout" base-type-id="abf2598f-0779-4d54-94e9-597b15cdb8e9" ver="5" description="" cardinal="1"/>
 			<object access-modifier="private" name="LayoutSizeLimits_1" display-name="LayoutSizeLimits_1" uuid="d288f8e7-4187-4b2e-a90b-4a7fa9a7394e" base-type="LayoutSizeLimits" base-type-id="10342c1f-560b-4160-9de5-7e2c08026f47" ver="5" description="" cardinal="1">
-				<designed target="MinWidth" value="110" ver="5"/>
+				<designed target="MinWidth" value="120" ver="5"/>
 				<designed target="MinHeight" value="20" ver="5"/>
-				<designed target="MaxWidth" value="110" ver="5"/>
+				<designed target="MaxWidth" value="120" ver="5"/>
 				<designed target="MaxHeight" value="20" ver="5"/>
 			</object>
 			<object access-modifier="private" name="LayoutMargins_1" display-name="LayoutMargins_1" uuid="c9298fc7-80aa-4e44-80e0-7eade7f37e8e" base-type="LayoutMargins" base-type-id="d86ce751-1ea7-42c6-8d4b-10c651a2727d" ver="5" description="" cardinal="1">
@@ -475,22 +480,22 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	</object>
 	<object access-modifier="private" name="ButtonOFF" display-name="ButtonOFF" uuid="fcb89a01-5b52-4042-81d1-c03d2c968111" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
 		<designed target="X" value="125" ver="5"/>
-		<designed target="Y" value="285" ver="5"/>
+		<designed target="Y" value="295" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="130" ver="5"/>
 		<designed target="Height" value="26" ver="5"/>
 		<designed target="Text" value="ВЫКЛЮЧИТЬ" ver="5"/>
-		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordConLoop"/>
 		<init target="_CtrlWordValue" ver="5" value="4"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>
-				<![CDATA[((ApStatus >> 6) & 1) == 1]]>
+				<![CDATA[((ApStatusDevice >> 6) & 1) == 1]]>
 			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="Pump" display-name="Pump" uuid="5f5cca7c-92bb-4a5e-957d-599eff2c1983" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
 		<designed target="X" value="160" ver="5"/>
-		<designed target="Y" value="215" ver="5"/>
+		<designed target="Y" value="225" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="45" ver="5"/>
@@ -502,5 +507,31 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="b32662bf-c29f-4560-98c3-d0f3be8f366c" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 	<param access-modifier="private" name="_init_DeviceNameEn" display-name="_init_DeviceNameEn" uuid="c49a89f2-f718-4e47-baa5-12e9ca6df6ae" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
 	<init target="_init_DeviceNameEn" ver="5" value="PumpNN"/>
+	<object access-modifier="private" name="_DeviceNameRu" display-name="_DeviceNameRu" uuid="338f43e9-5e8f-4cd7-9577-f78c2f804729" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<init target="_DeviceNameRu" ver="5" value="???"/>
+	<object access-modifier="private" name="ApStatusDevice" display-name="ApStatusDevice" uuid="d1148024-caff-48d1-8dcd-326c4b6b8c8f" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_DeviceNameEn + ".Status"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApCtrlWordDevice" display-name="ApCtrlWordDevice" uuid="57c9b58c-a6c3-47ed-be78-a943a3d02efa" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_DeviceNameEn + ".CtrlWord"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApNameRuDevice" display-name="ApNameRuDevice" uuid="550ad2f5-058c-4636-a31b-b2d86123aabf" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[_init_DeviceNameEn + ".NameRu"]]>
+			</expr>
+		</init>
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+	</object>
 </type>
 

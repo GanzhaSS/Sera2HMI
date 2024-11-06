@@ -225,7 +225,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 			<designed target="Y" value="10" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="SignalFore" display-name="SignalFore" uuid="8df52dfa-902c-4dc6-a42a-3d463b1a8e66" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="SignalFore_2" display-name="SignalFore_2" uuid="8df52dfa-902c-4dc6-a42a-3d463b1a8e66" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
 		<designed target="X" value="19" ver="5"/>
 		<designed target="Y" value="55" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>

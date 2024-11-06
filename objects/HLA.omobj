@@ -105,7 +105,7 @@
 			<designed target="Y" value="10" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="CircleFore_1_1" display-name="CircleFore_1_1" uuid="5f9c92b9-35a2-42f3-92cc-db8243c67887" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="CircleFore_1" display-name="CircleFore_1" uuid="5f9c92b9-35a2-42f3-92cc-db8243c67887" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="3" ver="5"/>
 		<designed target="Y" value="4" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
@@ -128,11 +128,11 @@
 		<designed target="HoleSize" value="0" ver="5"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[((here.ApStatus >> 0) & 1) == 1]]>
+				<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="CircleFore_1_2" display-name="CircleFore_1_2" uuid="75e47c73-77b2-4560-b29d-dda0cacbd83e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="CircleFore_2" display-name="CircleFore_2" uuid="75e47c73-77b2-4560-b29d-dda0cacbd83e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="3" ver="5"/>
 		<designed target="Y" value="4" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
@@ -155,7 +155,7 @@
 		<designed target="HoleSize" value="0" ver="5"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[((here.ApStatus >> 1) & 1) == 1]]>
+				<![CDATA[((here.ApStatus >> 0) & 1) == 1]]>
 			</body>
 		</do-trace>
 	</object>

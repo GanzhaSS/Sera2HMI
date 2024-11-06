@@ -74,11 +74,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
 			<body kind="om">
 				<![CDATA[if (ApTypeSecurityOpenLDAP) {
-	PermitControlDevice = TokenControlDevice.Value;
+	here.PermitControlDevice = here.TokenControlDevice.Value;
 	here.PermitControlPAZ = here.TokenControlPAZ.Value;
-	PermitControlAnaPrm = TokenControlAnaPrm.Value;
-	PermitControlSettings = TokenControlSettings.Value;
-	PermitEnableChngPsw = TokenEnableChngPsw.Value;
+	here.PermitControlAnaPrm = here.TokenControlAnaPrm.Value;
+	here.PermitControlSettings = here.TokenControlSettings.Value;
+	here.PermitEnableChngPsw = here.TokenEnableChngPsw.Value;
 	
 	// DebugTool_1.Log("ControlDevice = " + String.ToString(TokenControlDevice.Value));
 }

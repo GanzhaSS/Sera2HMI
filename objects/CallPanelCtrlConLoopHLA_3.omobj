@@ -1,0 +1,110 @@
+<type access-modifier="private" name="CallPanelCtrlConLoopHLA_3" display-name="CallPanelCtrlConLoopHLA_3" uuid="874a29b1-4ad3-49f9-a5aa-92eed032c3fd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="25" ver="5"/>
+	<designed target="Height" value="102" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffffffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="Action_PanOpen" display-name="Action_PanOpen" uuid="2322ccd0-78cc-4955-b298-8bea378061fb" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="09de2509-028b-4bd7-86a7-c84b6bc8f3c5" base-type="Управление_контуром_HLA_3" base-type-id="3bc8a24d-1ca6-4e5f-a90e-103ae6b8f739" ver="5">
+				<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
+				<init target="_init_HlaNameEn1" ver="5" ref="here._HlaNameEn1"/>
+				<init target="_init_HlaNameEn2" ver="5" ref="here._HlaNameEn2"/>
+				<init target="_init_HaNameEn1" ver="5" ref="here._HaNameEn1"/>
+				<init target="_init_ConLoopNameEn" ver="5" ref="here._ConLoopNameEn"/>
+				<init target="_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="_PanelDeltaX" display-name="_PanelDeltaX" uuid="fc555e26-2263-4e83-83c1-a9ebb61d1d52" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_PanelDeltaY" display-name="_PanelDeltaY" uuid="cbe2b0a9-8b8f-4433-bff0-330413870156" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<init target="_PanelDeltaY" ver="5" value="20"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[// Visible = true;
+BrushStyle = 1;
+PenStyle = 1;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[// Visible = false;
+BrushStyle = 0;
+PenStyle = 0;]]>
+		</body>
+	</do-on>
+	<init target="BrushStyle" ver="5" value="0"/>
+	<init target="PenStyle" ver="5" value="0"/>
+	<init target="_ConLoopNameEn" ver="5" value="ConLoopXX"/>
+	<object access-modifier="private" name="_FlagPaneEnable" display-name="_FlagPaneEnable" uuid="a3e314fb-ebff-4a58-98a2-64ec2dfb0369" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_ApSourceForm" display-name="_ApSourceForm" uuid="5c09b3a5-6e9f-4ae5-886b-942db47b2f97" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="_HlaNameEn1" display-name="_HlaNameEn1" uuid="e4e8eb1e-ebf9-47ee-abc5-d8c85c6c5f0a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<object access-modifier="private" name="_ConLoopNameEn" display-name="_ConLoopNameEn" uuid="0720c020-3eeb-4dd6-9bae-5e6495ef468f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_PanelDeltaX" ver="5" value="0"/>
+	<init target="Enabled" ver="5" value="false"/>
+	<do-trace access-modifier="private" target="Enabled" ver="5">
+		<body>
+			<![CDATA[here._FlagPaneEnable]]>
+		</body>
+	</do-trace>
+	<init target="_FlagPaneEnable" ver="5" value="true"/>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseClick">
+		<body kind="om">
+			<![CDATA[// Сохраняем необходимые координаты (относительно монитора) для открытия панели управления
+unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4(me._PanelDeltaX + here.ScreenX(here.X,here.Y));
+unit.Global_WinCtrl.PanelY = TypeConvert.ToInt4(me._PanelDeltaY + here.ScreenY(here.X,here.Y) + here.Height);
+
+// Открытие панели управления ...
+if (! unit.Global_WinCtrl.FlagWinOpening) {
+   unit.Global_WinCtrl.FlagWinOpening = true;
+   if (unit.Global_WinCtrl.WindowGroupPanelCtrlDevice.WindowCount < 1)  // Если ни одна панель не открыта, то ...
+      Action_PanOpen.Invoke();
+   else {
+      unit.Global_WinCtrl.WindowGroupPanelCtrlDevice.SendToAll("Close","");
+      Action_PanOpen.Invoke();
+   }
+}
+]]>
+		</body>
+	</do-on>
+	<init target="_HlaNameEn1" ver="5" value="HLA"/>
+	<object access-modifier="private" name="_HlaNameEn2" display-name="_HlaNameEn2" uuid="03fe6c44-1757-4a27-bc91-f6229b86bfe8" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_HlaNameEn2" ver="5" value="HLA"/>
+	<object access-modifier="private" name="_HaNameEn1" display-name="_HaNameEn1" uuid="860566ed-008a-48b5-9d03-d20913a7142f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_HaNameEn1" ver="5" value="HLA"/>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="0e66172f-6455-4e53-97c2-6b0176c64961" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["PAZ_ConLoop" + ((here._init_PanelNum<10)?"0":"") + String.ToString(here._init_PanelNum)]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="cf31097a-c1f7-4375-83ba-3e0710fada08" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="_init_PanelNum" display-name="_init_PanelNum" uuid="2638c19f-f4ca-4ee2-a707-fc5644230260" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
+	<init target="_init_PanelNum" ver="5" value="1"/>
+</type>
+

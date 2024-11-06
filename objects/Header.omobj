@@ -823,7 +823,7 @@ unit.Global_DataArray.PanelCaption[10] = "ПАЗ 10";
 unit.Global_DataArray.PanelCaption[11] = "ПАЗ 11";
 unit.Global_DataArray.PanelCaption[12] = "ПАЗ 12";
 unit.Global_DataArray.PanelCaption[13] = "ПАЗ 13";
-unit.Global_DataArray.PanelCaption[14] = "ПАЗ 14";
+unit.Global_DataArray.PanelCaption[28] = "ПАЗ 14";
 ]]>
 		</body>
 	</do-on>
@@ -994,7 +994,7 @@ unit.Global_DataArray.PAZName[10] = "Контур аварийного выкл�
 unit.Global_DataArray.PAZName[11] = "Контур аварийного выключения насоса 1-2";
 unit.Global_DataArray.PAZName[12] = "Контур аварийного выключения насоса 2-1";
 unit.Global_DataArray.PAZName[13] = "Контур аварийного выключения насоса 2-2";
-unit.Global_DataArray.PAZName[14] = "Контур аварийного включения вентилятора В4";
+unit.Global_DataArray.PAZName[28] = "Контур аварийного включения вентилятора В4";
 
 ]]>
 		</body>
@@ -1011,29 +1011,6 @@ unit.Global_DataArray.PAZName[14] = "Контур аварийного вклю�
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body kind="om">
 				<![CDATA[(ApAlrConnect.Quality == 192) && ApAlrConnect]]>
-			</body>
-		</do-trace>
-	</object>
-	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="b7e37769-13ed-49c0-a859-51740366aef6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1162" ver="5"/>
-		<designed target="Y" value="57" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="191" ver="5"/>
-		<designed target="Height" value="20" ver="5"/>
-		<designed target="Text" value="Текст" ver="5"/>
-		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
-		<designed target="FontColor" value="4278190080" ver="5"/>
-		<designed target="TextAlignment" value="33" ver="5"/>
-		<do-trace access-modifier="private" target="Text" ver="5">
-			<body>
-				<![CDATA[String.ToString(Global_Security.TokenControlPAZ)]]>
 			</body>
 		</do-trace>
 	</object>

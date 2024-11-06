@@ -23,7 +23,10 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
 			<object access-modifier="private" uuid="06fe4acb-4370-4f2c-8ec4-eb6df95471cc" base-type="Управление_контуром_HLA_2" base-type-id="c694eb96-2eff-4c48-b8d5-bb961d625957" ver="5">
 				<init target="_init_ApSourceForm" ver="5" ref="_init_ApSourceForm"/>
-				<init target="_init_HlaNameEn_2" ver="5" ref="here._HlaNameEn"/>
+				<init target="_init_HlaNameEn_1" ver="5" ref="here._HlaNameEn_1"/>
+				<init target="_init_ConLoopNameEn" ver="5" ref="here._ConLoopNameEn"/>
+				<init target="_init_HlaNameEn_2" ver="5" ref="here._HlaNameEn_2"/>
+				<init target="_init_HaNameEn_1" ver="5" ref="here._HaNameEn_1"/>
 			</object>
 		</do-on>
 	</object>
@@ -49,7 +52,7 @@ PenStyle = 0;]]>
 	<init target="_ConLoopNameEn" ver="5" value="ConLoopXX"/>
 	<object access-modifier="private" name="_FlagPaneEnable" display-name="_FlagPaneEnable" uuid="24127d35-f006-4b20-b1ac-14073a3c77cf" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="_ApSourceForm" display-name="_ApSourceForm" uuid="3f1cce9f-63e5-49ae-9eb8-1c5baec108b1" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
-	<object access-modifier="private" name="_HlaNameEn" display-name="_HlaNameEn" uuid="0e95a09e-3507-4295-a7d7-2269cad2d19f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<object access-modifier="private" name="_HlaNameEn_1" display-name="_HlaNameEn_1" uuid="0e95a09e-3507-4295-a7d7-2269cad2d19f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
 	<object access-modifier="private" name="_ConLoopNameEn" display-name="_ConLoopNameEn" uuid="33d97178-64c6-4305-aea2-8a8d698c922c" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
 	<init target="_PanelDeltaX" ver="5" value="0"/>
 	<init target="Enabled" ver="5" value="false"/>
@@ -78,6 +81,10 @@ if (! unit.Global_WinCtrl.FlagWinOpening) {
 ]]>
 		</body>
 	</do-on>
-	<init target="_HlaNameEn" ver="5" value="HLA"/>
+	<init target="_HlaNameEn_1" ver="5" value="HLA"/>
+	<object access-modifier="private" name="_HlaNameEn_2" display-name="_HlaNameEn_2" uuid="59c1e3c1-1d44-423f-bd07-b3b1c69044de" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_HlaNameEn_2" ver="5" value="HLA"/>
+	<object access-modifier="private" name="_HaNameEn_1" display-name="_HaNameEn_1" uuid="14d51f8f-b64a-4c58-b92a-baa3b8d02552" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_HaNameEn_1" ver="5" value="HLA"/>
 </type>
 

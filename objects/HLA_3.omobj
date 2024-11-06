@@ -1,0 +1,415 @@
+<type access-modifier="private" name="HLA_3" display-name="HLA_3" uuid="ee53eed5-f08d-4e92-a84c-71a6e3e81c93" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="85" ver="5"/>
+	<designed target="Height" value="25" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4278190080" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="CallPanelCtrlConLoopHLA3" display-name="CallPanelCtrlConLoopHLA3" uuid="12e908df-ba45-4d73-8650-e06b315ed44d" base-type="CallPanelCtrlConLoopHLA_3" base-type-id="874a29b1-4ad3-49f9-a5aa-92eed032c3fd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="85" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<init target="_PanelDeltaX" ver="5" ref="here._init_PanelDeltaX"/>
+		<init target="_PanelDeltaY" ver="5" ref="here._init_PanelDeltaY"/>
+		<init target="_FlagPaneEnable" ver="5" ref="here._init_FlagPaneEnable"/>
+		<init target="_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
+		<init target="_ConLoopNameEn" ver="5" ref="here._init_ConLoopNameEn"/>
+		<init target="_HlaNameEn" ver="5" ref="here._init_HlaNameEn1"/>
+		<init target="_HlaNameEn1" ver="5" ref="here._init_HlaNameEn1"/>
+		<init target="_HlaNameEn2" ver="5" ref="here._init_HlaNameEn2"/>
+		<init target="_HaNameEn1" ver="5" ref="here._init_HaNameEn1"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_1" display-name="CircleBack_1" uuid="fcc46688-6d85-4cac-bc75-4a9a2aba1ff4" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Сигнализация световая" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleBack_2" display-name="CircleBack_2" uuid="c862cade-dcaf-4a01-8f0d-fa451236e82d" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="33" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Сигнализация световая" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffd0d0d0" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="SignalBack" display-name="SignalBack" uuid="eca53683-ab05-45b1-8ef0-d71c52143b6a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="61" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Звуковая сигнализация" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="14" ver="5"/>
+		<designed target="PenColor" value="0xff8d8d8d" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_0" display-name="Point_0" uuid="f37d3a04-683a-4fde-83d6-3e549e984f4e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="71ad15b2-df8f-4d6f-a90f-070c98c86d78" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="65b0de5b-6769-424d-a2e0-5b98edec198a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5" cardinal="1">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="a34eb3e4-6a3a-4751-8c17-a22b4b457735" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="ca1247c8-88ae-4283-b4d1-767cd520c487" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="16" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="248a0863-87ac-4047-a14a-42babcddf1fe" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="16" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="135e64ef-12c1-45c1-ba0e-32f1006a541b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="d5ac8289-5b33-4357-b596-6635196b2b74" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="CircleFore_1_1" display-name="CircleFore_1_1" uuid="a90dc3b7-6de8-4e2f-bff0-94ff58d0cd25" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Концентрация ПВ" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((here.ApStatusHla1 >> 1) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CircleFore_1_2" display-name="CircleFore_1_2" uuid="cca74f20-bc9e-487e-bf4b-4338ac38f396" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Концентрация АВ" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((here.ApStatusHla1 >> 0) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_init_PanelDeltaX" display-name="_init_PanelDeltaX" uuid="5d8a1472-6df1-4213-bfe8-1256af3b590a" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<init target="_init_PanelDeltaX" ver="5" value="-85"/>
+	<param access-modifier="private" name="_init_PanelDeltaY" display-name="_init_PanelDeltaY" uuid="59546503-2eb5-4e0c-b925-b37b568065e7" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<init target="_init_PanelDeltaY" ver="5" value="-310"/>
+	<param access-modifier="private" name="_init_FlagPaneEnable" display-name="_init_FlagPaneEnable" uuid="a20a38c4-9fb5-4917-8e85-cff7172730ee" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description=""/>
+	<init target="_init_FlagPaneEnable" ver="5" value="true"/>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="4c6ff2eb-730a-4ddd-82bd-571460be3711" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_init_HlaNameEn1" display-name="_init_HlaNameEn1" uuid="02469fcb-1891-42f2-bf83-15ce978ef0aa" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_HlaNameEn1" ver="5" value="HLA"/>
+	<param access-modifier="private" name="_init_ConLoopNameEn" display-name="_init_ConLoopNameEn" uuid="4d177690-efa5-4f48-913e-81d5cfb92d13" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_ConLoopNameEn" ver="5" value="ConLoopXX"/>
+	<object access-modifier="private" name="ApStatusHla1" display-name="ApStatusHla1" uuid="c39450b2-1612-483e-adfc-874bfd624e5b" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here._init_HlaNameEn1 + ".Status"]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_init_HlaNameEn2" display-name="_init_HlaNameEn2" uuid="c7ee2c04-35a3-41cd-b85e-b64034d4e8d1" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_HlaNameEn2" ver="5" value="HLA"/>
+	<param access-modifier="private" name="_init_HaNameEn1" display-name="_init_HaNameEn1" uuid="18b1c520-a00b-4ab4-bc54-ae6d090d6218" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<init target="_init_HaNameEn1" ver="5" value="HLA"/>
+	<object access-modifier="private" name="ApStatusHla2" display-name="ApStatusHla2" uuid="c1ab2811-bb14-458b-a6e2-017281ec9d77" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here._init_HlaNameEn2 + ".Status"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApStatusHa1" display-name="ApStatusHa1" uuid="ba2babe4-2096-4011-9495-a129126bdd1e" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="_init_ApSourceForm"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here._init_HaNameEn1 + ".Status"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="CircleFore_2_2" display-name="CircleFore_2_2" uuid="c759ff81-d423-4f42-afb6-7508d7a21973" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="33" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Концентрация АВ" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((here.ApStatusHla2 >> 0) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CircleFore_2_1" display-name="CircleFore_2_1" uuid="1db29dfb-9849-4648-b5ec-8cc28ad63c9c" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="33" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="Концентрация ПВ" ver="5"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((here.ApStatusHla2 >> 1) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalFore_2" display-name="SignalFore_2" uuid="68bb4219-5213-40a4-b9ee-3c3c3a03b00a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="61" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="14" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_0" display-name="Point_0" uuid="611096fe-bc95-42e9-9e77-1b1f6af51b78" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="5fac354a-0555-476f-aaf8-df477a6ba1d8" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="7bf3dbc0-ed6c-4719-97c6-a4c5b672addf" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5" cardinal="1">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="a78ea03c-228e-4429-9314-2cf69ccf8d1b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="1d776681-f21c-42c7-9fb3-bc7a00ca6220" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="16" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="a8cad8a0-8f95-453a-9803-efe1a14bae29" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="16" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="d4e31f1f-c986-4f15-bf8d-9b7f95c5dec2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="6213c13f-0ca8-43ea-b55c-cf7ed0b50eba" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((here.ApStatusHa1 >> 1) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalFore_1" display-name="SignalFore_1" uuid="7ce8d8b3-c8ed-4bef-bf15-9bedf4d75519" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="61" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="14" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffff0000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_0" display-name="Point_0" uuid="1a7c50c6-1966-42ad-801d-8340a20361dd" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="8b2f9f08-d987-4176-b29d-10431a152b67" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="396902d8-4673-439a-945d-05a1d99c382e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5" cardinal="1">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="ba11f606-cd4f-483b-b5a3-825a334b63bb" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="fe17a4bc-209d-4371-80ee-2dde014501c6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="16" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="4dd212b7-bb93-4119-aaf0-d36ef2113752" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="16" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="f4b791f2-b480-4f37-9b8c-32a8f804882a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="8575b6cb-e8af-4f2e-8863-1c88cf7b60e1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[((here.ApStatusHa1 >> 0) & 1) == 1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="b3919b5e-7225-49d7-afe2-4fd090f35589" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Status"/>
+		<init target="Source" ver="5" ref="ApSource_This"/>
+	</object>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="83b08b37-8317-4756-a2c3-f5476003b6a8" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["PAZ_ConLoop" + ((here._init_PanelNum<10)?"0":"") + String.ToString(here._init_PanelNum)]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="_init_PanelNum" display-name="_init_PanelNum" uuid="4dea2bb5-89b4-4c43-bdd0-027de4711d8a" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
+	<init target="_init_PanelNum" ver="5" value="1"/>
+</type>
+

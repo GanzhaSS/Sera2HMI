@@ -7533,7 +7533,8 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_16"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop21"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_16"/>
 	</object>
 	<object access-modifier="private" name="HLA4_2" display-name="HLA4_2" uuid="9a0032eb-b34b-489b-a683-4635f89d023b" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="250" ver="5"/>
@@ -7542,8 +7543,9 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_02"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop14"/>
 		<init target="_init_PanelDeltaY" ver="5" value="50"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_02"/>
 	</object>
 	<object access-modifier="private" name="HLA4_3" display-name="HLA4_3" uuid="aa3247ed-7164-489e-b6fa-47937c74fdd4" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="750" ver="5"/>
@@ -7552,8 +7554,9 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_04"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop15"/>
 		<init target="_init_PanelDeltaY" ver="5" value="50"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_04"/>
 	</object>
 	<object access-modifier="private" name="HLA4_4" display-name="HLA4_4" uuid="844d6de3-6899-441b-be13-3138d0f5a117" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="1250" ver="5"/>
@@ -7562,8 +7565,9 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_06"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop16"/>
 		<init target="_init_PanelDeltaY" ver="5" value="50"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_06"/>
 	</object>
 	<object access-modifier="private" name="HLA4_5" display-name="HLA4_5" uuid="60be0485-aaf5-4fae-9654-b664e713cf8a" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="1320" ver="5"/>
@@ -7572,7 +7576,8 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_08"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop17"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_08"/>
 	</object>
 	<object access-modifier="private" name="HLA4_6" display-name="HLA4_6" uuid="60eb1afc-2c8a-45e4-901b-01fb04a1a465" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="820" ver="5"/>
@@ -7581,7 +7586,8 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_18"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop22"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_18"/>
 	</object>
 	<object access-modifier="private" name="HLA4_7" display-name="HLA4_7" uuid="3688f3b1-e6a0-435b-b2c6-cbe287f647f9" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="390" ver="5"/>
@@ -7590,7 +7596,8 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_14"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop20"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_14"/>
 	</object>
 	<object access-modifier="private" name="HLA4_8" display-name="HLA4_8" uuid="f5797416-a204-4b2b-a919-41e71671590b" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="890" ver="5"/>
@@ -7599,7 +7606,8 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_12"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop19"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_12"/>
 	</object>
 	<object access-modifier="private" name="HLA4_9" display-name="HLA4_9" uuid="652e0b6c-aa03-491c-a856-d8d6e3ebd77a" base-type="HLA4" base-type-id="5f6b30bc-189d-4a4e-9d8c-c48f4a47b5dd" ver="5" description="" cardinal="1">
 		<designed target="X" value="1390" ver="5"/>
@@ -7608,7 +7616,8 @@
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA11_10"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop18"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA11_10"/>
 	</object>
 </type>
 

@@ -975,7 +975,7 @@
 	</object>
 	<object access-modifier="private" name="vpH_A19_01" display-name="vpH_A19_01" uuid="fca24652-4985-4de2-8147-c85832000ee5" base-type="AnaPrm_pH" base-type-id="b997109f-1443-41f8-b2f3-4282ee230211" ver="5" description="" cardinal="1">
 		<designed target="X" value="327" ver="5"/>
-		<designed target="Y" value="391" ver="5"/>
+		<designed target="Y" value="386" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="65" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
@@ -3777,27 +3777,9 @@
 			<designed target="FontColor" value="0xff5500ff" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="AirTemp" display-name="AirTemp" uuid="68e2c829-c09d-49f7-b02f-f2fbc93ed439" base-type="AnaPrm_Temp" base-type-id="ff6fc2d6-bc7a-4b2d-a949-b77543d77cd8" ver="5" description="" cardinal="1">
-		<designed target="X" value="1160" ver="5"/>
-		<designed target="Y" value="80" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="70" ver="5"/>
-		<designed target="Height" value="20" ver="5"/>
-		<object access-modifier="private" name="AnaPrmPosition_3" display-name="AnaPrmPosition_3" uuid="b20257ef-91a5-4d3d-a9b4-ecf23684afbf" base-type="AnaPrmPosition" base-type-id="d2cf8b13-1584-45a0-b877-0861d06f82e5" ver="5" description="" cardinal="1">
-			<designed target="X" value="0" ver="5"/>
-			<designed target="Y" value="18" ver="5"/>
-			<designed target="Rotation" value="0" ver="5"/>
-			<designed target="Width" value="70" ver="5"/>
-			<designed target="Height" value="18" ver="5"/>
-			<designed target="Text" value="A25-01" ver="5"/>
-			<designed target="TextAlignment" value="129" ver="5"/>
-		</object>
-		<init target="_init_NameEn" ver="5" value="PAZ_SigA25_01"/>
-		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-	</object>
 	<object access-modifier="private" name="pH_A23_01" display-name="pH_A23_01" uuid="c2553210-0136-4b8c-8db8-1eca722f8d8e" base-type="AnaPrm_pH" base-type-id="b997109f-1443-41f8-b2f3-4282ee230211" ver="5" description="" cardinal="1">
 		<designed target="X" value="865" ver="5"/>
-		<designed target="Y" value="391" ver="5"/>
+		<designed target="Y" value="386" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="65" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
@@ -4010,6 +3992,8 @@
 		<designed target="Height" value="18" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="11"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_Pump1_2"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_2" display-name="CallPanelCtrlConLoopPAZ_2" uuid="915e102a-48bc-4643-849d-d2a03f64652b" base-type="CallPanelCtrlConLoopPAZ_Pumps" base-type-id="efa22260-1a2b-4a6e-8ab9-1af4b732f157" ver="5" description="" cardinal="1">
 		<designed target="X" value="465" ver="5"/>
@@ -4019,6 +4003,8 @@
 		<designed target="Height" value="18" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="10"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_Pump1_1"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_3" display-name="CallPanelCtrlConLoopPAZ_3" uuid="2e3c1a65-af67-44d4-9951-cd9713191ea6" base-type="CallPanelCtrlConLoopPAZ_Pumps" base-type-id="efa22260-1a2b-4a6e-8ab9-1af4b732f157" ver="5" description="" cardinal="1">
 		<designed target="X" value="825" ver="5"/>
@@ -4028,6 +4014,8 @@
 		<designed target="Height" value="18" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="13"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_Pump2_2"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_4" display-name="CallPanelCtrlConLoopPAZ_4" uuid="493900c3-1bef-4d54-b6da-d2b087dd7d12" base-type="CallPanelCtrlConLoopPAZ_Pumps" base-type-id="efa22260-1a2b-4a6e-8ab9-1af4b732f157" ver="5" description="" cardinal="1">
 		<designed target="X" value="965" ver="5"/>
@@ -4037,6 +4025,8 @@
 		<designed target="Height" value="18" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelNum" ver="5" value="12"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_Pump2_1"/>
 	</object>
 	<object access-modifier="private" name="VentV3_1" display-name="VentV3_1" uuid="0424c746-c5cd-47a0-80bd-17708776a4fd" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
 		<designed target="X" value="1780" ver="5"/>
@@ -4057,6 +4047,7 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_VentV4"/>
 		<init target="_init_PanelDeltaX" ver="5" value="-200"/>
 		<init target="_init_PanelDeltaY" ver="5" value="80"/>
+		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_5" display-name="CallPanelCtrlConLoopPAZ_5" uuid="00b2229f-3613-4126-923a-a16c3e59f546" base-type="CallPanelCtrlConLoopPAZ_Vent" base-type-id="bc91b041-5a14-4844-8e9c-f7ad61872e3d" ver="5" description="" cardinal="1">
 		<designed target="X" value="1775" ver="5"/>
@@ -4065,7 +4056,11 @@
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-		<init target="_init_PanelNum" ver="5" value="14"/>
+		<init target="_init_PanelNum" ver="5" value="28"/>
+		<init target="_init_PanelDeltaY" ver="5" value="30"/>
+		<init target="_init_PanelDeltaX" ver="5" value="-300"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_DeviceNameEn" ver="5" value="PAZ_VentV4"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_1" display-name="AnaPrm2_1" uuid="434de014-b978-4e92-9b40-df79f16cefe2" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="105" ver="5"/>
@@ -4091,10 +4086,11 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA24_02"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop23"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelDeltaY" ver="5" value="50"/>
 		<init target="_init_PanelDeltaX" ver="5" value="0"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA24_02"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_2" display-name="AnaPrm2_2" uuid="4832e985-dcfc-4ee0-8714-ab46e9f697cd" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="795" ver="5"/>
@@ -4120,9 +4116,10 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA24_04"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop24"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_PanelDeltaY" ver="5" value="50"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA24_04"/>
 	</object>
 	<object access-modifier="private" name="Spline_14" display-name="Spline_14" uuid="1597b524-96d0-4fb7-a670-1a7f34cac445" base-type="Spline" base-type-id="6f0ee94e-e217-41a0-978b-c65da315607c" ver="5" description="" cardinal="1">
 		<designed target="X" value="954.02957930693469" ver="5"/>
@@ -4220,8 +4217,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA16_02"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop25"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA16_02"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_4" display-name="AnaPrm2_4" uuid="c3a29aaa-a874-4975-9b79-d94e498bd72f" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="1365" ver="5"/>
@@ -4247,8 +4245,9 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA16_04"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop26"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA16_04"/>
 	</object>
 	<object access-modifier="private" name="AnaPrm2_5" display-name="AnaPrm2_5" uuid="26915386-72bb-42c3-9168-96d759f42567" base-type="AnaPrm_ConcH2SO4" base-type-id="2ad16e42-f847-4c44-96db-67615d77f829" ver="5" description="" cardinal="1">
 		<designed target="X" value="1745" ver="5"/>
@@ -4274,21 +4273,56 @@
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="50" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA13_02"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop27"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_HlaNameEn" ver="5" value="PAZ_SigA13_02"/>
 	</object>
-	<object access-modifier="private" name="HLA4_7" display-name="HLA4_7" uuid="d7bd29ff-bca2-4fdc-80f6-cf0a6e9cd28d" base-type="HLA_2" base-type-id="a5c35f03-4278-403b-8268-8aaa5282ba5c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="HLA4_7" display-name="HLA4_7" uuid="d7bd29ff-bca2-4fdc-80f6-cf0a6e9cd28d" base-type="HLA_3" base-type-id="ee53eed5-f08d-4e92-a84c-71a6e3e81c93" ver="5" description="" cardinal="1">
 		<designed target="X" value="1160" ver="5"/>
 		<designed target="Y" value="120" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="80" ver="5"/>
+		<designed target="Width" value="85" ver="5"/>
 		<designed target="Height" value="25" ver="5"/>
-		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_SigA25_02"/>
+		<init target="_init_ConLoopNameEn" ver="5" value="PAZ_ConLoop29"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_HlaNameEn_1" ver="5" value="PAZ_SigHL1"/>
 		<init target="_init_HlaNameEn_2" ver="5" value="PAZ_SigHL2"/>
 		<init target="_init_HaNameEn_1" ver="5" value="PAZ_SigHA1"/>
 		<init target="_init_PanelDeltaY" ver="5" value="50"/>
+		<init target="_init_HlaNameEn1" ver="5" value="PAZ_SigHL1"/>
+		<init target="_init_HlaNameEn2" ver="5" value="PAZ_SigHL2"/>
+		<init target="_init_HaNameEn1" ver="5" value="PAZ_SigHA1"/>
+		<init target="_init_PanelNum" ver="5" value="29"/>
+	</object>
+	<object access-modifier="private" name="Text_43" display-name="Text_43" uuid="cbc5cbc0-e844-4b6b-8c36-7b1703ea018f" base-type="Comment01" base-type-id="a85d8237-ff47-4c3e-9568-a62af2cb7356" ver="5" description="" cardinal="1">
+		<designed target="X" value="1156" ver="5"/>
+		<designed target="Y" value="144" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="30" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="HL1" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="FontColor" value="0xff0000ba" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_44" display-name="Text_44" uuid="9c807a52-9697-4c87-b872-b2b865892f46" base-type="Comment01" base-type-id="a85d8237-ff47-4c3e-9568-a62af2cb7356" ver="5" description="" cardinal="1">
+		<designed target="X" value="1187" ver="5"/>
+		<designed target="Y" value="144" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="30" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="HL2" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="FontColor" value="0xff0000ba" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_45" display-name="Text_45" uuid="1eb2eeca-3432-410e-8ce6-456ddb86bb6f" base-type="Comment01" base-type-id="a85d8237-ff47-4c3e-9568-a62af2cb7356" ver="5" description="" cardinal="1">
+		<designed target="X" value="1217" ver="5"/>
+		<designed target="Y" value="144" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="30" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="HA2" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="FontColor" value="0xff0000ba" ver="5"/>
 	</object>
 </type>
 
