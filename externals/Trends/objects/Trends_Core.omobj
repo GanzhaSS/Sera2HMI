@@ -707,7 +707,7 @@ UpdateYRanges(value);]]>
 			</body>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="LowRange" display-name="Нижний предел значений по Y" uuid="f06d20a4-4636-4b58-880c-1e45d7ec77aa" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="2">
+	<object access-modifier="private" name="LowRange" display-name="Нижний предел значений по Y" uuid="f06d20a4-4636-4b58-880c-1e45d7ec77aa" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="2">
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
 			<body kind="om">
 				<![CDATA[if (oldValue != value)
@@ -722,9 +722,9 @@ UpdateYRanges(value);]]>
 }]]>
 			</body>
 		</do-on>
-		<object access-modifier="private" name="oldValue" display-name="oldValue" uuid="caee4d10-8ea3-479b-a758-6d5c8df4fc1d" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<object access-modifier="private" name="oldValue" display-name="oldValue" uuid="caee4d10-8ea3-479b-a758-6d5c8df4fc1d" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 	</object>
-	<object access-modifier="private" name="HighRange" display-name="Верхний предел значений по Y" uuid="892bfb16-62ad-42eb-a4e4-11612a993833" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="2">
+	<object access-modifier="private" name="HighRange" display-name="Верхний предел значений по Y" uuid="892bfb16-62ad-42eb-a4e4-11612a993833" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="2">
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
 			<body kind="om">
 				<![CDATA[if (oldValue != value)
@@ -738,9 +738,9 @@ UpdateYRanges(value);]]>
 }]]>
 			</body>
 		</do-on>
-		<object access-modifier="private" name="oldValue" display-name="oldValue" uuid="d1a5ae74-c4e6-4b70-a335-5bc62843d3ed" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<object access-modifier="private" name="oldValue" display-name="oldValue" uuid="d1a5ae74-c4e6-4b70-a335-5bc62843d3ed" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 	</object>
-	<object access-modifier="private" name="GraphicThickness" display-name="Толщина графиков" uuid="6d03884e-9d0f-47c2-bc1d-1cd3faf4f117" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="2">
+	<object access-modifier="private" name="GraphicThickness" display-name="Толщина графиков" uuid="6d03884e-9d0f-47c2-bc1d-1cd3faf4f117" base-type="notifying_float" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="2">
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
 			<body kind="om">
 				<![CDATA[if (private.ErrorAsString != "") return;
@@ -889,8 +889,8 @@ if (private.NowParams.Lines[i].TypeGraph==unit.Const.tgMAIN_GRAPH && private.Now
 			<object access-modifier="private" name="bMainTime" display-name="bMainTime" uuid="c4d91174-f889-452c-981f-f85463a53993" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3" cardinal="21"/>
 		</object>
 		<object access-modifier="private" name="bShowPoints" display-name="bShowPoints" uuid="c91e94cb-18c4-45e6-8cd9-605740aae2b6" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
-		<object access-modifier="private" name="mX" display-name="mX" uuid="e83ccf1b-a306-40a5-a711-f2f264484b4c" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="2"/>
-		<object access-modifier="private" name="mY" display-name="mY" uuid="32a5a7bd-3f47-4562-949c-68daf1217e26" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="2"/>
+		<object access-modifier="private" name="mX" display-name="mX" uuid="e83ccf1b-a306-40a5-a711-f2f264484b4c" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="2"/>
+		<object access-modifier="private" name="mY" display-name="mY" uuid="32a5a7bd-3f47-4562-949c-68daf1217e26" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="2"/>
 		<object access-modifier="private" name="ZoomYEnable" display-name="ZoomYEnable" uuid="861d9a02-5cb1-4769-b0c5-aff104af74b3" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
 		<object access-modifier="private" name="ZoomXEnable" display-name="ZoomXEnable" uuid="f265517a-0316-44f5-a781-a98c9c9eb136" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
 		<init target="ZoomYEnable" ver="2" value="true"/>
@@ -1047,7 +1047,7 @@ return ValString;//*/
 
 ]]>
 			</body>
-			<param access-modifier="private" name="value" display-name="" uuid="71835e6a-8104-4f77-8df0-e9ec06b096cc" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
+			<param access-modifier="private" name="value" display-name="" uuid="71835e6a-8104-4f77-8df0-e9ec06b096cc" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
 			<param access-modifier="private" name="numDecimals" display-name="" uuid="68101e38-137a-4244-8fa9-f80eb74822c0" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="2"/>
 		</do>
 		<object access-modifier="private" name="bThis" display-name="bThis" uuid="d833c7ca-10b6-43d0-95cc-52589f539a91" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="4" cardinal="21"/>
@@ -1434,7 +1434,7 @@ return Variant.ToUint4(result, 0);]]>
 	
 ]]>
 			</body>
-			<param access-modifier="private" name="direct" display-name="" uuid="53284992-8f8f-46a6-a491-bfe95566caf5" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+			<param access-modifier="private" name="direct" display-name="" uuid="53284992-8f8f-46a6-a491-bfe95566caf5" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 		</do>
 		<do access-modifier="private" name="SetKzoomX" display-name="SetKzoomX" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 			<body kind="om">
@@ -1623,7 +1623,7 @@ else
 			<designed target="Enabled" value="true" ver="4"/>
 			<designed target="InvokeTrigger" value="false" ver="4"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-				<object access-modifier="private" uuid="ca75818a-757f-4c06-b9e1-911ed11dce8b" base-type="Trends_PrintMain" base-type-id="9ea85c57-5943-4aa2-a7c6-3e8b12cba954" ver="4">
+				<object access-modifier="private" uuid="ca75818a-757f-4c06-b9e1-911ed11dce8b" base-type="Trends_Print" base-type-id="9ea85c57-5943-4aa2-a7c6-3e8b12cba954" ver="4">
 					<init target="pCore" ver="5" ref="here"/>
 					<init target="pTheme" ver="5" ref="here.pTheme"/>
 					<init target="pChart" ver="5" ref="pChart_Oper_1"/>
@@ -1796,7 +1796,7 @@ if (index>0 && index<=unit.Const.MAX_LINES)
 				<param access-modifier="private" name="index" display-name="" uuid="1be52472-a93b-451b-94c3-14a8e3730102" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="3"/>
 				<param access-modifier="private" name="color" display-name="" uuid="6f9384fa-8d0f-4154-b36c-b58bf0d6971e" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="3"/>
 			</do>
-			<do access-modifier="private" name="GetMinY" display-name="GetMinY" ver="5" type="float8" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
+			<do access-modifier="private" name="GetMinY" display-name="GetMinY" ver="5" type="double" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
 				<body kind="om">
 					<![CDATA[
 result:double ;
@@ -1821,7 +1821,7 @@ return result;]]>
 				<param access-modifier="private" name="mode" display-name="" uuid="a7eea43e-4c2a-47d7-980c-770a7bce9591" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 				<param access-modifier="private" name="index" display-name="" uuid="301471b7-5168-44c9-9985-eccb644ff24a" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 			</do>
-			<do access-modifier="private" name="GetMaxY" display-name="GetMaxY" ver="5" type="float8" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
+			<do access-modifier="private" name="GetMaxY" display-name="GetMaxY" ver="5" type="double" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
 				<body kind="om">
 					<![CDATA[result:double;
 if (mode == unit.Const.amOPERATIVE)
@@ -2289,7 +2289,7 @@ return result;]]>
 			<designed target="Enabled" value="true" ver="4"/>
 			<designed target="InvokeTrigger" value="false" ver="4"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
-				<object access-modifier="private" uuid="1b43d624-913f-47d2-a9bb-8f58b18c144e" base-type="Trends_PrintMain" base-type-id="9ea85c57-5943-4aa2-a7c6-3e8b12cba954" ver="4">
+				<object access-modifier="private" uuid="1b43d624-913f-47d2-a9bb-8f58b18c144e" base-type="Trends_Print" base-type-id="9ea85c57-5943-4aa2-a7c6-3e8b12cba954" ver="4">
 					<init target="pCore" ver="5" ref="here"/>
 					<init target="pTheme" ver="5" ref="here.pTheme"/>
 					<init target="pChart" ver="5" ref="pChart_Hist_1"/>
@@ -2318,8 +2318,8 @@ if (!AutoRange)
 }]]>
 			</body>
 			<param access-modifier="private" name="axisIndex" display-name="" uuid="eb1df5e3-785b-426d-a463-675200cd6b8f" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
-			<param access-modifier="private" name="yMin" display-name="" uuid="5462ad01-7a21-42e4-a7fa-61c2075ca5f1" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
-			<param access-modifier="private" name="yMax" display-name="" uuid="97ba0e06-9b48-4283-b26f-fa89289328fa" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+			<param access-modifier="private" name="yMin" display-name="" uuid="5462ad01-7a21-42e4-a7fa-61c2075ca5f1" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+			<param access-modifier="private" name="yMax" display-name="" uuid="97ba0e06-9b48-4283-b26f-fa89289328fa" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 		</do>
 		<do access-modifier="private" name="MoveToNow" display-name="MoveToNow" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 			<body kind="om">
@@ -2537,11 +2537,11 @@ SendRequestToGetID(index);]]>
 	<param access-modifier="private" name="init_AP" display-name="init_AP" uuid="96c5b325-35fd-40ba-b215-e1b261a1ac76" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="2"/>
 	<param access-modifier="private" name="DataUpdatePeriod" display-name="Период обновления данных, мс" uuid="49bb0886-a530-4790-913f-58994fc728bd" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="2"/>
 	<object access-modifier="private" name="pTree" display-name="pTree" uuid="03f7fb78-452e-4eec-86de-c8edea8ef218" base-type="Trends_ItemsTree" base-type-id="2d934a44-5181-41f0-94db-e0e63af54d68" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="pChart_Oper_1" display-name="pChart_Oper_1" uuid="b682d0dc-f4d7-4b72-b99f-4e66022b9550" base-type="Trends_Chart_Operative" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="pChart_Oper_2" display-name="pChart_Oper_2" uuid="c35d654c-6714-4e09-b460-510374705420" base-type="Trends_Chart_Operative" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="pChart_Oper_3" display-name="pChart_Oper_3" uuid="f98629b4-5ae4-4da2-a949-555bb4ed5999" base-type="Trends_Chart_Operative" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="pChart_Oper_4" display-name="pChart_Oper_4" uuid="54b40c0d-6ccc-4a81-947a-a8166ed58015" base-type="Trends_Chart_Operative" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="pChart_Oper_5" display-name="pChart_Oper_5" uuid="d700d398-970e-4368-943d-a6e1aa26e66c" base-type="Trends_Chart_Operative" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="pChart_Oper_1" display-name="pChart_Oper_1" uuid="b682d0dc-f4d7-4b72-b99f-4e66022b9550" base-type="Trends_Chart" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="pChart_Oper_2" display-name="pChart_Oper_2" uuid="c35d654c-6714-4e09-b460-510374705420" base-type="Trends_Chart" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="pChart_Oper_3" display-name="pChart_Oper_3" uuid="f98629b4-5ae4-4da2-a949-555bb4ed5999" base-type="Trends_Chart" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="pChart_Oper_4" display-name="pChart_Oper_4" uuid="54b40c0d-6ccc-4a81-947a-a8166ed58015" base-type="Trends_Chart" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="pChart_Oper_5" display-name="pChart_Oper_5" uuid="d700d398-970e-4368-943d-a6e1aa26e66c" base-type="Trends_Chart" base-type-id="659f73ba-7fa5-4aa4-ac4d-623541275829" base-const="true" base-ref="true" ver="4"/>
 	<do access-modifier="private" name="AddItem" display-name="AddItem" ver="5" type="int4" type-id="74222947-f188-4195-8e0e-e33bd9827255">
 		<param access-modifier="private" name="path" display-name="" uuid="d74968fa-685c-441b-933c-90d01db30f28" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
 		<body kind="om">
@@ -2668,7 +2668,7 @@ pStatusLine.AdviseState = private.Items.GetAdviseState();
 	</do>
 	<do access-modifier="private" name="SetGraphicThickness" display-name="SetGraphicThickness" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
 		<param access-modifier="private" name="tag" display-name="" uuid="e3ea506e-7a95-45c2-b014-bc53f52f6530" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
-		<param access-modifier="private" name="value" display-name="" uuid="cb750778-7b0c-4585-90e9-6e81bd292cb5" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="2"/>
+		<param access-modifier="private" name="value" display-name="" uuid="cb750778-7b0c-4585-90e9-6e81bd292cb5" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="2"/>
 		<body kind="om">
 			<![CDATA[private.Initializer();  // инициализатор выполняется только один раз 
 
@@ -2985,8 +2985,8 @@ else
 	DebugTool_1.Log("Trends.SetIndividualRange: Ошибка установки диапазона значений");]]>
 		</body>
 		<param access-modifier="private" name="tag" display-name="" uuid="292b94d2-1f62-4077-a276-6ddd27b97ef6" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
-		<param access-modifier="private" name="lowRange" display-name="" uuid="f6d213e4-b8b9-4c02-a961-b6bc6b8b889d" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
-		<param access-modifier="private" name="highRange" display-name="" uuid="fe947c7a-a734-4ade-9bdc-5a91e1d3cb35" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
+		<param access-modifier="private" name="lowRange" display-name="" uuid="f6d213e4-b8b9-4c02-a961-b6bc6b8b889d" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
+		<param access-modifier="private" name="highRange" display-name="" uuid="fe947c7a-a734-4ade-9bdc-5a91e1d3cb35" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
 	</do>
 	<do access-modifier="private" name="FitToScreen" display-name="FitToScreen" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">
@@ -3265,7 +3265,7 @@ else
 	<object access-modifier="private" name="pTheme" display-name="Тема оформления" uuid="08206367-abe2-43ef-a571-54870a9cff55" base-type="Trends_Theme" base-type-id="3fbfa4c2-c742-4bec-94dc-d1bcb7ef25b6" base-const="true" base-ref="true" ver="4"/>
 	<do access-modifier="private" name="SetStringTagYValue" display-name="SetStringTagYValue" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<param access-modifier="private" name="index" display-name="" uuid="437227f5-b3fb-4f7d-80bf-67d002ce343f" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
-		<param access-modifier="private" name="value" display-name="" uuid="cd5b5c53-28f6-44d3-ac56-2dc95e109fd6" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<param access-modifier="private" name="value" display-name="" uuid="cd5b5c53-28f6-44d3-ac56-2dc95e109fd6" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		<body kind="om">
 			<![CDATA[if (index == unit.Const.ALL)
 {

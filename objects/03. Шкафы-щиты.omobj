@@ -181,7 +181,7 @@
 		<designed target="BrushColor" value="0xffdcdcdc" ver="5"/>
 		<designed target="BrushStyle" value="0" ver="5"/>
 	</object>
-	<object access-modifier="private" name="DPanelAlr_1" display-name="DPanelAlr_1" uuid="967c802d-af16-498b-bdc4-5720953e371f" base-type="DPanelAlr" base-type-id="b2ef45c5-c50e-4e68-8fa8-2809eafe3941" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="DPanelAlr_1" display-name="DPanelAlr_1" uuid="967c802d-af16-498b-bdc4-5720953e371f" base-type="PowerErr" base-type-id="b2ef45c5-c50e-4e68-8fa8-2809eafe3941" ver="5" description="" cardinal="1">
 		<designed target="X" value="440" ver="5"/>
 		<designed target="Y" value="130" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>

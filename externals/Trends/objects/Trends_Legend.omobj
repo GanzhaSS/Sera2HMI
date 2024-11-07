@@ -20,7 +20,7 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
-			<object access-modifier="private" uuid="ac5c25c4-6eef-41a9-8598-26e3bfb372c9" base-type="ChangeColor" base-type-id="7f88133f-deaf-4376-a13d-a52efda68de5" ver="5">
+			<object access-modifier="private" uuid="ac5c25c4-6eef-41a9-8598-26e3bfb372c9" base-type="Trends_GraphicSettings" base-type-id="7f88133f-deaf-4376-a13d-a52efda68de5" ver="5">
 				<init target="pTrends" ver="5" ref="pCore"/>
 				<init target="pTheme" ver="5" ref="here.pTheme"/>
 			</object>
@@ -689,8 +689,8 @@ if (numRow < Table_1.GetRowCount())
 ]]>
 		</body>
 		<param access-modifier="private" name="numRow" display-name="" uuid="3eeb15f5-2407-4fbf-8059-d6b396ba8f9b" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
-		<param access-modifier="private" name="minimum" display-name="" uuid="cd19d010-f3ab-4e69-bb18-1f2ad781d87a" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
-		<param access-modifier="private" name="maximum" display-name="" uuid="9e74d34f-cbf6-4fee-a626-f59a74747f7b" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<param access-modifier="private" name="minimum" display-name="" uuid="cd19d010-f3ab-4e69-bb18-1f2ad781d87a" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<param access-modifier="private" name="maximum" display-name="" uuid="9e74d34f-cbf6-4fee-a626-f59a74747f7b" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 		<param access-modifier="private" name="size" display-name="" uuid="c7f2a65f-1ec5-4d3c-b7f8-eac0579e2278" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="5"/>
 	</do>
 	<object access-modifier="private" name="pTheme" display-name="Тема оформления" uuid="aceb0bb2-bc06-44a5-9018-fba9fb89ac8f" base-type="Trends_Theme" base-type-id="3fbfa4c2-c742-4bec-94dc-d1bcb7ef25b6" base-const="true" base-ref="true" ver="5"/>

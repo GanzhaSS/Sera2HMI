@@ -177,24 +177,6 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 	<object access-modifier="private" name="_init_PanelDeltaX" display-name="_init_PanelDeltaX" uuid="64ac0d93-b15c-404b-a469-2d58032f17aa" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="_init_PanelDeltaY" display-name="_init_PanelDeltaY" uuid="84732d25-66b9-4c02-976f-917cab32da94" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="_init_Visible" display-name="_init_Visible" uuid="af241c0d-b700-4aa4-9676-aa8a85b4a13b" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
-	<designed target="WindowX" value="0" ver="5"/>
-	<designed target="WindowY" value="0" ver="5"/>
-	<designed target="WindowWidth" value="2560" ver="5"/>
-	<designed target="WindowHeight" value="1440" ver="5"/>
-	<designed target="WindowCaption" value="MainForm" ver="5"/>
-	<designed target="ShowWindowCaption" value="true" ver="5"/>
-	<designed target="ShowWindowMinimize" value="true" ver="5"/>
-	<designed target="ShowWindowMaximize" value="true" ver="5"/>
-	<designed target="ShowWindowClose" value="true" ver="5"/>
-	<designed target="AlwaysOnTop" value="false" ver="5"/>
-	<designed target="WindowSizeMode" value="0" ver="5"/>
-	<designed target="WindowBorderStyle" value="1" ver="5"/>
-	<designed target="WindowState" value="0" ver="5"/>
-	<designed target="WindowScalingMode" value="0" ver="5"/>
-	<designed target="MonitorNumber" value="0" ver="5"/>
-	<designed target="WindowPosition" value="0" ver="5"/>
-	<designed target="WindowCloseMode" value="0" ver="5"/>
-	<designed target="WindowIconPath" value="" ver="5"/>
 	<init target="_init_Visible" ver="5" value="true"/>
 	<do-trace access-modifier="private" target="BrushStyle" ver="5">
 		<conditional-expr>

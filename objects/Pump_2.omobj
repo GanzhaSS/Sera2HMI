@@ -204,7 +204,7 @@
 			</expr>
 		</init>
 	</object>
-	<object access-modifier="private" name="KVRU" display-name="KVRU" uuid="04d5b2d7-57cf-4ef2-bdf7-4ad5d15353d3" base-type="KVRU_el" base-type-id="0a16e52e-b1f3-4d15-a1fa-547f8f6dc17c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="KVRU" display-name="KVRU" uuid="04d5b2d7-57cf-4ef2-bdf7-4ad5d15353d3" base-type="_KVRU_el" base-type-id="0a16e52e-b1f3-4d15-a1fa-547f8f6dc17c" ver="5" description="" cardinal="1">
 		<designed target="X" value="-7" ver="5"/>
 		<designed target="Y" value="10" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>

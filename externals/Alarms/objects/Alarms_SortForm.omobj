@@ -912,7 +912,7 @@ else
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="TempTable_1" display-name="TempTable_1" uuid="ee5c6fcd-fd41-42b0-a1dc-62894ced3548" base-type="InMemoryTable" base-type-id="32b2875b-ee3e-454d-bcbb-40806a49273c" ver="3">
+	<object access-modifier="private" name="TempTable_1" display-name="TempTable_1" uuid="ee5c6fcd-fd41-42b0-a1dc-62894ced3548" base-type="TableModel" base-type-id="32b2875b-ee3e-454d-bcbb-40806a49273c" ver="3">
 		<designed target="MaxRowCount" value="1" ver="3"/>
 		<designed target="Frozen" value="false" ver="3"/>
 	</object>

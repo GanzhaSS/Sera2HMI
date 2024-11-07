@@ -21,7 +21,7 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
-			<object access-modifier="private" uuid="d9568a9d-287d-446b-a797-306396506c08" base-type="Управление_насосом" base-type-id="893a3e2b-b08d-4423-a358-b4c2529ee48c" ver="5">
+			<object access-modifier="private" uuid="d9568a9d-287d-446b-a797-306396506c08" base-type="Управление_насосом 1" base-type-id="893a3e2b-b08d-4423-a358-b4c2529ee48c" ver="5">
 				<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
 				<init target="_init_DeviceNameEn" ver="5" ref="here._DeviceNameEn"/>
 			</object>

@@ -258,8 +258,8 @@ while(i < Colors.Length)
 			<object access-modifier="private" name="G" display-name="G" uuid="8cc56508-0453-4fb4-9692-6590a02f7038" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="5"/>
 			<object access-modifier="private" name="B" display-name="B" uuid="869ebb7f-c722-4e41-9591-937081fcc05b" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="5"/>
 			<object access-modifier="private" name="H" display-name="H" uuid="8fb0721b-70fd-4492-a4ef-a87aab90ff01" base-type="notifying_int4" base-type-id="5ccca629-a45d-46c8-a56c-83ecde8126f7" ver="5"/>
-			<object access-modifier="private" name="S" display-name="S" uuid="1269a76e-b8fb-42ad-9f07-e7fcfa2a6244" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5"/>
-			<object access-modifier="private" name="V" display-name="V" uuid="3105fcf4-e0bc-4b29-bc12-97af0354a0ae" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5"/>
+			<object access-modifier="private" name="S" display-name="S" uuid="1269a76e-b8fb-42ad-9f07-e7fcfa2a6244" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5"/>
+			<object access-modifier="private" name="V" display-name="V" uuid="3105fcf4-e0bc-4b29-bc12-97af0354a0ae" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5"/>
 			<do access-modifier="private" name="Decode" display-name="Decode" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 				<body kind="om">
 					<![CDATA[// запоминаем цвет
@@ -311,8 +311,8 @@ this = A << 24 | R << 16 | G << 8 | B;
 Attributes.UpdateHSVSliders();]]>
 				</body>
 				<param access-modifier="private" name="hue" display-name="" uuid="084a28c9-4c67-4892-942d-42cc6e134c64" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
-				<param access-modifier="private" name="saturation" display-name="" uuid="3377efda-aa27-4540-bfd3-081634888899" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
-				<param access-modifier="private" name="brightness" display-name="" uuid="4ab0c6fb-024d-4ff7-81f9-48dfeb029e07" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+				<param access-modifier="private" name="saturation" display-name="" uuid="3377efda-aa27-4540-bfd3-081634888899" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+				<param access-modifier="private" name="brightness" display-name="" uuid="4ab0c6fb-024d-4ff7-81f9-48dfeb029e07" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 			</do>
 			<do access-modifier="private" name="RGBtoHSV" display-name="RGBtoHSV" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 				<body kind="om">
@@ -970,7 +970,7 @@ UpdateHSVSliders();]]>
 					</body>
 				</do-trace>
 			</object>
-			<object access-modifier="private" name="Html" display-name="Html" uuid="fd5046bf-5221-47e2-948d-98ce697d6e3f" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+			<object access-modifier="private" name="Html" display-name="Html" uuid="fd5046bf-5221-47e2-948d-98ce697d6e3f" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 				<designed target="X" value="45" ver="5"/>
 				<designed target="Y" value="0" ver="5"/>
 				<designed target="ZValue" value="0" ver="5"/>
@@ -1832,8 +1832,8 @@ blue: uint1 = TypeConvert.ToUint1(b*255);
 return 0xff << 24 | red << 16 | green << 8 | blue;]]>
 			</body>
 			<param access-modifier="private" name="hue" display-name="" uuid="dfee68f9-2c69-438b-a8ec-54af2e43e3a7" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
-			<param access-modifier="private" name="saturation" display-name="" uuid="155d9603-4b00-4ca5-a0a6-d0b9512d5646" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
-			<param access-modifier="private" name="brightness" display-name="" uuid="df39ae1f-0c10-489f-b14c-9cebaae39348" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+			<param access-modifier="private" name="saturation" display-name="" uuid="155d9603-4b00-4ca5-a0a6-d0b9512d5646" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+			<param access-modifier="private" name="brightness" display-name="" uuid="df39ae1f-0c10-489f-b14c-9cebaae39348" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 		</do>
 	</object>
 	<object access-modifier="private" name="OkButton" display-name="OkButton" uuid="91c02062-6983-487b-81b6-8fe2c5d4c6ce" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">

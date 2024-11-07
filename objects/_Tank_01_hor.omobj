@@ -109,7 +109,6 @@
 			<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
 			<designed target="FontColor" value="0xff484848" ver="5"/>
 			<designed target="TextAlignment" value="130" ver="5"/>
-			<init target="Text" ver="5" ref="_init_Pos"/>
 			<do-trace access-modifier="private" target="FontColor" ver="5">
 				<body>
 					<![CDATA[unit.Global_ColorSettings.ColorFontPosition]]>
@@ -130,8 +129,7 @@
 	<object access-modifier="private" name="col" display-name="col" uuid="4b4975d6-58e9-40f8-8dc9-2fc318382b0e" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
 		<init target="Value" ver="5" value="true"/>
 	</object>
-	<param access-modifier="private" name="_init_Pos" display-name="_init_Pos" uuid="173676be-e377-4ac6-af5f-bbdd26e7c3c8" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
-	<designed target="Width" value="240" ver="5"/>
+	<designed target="Width" value="190" ver="5"/>
 	<designed target="Height" value="100" ver="5"/>
 	<designed target="RoundingRadius" value="0" ver="5"/>
 	<designed target="PenColor" value="4278190080" ver="5"/>

@@ -54,7 +54,7 @@
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="CommentEditor" display-name="CommentEditor" uuid="e5e4a6de-8f30-4fb7-a60e-8818a9cb2dc4" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+	<object access-modifier="private" name="CommentEditor" display-name="CommentEditor" uuid="e5e4a6de-8f30-4fb7-a60e-8818a9cb2dc4" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 		<designed target="X" value="10" ver="2"/>
 		<designed target="Y" value="155" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -85,7 +85,7 @@
 			</body>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="0bb46822-e1e9-4d25-a204-a8c267ad40b9" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="0bb46822-e1e9-4d25-a204-a8c267ad40b9" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
 	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="KeyPress">
 		<body kind="om">
 			<![CDATA[if (event.KeyCode == 82)

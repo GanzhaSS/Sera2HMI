@@ -166,7 +166,7 @@ else if (event.KeyCode == 75) // Escape
 				</body>
 			</do-trace>
 		</object>
-		<object access-modifier="private" name="Editor" display-name="Editor" uuid="7cf8b7dd-d97a-4474-bb07-5a4116353174" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+		<object access-modifier="private" name="Editor" display-name="Editor" uuid="7cf8b7dd-d97a-4474-bb07-5a4116353174" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
 			<designed target="X" value="0" ver="4"/>
 			<designed target="Y" value="20" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
@@ -227,7 +227,7 @@ else if (event.KeyCode == 75) // Escape
 				</body>
 			</do-trace>
 		</object>
-		<object access-modifier="private" name="Editor" display-name="Editor" uuid="5e04eb21-78bd-4127-be2b-450fb0a5ce1e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<object access-modifier="private" name="Editor" display-name="Editor" uuid="5e04eb21-78bd-4127-be2b-450fb0a5ce1e" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 			<designed target="X" value="0" ver="2"/>
 			<designed target="Y" value="20" ver="2"/>
 			<designed target="Rotation" value="0" ver="2"/>
@@ -309,7 +309,7 @@ else Error = "";]]>
 				</body>
 			</do-trace>
 		</object>
-		<object access-modifier="private" name="Editor" display-name="Editor" uuid="8b9b0972-ce82-400d-9014-f2b62bae40a2" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<object access-modifier="private" name="Editor" display-name="Editor" uuid="8b9b0972-ce82-400d-9014-f2b62bae40a2" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 			<designed target="X" value="0" ver="2"/>
 			<designed target="Y" value="20" ver="2"/>
 			<designed target="Rotation" value="0" ver="2"/>

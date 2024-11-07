@@ -57,7 +57,7 @@
 		</do-trace>
 		<designed target="Flip" value="0" ver="5"/>
 	</object>
-	<object access-modifier="private" name="InputEdit" display-name="InputEdit" uuid="561c54a6-d4a2-4009-b37c-b3edac7fe2bc" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="InputEdit" display-name="InputEdit" uuid="561c54a6-d4a2-4009-b37c-b3edac7fe2bc" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="10" ver="5"/>
 		<designed target="Y" value="15" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>

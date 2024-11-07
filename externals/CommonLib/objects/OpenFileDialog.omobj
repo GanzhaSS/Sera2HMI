@@ -71,7 +71,7 @@
 			</do-trace>
 			<designed target="Flip" value="0" ver="5"/>
 		</object>
-		<object access-modifier="private" name="FileEdit" display-name="FileEdit" uuid="89d57af2-eb2b-487d-babe-76506361e25e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+		<object access-modifier="private" name="FileEdit" display-name="FileEdit" uuid="89d57af2-eb2b-487d-babe-76506361e25e" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 			<designed target="X" value="80" ver="5"/>
 			<designed target="Y" value="10" ver="5"/>
 			<designed target="ZValue" value="0" ver="5"/>

@@ -11,7 +11,6 @@
 	<designed target="Tooltip" value="" ver="5"/>
 	<designed target="Width" value="15" ver="5"/>
 	<designed target="Height" value="100" ver="5"/>
-	<designed target="RoundingRadius" value="0" ver="5"/>
 	<designed target="PenColor" value="0xff000000" ver="5"/>
 	<designed target="PenStyle" value="1" ver="5"/>
 	<designed target="PenWidth" value="1" ver="5"/>

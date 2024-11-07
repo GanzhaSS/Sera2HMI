@@ -548,7 +548,7 @@ Decorator.JsonDecorator = JSON.stringify(Object);
 		<designed target="Enabled" value="true" ver="3"/>
 		<designed target="InvokeTrigger" value="false" ver="3"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
-			<object access-modifier="private" uuid="ae4745aa-9fe2-473b-aed9-f2123d934078" base-type="SettingsEventsEdit" base-type-id="4443683c-71c1-4d42-9aa6-83a9842cf6a9" ver="3">
+			<object access-modifier="private" uuid="ae4745aa-9fe2-473b-aed9-f2123d934078" base-type="Alarms_SettingsEventsEdit" base-type-id="4443683c-71c1-4d42-9aa6-83a9842cf6a9" ver="3">
 				<designed target="WindowPosition" value="2" ver="3"/>
 				<init target="pSettingsEvents" ver="5" ref="here"/>
 				<init target="pTheme" ver="5" ref="here.pTheme"/>

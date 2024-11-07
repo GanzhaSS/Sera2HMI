@@ -94,7 +94,7 @@ else
 		</do-on>
 	</object>
 	<do-on access-modifier="private" name="OpenFirstScreen" display-name="OpenFirstScreen" ver="5" event="Opened" form-action="open-new" form-by-id="false">
-		<object access-modifier="private" uuid="5fcd970f-9a7c-49ed-9396-61f3d4ddd4f8" base-type="01. Очистка Ni-Co раствора" base-type-id="26e9c591-0227-4cb8-87e2-e51b41064a26" ver="5">
+		<object access-modifier="private" uuid="5fcd970f-9a7c-49ed-9396-61f3d4ddd4f8" base-type="01. Резервуарный парк" base-type-id="26e9c591-0227-4cb8-87e2-e51b41064a26" ver="5">
 			<init target="MonitorNumber" ver="5" ref="parent.MonitorNumber"/>
 			<init target="MonitorNum" ver="5" ref="parent.MonitorNum"/>
 		</object>
@@ -132,7 +132,7 @@ else
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new-independent" form-by-id="false">
-			<object access-modifier="private" uuid="3d09aed8-0d06-4f6e-8a91-fba83c741674" base-type="0. Заголовок" base-type-id="777385c6-b223-42b5-8421-e04ed74cc752" ver="5">
+			<object access-modifier="private" uuid="3d09aed8-0d06-4f6e-8a91-fba83c741674" base-type="Header" base-type-id="777385c6-b223-42b5-8421-e04ed74cc752" ver="5">
 				<init target="MonitorNum" ver="5" value="2"/>
 				<designed target="MonitorNumber" value="2" ver="5"/>
 			</object>
@@ -200,12 +200,11 @@ if (MonitorNum==1)
 			</body>
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRelease" form-by-id="false" form-action="open-new-independent">
-			<object access-modifier="private" uuid="e907b59f-d382-46d2-8033-ff9b31638c51" base-type="1. Очистка" base-type-id="26e9c591-0227-4cb8-87e2-e51b41064a26" ver="5">
+			<object access-modifier="private" uuid="e907b59f-d382-46d2-8033-ff9b31638c51" base-type="01. Резервуарный парк" base-type-id="26e9c591-0227-4cb8-87e2-e51b41064a26" ver="5">
 				<init target="MonitorNumber" ver="5" ref="BtMonitorNum"/>
 				<init target="MonitorNum" ver="5" ref="BtMonitorNum"/>
 			</object>
 		</do-on>
-		<designed target="Checked" value="false" ver="5"/>
 		<init target="_init_FormNameEn" ver="5" value="Ik01Scheme"/>
 	</object>
 	<object access-modifier="private" name="Day_Border" display-name="Day_Border" uuid="33c59b8c-cafe-4b62-be56-c89cc87d0e81" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
@@ -315,7 +314,7 @@ Text_Day.Text = DateTime.ToString(DateTime.Now(), "%d.%m.%y");]]>
 			</body>
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRelease" form-by-id="false" form-action="open-new-independent">
-			<object access-modifier="private" uuid="76896482-8a62-4513-ac91-fe6d9bd4bb43" base-type="02. Основная экстракция Co" base-type-id="2599b1a5-544a-4786-b1b0-c22aca4daccd" ver="5">
+			<object access-modifier="private" uuid="76896482-8a62-4513-ac91-fe6d9bd4bb43" base-type="02. Насосная" base-type-id="2599b1a5-544a-4786-b1b0-c22aca4daccd" ver="5">
 				<init target="MonitorNumber" ver="5" ref="BtMonitorNum"/>
 				<init target="MonitorNum" ver="5" ref="BtMonitorNum"/>
 			</object>
@@ -370,7 +369,6 @@ Text_Day.Text = DateTime.ToString(DateTime.Now(), "%d.%m.%y");]]>
 			</body>
 		</do-trace>
 		<init target="_init_FormNameEn" ver="5" value="Ik20Messages"/>
-		<designed target="BrushColor" value="0xffccd9e2" ver="5"/>
 		<do-trace access-modifier="private" target="Blink" ver="5">
 			<body>
 				<![CDATA[unit.Global_UnAckedMsg.FlagEnableButtonMsgBlink && unit.Global_UnAckedMsg.FlagExistUnAckedMsg]]>
@@ -759,7 +757,7 @@ unit.Global_Security.PermitEnableChngPsw  = false;
 		<designed target="DisabledPenStyle" value="1" ver="5"/>
 		<designed target="DisabledPenWidth" value="1" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRelease" form-by-id="false" form-action="open-dialog">
-			<object access-modifier="private" uuid="32a28664-0460-4254-9660-8a3af3011f05" base-type="LoginDialog1" base-type-id="c7207d37-9fb1-4a03-895b-08ac18ddd039" ver="5">
+			<object access-modifier="private" uuid="32a28664-0460-4254-9660-8a3af3011f05" base-type="LoginDialogServer" base-type-id="c7207d37-9fb1-4a03-895b-08ac18ddd039" ver="5">
 				<init target="MonitorNumber" ver="5" ref="here.MonitorNumber"/>
 				<init target="WindowX" ver="5" value="160"/>
 				<init target="WindowY" ver="5" value="40"/>
@@ -832,7 +830,7 @@ unit.Global_DataArray.PanelCaption[28] = "ПАЗ 14";
 			</body>
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRelease" form-by-id="false" form-action="open-new-independent">
-			<object access-modifier="private" uuid="07912151-5492-4c47-80f0-2a0b99513d9a" base-type="03. Схема 03" base-type-id="a3085819-8719-48c5-86ad-b1afd67b4437" ver="5">
+			<object access-modifier="private" uuid="07912151-5492-4c47-80f0-2a0b99513d9a" base-type="03. Шкафы-щиты" base-type-id="a3085819-8719-48c5-86ad-b1afd67b4437" ver="5">
 				<init target="MonitorNumber" ver="5" ref="BtMonitorNum"/>
 				<init target="MonitorNum" ver="5" ref="BtMonitorNum"/>
 				<init target="WindowNum" ver="5" value="3"/>

@@ -97,8 +97,8 @@ TableModel.AddColumn("field-id","","","","string",false,true);]]>
 		<init target="ppTheme" ver="5" ref="iTheme"/>
 		<init target="pVFControl" ver="5" ref="here"/>
 	</object>
-	<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="11712ae6-dc80-4556-b7a8-8966d157cdb5" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
-	<object access-modifier="private" name="editorWidth" display-name="editorWidth" uuid="b0d0d484-79e1-4614-bb30-373f74d32561" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="11712ae6-dc80-4556-b7a8-8966d157cdb5" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="editorWidth" display-name="editorWidth" uuid="b0d0d484-79e1-4614-bb30-373f74d32561" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
 	<object access-modifier="private" name="TestTable" display-name="TestTable" uuid="d5d59bb4-c36e-4ce4-b8c4-f89c98d8f59b" base-type="Table" base-type-id="c65ff4dc-f22b-47d3-9333-72c4e4e5f662" ver="3">
 		<designed target="X" value="0" ver="3"/>
 		<designed target="Y" value="0" ver="3"/>
@@ -274,7 +274,7 @@ TablePanel.Column1.Width = width-20/*scroll*/;
 ]]>
 		</body>
 	</do>
-	<do access-modifier="private" name="GetRequiredLabelWidth" display-name="GetRequiredLabelWidth" ver="5" type="float8" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
+	<do access-modifier="private" name="GetRequiredLabelWidth" display-name="GetRequiredLabelWidth" ver="5" type="double" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
 		<body kind="om">
 			<![CDATA[symbols: int4 = 0;
 

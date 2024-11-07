@@ -187,7 +187,6 @@ if (!hasFocus) {
 				<init target="Buttons" ver="5" value="0"/>
 				<init target="LineHeight" ver="5" value="11"/>
 				<init target="CharactersPerLine" ver="5" value="50"/>
-				<designed target="WindowPosition" value="2" ver="5"/>
 				<init target="Message" ver="5">
 					<expr>
 						<![CDATA["Введенное значение должно быть в диапазоне \n\r от  " + String.ToString(_init_Min) + "  до  " + String.ToString(_init_Max)]]>

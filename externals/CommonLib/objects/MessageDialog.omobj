@@ -226,7 +226,7 @@ if (Buttons == 0 || Buttons == 1)
 		</do>
 		<object access-modifier="private" name="ResultCode" display-name="Результат (1-Ok, 2-Yes, 3-No)" uuid="36e453d9-efea-432f-81e7-e7ab4d71c072" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
 	</object>
-	<object access-modifier="private" name="LineHeight" display-name="Высота строки текста" uuid="58c598be-0c7c-43b9-a3e4-b64d8de440c1" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+	<object access-modifier="private" name="LineHeight" display-name="Высота строки текста" uuid="58c598be-0c7c-43b9-a3e4-b64d8de440c1" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 	<object access-modifier="private" name="CharactersPerLine" display-name="Символов в строке" uuid="d01315b2-aab6-4256-9dbd-3568f4d1b872" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
 	<init target="LineHeight" ver="5" value="15"/>
 	<init target="CharactersPerLine" ver="5" value="50"/>

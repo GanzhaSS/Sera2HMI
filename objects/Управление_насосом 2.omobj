@@ -89,7 +89,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="2"/>
 		<designed target="Text" value="ВКЛЮЧИТЬ" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>
 				<![CDATA[((ApStatus >> 5) & 1) == 1]]>
@@ -127,7 +126,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		</body>
 	</do-trace>
 	<init target="Focus" ver="5" value="false"/>
-	<object access-modifier="private" name="Pump" display-name="Pump" uuid="8e7257d3-5afe-47e3-8077-915958fcd3f0" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump" display-name="Pump" uuid="8e7257d3-5afe-47e3-8077-915958fcd3f0" base-type="Pump_1" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
 		<designed target="X" value="130" ver="5"/>
 		<designed target="Y" value="20" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -138,13 +137,12 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_init_FlagVisibleDAlr" ver="5" value="false"/>
 	</object>
-	<object access-modifier="private" name="Pallet13_2" display-name="Pallet13_2" uuid="a9f6c816-1747-47e3-940f-e98f296c79b0" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pallet13_2" display-name="Pallet13_2" uuid="a9f6c816-1747-47e3-940f-e98f296c79b0" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="340.66666666666708" ver="5"/>
 		<designed target="Y" value="20.333333333333485" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="100" ver="5"/>
 		<designed target="Height" value="100" ver="5"/>
-		<designed target="PenColor" value="0xff484848" ver="5"/>
 		<object access-modifier="private" name="DevicePosition" display-name="DevicePosition" uuid="0f2a92c6-5fec-4a9a-bd94-8311bd8ed685" base-type="DevicePosition" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
 			<designed target="X" value="16" ver="5"/>
 			<designed target="Y" value="83" ver="5"/>
@@ -154,7 +152,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="13-2" ver="5"/>
 		</object>
-		<object access-modifier="private" name="Pallet13_2_1" display-name="Pallet13_2_1" uuid="aed5b70e-2771-4172-980a-4e167efc46fe" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet13_2_1" display-name="Pallet13_2_1" uuid="aed5b70e-2771-4172-980a-4e167efc46fe" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="9.3333333333329165" ver="5"/>
 			<designed target="Y" value="9.6666666666665151" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
@@ -215,7 +213,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 				</object>
 			</object>
 		</object>
-		<object access-modifier="private" name="Pallet13_2_2" display-name="Pallet13_2_2" uuid="f224baa4-fc42-4ad7-9b95-e7816d0beba5" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet13_2_2" display-name="Pallet13_2_2" uuid="f224baa4-fc42-4ad7-9b95-e7816d0beba5" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="69.333333333332916" ver="5"/>
 			<designed target="Y" value="9.6666666666665151" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
@@ -306,7 +304,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="8"/>
 		<designed target="Text" value="Задать частоту 1" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 	</object>
 	<object access-modifier="private" name="ButtonON_2" display-name="ButtonON_2" uuid="eb20b26e-0df5-4101-9f45-d3f24d5d803c" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
 		<designed target="X" value="90" ver="5"/>
@@ -317,15 +314,13 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="16"/>
 		<designed target="Text" value="Задать частоту 2" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 	</object>
-	<object access-modifier="private" name="Pallet13_1" display-name="Pallet13_1" uuid="d0078693-a5cf-4e98-82b2-d085ded69d8e" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pallet13_1" display-name="Pallet13_1" uuid="d0078693-a5cf-4e98-82b2-d085ded69d8e" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="490.66666666666708" ver="5"/>
 		<designed target="Y" value="20.333333333333485" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="100" ver="5"/>
 		<designed target="Height" value="100" ver="5"/>
-		<designed target="PenColor" value="0xff484848" ver="5"/>
 		<object access-modifier="private" name="DevicePosition" display-name="DevicePosition" uuid="150c9a23-196b-4665-836e-ba2ea1201bf5" base-type="DevicePosition" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
 			<designed target="X" value="16" ver="5"/>
 			<designed target="Y" value="83" ver="5"/>
@@ -335,7 +330,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="13-1" ver="5"/>
 		</object>
-		<object access-modifier="private" name="Pallet13_1_1" display-name="Pallet13_1_1" uuid="825e52f1-556c-4dbe-8a87-695d759f08f8" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet13_1_1" display-name="Pallet13_1_1" uuid="825e52f1-556c-4dbe-8a87-695d759f08f8" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="9.3333333333329165" ver="5"/>
 			<designed target="Y" value="9.6666666666665151" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
@@ -396,7 +391,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 				</object>
 			</object>
 		</object>
-		<object access-modifier="private" name="Pallet13_1_2" display-name="Pallet13_1_2" uuid="1d5f933a-41a4-4bbc-96ef-50c6e097b4dd" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet13_1_2" display-name="Pallet13_1_2" uuid="1d5f933a-41a4-4bbc-96ef-50c6e097b4dd" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="69.33333333333303" ver="5"/>
 			<designed target="Y" value="9.6666666666665151" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
@@ -478,13 +473,12 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="visibleLow" ver="5" value="false"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm_1"/>
 	</object>
-	<object access-modifier="private" name="Pallet4" display-name="Pallet4" uuid="f7bcf45d-7cee-485d-8581-970c44043b6a" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pallet4" display-name="Pallet4" uuid="f7bcf45d-7cee-485d-8581-970c44043b6a" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="340.66666666666708" ver="5"/>
 		<designed target="Y" value="150.33333333333348" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="100" ver="5"/>
 		<designed target="Height" value="100" ver="5"/>
-		<designed target="PenColor" value="0xff484848" ver="5"/>
 		<object access-modifier="private" name="DevicePosition" display-name="DevicePosition" uuid="98523bde-aa55-4494-b704-68a477a655bd" base-type="DevicePosition" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
 			<designed target="X" value="16" ver="5"/>
 			<designed target="Y" value="83" ver="5"/>
@@ -494,7 +488,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="4" ver="5"/>
 		</object>
-		<object access-modifier="private" name="Pallet4_1" display-name="Pallet4_1" uuid="2a419f3b-d6f1-4e04-9470-395ca9d25798" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet4_1" display-name="Pallet4_1" uuid="2a419f3b-d6f1-4e04-9470-395ca9d25798" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="14.333333333332916" ver="5"/>
 			<designed target="Y" value="4.6666666666665151" ver="5"/>
 			<designed target="Rotation" value="270" ver="5"/>
@@ -555,7 +549,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 				</object>
 			</object>
 		</object>
-		<object access-modifier="private" name="Pallet4_2" display-name="Pallet4_2" uuid="11029956-bebb-4819-b271-4012eca5facc" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet4_2" display-name="Pallet4_2" uuid="11029956-bebb-4819-b271-4012eca5facc" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="14.333333333332916" ver="5"/>
 			<designed target="Y" value="64.666666666666515" ver="5"/>
 			<designed target="Rotation" value="270" ver="5"/>
@@ -637,13 +631,12 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="visibleLow" ver="5" value="false"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="Pallet7" display-name="Pallet7" uuid="42462ec9-2614-4c45-86b2-9e693ac4d4f7" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pallet7" display-name="Pallet7" uuid="42462ec9-2614-4c45-86b2-9e693ac4d4f7" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="490.66666666666708" ver="5"/>
 		<designed target="Y" value="150.33333333333348" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="100" ver="5"/>
 		<designed target="Height" value="100" ver="5"/>
-		<designed target="PenColor" value="0xff484848" ver="5"/>
 		<object access-modifier="private" name="DevicePosition" display-name="DevicePosition" uuid="d351fa5d-94c2-415c-811a-e305a75eadff" base-type="DevicePosition" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
 			<designed target="X" value="16" ver="5"/>
 			<designed target="Y" value="83" ver="5"/>
@@ -653,7 +646,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="7" ver="5"/>
 		</object>
-		<object access-modifier="private" name="Pallet7_1" display-name="Pallet7_1" uuid="1aa1f3ff-4db3-4c32-8a3e-7c85dfb63f75" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet7_1" display-name="Pallet7_1" uuid="1aa1f3ff-4db3-4c32-8a3e-7c85dfb63f75" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="9.3333333333329165" ver="5"/>
 			<designed target="Y" value="9.6666666666665151" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>

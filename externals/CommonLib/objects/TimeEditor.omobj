@@ -76,7 +76,7 @@ if (here.Value != newValue)
 		</do>
 	</object>
 	<object access-modifier="private" name="pValueChanged" display-name="pValueChanged" uuid="e583b2f6-097c-4ae7-af75-32baac6f2f47" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5"/>
-	<object access-modifier="private" name="Editor" display-name="Editor" uuid="05eb3a0e-7480-4d26-b3cc-598134859ef3" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="Editor" display-name="Editor" uuid="05eb3a0e-7480-4d26-b3cc-598134859ef3" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="0" ver="5"/>
 		<designed target="Y" value="0" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>

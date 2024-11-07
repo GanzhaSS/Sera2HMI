@@ -89,7 +89,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="2"/>
 		<designed target="Text" value="ВКЛЮЧИТЬ" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>
 				<![CDATA[((ApStatus >> 5) & 1) == 1]]>

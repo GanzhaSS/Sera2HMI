@@ -1646,8 +1646,8 @@ Update();]]>
 		<designed target="RootPath" value="/" ver="5"/>
 	</object>
 	<object access-modifier="private" name="iconsPath" display-name="iconsPath" uuid="28bd1694-8430-4c6a-bcb5-5c1e113ea850" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="mX" display-name="mX" uuid="00999db3-9beb-446a-81e9-b92c1656d032" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
-	<object access-modifier="private" name="mY" display-name="mY" uuid="ce1fe154-5446-49da-a594-d12ec2b17ee3" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="mX" display-name="mX" uuid="00999db3-9beb-446a-81e9-b92c1656d032" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="mY" display-name="mY" uuid="ce1fe154-5446-49da-a594-d12ec2b17ee3" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 	<do access-modifier="private" name="SetHistoryInterval" display-name="SetHistoryInterval" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">
 			<![CDATA[RecHistory.fromDateEditor.Value = tFrom;

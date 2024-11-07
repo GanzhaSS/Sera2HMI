@@ -21,7 +21,7 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
-			<object access-modifier="private" uuid="13f17120-ee45-4608-9d0e-20e0f73fb478" base-type="Управление_контуром_ПАЗ" base-type-id="700fa42d-399f-475f-b78f-ca2b2dbcbdc6" ver="5">
+			<object access-modifier="private" uuid="13f17120-ee45-4608-9d0e-20e0f73fb478" base-type="Управление_контуром_ПАЗ_Клапаны" base-type-id="700fa42d-399f-475f-b78f-ca2b2dbcbdc6" ver="5">
 				<init target="_PanelNum" ver="5" ref="here._init_PanelNum"/>
 				<init target="_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
 				<init target="_init_DeviceNameEn" ver="5" ref="here._DeviceNameEn"/>
@@ -177,24 +177,6 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 	<object access-modifier="private" name="_init_PanelDeltaX" display-name="_init_PanelDeltaX" uuid="99a94ecf-2300-47b1-9a79-2c2607e067b7" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="_init_PanelDeltaY" display-name="_init_PanelDeltaY" uuid="06586e8b-d014-4af0-ace0-47301d963d80" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="_init_Visible" display-name="_init_Visible" uuid="c3effe17-ca5b-4685-81db-7c5fc925d851" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
-	<designed target="WindowX" value="0" ver="5"/>
-	<designed target="WindowY" value="0" ver="5"/>
-	<designed target="WindowWidth" value="2560" ver="5"/>
-	<designed target="WindowHeight" value="1440" ver="5"/>
-	<designed target="WindowCaption" value="MainForm" ver="5"/>
-	<designed target="ShowWindowCaption" value="true" ver="5"/>
-	<designed target="ShowWindowMinimize" value="true" ver="5"/>
-	<designed target="ShowWindowMaximize" value="true" ver="5"/>
-	<designed target="ShowWindowClose" value="true" ver="5"/>
-	<designed target="AlwaysOnTop" value="false" ver="5"/>
-	<designed target="WindowSizeMode" value="0" ver="5"/>
-	<designed target="WindowBorderStyle" value="1" ver="5"/>
-	<designed target="WindowState" value="0" ver="5"/>
-	<designed target="WindowScalingMode" value="0" ver="5"/>
-	<designed target="MonitorNumber" value="0" ver="5"/>
-	<designed target="WindowPosition" value="0" ver="5"/>
-	<designed target="WindowCloseMode" value="0" ver="5"/>
-	<designed target="WindowIconPath" value="" ver="5"/>
 	<init target="_init_Visible" ver="5" value="true"/>
 	<do-trace access-modifier="private" target="BrushStyle" ver="5">
 		<conditional-expr>

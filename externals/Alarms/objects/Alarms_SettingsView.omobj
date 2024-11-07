@@ -292,7 +292,7 @@ ValueEdit.Focus = true;]]>
 			</body>
 			<param access-modifier="private" name="row" display-name="" uuid="50ab0212-e2c3-4532-8ea0-068893bbdcc1" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 			<param access-modifier="private" name="column" display-name="" uuid="a98c0ace-8582-48aa-88e5-e7f93fd1f781" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
-			<param access-modifier="private" name="columnX" display-name="" uuid="5c8270b5-32ff-4314-8410-f4544befd57d" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+			<param access-modifier="private" name="columnX" display-name="" uuid="5c8270b5-32ff-4314-8410-f4544befd57d" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 			<param access-modifier="private" name="columnWidth" display-name="" uuid="1f848f66-3353-4ab9-b557-bdcd341275b9" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 		</do>
 		<do access-modifier="private" name="FinishEditing" display-name="FinishEditing" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
@@ -316,7 +316,7 @@ ValueEdit.Visible = false;]]>
 		</do>
 		<object access-modifier="private" name="editRow" display-name="editRow" uuid="99aea48c-a0bd-4b46-ac80-ffc598dcc4bf" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 		<object access-modifier="private" name="editCol" display-name="editCol" uuid="930901ad-52b1-4e55-9ccc-97597cbff0d4" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
-		<do access-modifier="private" name="StartEditing" display-name="StartEditing" ver="5" type="" type-id="">
+		<do access-modifier="private" name="StartEditing" display-name="StartEditing" ver="5" type="void" type-id="">
 			<body kind="om">
 				<![CDATA[if (curCol == 1)
 	EditCell(curRow, curCol, DescriptionColumn.Width, TitleColumn.Width);
@@ -346,7 +346,7 @@ UpdateButtonEnable();]]>
 		<object access-modifier="private" name="curRow" display-name="curRow" uuid="a144b7a4-c508-41d7-8588-205c5315bfdd" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 		<object access-modifier="private" name="curCol" display-name="curCol" uuid="50b886da-d4b9-41fe-b836-e8a21f0eed0f" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 		<designed target="DelayedSortingEnabled" value="false" ver="4"/>
-		<object access-modifier="private" name="ValueEdit" display-name="ValueEdit" uuid="fd30a4b3-1d74-437c-8d5b-ede7b65ab379" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="3">
+		<object access-modifier="private" name="ValueEdit" display-name="ValueEdit" uuid="fd30a4b3-1d74-437c-8d5b-ede7b65ab379" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="3">
 			<designed target="X" value="10" ver="3"/>
 			<designed target="Y" value="30" ver="3"/>
 			<designed target="ZValue" value="0" ver="3"/>
@@ -687,7 +687,7 @@ return fontParams.toString();]]>
 	</do>
 	<designed target="ZValue" value="0" ver="3"/>
 	<designed target="Opacity" value="1" ver="3"/>
-	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="489c06c2-589d-41cf-a92e-497460df5185" base-type="SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="489c06c2-589d-41cf-a92e-497460df5185" base-type="Alarms_SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
 	<do access-modifier="private" name="UpdateButtonEnable" display-name="UpdateButtonEnable" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">
 			<![CDATA[isSelected: bool = ColumnsTable.IsRowSelected(ColumnsTable.curRow);

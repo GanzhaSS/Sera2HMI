@@ -8,7 +8,7 @@
 	<designed target="Opacity" value="1" ver="5"/>
 	<designed target="Enabled" value="true" ver="5"/>
 	<designed target="Tooltip" value="" ver="5"/>
-	<object access-modifier="private" name="Editor" display-name="Editor" uuid="026766a6-2fad-486f-afcf-14dc1901bd38" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="Editor" display-name="Editor" uuid="026766a6-2fad-486f-afcf-14dc1901bd38" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="0" ver="5"/>
 		<designed target="Y" value="0" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>

@@ -85,7 +85,7 @@ for (let i = 0; i < Math.max(items.length,Checkbox.Length); i++)
 bInit = true;]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="d0b5e6d1-b844-4f29-a83a-b6e4cfc4b464" base-type="SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="d0b5e6d1-b844-4f29-a83a-b6e4cfc4b464" base-type="Alarms_SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
 	<object access-modifier="private" name="Checkbox" display-name="Checkbox" uuid="c1d3d8d9-1428-4ed0-9c55-424c5d3f0163" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" cardinal="20">
 		<designed target="X" value="50" ver="5"/>
 		<designed target="Y" value="10" ver="5"/>

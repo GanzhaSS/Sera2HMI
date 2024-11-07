@@ -311,7 +311,7 @@ if (hasFocus)
 			</do-trace>
 		</object>
 	</object>
-	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="a2b700d2-94a3-4528-b1a1-273525755f7f" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="a2b700d2-94a3-4528-b1a1-273525755f7f" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
 	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
 		<body kind="om">
 			<![CDATA[Buttons.OrientationComboBox.AddItem("Книжная");

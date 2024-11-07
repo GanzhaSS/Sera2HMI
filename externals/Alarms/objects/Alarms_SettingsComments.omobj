@@ -31,8 +31,8 @@
 	<designed target="WindowPosition" value="2" ver="2"/>
 	<designed target="WindowCloseMode" value="0" ver="2"/>
 	<object access-modifier="private" name="Debug" display-name="Debug" uuid="3b216221-c9d5-492e-9d90-05eccfc7c7c6" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
-	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="53d22bd5-80bc-4fbe-8f0c-8c16f95e423d" base-type="SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
-	<object access-modifier="private" name="PatternEditor" display-name="PatternEditor" uuid="09f69e6e-4ec2-44cf-9c67-b0baaf80d4a6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="3">
+	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="53d22bd5-80bc-4fbe-8f0c-8c16f95e423d" base-type="Alarms_SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="PatternEditor" display-name="PatternEditor" uuid="09f69e6e-4ec2-44cf-9c67-b0baaf80d4a6" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="3">
 		<designed target="X" value="5" ver="3"/>
 		<designed target="Y" value="5" ver="3"/>
 		<designed target="Rotation" value="0" ver="3"/>

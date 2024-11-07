@@ -21,7 +21,7 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
-			<object access-modifier="private" uuid="94616b21-8d2e-4070-97c7-3565ed52cee5" base-type="Управление_контуром_сигнализации" base-type-id="1fd52480-abd8-4796-b4e4-4b5a5082aeea" ver="5">
+			<object access-modifier="private" uuid="94616b21-8d2e-4070-97c7-3565ed52cee5" base-type="Управление_контуром_HLA" base-type-id="1fd52480-abd8-4796-b4e4-4b5a5082aeea" ver="5">
 				<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
 				<init target="_init_ConLoopNameEn" ver="5" ref="here._ConLoopNameEn"/>
 				<init target="_init_HlaNameEn" ver="5" ref="here._HlaNameEn"/>

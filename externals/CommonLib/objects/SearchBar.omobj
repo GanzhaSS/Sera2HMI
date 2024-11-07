@@ -16,7 +16,7 @@
 	<designed target="PenWidth" value="1" ver="5"/>
 	<designed target="BrushColor" value="0xffffffff" ver="5"/>
 	<designed target="BrushStyle" value="1" ver="5"/>
-	<object access-modifier="private" name="PatternEdit" display-name="PatternEdit" uuid="2e388e51-3b53-439d-9a5c-eac11410bb75" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="PatternEdit" display-name="PatternEdit" uuid="2e388e51-3b53-439d-9a5c-eac11410bb75" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
 		<designed target="X" value="0" ver="5"/>
 		<designed target="Y" value="0" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>

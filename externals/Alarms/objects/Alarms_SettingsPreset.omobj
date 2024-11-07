@@ -30,7 +30,7 @@
 	<designed target="MonitorNumber" value="0" ver="2"/>
 	<designed target="WindowPosition" value="2" ver="2"/>
 	<designed target="WindowCloseMode" value="0" ver="2"/>
-	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="efdbc6f4-00b3-4641-80b7-076045f31e26" base-type="SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="efdbc6f4-00b3-4641-80b7-076045f31e26" base-type="Alarms_SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
 	<designed target="ZValue" value="0" ver="3"/>
 	<designed target="Opacity" value="1" ver="3"/>
 	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
@@ -285,7 +285,7 @@ pSettingsForm.Settings.PresetFilters.OnEdited();
 		<designed target="PenWidth" value="1" ver="4"/>
 		<designed target="BrushColor" value="4278190080" ver="4"/>
 		<designed target="BrushStyle" value="0" ver="4"/>
-		<object access-modifier="private" name="Editor" display-name="Editor" uuid="47cbbb29-7a98-48e2-9a18-5c4532c2189d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+		<object access-modifier="private" name="Editor" display-name="Editor" uuid="47cbbb29-7a98-48e2-9a18-5c4532c2189d" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
 			<designed target="X" value="0" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>

@@ -89,7 +89,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="2"/>
 		<designed target="Text" value="ОТКРЫТЬ" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>
 				<![CDATA[((ApStatus >> 5) & 1) == 1]]>
@@ -127,7 +126,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		</body>
 	</do-trace>
 	<init target="Focus" ver="5" value="false"/>
-	<object access-modifier="private" name="Valve_hor_Circle_34" display-name="Valve_hor_Circle_34" uuid="249269b7-9541-41c8-85cb-ce90c3f063a7" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Valve_hor_Circle_34" display-name="Valve_hor_Circle_34" uuid="249269b7-9541-41c8-85cb-ce90c3f063a7" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="128" ver="5"/>
 		<designed target="Y" value="25" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>

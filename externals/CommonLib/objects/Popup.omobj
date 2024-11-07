@@ -103,7 +103,7 @@
 		</body>
 	</do-on>
 	<object access-modifier="private" name="PointHeight" display-name="PointHeight" uuid="131e2cde-4948-4833-ae69-514f5b06a1ad" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
-	<object access-modifier="private" name="WindowUtilities" display-name="WindowUtilities" uuid="ccab2a47-52da-4907-8f60-1c517458f3a4" base-type="WindowUtilities" base-type-id="4a818ada-44b1-4070-9b9d-c28dc3447ece" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="WindowUtilities" display-name="WindowUtilities" uuid="ccab2a47-52da-4907-8f60-1c517458f3a4" base-type="WindowUtils" base-type-id="4a818ada-44b1-4070-9b9d-c28dc3447ece" ver="5" description="" cardinal="1">
 		<init target="pForm" ver="5" ref="here"/>
 	</object>
 	<designed target="Flip" value="0" ver="5"/>

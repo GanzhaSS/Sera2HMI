@@ -241,7 +241,7 @@ Close();]]>
 		</do-trace>
 		<init target="Visible" ver="4" value="false"/>
 	</object>
-	<object access-modifier="private" name="TextDescr" display-name="TextDescr" uuid="4ce3a505-2168-4ff8-b3c1-5c7c2bd9d1f6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="TextDescr" display-name="TextDescr" uuid="4ce3a505-2168-4ff8-b3c1-5c7c2bd9d1f6" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="10" ver="5"/>
 		<designed target="Y" value="20" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
@@ -302,7 +302,7 @@ else Error = "";]]>
 		</do-trace>
 		<init target="Visible" ver="4" value="false"/>
 	</object>
-	<object access-modifier="private" name="TextId" display-name="TextId" uuid="8f81e633-d0f9-490b-bbda-c1ab16e82ae7" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="TextId" display-name="TextId" uuid="8f81e633-d0f9-490b-bbda-c1ab16e82ae7" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="10" ver="5"/>
 		<designed target="Y" value="70" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>

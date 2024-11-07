@@ -89,7 +89,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="2"/>
 		<designed target="Text" value="ВКЛЮЧИТЬ" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>
 				<![CDATA[((ApStatus >> 5) & 1) == 1]]>
@@ -127,7 +126,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		</body>
 	</do-trace>
 	<init target="Focus" ver="5" value="false"/>
-	<object access-modifier="private" name="Pump" display-name="Pump" uuid="2f71aa54-f7a5-4cab-904c-675ef3cea3c9" base-type="Pump" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pump" display-name="Pump" uuid="2f71aa54-f7a5-4cab-904c-675ef3cea3c9" base-type="Pump_1" base-type-id="d3b95af4-680d-4284-a65a-a32f637cf273" ver="5" description="" cardinal="1">
 		<designed target="X" value="130" ver="5"/>
 		<designed target="Y" value="20" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -138,13 +137,12 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_init_NameEn" ver="5" ref="here._init_DeviceNameEn"/>
 		<init target="_init_FlagVisibleDAlr" ver="5" value="false"/>
 	</object>
-	<object access-modifier="private" name="Pallet3" display-name="Pallet3" uuid="0d17b863-c69f-4075-a0ca-b03eaebc2c10" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Pallet3" display-name="Pallet3" uuid="0d17b863-c69f-4075-a0ca-b03eaebc2c10" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 		<designed target="X" value="380.66666666666708" ver="5"/>
 		<designed target="Y" value="20.333333333333485" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="100" ver="5"/>
 		<designed target="Height" value="100" ver="5"/>
-		<designed target="PenColor" value="0xff484848" ver="5"/>
 		<object access-modifier="private" name="DevicePosition" display-name="DevicePosition" uuid="1357fdb9-8dba-4f86-85db-a341b141b72c" base-type="DevicePosition" base-type-id="a3bec034-00b4-4b6f-898e-4a27529440cb" ver="5" description="" cardinal="1">
 			<designed target="X" value="16" ver="5"/>
 			<designed target="Y" value="83" ver="5"/>
@@ -154,7 +152,7 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 			<designed target="TextAlignment" value="130" ver="5"/>
 			<designed target="Text" value="3" ver="5"/>
 		</object>
-		<object access-modifier="private" name="Pallet3_1" display-name="Pallet3_1" uuid="21a40839-a350-4302-997b-c9490ee74aee" base-type="Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Pallet3_1" display-name="Pallet3_1" uuid="21a40839-a350-4302-997b-c9490ee74aee" base-type="_Tank_05" base-type-id="d6c7cfe2-1f13-42ec-9393-e0409863c40d" ver="5" description="" cardinal="1">
 			<designed target="X" value="40" ver="5"/>
 			<designed target="Y" value="10" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
@@ -245,7 +243,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="8"/>
 		<designed target="Text" value="Задать частоту 1" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 	</object>
 	<object access-modifier="private" name="ButtonON_2" display-name="ButtonON_2" uuid="e98e3090-84d0-4d23-b241-b04073f2ad8c" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
 		<designed target="X" value="90" ver="5"/>
@@ -256,7 +253,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWord"/>
 		<init target="_CtrlWordValue" ver="5" value="16"/>
 		<designed target="Text" value="Задать частоту 2" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 	</object>
 </type>
 

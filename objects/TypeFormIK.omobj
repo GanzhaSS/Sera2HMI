@@ -1,4 +1,4 @@
-<type access-modifier="private" name="TypeFormIK" display-name="TypeFormIK" uuid="776690f6-d033-44fe-a695-fcd55837ecdb" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+<type access-modifier="private" name="TypeFormIK" display-name="TypeFormIK" uuid="776690f6-d033-44fe-a695-fcd55837ecdb" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
 	<designed target="X" value="0" ver="5"/>
 	<designed target="Y" value="0" ver="5"/>
 	<designed target="ZValue" value="0" ver="5"/>

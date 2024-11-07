@@ -96,7 +96,7 @@
 				<designed target="Enabled" value="true" ver="2"/>
 				<designed target="InvokeTrigger" value="false" ver="2"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame" form-action="open-in-frame" form-by-id="false">
-					<object access-modifier="private" uuid="f76742e3-b6b0-42d2-82f8-37ba999928cd" base-type="SettingsSeverity" base-type-id="4d754945-ea42-4c97-9c9a-2aab992cab7b" ver="2">
+					<object access-modifier="private" uuid="f76742e3-b6b0-42d2-82f8-37ba999928cd" base-type="Alarms_SettingsSeverity" base-type-id="4d754945-ea42-4c97-9c9a-2aab992cab7b" ver="2">
 						<init target="pSettingsForm" ver="5" ref="here"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
 					</object>
@@ -248,7 +248,7 @@
 				<designed target="Enabled" value="true" ver="2"/>
 				<designed target="InvokeTrigger" value="false" ver="2"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame" form-action="open-in-frame" form-by-id="false">
-					<object access-modifier="private" uuid="0be5a335-dd85-4829-897e-5aac9129dc8d" base-type="SettingsView_1" base-type-id="24dfd776-d198-4602-b1a5-4cb8ae859b82" ver="3">
+					<object access-modifier="private" uuid="0be5a335-dd85-4829-897e-5aac9129dc8d" base-type="Alarms_SettingsView" base-type-id="24dfd776-d198-4602-b1a5-4cb8ae859b82" ver="3">
 						<init target="pSettingsForm" ver="5" ref="here"/>
 						<init target="pColumnsModel" ver="5" ref="Settings.View.ColumnsModel"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
@@ -337,7 +337,7 @@
 				<designed target="Enabled" value="true" ver="2"/>
 				<designed target="InvokeTrigger" value="false" ver="2"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame" form-action="open-in-frame" form-by-id="false">
-					<object access-modifier="private" uuid="7068562d-c380-4cef-985f-4e5d9a1813f1" base-type="SettingsPanel" base-type-id="2c204548-68af-4a68-bc0f-bcdba77c2510" ver="3">
+					<object access-modifier="private" uuid="7068562d-c380-4cef-985f-4e5d9a1813f1" base-type="Alarms_SettingsPanel" base-type-id="2c204548-68af-4a68-bc0f-bcdba77c2510" ver="3">
 						<init target="pSettingsForm" ver="5" ref="here"/>
 						<init target="bInit" ver="5" value="false"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
@@ -401,7 +401,7 @@
 				<designed target="Enabled" value="true" ver="2"/>
 				<designed target="InvokeTrigger" value="false" ver="2"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame" form-action="open-in-frame" form-by-id="false">
-					<object access-modifier="private" uuid="cc1d6c9f-9d73-445a-bc60-402a88a60c7f" base-type="SettingsPatterns" base-type-id="ebea196a-3107-4b8b-9ace-6843fabd4752" ver="3">
+					<object access-modifier="private" uuid="cc1d6c9f-9d73-445a-bc60-402a88a60c7f" base-type="Alarms_SettingsComments" base-type-id="ebea196a-3107-4b8b-9ace-6843fabd4752" ver="3">
 						<init target="pSettingsForm" ver="5" ref="here"/>
 						<init target="pPatternsModel" ver="5" ref="Settings.Comments.Patterns"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
@@ -561,7 +561,7 @@
 				<designed target="Enabled" value="true" ver="2"/>
 				<designed target="InvokeTrigger" value="false" ver="2"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame" form-action="open-in-frame" form-by-id="false">
-					<object access-modifier="private" uuid="6597b6ce-4a1d-4cea-a7e1-61264f81aa19" base-type="SettingsExport" base-type-id="d70e4b6b-9fd8-4ea9-91d1-e367555ed827" ver="3">
+					<object access-modifier="private" uuid="6597b6ce-4a1d-4cea-a7e1-61264f81aa19" base-type="Alarms_SettingsExport" base-type-id="d70e4b6b-9fd8-4ea9-91d1-e367555ed827" ver="3">
 						<init target="pSettingsForm" ver="5" ref="here"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
 					</object>
@@ -1232,7 +1232,7 @@ Close();]]>
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="d4139187-e360-47a3-b376-dc400ead528f" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="d4139187-e360-47a3-b376-dc400ead528f" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
 	<object access-modifier="private" name="Settings" display-name="Settings" uuid="972e02c6-0f37-4d6d-af64-7521b9c68350" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
 		<designed target="X" value="0" ver="2"/>
 		<designed target="Y" value="0" ver="2"/>

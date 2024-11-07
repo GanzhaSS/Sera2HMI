@@ -165,7 +165,7 @@
 		</do-on>
 		<designed target="Flip" value="0" ver="5"/>
 	</object>
-	<object access-modifier="private" name="PasswordEdit" display-name="PasswordEdit" uuid="2e628d84-48c6-476b-a890-795244850590" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="PasswordEdit" display-name="PasswordEdit" uuid="2e628d84-48c6-476b-a890-795244850590" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="100" ver="5"/>
 		<designed target="Y" value="120" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
@@ -741,7 +741,7 @@ Close();]]>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-action="close"/>
 			<designed target="Checked" value="false" ver="5"/>
 		</object>
-		<do access-modifier="private" name="UpdateButtonsEnable" display-name="UpdateButtonsEnable" ver="5" type="" type-id="">
+		<do access-modifier="private" name="UpdateButtonsEnable" display-name="UpdateButtonsEnable" ver="5" type="void" type-id="">
 			<body kind="om">
 				<![CDATA[LoginButton.Enabled = SecurityContext.Connected && UserComboBox.Text != "" && PasswordEdit.Text != "";
 LogoutButton.Enabled = SecurityContext.Connected && !SecurityContext.GuestMode;
@@ -759,7 +759,7 @@ else if (event.KeyCode == 75) // Escape
 	Close();]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="Result" display-name="Ссылка на результат" uuid="54baf657-fbe4-4e39-9546-eba943ad070d" base-type="AuthentificationResult" base-type-id="5a70987d-09be-4ae7-90b3-76a00c6721bb" base-const="true" base-ref="true" ver="5"/>
+	<object access-modifier="private" name="Result" display-name="Ссылка на результат" uuid="54baf657-fbe4-4e39-9546-eba943ad070d" base-type="LoginDialogResult" base-type-id="5a70987d-09be-4ae7-90b3-76a00c6721bb" base-const="true" base-ref="true" ver="5"/>
 	<object access-modifier="private" name="ChangePassword" display-name="ChangePassword" uuid="767d2a2b-0155-44ca-b2d2-5c1b75d55cb8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5"/>
 	<do access-modifier="private" name="FitWindowSize" display-name="FitWindowSize" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">
@@ -768,7 +768,7 @@ else if (event.KeyCode == 75) // Escape
 else WindowHeight = 205;]]>
 		</body>
 	</do>
-	<do access-modifier="private" name="UpdateLayout" display-name="UpdateLayout" ver="5" type="" type-id="">
+	<do access-modifier="private" name="UpdateLayout" display-name="UpdateLayout" ver="5" type="void" type-id="">
 		<body kind="om">
 			<![CDATA[ButtonsPanel.Y = Height - ButtonsPanel.Height;]]>
 		</body>

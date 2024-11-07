@@ -195,7 +195,7 @@ DebugTool_1.Log("ClearAcknowledgedEvents() => " + String.ToString(result));]]>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="uint4_1" display-name="uint4_1" uuid="d37031ae-9f41-4785-bd9c-f66af5d69bec" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="2"/>
-	<object access-modifier="private" name="Alarms_1" display-name="Alarms_1" uuid="fdcf3fcb-97a5-480a-88b1-f1c195147619" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" ver="2">
+	<object access-modifier="private" name="Alarms_1" display-name="Alarms_1" uuid="fdcf3fcb-97a5-480a-88b1-f1c195147619" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" ver="2">
 		<designed target="X" value="5" ver="2"/>
 		<designed target="Y" value="90" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -265,7 +265,7 @@ DebugTool_1.Log("ClearAcknowledgedEvents() => " + String.ToString(result));]]>
 			<![CDATA[Alarms_1.objectId]]>
 		</body>
 	</do-trace>
-	<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="d46887e1-7c62-4fd7-bbfc-e86b74dc1732" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+	<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="d46887e1-7c62-4fd7-bbfc-e86b74dc1732" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 		<designed target="X" value="730" ver="2"/>
 		<designed target="Y" value="40" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -1128,7 +1128,7 @@ log(JSON.stringify(jsonStr));
 			</do-on>
 		</object>
 	</object>
-	<do access-modifier="private" name="SetSubscriptionFilter" display-name="SetSubscriptionFilter" ver="5" type="" type-id="">
+	<do access-modifier="private" name="SetSubscriptionFilter" display-name="SetSubscriptionFilter" ver="5" type="void" type-id="">
 		<body kind="javascript">
 			<![CDATA[var Filter1 = "{\"AND\":[{\">\":{\"severity\":400}},{\"<\":{\"severity\":800}}]}";
 

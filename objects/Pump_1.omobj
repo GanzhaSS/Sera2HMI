@@ -17,7 +17,7 @@
 	<designed target="PenWidth" value="1" ver="5"/>
 	<designed target="BrushColor" value="4278190080" ver="5"/>
 	<designed target="BrushStyle" value="0" ver="5"/>
-	<object access-modifier="private" name="CallPanelCtrlPump" display-name="CallPanelCtrlPump" uuid="040eb96a-5536-46fb-b9d6-72b26b099e4e" base-type="CallPanelCtrlPump" base-type-id="df7102d2-a9df-44cb-9401-0e81303969fc" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="CallPanelCtrlPump" display-name="CallPanelCtrlPump" uuid="040eb96a-5536-46fb-b9d6-72b26b099e4e" base-type="CallPanelCtrlPump_1" base-type-id="df7102d2-a9df-44cb-9401-0e81303969fc" ver="5" description="" cardinal="1">
 		<designed target="X" value="-5" ver="5"/>
 		<designed target="Y" value="-5" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -203,7 +203,7 @@
 			</expr>
 		</init>
 	</object>
-	<object access-modifier="private" name="KVRU" display-name="KVRU" uuid="8b461bbc-bdfe-4d5b-b3d6-31dfca52094f" base-type="KVRU_el" base-type-id="0a16e52e-b1f3-4d15-a1fa-547f8f6dc17c" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="KVRU" display-name="KVRU" uuid="8b461bbc-bdfe-4d5b-b3d6-31dfca52094f" base-type="_KVRU_el" base-type-id="0a16e52e-b1f3-4d15-a1fa-547f8f6dc17c" ver="5" description="" cardinal="1">
 		<designed target="X" value="-7" ver="5"/>
 		<designed target="Y" value="10" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>

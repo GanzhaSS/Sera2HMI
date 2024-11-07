@@ -719,8 +719,8 @@ pCore.private.bPrint = false;]]>
 	Trends.UpdateLayout();
 }]]>
 		</body>
-		<param access-modifier="private" name="width" display-name="" uuid="082e3529-e16d-4356-8f7b-c6539fa6f66a" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
-		<param access-modifier="private" name="height" display-name="" uuid="4f25447e-5128-42d1-a0ca-683e70e3bb83" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<param access-modifier="private" name="width" display-name="" uuid="082e3529-e16d-4356-8f7b-c6539fa6f66a" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<param access-modifier="private" name="height" display-name="" uuid="4f25447e-5128-42d1-a0ca-683e70e3bb83" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 	</do>
 	<object access-modifier="private" name="ExParams" display-name="ExParams" uuid="b7d2cfcc-bed4-4bc0-9b69-86cbc8731ae0" base-type="Trends_Parameters" base-type-id="b3130c37-74d0-4745-864b-c3a1702c818e" ver="5">
 		<designed target="X" value="70" ver="5"/>

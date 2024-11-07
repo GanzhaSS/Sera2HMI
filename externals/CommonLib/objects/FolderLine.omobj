@@ -103,7 +103,7 @@
 		</do-trace>
 		<designed target="Checked" value="false" ver="5"/>
 	</object>
-	<object access-modifier="private" name="FolderEdit" display-name="FolderEdit" uuid="21e7db17-6331-4d07-8bd0-c5f14c86bfcb" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="FolderEdit" display-name="FolderEdit" uuid="21e7db17-6331-4d07-8bd0-c5f14c86bfcb" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="30" ver="5"/>
 		<designed target="Y" value="10" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>

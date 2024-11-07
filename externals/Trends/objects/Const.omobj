@@ -14,7 +14,7 @@
 	<object access-modifier="private" name="cpVALUE" display-name="cpVALUE" uuid="dc3ada24-ec9b-4957-941e-f1bbfa734930" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
 	<object access-modifier="private" name="cpQUALITY" display-name="cpQUALITY" uuid="10156a2d-1ff5-4dd6-a79d-75ec577f373e" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
 	<object access-modifier="private" name="cpTIMESTAMP" display-name="cpTIMESTAMP" uuid="a3726815-f03e-4161-89d0-67c8ed702572" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5"/>
-	<object access-modifier="private" name="K_ZOOM" display-name="K_ZOOM" uuid="d5044ff7-bde6-42cc-bc06-6811e876782f" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5"/>
+	<object access-modifier="private" name="K_ZOOM" display-name="K_ZOOM" uuid="d5044ff7-bde6-42cc-bc06-6811e876782f" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5"/>
 	<object access-modifier="private" name="clBLACK" display-name="clBLACK" uuid="99fc5fa3-0599-437e-82eb-80fa4c8e5b3d" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="5"/>
 	<object access-modifier="private" name="clRED" display-name="clRED" uuid="ab37b9ac-7655-4884-b0e5-55e6f9d6c270" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="5"/>
 	<object access-modifier="private" name="tgNONE" display-name="tgNONE" uuid="3ee01ded-16d6-467b-9012-db67a809f622" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="5"/>

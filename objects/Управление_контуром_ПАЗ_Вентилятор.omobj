@@ -86,7 +86,7 @@
 		<designed target="PenColor" value="0xff787878" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
 		<designed target="BrushStyle" value="0" ver="5"/>
 		<object access-modifier="private" name="Title" display-name="Title" uuid="ae885c51-f913-4503-9226-56572f9e2cf1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 			<designed target="X" value="151" ver="5"/>
@@ -381,16 +381,6 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 	<object access-modifier="private" name="_PanelNum" display-name="_PanelNum" uuid="11157244-15b5-4ed6-b315-9c8b202a4eb1" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
 	<init target="_ApSourceConLoop" ver="5" ref="unit.Global_ApSource.ApSourceMain"/>
 	<init target="_PanelNum" ver="5" value="1"/>
-	<object access-modifier="private" name="ActionPanelOpenPump" display-name="ActionPanelOpenPump" uuid="afe92771-b911-4728-ab31-ea88e6aa6ef8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="InvokeTrigger" value="false" ver="5"/>
-		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
-			<object access-modifier="private" uuid="77b31f18-74b0-4b01-b3d7-00eba4ce2297" base-type="Управление_насосом ПАЗ" base-type-id="25f60aca-5928-4e3c-beec-9bef05f90303" ver="5">
-				<init target="WindowY" ver="5" ref="unit.Global_WinCtrl.PanelPumpY"/>
-				<init target="_PanelNum" ver="5" ref="here._PanelNum"/>
-			</object>
-		</do-on>
-	</object>
 	<object access-modifier="private" name="Panel" display-name="Panel" uuid="7502a915-c354-4387-937c-aaafe9fed368" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
 		<designed target="X" value="20" ver="5"/>
 		<designed target="Y" value="195" ver="5"/>
@@ -405,7 +395,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 		<designed target="Width" value="340" ver="5"/>
 		<designed target="Height" value="145" ver="5"/>
 		<designed target="RoundingRadius" value="0" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenColor" value="0xff787878" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
 		<designed target="BrushColor" value="4278190080" ver="5"/>
@@ -497,7 +487,6 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" ref="here._init_DeviceNameEn"/>
-		<init target="_init_FlagVisibleDAlr" ver="5" value="false"/>
 	</object>
 	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="b32662bf-c29f-4560-98c3-d0f3be8f366c" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 	<param access-modifier="private" name="_init_DeviceNameEn" display-name="_init_DeviceNameEn" uuid="c49a89f2-f718-4e47-baa5-12e9ca6df6ae" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>

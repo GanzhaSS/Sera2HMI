@@ -1280,7 +1280,7 @@ NextPage();]]>
 	</do-on>
 	<designed target="ZValue" value="0" ver="3"/>
 	<designed target="Opacity" value="1" ver="3"/>
-	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="ce36a76f-2d17-4a31-af00-80f95077bb90" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="ce36a76f-2d17-4a31-af00-80f95077bb90" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
 	<do-on access-modifier="private" name="Handler_Closed" display-name="Handler_Closed" ver="5" event="Closed">
 		<body kind="om">
 			<![CDATA[// возвращаем оперативный режим обратно

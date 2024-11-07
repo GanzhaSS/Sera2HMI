@@ -39,10 +39,10 @@
 		<object access-modifier="private" name="PointSymbolCode" display-name="PointSymbolCode" uuid="3d8598ff-80a0-499e-bd6c-6db3718304a8" base-type="uint2" base-type-id="ae923ad8-8b75-4813-8121-36efe3cc8c12" ver="4" cardinal="1"/>
 		<object access-modifier="private" name="StyleGood" display-name="StyleGood" uuid="9d245eb8-7914-414f-bfc0-e898fa5503b5" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="4" cardinal="1"/>
 		<object access-modifier="private" name="StyleBad" display-name="StyleBad" uuid="6ec8abd8-6bfb-470b-a16b-ce5cdb613564" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="4" cardinal="1"/>
-		<object access-modifier="private" name="WidthGood" display-name="WidthGood" uuid="82a53818-be25-41d8-96d5-41c8be48754a" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4" cardinal="1"/>
-		<object access-modifier="private" name="WidthBad" display-name="WidthBad" uuid="fbce4717-2cd7-48af-b347-ff58992e5e5f" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4" cardinal="1"/>
+		<object access-modifier="private" name="WidthGood" display-name="WidthGood" uuid="82a53818-be25-41d8-96d5-41c8be48754a" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4" cardinal="1"/>
+		<object access-modifier="private" name="WidthBad" display-name="WidthBad" uuid="fbce4717-2cd7-48af-b347-ff58992e5e5f" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4" cardinal="1"/>
 		<object access-modifier="private" name="ItemCDT" display-name="ItemCDT" uuid="bc7b242e-a3ea-491d-8deb-e97b13b8ab0a" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="4" cardinal="1"/>
-		<object access-modifier="private" name="StringTagYValue" display-name="StringTagYValue" uuid="5cbd4788-5f63-4758-88a7-6368d4979094" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4" cardinal="1"/>
+		<object access-modifier="private" name="StringTagYValue" display-name="StringTagYValue" uuid="5cbd4788-5f63-4758-88a7-6368d4979094" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4" cardinal="1"/>
 		<init target="Used" ver="5" value="false"/>
 	</object>
 	<object access-modifier="private" name="Axis" display-name="Axis" uuid="88f4bcba-48f7-427f-b8e9-b9097ce204b7" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="5" cardinal="21">
@@ -56,10 +56,10 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
 		<object access-modifier="private" name="ColorY" display-name="ColorY" uuid="4c096aff-3ab1-495e-a0b5-0095a7396f03" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="4" cardinal="1"/>
-		<object access-modifier="private" name="fixYmax" display-name="fixYmax" uuid="b51b10a1-ee79-4ee0-8479-a0134f15c154" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
-		<object access-modifier="private" name="fixYmin" display-name="fixYmin" uuid="b9ef9ee5-fdb2-47dd-ad22-313e4519f5dc" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
-		<object access-modifier="private" name="Ymin" display-name="Ymin" uuid="708b2f80-833d-4ca0-9ae4-883c69a0d88b" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
-		<object access-modifier="private" name="Ymax" display-name="Ymax" uuid="a187519d-e294-450a-8447-fb6b5f107071" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
+		<object access-modifier="private" name="fixYmax" display-name="fixYmax" uuid="b51b10a1-ee79-4ee0-8479-a0134f15c154" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
+		<object access-modifier="private" name="fixYmin" display-name="fixYmin" uuid="b9ef9ee5-fdb2-47dd-ad22-313e4519f5dc" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
+		<object access-modifier="private" name="Ymin" display-name="Ymin" uuid="708b2f80-833d-4ca0-9ae4-883c69a0d88b" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
+		<object access-modifier="private" name="Ymax" display-name="Ymax" uuid="a187519d-e294-450a-8447-fb6b5f107071" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
 		<object access-modifier="private" name="Yscale" display-name="Yscale" uuid="8b0462ff-d6d4-4780-a3ff-131b74f51134" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="5" cardinal="1"/>
 		<object access-modifier="private" name="bUserScale" display-name="bUserScale" uuid="c6a31450-89f2-4576-8c73-d09ca1e20f1f" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
 	</object>
@@ -433,8 +433,8 @@ while (i < Charts.Length)
 return 0;]]>
 			</body>
 		</do>
-		<object access-modifier="private" name="Y0min" display-name="Y0min" uuid="8ca4e88e-0c97-4daa-bab8-316cc000d096" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
-		<object access-modifier="private" name="Y0max" display-name="Y0max" uuid="ca546081-e220-4c72-a1a3-397de20af0bf" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
+		<object access-modifier="private" name="Y0min" display-name="Y0min" uuid="8ca4e88e-0c97-4daa-bab8-316cc000d096" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
+		<object access-modifier="private" name="Y0max" display-name="Y0max" uuid="ca546081-e220-4c72-a1a3-397de20af0bf" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2" cardinal="1"/>
 		<object access-modifier="private" name="bUserScale" display-name="bUserScale" uuid="78d5aaf5-c4f8-488c-adef-b54565d68e97" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
 	</object>
 	<do access-modifier="private" name="GetItemFree" display-name="GetItemFree" ver="5" type="int4" type-id="74222947-f188-4195-8e0e-e33bd9827255">

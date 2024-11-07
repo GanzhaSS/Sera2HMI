@@ -40,7 +40,7 @@
 		<designed target="Width" value="340" ver="5"/>
 		<designed target="Height" value="175" ver="5"/>
 		<designed target="RoundingRadius" value="0" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenColor" value="0xff787878" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
 		<designed target="BrushColor" value="4278190080" ver="5"/>

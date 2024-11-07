@@ -239,7 +239,7 @@ Close();]]>
 		<designed target="DisabledPenStyle" value="1" ver="4"/>
 		<designed target="DisabledPenWidth" value="1" ver="4"/>
 	</object>
-	<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="5fc5baef-54e5-48bb-8be0-8baad295c166" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="5fc5baef-54e5-48bb-8be0-8baad295c166" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
 	<object access-modifier="private" name="pTheme" display-name="Тема оформления" uuid="5bf1eb26-4eaa-49f6-a14e-fcfcd918b92e" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" base-const="true" base-ref="true" ver="4"/>
 	<do-trace access-modifier="private" target="BrushColor" ver="5">
 		<body>

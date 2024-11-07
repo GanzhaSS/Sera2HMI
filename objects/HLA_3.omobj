@@ -30,7 +30,6 @@
 		<init target="_FlagPaneEnable" ver="5" ref="here._init_FlagPaneEnable"/>
 		<init target="_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_ConLoopNameEn" ver="5" ref="here._init_ConLoopNameEn"/>
-		<init target="_HlaNameEn" ver="5" ref="here._init_HlaNameEn1"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSource_This"/>
 		<init target="_HaNameEn1" ver="5" ref="here._init_HaNameEn1"/>
 		<init target="_HlaNameEn2" ver="5" ref="here._init_HlaNameEn2"/>

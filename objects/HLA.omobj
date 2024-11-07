@@ -17,7 +17,7 @@
 	<designed target="PenWidth" value="1" ver="5"/>
 	<designed target="BrushColor" value="4278190080" ver="5"/>
 	<designed target="BrushStyle" value="0" ver="5"/>
-	<object access-modifier="private" name="CallPanelCtrlConLoopHLA3" display-name="CallPanelCtrlConLoopHLA3" uuid="a3470450-6ede-4edd-a925-788e94320843" base-type="CallPanelCtrlConLoopSignal" base-type-id="05ee14ef-2098-4a00-aebb-17c7de4a44c0" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="CallPanelCtrlConLoopHLA3" display-name="CallPanelCtrlConLoopHLA3" uuid="a3470450-6ede-4edd-a925-788e94320843" base-type="CallPanelCtrlConLoopHLA" base-type-id="05ee14ef-2098-4a00-aebb-17c7de4a44c0" ver="5" description="" cardinal="1">
 		<designed target="X" value="0" ver="5"/>
 		<designed target="Y" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -31,6 +31,7 @@
 		<init target="_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_ConLoopNameEn" ver="5" ref="here._init_ConLoopNameEn"/>
 		<init target="_HlaNameEn" ver="5" ref="here._init_HlaNameEn"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSource_This"/>
 	</object>
 	<object access-modifier="private" name="CircleBack_1" display-name="CircleBack_1" uuid="49edcc0f-d0aa-4413-8b81-99f59fa867f9" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="3" ver="5"/>

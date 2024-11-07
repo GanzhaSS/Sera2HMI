@@ -159,7 +159,7 @@ else if (event.KeyCode == 75) // Escape
 			</do-trace>
 			<designed target="Flip" value="0" ver="5"/>
 		</object>
-		<object access-modifier="private" name="Edit" display-name="Edit" uuid="d1cdc5c6-2bae-493e-a8cb-b4d0c1451844" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Edit" display-name="Edit" uuid="d1cdc5c6-2bae-493e-a8cb-b4d0c1451844" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
 			<designed target="X" value="80" ver="5"/>
 			<designed target="Y" value="5" ver="5"/>
 			<designed target="ZValue" value="0" ver="5"/>
@@ -254,7 +254,7 @@ else if (event.KeyCode == 75) // Escape
 			</do-trace>
 			<designed target="Flip" value="0" ver="5"/>
 		</object>
-		<object access-modifier="private" name="HostEdit" display-name="HostEdit" uuid="6b3c01db-c7a9-45ed-b830-380bdede07de" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="HostEdit" display-name="HostEdit" uuid="6b3c01db-c7a9-45ed-b830-380bdede07de" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
 			<designed target="X" value="20" ver="5"/>
 			<designed target="Y" value="25" ver="5"/>
 			<designed target="ZValue" value="0" ver="5"/>
@@ -372,8 +372,6 @@ else
 			<designed target="Height" value="25" ver="5"/>
 			<init target="Maximum" ver="5" value="65535"/>
 			<init target="Minimum" ver="5" value="1"/>
-			<designed target="Visible" value="true" ver="5"/>
-			<designed target="Opacity" value="1" ver="5"/>
 		</object>
 		<do access-modifier="private" name="UpdateLayout" display-name="UpdateLayout" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 			<body kind="om">

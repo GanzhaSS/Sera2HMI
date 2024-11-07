@@ -76,7 +76,7 @@ if (here.Value != newValue)
 		</do>
 	</object>
 	<object access-modifier="private" name="pValueChanged" display-name="pValueChanged" uuid="b805ee96-4b36-412f-8e3b-86fd63bd1983" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5"/>
-	<object access-modifier="private" name="Editor" display-name="Editor" uuid="396aa01f-434b-4af5-9af4-8dd33aff9c94" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
+	<object access-modifier="private" name="Editor" display-name="Editor" uuid="396aa01f-434b-4af5-9af4-8dd33aff9c94" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5">
 		<designed target="X" value="0" ver="5"/>
 		<designed target="Y" value="0" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
@@ -586,7 +586,7 @@ Value.Update();]]>
 					</body>
 				</do-on>
 			</object>
-			<object access-modifier="private" name="CalendarResult" display-name="CalendarResult" uuid="93e8fc3f-079b-45bd-a02c-2ad90bcf0c22" base-type="CalendarResult" base-type-id="eeb829fa-15e3-4693-8f06-a8504de6c239" ver="5" description="" cardinal="1"/>
+			<object access-modifier="private" name="CalendarResult" display-name="CalendarResult" uuid="93e8fc3f-079b-45bd-a02c-2ad90bcf0c22" base-type="DateTimeResult" base-type-id="eeb829fa-15e3-4693-8f06-a8504de6c239" ver="5" description="" cardinal="1"/>
 			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MousePress" form-action="open-new" form-by-id="false">
 				<object access-modifier="private" uuid="6da86338-73cb-49de-9482-4d71ac03c22d" base-type="Calendar" base-type-id="5edbd6ad-2bda-47b2-b1b0-7cb577333b8c" ver="5">
 					<init target="pResult" ver="5" ref="CalendarResult"/>

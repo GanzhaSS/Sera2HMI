@@ -99,7 +99,7 @@ Ack(source, condition, Main_panel.private.AckComment, Main_panel.private.UserNam
 						</object>
 					</do-on>
 				</object>
-				<object access-modifier="private" name="LoginResult" display-name="LoginResult" uuid="c708fcee-5659-4420-89b4-5c958e31c9a0" base-type="AuthentificationResult" base-type-id="5a70987d-09be-4ae7-90b3-76a00c6721bb" ver="4"/>
+				<object access-modifier="private" name="LoginResult" display-name="LoginResult" uuid="c708fcee-5659-4420-89b4-5c958e31c9a0" base-type="LoginDialogResult" base-type-id="5a70987d-09be-4ae7-90b3-76a00c6721bb" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" form-action="open-dialog" form-by-id="false">
 					<object access-modifier="private" uuid="8395a3b0-3375-486b-b53d-6536417868da" base-type="LoginDialog" base-type-id="eb8d4a9b-7cd2-4fcf-81e1-67eed3b5c0d4" ver="4">
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
@@ -1322,42 +1322,42 @@ if (AcknowledgmentDoubleClick && !FollowLatestEvent)
 					</body>
 				</do-on>
 			</object>
-			<object access-modifier="private" name="BoolToken_Acknowledgment" display-name="BoolToken_Acknowledgment" uuid="cecaf780-bf51-45de-883a-afcb255a28fd" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_Acknowledgment" display-name="BoolToken_Acknowledgment" uuid="cecaf780-bf51-45de-883a-afcb255a28fd" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="Acknowledgment"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_ClearCurrentEvents" display-name="BoolToken_ClearCurrentEvents" uuid="81935575-2b85-4a80-9121-f7e0848fbbde" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_ClearCurrentEvents" display-name="BoolToken_ClearCurrentEvents" uuid="81935575-2b85-4a80-9121-f7e0848fbbde" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="ClearCurrentEvents"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_EditSettings" display-name="BoolToken_EditSettings" uuid="72d15cae-052e-4189-acee-15e302f42f91" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_EditSettings" display-name="BoolToken_EditSettings" uuid="72d15cae-052e-4189-acee-15e302f42f91" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="EditSettings"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_ExportDataAvailability" display-name="BoolToken_ExportDataAvailability" uuid="296021cf-3943-440b-ad9e-54ccbc8dd302" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_ExportDataAvailability" display-name="BoolToken_ExportDataAvailability" uuid="296021cf-3943-440b-ad9e-54ccbc8dd302" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="ExportDataAvailability"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_Filtering" display-name="BoolToken_Filtering" uuid="14531ee4-d861-48b6-b71e-09acb07aac90" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_Filtering" display-name="BoolToken_Filtering" uuid="14531ee4-d861-48b6-b71e-09acb07aac90" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="Filtering"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_SoundPlaybackManagment" display-name="BoolToken_SoundPlaybackManagment" uuid="7881cad4-8d83-47f3-b296-cf3c8bf5a13a" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_SoundPlaybackManagment" display-name="BoolToken_SoundPlaybackManagment" uuid="7881cad4-8d83-47f3-b296-cf3c8bf5a13a" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="SoundPlaybackManagment"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_TakeCurrentEventsSnapshot" display-name="BoolToken_TakeCurrentEventsSnapshot" uuid="6c1ca24c-12b6-4cf2-b8c0-29c72daa5436" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_TakeCurrentEventsSnapshot" display-name="BoolToken_TakeCurrentEventsSnapshot" uuid="6c1ca24c-12b6-4cf2-b8c0-29c72daa5436" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="TakeCurrentEventsSnapshot"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_ViewCurrentEvents" display-name="BoolToken_ViewCurrentEvents" uuid="67d2a179-f9cf-444f-9708-20b0939f9974" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_ViewCurrentEvents" display-name="BoolToken_ViewCurrentEvents" uuid="67d2a179-f9cf-444f-9708-20b0939f9974" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="ViewCurrentEvents"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
@@ -1367,7 +1367,7 @@ if (AcknowledgmentDoubleClick && !FollowLatestEvent)
 					</body>
 				</do-on>
 			</object>
-			<object access-modifier="private" name="BoolToken_ViewEventHistory" display-name="BoolToken_ViewEventHistory" uuid="1192b917-88fa-4ddf-8c42-36a350f678c7" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_ViewEventHistory" display-name="BoolToken_ViewEventHistory" uuid="1192b917-88fa-4ddf-8c42-36a350f678c7" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="ViewEventHistory"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
@@ -1377,17 +1377,17 @@ if (AcknowledgmentDoubleClick && !FollowLatestEvent)
 					</body>
 				</do-on>
 			</object>
-			<object access-modifier="private" name="BoolToken_ArrangeEventHistoryIntoPages" display-name="BoolToken_ArrangeEventHistoryIntoPages" uuid="3e6b6062-5f2f-41ee-9f56-1ad9e1b4f1e3" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_ArrangeEventHistoryIntoPages" display-name="BoolToken_ArrangeEventHistoryIntoPages" uuid="3e6b6062-5f2f-41ee-9f56-1ad9e1b4f1e3" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="ArrangeEventHistoryIntoPages"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_EventTableSortAvailability" display-name="BoolToken_EventTableSortAvailability" uuid="57ee1953-ad85-44ef-826f-d51bc3a539b4" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_EventTableSortAvailability" display-name="BoolToken_EventTableSortAvailability" uuid="57ee1953-ad85-44ef-826f-d51bc3a539b4" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="EventTableSortAvailability"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
 			</object>
-			<object access-modifier="private" name="BoolToken_FileSystemAccess" display-name="BoolToken_FileSystemAccess" uuid="6aa283f4-e309-4792-95fc-54cffbec9343" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_FileSystemAccess" display-name="BoolToken_FileSystemAccess" uuid="6aa283f4-e309-4792-95fc-54cffbec9343" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="FileSystemAccess"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
@@ -1398,7 +1398,7 @@ Export.ExportPath.Update(Export.ExportPath.Value);]]>
 					</body>
 				</do-on>
 			</object>
-			<object access-modifier="private" name="BoolToken_Printing" display-name="BoolToken_Printing" uuid="17172688-2637-4dd2-8be0-cba5eb7f31ad" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
+			<object access-modifier="private" name="BoolToken_Printing" display-name="BoolToken_Printing" uuid="17172688-2637-4dd2-8be0-cba5eb7f31ad" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="2">
 				<init target="Right" ver="5" value="Printing"/>
 				<init target="SecurityContext" ver="5" ref="SecurityContext_1"/>
 				<init target="Application" ver="5" ref="SecurityApplication"/>
@@ -1633,7 +1633,7 @@ else
 return sourceString;]]>
 				</body>
 			</do>
-			<object access-modifier="private" name="tempHeight" display-name="tempHeight" uuid="04ef677c-60ce-47af-9c8a-ea5827787ced" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+			<object access-modifier="private" name="tempHeight" display-name="tempHeight" uuid="04ef677c-60ce-47af-9c8a-ea5827787ced" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
 			<do access-modifier="private" name="LoadHistory" display-name="LoadHistory" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 				<body kind="om">
 					<![CDATA[if (ActiveMode == 1)
@@ -1892,7 +1892,7 @@ for (let c = 0; c < columns.length; c++)
 				<designed target="Enabled" value="true" ver="2"/>
 				<designed target="InvokeTrigger" value="false" ver="2"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="052df691-6bff-406c-91ae-35b8ffb410ed" base-type="CommentAck" base-type-id="849094ab-4a33-4e58-ad4d-5a8e53262f5c" ver="2">
+					<object access-modifier="private" uuid="052df691-6bff-406c-91ae-35b8ffb410ed" base-type="Alarms_CommentAck" base-type-id="849094ab-4a33-4e58-ad4d-5a8e53262f5c" ver="2">
 						<init target="pAlarms" ver="5" ref="here"/>
 						<designed target="WindowPosition" value="3" ver="2"/>
 						<init target="Focus" ver="5" value="true"/>
@@ -2412,7 +2412,7 @@ private.LoadSaveBusy.LoadingFile = false;
 				<designed target="Enabled" value="true" ver="3"/>
 				<designed target="InvokeTrigger" value="false" ver="3"/>
 				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="e0081261-01a5-4a0a-9e40-7f649ec7a176" base-type="ExportAlarms" base-type-id="4eaa655b-e7df-43ce-a704-693e19fb182e" ver="3">
+					<object access-modifier="private" uuid="e0081261-01a5-4a0a-9e40-7f649ec7a176" base-type="Alarms_ExportAlarms" base-type-id="4eaa655b-e7df-43ce-a704-693e19fb182e" ver="3">
 						<init target="pAlarms" ver="5" ref="here"/>
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
 						<init target="Scale" ver="5">
@@ -2429,7 +2429,7 @@ private.LoadSaveBusy.LoadingFile = false;
 				<designed target="Enabled" value="true" ver="3"/>
 				<designed target="InvokeTrigger" value="false" ver="3"/>
 				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="069f93f3-9ba5-4c11-babb-cdb6ef592e79" base-type="ExportAlarms" base-type-id="4eaa655b-e7df-43ce-a704-693e19fb182e" ver="3">
+					<object access-modifier="private" uuid="069f93f3-9ba5-4c11-babb-cdb6ef592e79" base-type="Alarms_ExportAlarms" base-type-id="4eaa655b-e7df-43ce-a704-693e19fb182e" ver="3">
 						<init target="pAlarms" ver="5" ref="here"/>
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
 						<init target="Init_TableModel" ver="5" ref="Main_tables_Operative.TableModel_1"/>
@@ -2446,7 +2446,7 @@ private.LoadSaveBusy.LoadingFile = false;
 				<designed target="Enabled" value="true" ver="3"/>
 				<designed target="InvokeTrigger" value="false" ver="3"/>
 				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="44a3a732-4ce2-42d0-96ce-4cb7ad114e91" base-type="SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" ver="3">
+					<object access-modifier="private" uuid="44a3a732-4ce2-42d0-96ce-4cb7ad114e91" base-type="Alarms_SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" ver="3">
 						<init target="pAlarms" ver="5" ref="here"/>
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
@@ -2457,7 +2457,7 @@ private.LoadSaveBusy.LoadingFile = false;
 				<designed target="Enabled" value="true" ver="3"/>
 				<designed target="InvokeTrigger" value="false" ver="3"/>
 				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="bd3f6d0a-2613-47e0-9805-1ab0c3c63c43" base-type="FilterViewForm" base-type-id="0eb5fd44-6f82-41a2-83b6-c72fb7903de1" ver="3">
+					<object access-modifier="private" uuid="bd3f6d0a-2613-47e0-9805-1ab0c3c63c43" base-type="Alarms_FilterViewForm" base-type-id="0eb5fd44-6f82-41a2-83b6-c72fb7903de1" ver="3">
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
 						<init target="Link_Alarms" ver="5" ref="here"/>
@@ -2470,7 +2470,7 @@ private.LoadSaveBusy.LoadingFile = false;
 				<designed target="Enabled" value="true" ver="3"/>
 				<designed target="InvokeTrigger" value="false" ver="3"/>
 				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="10906d28-55f0-42ac-b947-ff95b7d98bfb" base-type="FilterForm" base-type-id="3a63182a-45e8-4259-a203-84dcd20232b8" ver="3">
+					<object access-modifier="private" uuid="10906d28-55f0-42ac-b947-ff95b7d98bfb" base-type="Alarms_FilterRequestForm" base-type-id="3a63182a-45e8-4259-a203-84dcd20232b8" ver="3">
 						<init target="Link_Alarms" ver="5" ref="here"/>
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
@@ -2481,7 +2481,7 @@ private.LoadSaveBusy.LoadingFile = false;
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="a496e93d-8690-4fa4-9b8d-7fc398caebd0" base-type="PrintForm" base-type-id="a0785a72-33ef-4e4e-a349-99dd6fa180bc" ver="3">
+					<object access-modifier="private" uuid="a496e93d-8690-4fa4-9b8d-7fc398caebd0" base-type="Alarms_PrintForm" base-type-id="a0785a72-33ef-4e4e-a349-99dd6fa180bc" ver="3">
 						<init target="pAlarms" ver="5" ref="here"/>
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
 						<init target="Scale" ver="5">
@@ -2497,7 +2497,7 @@ private.LoadSaveBusy.LoadingFile = false;
 				<designed target="Enabled" value="true" ver="3"/>
 				<designed target="InvokeTrigger" value="false" ver="3"/>
 				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="f2db7041-4132-4caa-b182-1b0583052444" base-type="SortForm" base-type-id="95d52964-3d3f-43d2-ad6f-f3cb68a1c51b" ver="3">
+					<object access-modifier="private" uuid="f2db7041-4132-4caa-b182-1b0583052444" base-type="Alarms_SortForm" base-type-id="95d52964-3d3f-43d2-ad6f-f3cb68a1c51b" ver="3">
 						<init target="Alarms_1" ver="5" ref="here"/>
 						<init target="AlwaysOnTop" ver="5" ref="AlwaysOnTopForm"/>
 						<init target="pTheme" ver="5" ref="here.pTheme"/>
@@ -4293,7 +4293,7 @@ Main_panel.ToolBar.RecHistory.DateTimeChanged.Invoke();]]>
 				<param access-modifier="private" name="timeStart" display-name="" uuid="d7f14cfd-2dc4-466f-9b28-24195f823d69" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="3"/>
 				<param access-modifier="private" name="timeEnd" display-name="" uuid="be6c30b3-bfcd-4aff-8614-1462dee4f535" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="3"/>
 			</do>
-			<do access-modifier="private" name="GetFormScale" display-name="GetFormScale" ver="5" type="float8" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
+			<do access-modifier="private" name="GetFormScale" display-name="GetFormScale" ver="5" type="double" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
 				<body kind="om">
 					<![CDATA[// Изменение масштаба формы при низком разрешении монитора
 // Возвращает коэффициент масштабирования Scale
@@ -4326,8 +4326,8 @@ if (newScale < 1.0)
 	return newScale;
 else return 1.0;]]>
 				</body>
-				<param access-modifier="private" name="width" display-name="" uuid="e1ea16e7-8674-4032-b65f-6cea5e40e332" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
-				<param access-modifier="private" name="height" display-name="" uuid="a84d3863-61bd-4c2c-889b-d584a0d3d434" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+				<param access-modifier="private" name="width" display-name="" uuid="e1ea16e7-8674-4032-b65f-6cea5e40e332" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+				<param access-modifier="private" name="height" display-name="" uuid="a84d3863-61bd-4c2c-889b-d584a0d3d434" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 			</do>
 			<object access-modifier="private" name="MonitorList_1" display-name="MonitorList_1" uuid="6a513328-096f-4f53-80ae-1776dee4acbd" base-type="MonitorList" base-type-id="c74bfc5a-253e-4144-8b20-917cf4cf333b" ver="4"/>
 			<do access-modifier="private" name="IsAbsolutePath" display-name="IsAbsolutePath" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
@@ -4859,7 +4859,7 @@ for (let i = 0; i < columns.length; i++)
 defaultSorting.Value = defSet;]]>
 					</body>
 				</do>
-				<do access-modifier="private" name="SetDefaultSorting" display-name="SetDefaultSorting" ver="5" type="" type-id="">
+				<do access-modifier="private" name="SetDefaultSorting" display-name="SetDefaultSorting" ver="5" type="void" type-id="">
 					<body kind="javascript">
 						<![CDATA[var sortArray = [];
 sortArray.push({'Id':'time', 'SortOrder':1, 'SortPriority':2});
@@ -5783,7 +5783,7 @@ catch(error)
 ]]>
 					</body>
 				</do>
-				<do access-modifier="private" name="SetDefaults" display-name="SetDefaults" ver="5" type="" type-id="">
+				<do access-modifier="private" name="SetDefaults" display-name="SetDefaults" ver="5" type="void" type-id="">
 					<body kind="om">
 						<![CDATA[// значения по умолчанию
 Range1.SoundEnable = true;
@@ -7931,20 +7931,9 @@ catch(err)
 			<designed target="X" value="0" ver="3"/>
 			<designed target="Y" value="0" ver="3"/>
 			<designed target="Rotation" value="0" ver="3"/>
-			<designed target="Scale" value="1" ver="3"/>
-			<designed target="Visible" value="true" ver="3"/>
-			<designed target="Enabled" value="true" ver="3"/>
 			<designed target="Tooltip" value="" ver="3"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
 			<designed target="Width" value="24" ver="5"/>
 			<designed target="Height" value="24" ver="5"/>
-			<designed target="RoundingRadius" value="0" ver="5"/>
-			<designed target="PenColor" value="4278190080" ver="5"/>
-			<designed target="PenStyle" value="0" ver="5"/>
-			<designed target="PenWidth" value="1" ver="5"/>
-			<designed target="BrushColor" value="4278190080" ver="5"/>
-			<designed target="BrushStyle" value="0" ver="5"/>
 			<object access-modifier="private" name="SizeLimits" display-name="SizeLimits" uuid="0fdd1465-2589-4af4-b288-d681790bb4c1" base-type="LayoutSizeLimits" base-type-id="10342c1f-560b-4160-9de5-7e2c08026f47" ver="5" description="" cardinal="1">
 				<designed target="MinWidth" value="0" ver="5"/>
 				<designed target="MinHeight" value="0" ver="5"/>
@@ -8842,7 +8831,7 @@ Main_tables_Operative.TableModel_1.ApAlarmQuery_1.HistoryPreloadInterval = inter
 Main_tables_Operative.TableModel_1.ApAlarmQuery_1.ReloadSmart(false, false);
 ]]>
 		</body>
-		<param access-modifier="private" name="intervalDuration" display-name="" uuid="328e2977-8e6b-41a9-92af-749a50e274d4" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<param access-modifier="private" name="intervalDuration" display-name="" uuid="328e2977-8e6b-41a9-92af-749a50e274d4" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
 		<param access-modifier="private" name="onlyNotAcked" display-name="" uuid="97998d45-24d1-4a37-96e6-8a954d6cb24d" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
 		<param access-modifier="private" name="requestAdvancedFilterAsJson" display-name="" uuid="ebcb9a78-385d-4fe9-9fb1-f11bcc831967" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="3"/>
 	</do>
@@ -8946,10 +8935,10 @@ return result;]]>
 	<object access-modifier="private" name="DisplayToolbarAtStartup" display-name="Отображать панель инструментов при запуске" uuid="90718164-01cc-4071-99ab-c54406b0a0fb" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
 	<object access-modifier="private" name="DisplayStatePanelAtStartup" display-name="Отображать строку состояния при запуске" uuid="e12d71b4-b40e-4d97-b78e-bf82caa9c213" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
 	<do access-modifier="private" name="SetSize" display-name="SetSize" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da" form-by-id="true">
-		<param access-modifier="private" name="coordX" display-name="" uuid="f811a132-5084-4629-b611-5af06cb40695" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
-		<param access-modifier="private" name="coordY" display-name="" uuid="9f6c31d4-e0df-46a6-9efb-83c77a15bd3c" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
-		<param access-modifier="private" name="width" display-name="" uuid="e9f3f9ed-e248-49ed-ae1b-d97242b0c3ec" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
-		<param access-modifier="private" name="height" display-name="" uuid="9de4eb4e-6433-433f-9a92-e37662f4090d" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<param access-modifier="private" name="coordX" display-name="" uuid="f811a132-5084-4629-b611-5af06cb40695" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<param access-modifier="private" name="coordY" display-name="" uuid="9f6c31d4-e0df-46a6-9efb-83c77a15bd3c" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<param access-modifier="private" name="width" display-name="" uuid="e9f3f9ed-e248-49ed-ae1b-d97242b0c3ec" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<param access-modifier="private" name="height" display-name="" uuid="9de4eb4e-6433-433f-9a92-e37662f4090d" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
 		<body kind="om">
 			<![CDATA[//Функция изменения размера типа и объектов с обновлением разметки 
 Main_panel.private.Initializer();

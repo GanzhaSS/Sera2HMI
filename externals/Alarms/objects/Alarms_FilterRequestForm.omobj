@@ -98,7 +98,7 @@
 				</body>
 			</do-trace>
 		</object>
-		<object access-modifier="private" name="Editor" display-name="Editor" uuid="20838765-1bd3-4ece-8ed8-27d5513f058e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<object access-modifier="private" name="Editor" display-name="Editor" uuid="20838765-1bd3-4ece-8ed8-27d5513f058e" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 			<designed target="X" value="0" ver="2"/>
 			<designed target="Y" value="0" ver="2"/>
 			<designed target="Rotation" value="0" ver="2"/>
@@ -215,7 +215,7 @@ else
 				</body>
 			</do-trace>
 		</object>
-		<object access-modifier="private" name="Editor" display-name="Editor" uuid="7b3fc42b-43b7-4691-9654-c6cbc4a3eb39" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<object access-modifier="private" name="Editor" display-name="Editor" uuid="7b3fc42b-43b7-4691-9654-c6cbc4a3eb39" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 			<designed target="X" value="0" ver="2"/>
 			<designed target="Y" value="0" ver="2"/>
 			<designed target="Rotation" value="0" ver="2"/>
@@ -332,7 +332,7 @@ else
 				</body>
 			</do-trace>
 		</object>
-		<object access-modifier="private" name="Editor" display-name="Editor" uuid="7f79843e-1bd8-4bef-b93f-c5b782f4f239" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<object access-modifier="private" name="Editor" display-name="Editor" uuid="7f79843e-1bd8-4bef-b93f-c5b782f4f239" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 			<designed target="X" value="0" ver="2"/>
 			<designed target="Y" value="0" ver="2"/>
 			<designed target="Rotation" value="0" ver="2"/>
@@ -693,7 +693,7 @@ CancelButton.X = Width - CancelButton.Width - 10;
 ApplyButton.X = CancelButton.X - ApplyButton.Width - 10;]]>
 		</body>
 	</do>
-	<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="d1219af1-daa7-407b-8377-944bb37a2ee1" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="d1219af1-daa7-407b-8377-944bb37a2ee1" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
 	<object access-modifier="private" name="pTheme" display-name="Тема оформления" uuid="f9d53a20-cc54-4cf7-acf2-55b8acbc436a" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" base-const="true" base-ref="true" ver="4"/>
 	<do-trace access-modifier="private" target="BrushColor" ver="5">
 		<body>

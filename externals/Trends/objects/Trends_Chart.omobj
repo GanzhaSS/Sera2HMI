@@ -2690,7 +2690,7 @@ return ValString;//*/
 
 ]]>
 			</body>
-			<param access-modifier="private" name="value" display-name="" uuid="5bbc14a2-191b-4652-92ea-a52eb03eec8e" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
+			<param access-modifier="private" name="value" display-name="" uuid="5bbc14a2-191b-4652-92ea-a52eb03eec8e" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
 			<param access-modifier="private" name="numDecimals" display-name="" uuid="7a0b53af-034a-460e-b92d-558f735bdba7" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="2"/>
 		</do>
 		<object access-modifier="private" name="ExportTempPath" display-name="ExportTempPath" uuid="37b01455-8e96-4b22-aa27-8644e976f297" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
@@ -2712,7 +2712,7 @@ while (i < unit.Const.MAX_LINES)
 			</body>
 		</do>
 	</object>
-	<object access-modifier="private" name="ControlLineWidth" display-name="Ширина реперных линий" uuid="19387c85-8cc1-4193-be9d-eee9561bdaf4" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="3">
+	<object access-modifier="private" name="ControlLineWidth" display-name="Ширина реперных линий" uuid="19387c85-8cc1-4193-be9d-eee9561bdaf4" base-type="notifying_float" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="3">
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
 			<body kind="om">
 				<![CDATA[i:int4 = 0;
@@ -2798,7 +2798,7 @@ Lines.Update();]]>
 			</body>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="DeltaLineWidth" display-name="Утолщение выделенного графика" uuid="83fd3b44-70bd-481a-a8b3-65b05f5a09a9" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="2"/>
+	<object access-modifier="private" name="DeltaLineWidth" display-name="Утолщение выделенного графика" uuid="83fd3b44-70bd-481a-a8b3-65b05f5a09a9" base-type="notifying_float" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="2"/>
 	<do access-modifier="private" name="GetNextReper" display-name="GetNextReper" ver="5" type="uint4" type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e">
 		<body kind="om">
 			<![CDATA[// Поиск доступного репера для установки
@@ -3244,7 +3244,7 @@ while (i <= unit.Const.MAX_LINES)
 
 Chart.Update();]]>
 		</body>
-		<param access-modifier="private" name="direct" display-name="" uuid="faf6ecf3-32c3-49dc-bf55-6e3c58af2332" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+		<param access-modifier="private" name="direct" display-name="" uuid="faf6ecf3-32c3-49dc-bf55-6e3c58af2332" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 	</do>
 	<do access-modifier="private" name="ZoomX" display-name="ZoomX" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">
@@ -3266,7 +3266,7 @@ Chart.Axis_X.SetInterval(minX, maxX);
 
 Chart.Update();]]>
 		</body>
-		<param access-modifier="private" name="direct" display-name="" uuid="11b602b9-8279-4e73-963d-11f391134478" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+		<param access-modifier="private" name="direct" display-name="" uuid="11b602b9-8279-4e73-963d-11f391134478" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 	</do>
 	<do access-modifier="private" name="CancelReadAsync" display-name="CancelReadAsync" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">
@@ -4047,7 +4047,7 @@ if (index==0 || index==20){
 Chart.Update();]]>
 			</body>
 			<param access-modifier="private" name="index" display-name="" uuid="c0571fda-d011-4e61-bfd2-5ddb26cdfc75" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
-			<param access-modifier="private" name="value" display-name="" uuid="f915d579-a8f7-4ac4-ab90-e0014a2f7774" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+			<param access-modifier="private" name="value" display-name="" uuid="f915d579-a8f7-4ac4-ab90-e0014a2f7774" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		</do>
 		<do access-modifier="private" name="SetZOrder" display-name="SetZOrder" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 			<body kind="om">
@@ -4118,7 +4118,7 @@ if (index==0 || index==20){
 			<param access-modifier="private" name="index" display-name="" uuid="2f4b68a4-2b00-47bb-9792-b6a5da49253c" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
 			<param access-modifier="private" name="value" display-name="" uuid="168778fe-099a-4939-9b24-36ae2469f671" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="4"/>
 		</do>
-		<do access-modifier="private" name="GetMinY" display-name="GetMinY" ver="5" type="float8" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
+		<do access-modifier="private" name="GetMinY" display-name="GetMinY" ver="5" type="double" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
 			<body kind="om">
 				<![CDATA[	if (index == 1) return Variant.ToDouble(Chart.Line_1.GetMinY(),-1);
 	if (index == 2)	return Variant.ToDouble(Chart.Line_2.GetMinY(),0);
@@ -4144,7 +4144,7 @@ return 0;]]>
 			</body>
 			<param access-modifier="private" name="index" display-name="" uuid="1c3e3268-0b78-4da3-a738-ebbf2da6fe2d" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="3"/>
 		</do>
-		<do access-modifier="private" name="GetMaxY" display-name="GetMaxY" ver="5" type="float8" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
+		<do access-modifier="private" name="GetMaxY" display-name="GetMaxY" ver="5" type="double" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
 			<body kind="om">
 				<![CDATA[	if (index == 1) return Variant.ToDouble(Chart.Line_1.GetMaxY(), -1);
 	if (index == 2)	return Variant.ToDouble(Chart.Line_2.GetMaxY(), 0);
@@ -5026,8 +5026,8 @@ Chart.Axis_Y[index].Scale = unit.Const.scFIXED;
 Chart.Axis_Y[index].SetInterval(min, max);]]>
 		</body>
 		<param access-modifier="private" name="index" display-name="" uuid="d940a292-ec45-4ab8-9821-e6cc9c7094cc" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
-		<param access-modifier="private" name="min" display-name="" uuid="4950e9c5-4383-4d3f-bfa1-4853754cd544" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
-		<param access-modifier="private" name="max" display-name="" uuid="de3b890f-70ad-49f1-afe5-5d44e21710e0" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<param access-modifier="private" name="min" display-name="" uuid="4950e9c5-4383-4d3f-bfa1-4853754cd544" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<param access-modifier="private" name="max" display-name="" uuid="de3b890f-70ad-49f1-afe5-5d44e21710e0" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 	</do>
 	<do access-modifier="private" name="LegendValuesUpdate" display-name="LegendValuesUpdate" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">

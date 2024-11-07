@@ -223,7 +223,7 @@ AddItem("24 часа");
 SelectedIndex = 0;]]>
 				</body>
 			</do>
-			<do access-modifier="private" name="GetInterval" display-name="GetInterval" ver="5" type="float8" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
+			<do access-modifier="private" name="GetInterval" display-name="GetInterval" ver="5" type="double" type-id="7ad62ecf-96dd-4751-9b96-e77954b44409">
 				<body kind="om">
 					<![CDATA[if (SelectedIndex == 0) return 1; // 1 секунда
 else if (SelectedIndex == 1) return 10; // 10 секунд
@@ -961,7 +961,7 @@ Exporter.Reload();
 BeginReadAsync();	]]>
 			</body>
 			<param access-modifier="private" name="mode" display-name="" uuid="83d6c3a3-d5e5-47c4-9cb8-5ee6879db1b4" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="4"/>
-			<param access-modifier="private" name="interval" display-name="" uuid="77f31424-ab81-4fb8-9a3a-db0807f131c1" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+			<param access-modifier="private" name="interval" display-name="" uuid="77f31424-ab81-4fb8-9a3a-db0807f131c1" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		</do>
 	</object>
 	<object access-modifier="private" name="SaveFileDialogResult" display-name="SaveFileDialogResult" uuid="33000800-b97e-4db9-a308-4534b7a262e3" base-type="FileDialogResult" base-type-id="602926f1-7d01-4d50-a5c0-d8fd35eadc74" ver="4"/>

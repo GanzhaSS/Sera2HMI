@@ -157,7 +157,7 @@ Submenu.Open();]]>
 			<designed target="Enabled" value="true" ver="5"/>
 			<designed target="InvokeTrigger" value="false" ver="5"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
-				<object access-modifier="private" uuid="add94ffc-a550-4240-8cd5-cff991d44819" base-type="ContextMenu" base-type-id="07bb4545-980a-4140-bbaa-4d1397447864" ver="5">
+				<object access-modifier="private" uuid="add94ffc-a550-4240-8cd5-cff991d44819" base-type="Menu" base-type-id="07bb4545-980a-4140-bbaa-4d1397447864" ver="5">
 					<init target="pResult" ver="5" ref="here.pResult"/>
 					<init target="pAction" ver="5" ref="parent.OnAction"/>
 					<init target="pOnClosed" ver="5" ref="parent.OnClosed"/>

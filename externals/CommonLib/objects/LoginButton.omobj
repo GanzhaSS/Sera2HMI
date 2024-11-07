@@ -128,7 +128,7 @@ Icon.ImageFile = "CommonLib_Icons/" + fileName;]]>
 			</object>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="LoginResult" display-name="LoginResult" uuid="321cb9e2-1558-4378-9141-6534939ae73f" base-type="AuthentificationResult" base-type-id="5a70987d-09be-4ae7-90b3-76a00c6721bb" ver="5"/>
+	<object access-modifier="private" name="LoginResult" display-name="LoginResult" uuid="321cb9e2-1558-4378-9141-6534939ae73f" base-type="LoginDialogResult" base-type-id="5a70987d-09be-4ae7-90b3-76a00c6721bb" ver="5"/>
 	<designed target="Checked" value="false" ver="5"/>
 	<do access-modifier="private" name="UpdateLayout" display-name="UpdateLayout" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="om">

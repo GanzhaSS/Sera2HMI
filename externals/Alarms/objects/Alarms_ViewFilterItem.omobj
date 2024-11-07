@@ -158,8 +158,8 @@ pVFControl.ChangedInvoke(columnId);]]>
 				<![CDATA[labelWidth + 5 + editorWidth]]>
 			</body>
 		</do-trace>
-		<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="3eab34f6-d46a-4d05-a85e-288abcb45192" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
-		<object access-modifier="private" name="editorWidth" display-name="editorWidth" uuid="8a31ad41-51a9-4df1-8f09-43a80bac615b" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+		<object access-modifier="private" name="labelWidth" display-name="labelWidth" uuid="3eab34f6-d46a-4d05-a85e-288abcb45192" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+		<object access-modifier="private" name="editorWidth" display-name="editorWidth" uuid="8a31ad41-51a9-4df1-8f09-43a80bac615b" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
 		<object access-modifier="private" name="filterSource" display-name="filterSource" uuid="99d1a4e0-c605-419b-ad0d-59fbe64b0d41" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
 		<object access-modifier="private" name="filterFormatted" display-name="filterFormatted" uuid="cf4a71cf-2256-4616-b0ab-717aa2f9c7e5" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5"/>
 		<object access-modifier="private" name="columnId" display-name="columnId" uuid="00fadc6c-d1d6-4603-8e1b-8113fc5fc9df" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
@@ -170,8 +170,8 @@ pVFControl.ChangedInvoke(columnId);]]>
 			<![CDATA[Rect.labelWidth = wLabel;
 Rect.editorWidth = wEditor;]]>
 		</body>
-		<param access-modifier="private" name="wLabel" display-name="" uuid="1a46ebcc-9b86-4373-af69-df07ca81512b" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
-		<param access-modifier="private" name="wEditor" display-name="" uuid="4ccbd297-1820-4793-b9ab-9bbb3dd38914" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<param access-modifier="private" name="wLabel" display-name="" uuid="1a46ebcc-9b86-4373-af69-df07ca81512b" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
+		<param access-modifier="private" name="wEditor" display-name="" uuid="4ccbd297-1820-4793-b9ab-9bbb3dd38914" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5"/>
 	</do>
 	<do access-modifier="private" name="Setup" display-name="Setup" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
 		<body kind="javascript">

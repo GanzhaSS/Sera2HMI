@@ -715,7 +715,7 @@ Close();]]>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="Date" display-name="Дата" uuid="adf99bf4-c94a-44dc-9e65-278db86bda89" base-type="timestamp" base-type-id="27c3d64b-a025-4ed3-8f63-d47e43a496aa" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="pResult" display-name="Ссылка на результат" uuid="f1c5897a-6074-4003-85b6-7e3c8bf02480" base-type="CalendarResult" base-type-id="eeb829fa-15e3-4693-8f06-a8504de6c239" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="pResult" display-name="Ссылка на результат" uuid="f1c5897a-6074-4003-85b6-7e3c8bf02480" base-type="DateTimeResult" base-type-id="eeb829fa-15e3-4693-8f06-a8504de6c239" base-const="true" base-ref="true" ver="5" description=""/>
 	<object access-modifier="private" name="pSelected" display-name="pSelected" uuid="a0e4b0f5-9279-4a4a-bb84-1989a9b03052" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
 	<do-trace access-modifier="private" target="BrushColor" ver="5">
 		<body kind="om">

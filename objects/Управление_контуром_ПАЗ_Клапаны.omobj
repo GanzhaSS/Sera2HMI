@@ -83,7 +83,7 @@
 		<designed target="Width" value="340" ver="5"/>
 		<designed target="Height" value="125" ver="5"/>
 		<designed target="RoundingRadius" value="0" ver="5"/>
-		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenColor" value="0xff787878" ver="5"/>
 		<designed target="PenStyle" value="1" ver="5"/>
 		<designed target="PenWidth" value="1" ver="5"/>
 		<designed target="BrushColor" value="4278190080" ver="5"/>
@@ -302,7 +302,7 @@
 				<designed target="Enabled" value="true" ver="5"/>
 				<designed target="InvokeTrigger" value="false" ver="5"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
-					<object access-modifier="private" uuid="d39f51e0-4a4f-4fdc-83cc-4c0f23dbdf44" base-type="02. Насосы 216.1-4 и 225.1,2 Block" base-type-id="5299720c-efd5-44fb-b372-022039401d20" ver="5">
+					<object access-modifier="private" uuid="d39f51e0-4a4f-4fdc-83cc-4c0f23dbdf44" base-type="Блокировки_ВКЛ_ПАЗ_азакр_клапана" base-type-id="5299720c-efd5-44fb-b372-022039401d20" ver="5">
 						<init target="_init_PanelWindowCaption" ver="5" ref="here.WindowCaption"/>
 						<init target="_init_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
 						<init target="_init_PanelNum" ver="5" ref="here._PanelNum"/>
@@ -476,7 +476,6 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 		<designed target="Height" value="26" ver="5"/>
 		<init target="_CtrlWordValue" ver="5" value="2"/>
 		<designed target="Text" value="ОТКРЫТЬ" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>
 				<![CDATA[((ApStatusDevice >> 5) & 1) == 1]]>
@@ -499,7 +498,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="Valve_hor_Circle_34" display-name="Valve_hor_Circle_34" uuid="65503998-12e8-4272-ad34-ce55225e039b" base-type="Valve_hor_Circle_4" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="Valve_hor_Circle_34" display-name="Valve_hor_Circle_34" uuid="65503998-12e8-4272-ad34-ce55225e039b" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="178" ver="5"/>
 		<designed target="Y" value="225" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>

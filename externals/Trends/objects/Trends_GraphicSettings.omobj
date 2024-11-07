@@ -330,7 +330,7 @@ else if (event.KeyCode == 82)
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="editWidthGood" display-name="editWidthGood" uuid="1699b4dc-626e-4fca-bb4e-ca81fdd6e985" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+	<object access-modifier="private" name="editWidthGood" display-name="editWidthGood" uuid="1699b4dc-626e-4fca-bb4e-ca81fdd6e985" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 		<designed target="X" value="75" ver="2"/>
 		<designed target="Y" value="95" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -355,7 +355,7 @@ else if (event.KeyCode == 82)
 		</do-on>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Opacity" value="1" ver="4"/>
-		<object access-modifier="private" name="Value" display-name="Value" uuid="48301c15-65f7-48d3-925f-5f7b5c420b27" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<object access-modifier="private" name="Value" display-name="Value" uuid="48301c15-65f7-48d3-925f-5f7b5c420b27" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		<object access-modifier="private" name="InputValidator_1" display-name="InputValidator_1" uuid="f9bc1cca-b146-4ce5-9aa0-4d57120927d9" base-type="InputValidator" base-type-id="d3926631-8c96-4ca0-b80c-d1953fff515c" ver="4">
 			<designed target="Input" value="" ver="4"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ResultChanged">
@@ -377,7 +377,7 @@ if (result == 2)
 				</body>
 			</do-on>
 			<init target="ValidationType" ver="5">
-				<object access-modifier="private" uuid="f6e31818-d21d-4c55-83e9-7450ff7e9afe" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
+				<object access-modifier="private" uuid="f6e31818-d21d-4c55-83e9-7450ff7e9afe" base-type="RegexValidation" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
 					<designed target="PartialValidPattern" value="" ver="4"/>
 					<designed target="ValidPattern" value="^[-+]?[0-9]*[,.]?[0-9]+(?:[eE][-+]?[0-9]+)?$" ver="4"/>
 				</object>
@@ -480,7 +480,7 @@ while (i < pTrends.private.LineStyles.Names.Length)
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="editWidthBad" display-name="editWidthBad" uuid="889c48ed-a5b3-4b6d-bb7c-e42984983328" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+	<object access-modifier="private" name="editWidthBad" display-name="editWidthBad" uuid="889c48ed-a5b3-4b6d-bb7c-e42984983328" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 		<designed target="X" value="75" ver="2"/>
 		<designed target="Y" value="155" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -505,7 +505,7 @@ while (i < pTrends.private.LineStyles.Names.Length)
 		</do-on>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Opacity" value="1" ver="4"/>
-		<object access-modifier="private" name="Value" display-name="Value" uuid="4396fac0-66aa-4b21-a387-b9f5b75a7796" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<object access-modifier="private" name="Value" display-name="Value" uuid="4396fac0-66aa-4b21-a387-b9f5b75a7796" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		<object access-modifier="private" name="InputValidator_1" display-name="InputValidator_1" uuid="29e9b7a6-9edb-4fc7-8eb4-885773f75ba0" base-type="InputValidator" base-type-id="d3926631-8c96-4ca0-b80c-d1953fff515c" ver="4">
 			<designed target="Input" value="" ver="4"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ResultChanged">
@@ -527,7 +527,7 @@ if (result == 2)
 				</body>
 			</do-on>
 			<init target="ValidationType" ver="5">
-				<object access-modifier="private" uuid="3483d583-5bf2-4289-a968-a7507e042fef" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
+				<object access-modifier="private" uuid="3483d583-5bf2-4289-a968-a7507e042fef" base-type="RegexValidation" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
 					<designed target="PartialValidPattern" value="" ver="4"/>
 					<designed target="ValidPattern" value="^[-+]?[0-9]*[,.]?[0-9]+(?:[eE][-+]?[0-9]+)?$" ver="4"/>
 				</object>
@@ -755,7 +755,7 @@ while (i < pTrends.private.Markers.Symbols.Length)
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="editLowRangeIndivid" display-name="editLowRangeIndivid" uuid="32abbd94-8656-40e4-b197-d8d518c6c5d1" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+	<object access-modifier="private" name="editLowRangeIndivid" display-name="editLowRangeIndivid" uuid="32abbd94-8656-40e4-b197-d8d518c6c5d1" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 		<designed target="X" value="130" ver="2"/>
 		<designed target="Y" value="265" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -780,7 +780,7 @@ while (i < pTrends.private.Markers.Symbols.Length)
 		</do-on>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Opacity" value="1" ver="4"/>
-		<object access-modifier="private" name="Value" display-name="Value" uuid="9baaadfe-142f-4411-978a-c5faa811d858" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<object access-modifier="private" name="Value" display-name="Value" uuid="9baaadfe-142f-4411-978a-c5faa811d858" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		<object access-modifier="private" name="InputValidator_1" display-name="InputValidator_1" uuid="765b5cd7-b74a-4b95-860a-f24baf179a52" base-type="InputValidator" base-type-id="d3926631-8c96-4ca0-b80c-d1953fff515c" ver="4">
 			<designed target="Input" value="" ver="4"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ResultChanged">
@@ -801,7 +801,7 @@ if (result == 2)
 				</body>
 			</do-on>
 			<init target="ValidationType" ver="5">
-				<object access-modifier="private" uuid="bc9f75b8-e68a-42fd-a2e6-048edecd2114" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
+				<object access-modifier="private" uuid="bc9f75b8-e68a-42fd-a2e6-048edecd2114" base-type="RegexValidation" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
 					<designed target="PartialValidPattern" value="" ver="4"/>
 					<designed target="ValidPattern" value="^[-+]?[0-9]*[,.]?[0-9]+(?:[eE][-+]?[0-9]+)?$" ver="4"/>
 				</object>
@@ -818,7 +818,7 @@ unit.Const.clRED]]>
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="editHighRangeIndivid" display-name="editHighRangeIndivid" uuid="564942b6-a6a3-418c-a2ce-4876a9ded95e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+	<object access-modifier="private" name="editHighRangeIndivid" display-name="editHighRangeIndivid" uuid="564942b6-a6a3-418c-a2ce-4876a9ded95e" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 		<designed target="X" value="210" ver="2"/>
 		<designed target="Y" value="265" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -844,7 +844,7 @@ unit.Const.clRED]]>
 		</do-on>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Opacity" value="1" ver="4"/>
-		<object access-modifier="private" name="Value" display-name="Value" uuid="b0229cfc-1e5d-4038-80ea-b899facd75c1" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<object access-modifier="private" name="Value" display-name="Value" uuid="b0229cfc-1e5d-4038-80ea-b899facd75c1" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		<object access-modifier="private" name="InputValidator_1" display-name="InputValidator_1" uuid="cad0cd14-0260-4fe0-a231-a865b70938bd" base-type="InputValidator" base-type-id="d3926631-8c96-4ca0-b80c-d1953fff515c" ver="4">
 			<designed target="Input" value="" ver="4"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ResultChanged">
@@ -865,7 +865,7 @@ if (result == 2)
 				</body>
 			</do-on>
 			<init target="ValidationType" ver="5">
-				<object access-modifier="private" uuid="6bbc5062-abe1-4055-b517-22cdc202dbe9" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
+				<object access-modifier="private" uuid="6bbc5062-abe1-4055-b517-22cdc202dbe9" base-type="RegexValidation" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
 					<designed target="PartialValidPattern" value="" ver="4"/>
 					<designed target="ValidPattern" value="^[-+]?[0-9]*[,.]?[0-9]+(?:[eE][-+]?[0-9]+)?$" ver="4"/>
 				</object>
@@ -882,7 +882,7 @@ unit.Const.clRED]]>
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="editYValue" display-name="editYValue" uuid="9e67a4fa-fd09-4dc7-8bc2-19982efb964f" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+	<object access-modifier="private" name="editYValue" display-name="editYValue" uuid="9e67a4fa-fd09-4dc7-8bc2-19982efb964f" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
 		<designed target="X" value="210" ver="2"/>
 		<designed target="Y" value="300" ver="2"/>
 		<designed target="Rotation" value="0" ver="2"/>
@@ -947,14 +947,14 @@ else
 				</body>
 			</do-on>
 			<init target="ValidationType" ver="5">
-				<object access-modifier="private" uuid="e61381b7-2055-4773-ad2b-7e5c741d54b2" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
+				<object access-modifier="private" uuid="e61381b7-2055-4773-ad2b-7e5c741d54b2" base-type="RegexValidation" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="4">
 					<designed target="PartialValidPattern" value="" ver="4"/>
 					<designed target="ValidPattern" value="^[-+]?[0-9]*[,.]?[0-9]+(?:[eE][-+]?[0-9]+)?$" ver="4"/>
 				</object>
 			</init>
 		</object>
 		<object access-modifier="private" name="bValid" display-name="bValid" uuid="fccbddcd-351f-4378-9ead-81e555bfa623" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<object access-modifier="private" name="Value" display-name="Value" uuid="6bb91a84-35b9-46a0-b1eb-873498b29844" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
+		<object access-modifier="private" name="Value" display-name="Value" uuid="6bb91a84-35b9-46a0-b1eb-873498b29844" base-type="double" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="4"/>
 		<init target="bValid" ver="5" value="true"/>
 	</object>
 	<object access-modifier="private" name="btnOK" display-name="btnOK" uuid="9cc9f11f-fcf1-4623-967d-59ebc15a0d1f" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">

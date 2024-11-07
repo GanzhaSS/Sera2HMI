@@ -712,7 +712,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="79" ver="5"/>
 		<designed target="Height" value="31" ver="5"/>
 		<init target="_init_ValueNameEn" ver="5" value="Cfg.ScaleMax"/>
-		<designed target="Enabled" value="true" ver="5"/>
 		<init target="_init_Max" ver="5" value="100000"/>
 		<init target="_init_Min" ver="5" value="-100000"/>
 		<designed target="Tooltip" value="Верхняя граница" ver="5"/>
@@ -742,7 +741,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="79" ver="5"/>
 		<designed target="Height" value="31" ver="5"/>
 		<init target="_init_ValueNameEn" ver="5" value="Cfg.AH_Lim"/>
-		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="Аварийное верхнее значение" ver="5"/>
 		<do-trace access-modifier="private" target="_init_Permit" ver="5">
 			<body kind="om">
@@ -787,7 +785,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="79" ver="5"/>
 		<designed target="Height" value="31" ver="5"/>
 		<init target="_init_ValueNameEn" ver="5" value="Cfg.WH_Lim"/>
-		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="Предупредительное верхнее значение" ver="5"/>
 		<do-trace access-modifier="private" target="_init_Permit" ver="5">
 			<body kind="om">
@@ -832,7 +829,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="79" ver="5"/>
 		<designed target="Height" value="31" ver="5"/>
 		<init target="_init_ValueNameEn" ver="5" value="Cfg.WL_Lim"/>
-		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="Предупредительное нижнее значение" ver="5"/>
 		<do-trace access-modifier="private" target="_init_Permit" ver="5">
 			<body kind="om">
@@ -877,7 +873,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="79" ver="5"/>
 		<designed target="Height" value="31" ver="5"/>
 		<init target="_init_ValueNameEn" ver="5" value="Cfg.AL_Lim"/>
-		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="Аварийное нижнее значение" ver="5"/>
 		<do-trace access-modifier="private" target="_init_Permit" ver="5">
 			<body kind="om">
@@ -922,7 +917,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="79" ver="5"/>
 		<designed target="Height" value="31" ver="5"/>
 		<init target="_init_ValueNameEn" ver="5" value="Cfg.ScaleMin"/>
-		<designed target="Enabled" value="true" ver="5"/>
 		<init target="_init_Max" ver="5" value="100000"/>
 		<init target="_init_Min" ver="5" value="-100000"/>
 		<designed target="Tooltip" value="Нижняя граница" ver="5"/>
@@ -952,8 +946,6 @@ unit.Global_WinCtrl.FlagWinOpening = false;
 		<designed target="Width" value="79" ver="5"/>
 		<designed target="Height" value="31" ver="5"/>
 		<init target="_init_ValueNameEn" ver="5" value="Cfg.Num"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<init target="_init_DigitsCount" ver="5" value="0"/>
 		<init target="_init_Max" ver="5" value="5"/>
 		<init target="_init_Min" ver="5" value="0"/>
 		<do-trace access-modifier="private" target="_init_Permit" ver="5">
