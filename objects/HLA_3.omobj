@@ -31,9 +31,10 @@
 		<init target="_ApSourceForm" ver="5" ref="here._init_ApSourceForm"/>
 		<init target="_ConLoopNameEn" ver="5" ref="here._init_ConLoopNameEn"/>
 		<init target="_HlaNameEn" ver="5" ref="here._init_HlaNameEn1"/>
-		<init target="_HlaNameEn1" ver="5" ref="here._init_HlaNameEn1"/>
-		<init target="_HlaNameEn2" ver="5" ref="here._init_HlaNameEn2"/>
+		<init target="_init_ApSourceForm" ver="5" ref="here.ApSource_This"/>
 		<init target="_HaNameEn1" ver="5" ref="here._init_HaNameEn1"/>
+		<init target="_HlaNameEn2" ver="5" ref="here._init_HlaNameEn2"/>
+		<init target="_HlaNameEn1" ver="5" ref="here._init_HlaNameEn1"/>
 	</object>
 	<object access-modifier="private" name="CircleBack_1" display-name="CircleBack_1" uuid="fcc46688-6d85-4cac-bc75-4a9a2aba1ff4" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
 		<designed target="X" value="3" ver="5"/>
@@ -389,7 +390,7 @@
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="ApStatus" display-name="ApStatus" uuid="b3919b5e-7225-49d7-afe2-4fd090f35589" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ApConLoopStatus" display-name="ApConLoopStatus" uuid="b3919b5e-7225-49d7-afe2-4fd090f35589" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
 		<init target="Path" ver="5" value="Status"/>
 		<init target="Source" ver="5" ref="ApSource_This"/>
 	</object>

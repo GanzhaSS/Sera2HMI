@@ -459,14 +459,14 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 		<designed target="Width" value="140" ver="5"/>
 		<designed target="Height" value="26" ver="5"/>
 		<designed target="Text" value="Сброс аварий" ver="5"/>
-		<init target="_CtrlWordValue" ver="5" value="0x0001"/>
+		<init target="_CtrlWordValue" ver="5" value="1"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<do-trace access-modifier="private" target="_PermitControl" ver="5">
 			<body kind="om">
 				<![CDATA[unit.Global_Security.PermitControlDevice]]>
 			</body>
 		</do-trace>
-		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordDevice"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordConLoop"/>
 	</object>
 	<object access-modifier="private" name="ButtonOPE" display-name="ButtonOPE" uuid="57b749d5-77db-4801-b6bc-a93f896eb583" base-type="ButtonCommand" base-type-id="437579ff-e75b-4449-bb2c-b400391f7906" ver="5" description="" cardinal="1">
 		<designed target="X" value="70" ver="5"/>
@@ -491,7 +491,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 		<designed target="Width" value="110" ver="5"/>
 		<designed target="Height" value="26" ver="5"/>
 		<designed target="Text" value="ЗАКРЫТЬ" ver="5"/>
-		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordConLoop"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordDevice"/>
 		<init target="_CtrlWordValue" ver="5" value="4"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>

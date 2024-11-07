@@ -138,8 +138,8 @@ else if (SelectedIndex == 3)
 	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
 		<body kind="om">
 			<![CDATA[ComboBox_1.AddItem("Все");
-ComboBox_1.AddItem("Схема 01");
-ComboBox_1.AddItem("Схема 02");
+ComboBox_1.AddItem("Резервуарный парк");
+ComboBox_1.AddItem("Насосная");
 ComboBox_1.AddItem("Шкафы / щиты");
 
 Checkbox_1.State = Alarms1.LookLatestEvent;  // Состояне автопрокрутки таблицы сообщений

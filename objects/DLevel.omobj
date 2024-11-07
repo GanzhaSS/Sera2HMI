@@ -65,7 +65,7 @@
 		<designed target="Visible" value="true" ver="5"/>
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="Ниэний уровень" ver="5"/>
+		<designed target="Tooltip" value="Нижний уровень" ver="5"/>
 		<designed target="Width" value="14" ver="5"/>
 		<designed target="Height" value="14" ver="5"/>
 		<designed target="PenColor" value="0xff000000" ver="5"/>

@@ -25,6 +25,7 @@
 				<init target="_init_ApSourceForm" ver="5" ref="here._ApSourceForm"/>
 				<init target="_init_ConLoopNameEn" ver="5" ref="here._ConLoopNameEn"/>
 				<init target="_init_HlaNameEn" ver="5" ref="here._HlaNameEn"/>
+				<init target="_ApSourceConLoop" ver="5" ref="here.ApSource_This"/>
 			</object>
 		</do-on>
 	</object>
@@ -80,5 +81,24 @@ if (! unit.Global_WinCtrl.FlagWinOpening) {
 		</body>
 	</do-on>
 	<init target="_HlaNameEn" ver="5" value="HLA"/>
+	<object access-modifier="private" name="ApSource_This" display-name="ApSource_This" uuid="e6d6b1d3-f1be-4603-bee3-644a742d223b" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="_init_ApSourceForm"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["PAZ_ConLoop" + ((here._init_PanelNum<10)?"0":"") + String.ToString(here._init_PanelNum)]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="_init_PanelNum" display-name="_init_PanelNum" uuid="ad38aba1-8d3c-47c3-9b95-cebcfedee486" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="5" description="" cardinal="1"/>
+	<init target="_init_PanelNum" ver="5" value="1"/>
+	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="e4d74b5c-a2b9-47c7-83cd-5ddb0324b8e6" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 </type>
 

@@ -1,4 +1,4 @@
-<type access-modifier="private" name="03. Схема 03" display-name="03. Схема 03" uuid="a3085819-8719-48c5-86ad-b1afd67b4437" base-type="TypeFormIK" base-type-id="776690f6-d033-44fe-a695-fcd55837ecdb" ver="5">
+<type access-modifier="private" name="03. Шкафы-щиты" display-name="03. Шкафы-щиты" uuid="a3085819-8719-48c5-86ad-b1afd67b4437" base-type="TypeFormIK" base-type-id="776690f6-d033-44fe-a695-fcd55837ecdb" ver="5">
 	<designed target="X" value="0" ver="5"/>
 	<designed target="Y" value="0" ver="5"/>
 	<designed target="ZValue" value="0" ver="5"/>

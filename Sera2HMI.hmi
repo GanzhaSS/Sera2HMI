@@ -19,8 +19,8 @@
 	<object file="Global_WinCtrl.omobj" filter=""/>
 	<object file="TypeFormIK.omobj" filter="Типы форм"/>
 	<object file="ButtonMenu.omobj" filter="Buttons"/>
-	<object file="01. Схема 01.omobj" filter=""/>
-	<object file="02. Схема 02.omobj" filter=""/>
+	<object file="01. Резервуарный парк.omobj" filter=""/>
+	<object file="02. Насосная.omobj" filter=""/>
 	<object file="20. Сообщения.omobj" filter=""/>
 	<object file="30. Настройки.omobj" filter=""/>
 	<object file="Global_Alarms.omobj" filter=""/>
@@ -68,7 +68,7 @@
 	<object file="Fan.omobj" filter="Units"/>
 	<object file="CallPanelCtrlVent.omobj" filter="Panels"/>
 	<object file="AnaPrm_Lev_Progress.omobj" filter="AnaPrm"/>
-	<object file="MessageAlarm.omobj" filter=""/>
+	<object file="MessageAlarm.omobj" filter="Units"/>
 	<object file="CircleAlarm.omobj" filter="CirclesAlarm"/>
 	<object file="Pump_1.omobj" filter="Pumps"/>
 	<object file="Управление_клапаном с уровнем.omobj" filter="Панели управления"/>
@@ -76,7 +76,7 @@
 	<object file="FormTrendSingle.omobj" filter=""/>
 	<object file="InputNumber.omobj" filter=""/>
 	<object file="InputUINT1.omobj" filter=""/>
-	<object file="03. Схема 03.omobj" filter=""/>
+	<object file="03. Шкафы-щиты.omobj" filter=""/>
 	<object file="Valve_ver_Circle_2.omobj" filter="Valves"/>
 	<object file="CallPanelCtrlValve_2.omobj" filter="Panels"/>
 	<object file="Pump_2.omobj" filter="Pumps"/>
@@ -84,45 +84,45 @@
 	<object file="CircleRedGrey.omobj" filter="CirclesAlarm"/>
 	<object file="CircleGreenGrey.omobj" filter="CirclesAlarm"/>
 	<object file="CircleRedGreen.omobj" filter="CirclesAlarm"/>
-	<object file="DLevel.omobj" filter=""/>
-	<object file="PowerErr.omobj" filter=""/>
-	<object file="Panel3_1.omobj" filter=""/>
-	<object file="Panel3_2.omobj" filter=""/>
-	<object file="Panel3_4.omobj" filter=""/>
+	<object file="DLevel.omobj" filter="CirclesAlarm"/>
+	<object file="PowerErr.omobj" filter="Units"/>
+	<object file="Panel3_1.omobj" filter="Units"/>
+	<object file="Panel3_2.omobj" filter="Units"/>
+	<object file="Panel3_4.omobj" filter="Units"/>
 	<object file="PanelCPUs.omobj" filter="Panels"/>
 	<object file="Global_UnAckedMsg.omobj" filter=""/>
 	<object file="ButtonMenu_1.omobj" filter="Buttons"/>
 	<object file="Управление_насосом 2.omobj" filter="Панели управления"/>
 	<object file="Vent.omobj" filter="Pumps"/>
-	<object file="CallPanelCtrlConLoopPAZ_Valve.omobj" filter=""/>
+	<object file="CallPanelCtrlConLoopPAZ_Valve.omobj" filter="Panels"/>
 	<object file="Управление_контуром_ПАЗ_Клапаны.omobj" filter="Панели управления"/>
 	<object file="Блокировки_ВКЛ_ПАЗ_авкл_вентиляции.omobj" filter="Панели управления"/>
 	<object file="Блокировки_ВКЛ_ПАЗ_авыкл_насоса_1.omobj" filter="Панели управления"/>
 	<object file="Блокировки_ВКЛ_ПАЗ_азакр_клапана.omobj" filter="Панели управления"/>
 	<object file="Global_Theme.omobj" filter=""/>
-	<object file="PanelHeader.omobj" filter=""/>
+	<object file="PanelHeader.omobj" filter="Units"/>
 	<object file="AnaPrmShort.omobj" filter="AnaPrm"/>
 	<object file="_Tank_2.omobj" filter="Tanks"/>
 	<object file="AnaPrm_ConcH2SO4.omobj" filter="AnaPrm"/>
-	<object file="CallPanelCtrlConLoopHLA.omobj" filter=""/>
+	<object file="CallPanelCtrlConLoopHLA.omobj" filter="Panels"/>
 	<object file="Управление_контуром_HLA.omobj" filter="Панели управления"/>
-	<object file="DLevel_High.omobj" filter=""/>
-	<object file="HLA.omobj" filter=""/>
-	<object file="Panel_Alr.omobj" filter=""/>
+	<object file="DLevel_High.omobj" filter="CirclesAlarm"/>
+	<object file="HLA.omobj" filter="Buttons"/>
+	<object file="Panel_Alr.omobj" filter="Units"/>
 	<object file="Блокировки_ВКЛ_ПАЗ_авыкл_насоса_2.omobj" filter="Панели управления"/>
 	<object file="Управление_насосом ПАЗ.omobj" filter="Панели управления"/>
-	<object file="HLA_2.omobj" filter=""/>
+	<object file="HLA_2.omobj" filter="Buttons"/>
 	<object file="Управление_контуром_HLA_2.omobj" filter="Панели управления"/>
 	<object file="Управление_контуром_ПАЗ_Насосы.omobj" filter="Панели управления"/>
-	<object file="CallPanelCtrlConLoopPAZ_Pump.omobj" filter=""/>
-	<object file="PowerPAZ.omobj" filter=""/>
-	<object file="PanelAlrPAZ.omobj" filter=""/>
-	<object file="CallPanelCtrlConLoopHLA_2.omobj" filter=""/>
+	<object file="CallPanelCtrlConLoopPAZ_Pump.omobj" filter="Panels"/>
+	<object file="PowerPAZ.omobj" filter="Units"/>
+	<object file="PanelAlrPAZ.omobj" filter="Units"/>
+	<object file="CallPanelCtrlConLoopHLA_2.omobj" filter="Panels"/>
 	<object file="Управление_контуром_ПАЗ_Вентилятор.omobj" filter="Панели управления"/>
-	<object file="CallPanelCtrlConLoopPAZ_Vent.omobj" filter=""/>
+	<object file="CallPanelCtrlConLoopPAZ_Vent.omobj" filter="Panels"/>
 	<object file="Управление_клапаном_1.omobj" filter="Панели управления"/>
 	<object file="Управление_контуром_HLA_3.omobj" filter="Панели управления"/>
-	<object file="HLA_3.omobj" filter=""/>
-	<object file="CallPanelCtrlConLoopHLA_3.omobj" filter=""/>
+	<object file="HLA_3.omobj" filter="Buttons"/>
+	<object file="CallPanelCtrlConLoopHLA_3.omobj" filter="Panels"/>
 </unit>
 

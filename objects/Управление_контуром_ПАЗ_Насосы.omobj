@@ -495,7 +495,7 @@ here.WindowCaption = unit.Global_DataArray.PanelCaption[here._PanelNum];]]>
 		<designed target="Width" value="130" ver="5"/>
 		<designed target="Height" value="26" ver="5"/>
 		<designed target="Text" value="ВЫКЛЮЧИТЬ" ver="5"/>
-		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordConLoop"/>
+		<init target="_ApCtrlWord" ver="5" ref="ApCtrlWordDevice"/>
 		<init target="_CtrlWordValue" ver="5" value="4"/>
 		<do-trace access-modifier="private" target="Enabled" ver="5">
 			<body>

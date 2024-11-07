@@ -1224,7 +1224,7 @@
 			<designed target="Y" value="30" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-			<init target="_init_NameEn" ver="5" value="PAZ_CPU_A_Diagn"/>
+			<init target="_init_NameEn" ver="5" value="PAZ_DiagnCPU_A"/>
 			<designed target="Width" value="130" ver="5"/>
 			<designed target="Height" value="80" ver="5"/>
 		</object>
@@ -1233,7 +1233,7 @@
 			<designed target="Y" value="30" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
-			<init target="_init_NameEn" ver="5" value="PAZ_CPU_B_Diagn"/>
+			<init target="_init_NameEn" ver="5" value="PAZ_DiagnCPU_B"/>
 			<designed target="Width" value="130" ver="5"/>
 			<designed target="Height" value="80" ver="5"/>
 		</object>

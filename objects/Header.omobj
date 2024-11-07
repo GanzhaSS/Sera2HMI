@@ -126,38 +126,6 @@ else
 			<designed target="Y" value="0" ver="5"/>
 		</object>
 	</object>
-	<object access-modifier="private" name="Checkbox2mon" display-name="Checkbox2mon" uuid="4d6b1749-94cf-4da5-8987-c5642dffe22e" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
-		<designed target="X" value="1550" ver="5"/>
-		<designed target="Y" value="7" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="133" ver="5"/>
-		<designed target="Height" value="23" ver="5"/>
-		<designed target="Text" value="Второй монитор" ver="5"/>
-		<designed target="Font" value="Sans Serif,9,-1,5,50,0,0,0,0,0" ver="5"/>
-		<designed target="FontColor" value="4278190080" ver="5"/>
-		<designed target="State" value="false" ver="5"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
-			<body kind="om">
-				<![CDATA[// Изменилось состояние флага
-if (MonitorNum == 1) {     // Если изменение флага произошло на 1-вом мониторе ...
-   if (state)     // Если флаг stat установлен ...
-      ActionTitleOpen.Invoke();    // Открыть заголовок на 2-ом мониторе
-   else           // Если флаг stat снят ...
-      if (unit.Global_WinCtrl.WindowGroupTitle.WindowCount == 2)   // Если второй монитор используется ...
-         // Закрыть заголовок на 2-ом мониторе
-         unit.Global_WinCtrl.WindowGroupTitle.SendMessageByID(unit.Global_WinCtrl.WindowGroupTitle.GetWindowIDbyIndex(1),"TitleClose","");
-}
-]]>
-			</body>
-		</do-on>
-	</object>
 	<object access-modifier="private" name="MonitorNum" display-name="MonitorNum" uuid="54dd698a-c8df-4b70-b987-703277a7e0d0" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
 	<init target="MonitorNum" ver="5" value="1"/>
 	<object access-modifier="private" name="ActionTitleOpen" display-name="ActionTitleOpen" uuid="bc37336c-21be-460c-ba06-527f7bdee0b7" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
@@ -827,103 +795,6 @@ unit.Global_DataArray.PanelCaption[28] = "ПАЗ 14";
 ]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="Button_2" display-name="Button_2" uuid="ad5f3df3-8de0-40f7-b1ce-fb04c52a3d8f" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
-		<designed target="X" value="1509" ver="5"/>
-		<designed target="Y" value="58" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="75" ver="5"/>
-		<designed target="Height" value="23" ver="5"/>
-		<designed target="Checkable" value="false" ver="5"/>
-		<designed target="Checked" value="false" ver="5"/>
-		<designed target="Text" value="Тест" ver="5"/>
-		<designed target="TextAlignment" value="132" ver="5"/>
-		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
-		<designed target="FontColor" value="4278190080" ver="5"/>
-		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
-		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
-		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
-		<designed target="BrushColor" value="0xffbdbab7" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="OnClickBrushColor" value="4288650650" ver="5"/>
-		<designed target="OnClickBrushStyle" value="1" ver="5"/>
-		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
-		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
-		<designed target="DisabledBrushColor" value="4290295218" ver="5"/>
-		<designed target="DisabledBrushStyle" value="1" ver="5"/>
-		<designed target="PenColor" value="4278190080" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
-		<designed target="OnClickPenStyle" value="1" ver="5"/>
-		<designed target="OnClickPenWidth" value="1" ver="5"/>
-		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
-		<designed target="OnHoverPenStyle" value="1" ver="5"/>
-		<designed target="OnHoverPenWidth" value="1" ver="5"/>
-		<designed target="DisabledPenColor" value="4290295218" ver="5"/>
-		<designed target="DisabledPenStyle" value="1" ver="5"/>
-		<designed target="DisabledPenWidth" value="1" ver="5"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRelease" form-by-id="false" form-action="open-new">
-			<object access-modifier="private" uuid="51cd46ed-ba00-4a46-854b-df9f4e54fb25" base-type="TEST" base-type-id="85ebdd75-f8cb-4c39-85f4-c867d907388b" ver="5"/>
-		</do-on>
-		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MousePress">
-			<body kind="om">
-				<![CDATA[   unit.Global_WinCtrl.PanelX = TypeConvert.ToInt4( me.ScreenX(0,0) - 100);
-   unit.Global_WinCtrl.PanelY = TypeConvert.ToInt4( me.ScreenY(0,0) + me.Height + 5);
-]]>
-			</body>
-		</do-on>
-	</object>
-	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="c6d20e67-4a8a-4d4c-b3a1-4de14b62d9a6" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
-		<designed target="X" value="1045" ver="5"/>
-		<designed target="Y" value="58" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="75" ver="5"/>
-		<designed target="Height" value="23" ver="5"/>
-		<designed target="Checkable" value="false" ver="5"/>
-		<designed target="Checked" value="false" ver="5"/>
-		<designed target="Text" value="Выход" ver="5"/>
-		<designed target="TextAlignment" value="132" ver="5"/>
-		<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
-		<designed target="FontColor" value="4278190080" ver="5"/>
-		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
-		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
-		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
-		<designed target="BrushColor" value="0xffb5b2b0" ver="5"/>
-		<designed target="BrushStyle" value="1" ver="5"/>
-		<designed target="OnClickBrushColor" value="4288650650" ver="5"/>
-		<designed target="OnClickBrushStyle" value="1" ver="5"/>
-		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
-		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
-		<designed target="DisabledBrushColor" value="4290295218" ver="5"/>
-		<designed target="DisabledBrushStyle" value="1" ver="5"/>
-		<designed target="PenColor" value="4278190080" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="1" ver="5"/>
-		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
-		<designed target="OnClickPenStyle" value="1" ver="5"/>
-		<designed target="OnClickPenWidth" value="1" ver="5"/>
-		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
-		<designed target="OnHoverPenStyle" value="1" ver="5"/>
-		<designed target="OnHoverPenWidth" value="1" ver="5"/>
-		<designed target="DisabledPenColor" value="4290295218" ver="5"/>
-		<designed target="DisabledPenStyle" value="1" ver="5"/>
-		<designed target="DisabledPenWidth" value="1" ver="5"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRelease" form-action="close"/>
-	</object>
 	<object access-modifier="private" name="AlrConnectPLC_1" display-name="AlrConnectPLC_1" uuid="e93f2f2e-1de4-4cb6-9883-8aa652092c7f" base-type="AlrConnectPLC" base-type-id="4f1882e1-94df-484e-bf56-cec581cd875f" ver="5" description="" cardinal="1">
 		<designed target="X" value="650" ver="5"/>
 		<designed target="Y" value="7" ver="5"/>
@@ -932,13 +803,6 @@ unit.Global_DataArray.PanelCaption[28] = "ПАЗ 14";
 		<init target="_init_NameEn" ver="5" value="Connect"/>
 		<designed target="Width" value="190" ver="5"/>
 		<init target="_init_ApSource" ver="5" ref="unit.Global_ApSource.ApSourceObjectsGeneral"/>
-	</object>
-	<object access-modifier="private" name="Box_1" display-name="Box_1" uuid="a1ee8b86-d20c-4d20-aa1d-3939ee1ebbb5" base-type="Box" base-type-id="c725a6da-5745-4495-938e-67d39c7c2814" ver="5" description="" cardinal="1">
-		<designed target="X" value="1386" ver="5"/>
-		<designed target="Y" value="46" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="110" ver="5"/>
-		<designed target="Height" value="35" ver="5"/>
 	</object>
 	<object access-modifier="private" name="AlrConnectAlphaServer_1" display-name="AlrConnectAlphaServer_1" uuid="be062e25-6744-45e5-b7b5-dd0a19720517" base-type="AlrConnectAlphaServer" base-type-id="e2081c28-2e93-4b74-8d15-bfd002fe4019" ver="5" description="" cardinal="1">
 		<designed target="X" value="370" ver="5"/>
@@ -1013,6 +877,38 @@ unit.Global_DataArray.PAZName[28] = "Контур аварийного вклю�
 				<![CDATA[(ApAlrConnect.Quality == 192) && ApAlrConnect]]>
 			</body>
 		</do-trace>
+	</object>
+	<object access-modifier="private" name="Checkbox2mon" display-name="Checkbox2mon" uuid="4d6b1749-94cf-4da5-8987-c5642dffe22e" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1550" ver="5"/>
+		<designed target="Y" value="7" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="133" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="Второй монитор" ver="5"/>
+		<designed target="Font" value="Sans Serif,9,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[// Изменилось состояние флага
+if (MonitorNum == 1) {     // Если изменение флага произошло на 1-вом мониторе ...
+   if (state)     // Если флаг stat установлен ...
+      ActionTitleOpen.Invoke();    // Открыть заголовок на 2-ом мониторе
+   else           // Если флаг stat снят ...
+      if (unit.Global_WinCtrl.WindowGroupTitle.WindowCount == 2)   // Если второй монитор используется ...
+         // Закрыть заголовок на 2-ом мониторе
+         unit.Global_WinCtrl.WindowGroupTitle.SendMessageByID(unit.Global_WinCtrl.WindowGroupTitle.GetWindowIDbyIndex(1),"TitleClose","");
+}
+]]>
+			</body>
+		</do-on>
 	</object>
 </type>
 
