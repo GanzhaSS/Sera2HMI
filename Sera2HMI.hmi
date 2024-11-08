@@ -99,5 +99,6 @@
 	<object file="CallPanelCtrlConLoopHLA_3.omobj" filter="Panels"/>
 	<object file="Valve_hor_Circle_PAZ.omobj" filter="Valves"/>
 	<object file="CallPanelCtrlValve_PAZ.omobj" filter="Panels"/>
+	<object file="Vent_PAZ.omobj" filter="Pumps"/>
 </unit>
 

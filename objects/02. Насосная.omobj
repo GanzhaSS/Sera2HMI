@@ -3554,7 +3554,7 @@
 		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_DeviceNameEn" ver="5" value="PAZ_Pump2_1"/>
 	</object>
-	<object access-modifier="private" name="VentV3_1" display-name="VentV3_1" uuid="0424c746-c5cd-47a0-80bd-17708776a4fd" base-type="Vent" base-type-id="cb22eeff-490a-4a2f-b9f5-fa2c584bf9de" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="VentV3_1" display-name="VentV3_1" uuid="0424c746-c5cd-47a0-80bd-17708776a4fd" base-type="Vent_PAZ" base-type-id="5ea43215-af16-492b-964f-9c25aca1794d" ver="5" description="" cardinal="1">
 		<designed target="X" value="1780" ver="5"/>
 		<designed target="Y" value="75" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -3573,10 +3573,12 @@
 		<init target="_init_PanelDeltaX" ver="5" value="-200"/>
 		<init target="_init_PanelDeltaY" ver="5" value="80"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="28"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_5" display-name="CallPanelCtrlConLoopPAZ_5" uuid="00b2229f-3613-4126-923a-a16c3e59f546" base-type="CallPanelCtrlConLoopPAZ_Vent" base-type-id="bc91b041-5a14-4844-8e9c-f7ad61872e3d" ver="5" description="" cardinal="1">
 		<designed target="X" value="1775" ver="5"/>
-		<designed target="Y" value="45" ver="5"/>
+		<designed target="Y" value="42" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="60" ver="5"/>
 		<designed target="Height" value="18" ver="5"/>

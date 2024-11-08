@@ -255,7 +255,7 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 		<init target="Visible" ver="5" value="false"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[(ApStatus & 0x0002) == 0x0002]]>
+				<![CDATA[here._init_Visible && (ApStatus & 0x0002) == 0x0002]]>
 			</body>
 		</do-trace>
 		<init target="BrushColor" ver="5" ref="unit.Global_ColorSettings.ColorAlr"/>
