@@ -3071,6 +3071,15 @@
 			<init target="_init_NameEn" ver="5" value="Tank8Lev"/>
 			<init target="_init_ShowUnit" ver="5" value="false"/>
 		</object>
+		<object access-modifier="private" name="AnaPrm1_Progress_1" display-name="AnaPrm1_Progress_1" uuid="18e044d6-ad93-4a85-8c72-54a692df3a6f" base-type="AnaPrm_Lev_Progress" base-type-id="aa499b1e-cbdf-4d63-a939-0334156c3c8a" ver="5" description="" cardinal="1">
+			<designed target="X" value="130" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="15" ver="5"/>
+			<designed target="Height" value="90" ver="5"/>
+			<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+			<init target="_init_NameEn" ver="5" value="Tank8Lev"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="ValveVP86" display-name="ValveVP86" uuid="674c0304-f80a-41ac-8b54-f80a8c9d6b04" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
 		<designed target="X" value="858" ver="5"/>
@@ -5500,7 +5509,7 @@
 		<init target="_init_NameEn" ver="5" value="Pallet13_1"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="ValveVP91_1" display-name="ValveVP91_1" uuid="6a7bd85a-faff-44ac-a705-a6c8f88ed121" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP91_1" display-name="ValveVP91_1" uuid="6a7bd85a-faff-44ac-a705-a6c8f88ed121" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="198" ver="5"/>
 		<designed target="Y" value="157" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5518,6 +5527,8 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP91o"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="3"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_1" display-name="CallPanelCtrlConLoopPAZ_1" uuid="a62a4c09-6faa-4a93-9576-08a1573bed9b" base-type="CallPanelCtrlConLoopPAZ_Valve" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="305" ver="5"/>
@@ -5567,7 +5578,7 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_Tank3"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="ValveVP87_1" display-name="ValveVP87_1" uuid="a8a334b4-5396-41df-a8f8-1568cc208e23" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP87_1" display-name="ValveVP87_1" uuid="a8a334b4-5396-41df-a8f8-1568cc208e23" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="698" ver="5"/>
 		<designed target="Y" value="158" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5585,6 +5596,8 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP87o"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="2"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_2" display-name="CallPanelCtrlConLoopPAZ_2" uuid="899a289c-8abb-4304-a864-f151a4d6aa0c" base-type="CallPanelCtrlConLoopPAZ_Valve" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="805" ver="5"/>
@@ -5634,7 +5647,7 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_Tank2"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="ValveVP83_1" display-name="ValveVP83_1" uuid="22e4a062-6419-4f03-8d73-868a45a84df4" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP83_1" display-name="ValveVP83_1" uuid="22e4a062-6419-4f03-8d73-868a45a84df4" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="1198" ver="5"/>
 		<designed target="Y" value="158" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5652,6 +5665,8 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP83o"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="1"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_3" display-name="CallPanelCtrlConLoopPAZ_3" uuid="5fc93238-ba88-466e-9d9c-3bff45a6d003" base-type="CallPanelCtrlConLoopPAZ_Valve" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="1305" ver="5"/>
@@ -5701,7 +5716,7 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_Tank1"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="ValveVP79_1" display-name="ValveVP79_1" uuid="7af818d1-f842-4ed6-8064-c85a14dc704b" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP79_1" display-name="ValveVP79_1" uuid="7af818d1-f842-4ed6-8064-c85a14dc704b" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="268" ver="5"/>
 		<designed target="Y" value="398" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5719,6 +5734,8 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP79o"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="6"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_4" display-name="CallPanelCtrlConLoopPAZ_4" uuid="6a2063f6-9666-4049-b123-e189f7b5bd4b" base-type="CallPanelCtrlConLoopPAZ_Valve" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="375" ver="5"/>
@@ -5816,7 +5833,7 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_Tank5"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 	</object>
-	<object access-modifier="private" name="ValveVP75_1" display-name="ValveVP75_1" uuid="839fa416-550a-4a78-af60-0b29dfa69d3c" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP75_1" display-name="ValveVP75_1" uuid="839fa416-550a-4a78-af60-0b29dfa69d3c" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="768" ver="5"/>
 		<designed target="Y" value="398" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5834,8 +5851,10 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP75o"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="5"/>
 	</object>
-	<object access-modifier="private" name="ValveVP71_1" display-name="ValveVP71_1" uuid="a23ab9ae-dc0e-44ea-8e1c-6a3cc752f27f" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP71_1" display-name="ValveVP71_1" uuid="a23ab9ae-dc0e-44ea-8e1c-6a3cc752f27f" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="1268" ver="5"/>
 		<designed target="Y" value="398" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5853,6 +5872,8 @@
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP71o"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="4"/>
 	</object>
 	<object access-modifier="private" name="DLevel_9" display-name="DLevel_9" uuid="79846a82-3cf3-4c56-aa04-3280aa479248" base-type="DLevel_High" base-type-id="98b21261-2810-413e-900a-9a0891d9c521" ver="5" description="" cardinal="1">
 		<designed target="X" value="1483" ver="5"/>
@@ -5902,7 +5923,7 @@
 		</object>
 		<init target="_init_NameEn" ver="5" value="PAZ_ConcSO2A11_07"/>
 	</object>
-	<object access-modifier="private" name="ValveVP67_1" display-name="ValveVP67_1" uuid="d9a01c67-4740-4541-94fd-5827428826bc" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP67_1" display-name="ValveVP67_1" uuid="d9a01c67-4740-4541-94fd-5827428826bc" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="338" ver="5"/>
 		<designed target="Y" value="638" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5920,8 +5941,10 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP67o"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="9"/>
 	</object>
-	<object access-modifier="private" name="ValveVP63_1" display-name="ValveVP63_1" uuid="df297678-a496-4b9e-ba1c-0ac6306105a3" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP63_1" display-name="ValveVP63_1" uuid="df297678-a496-4b9e-ba1c-0ac6306105a3" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="838" ver="5"/>
 		<designed target="Y" value="638" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5939,8 +5962,10 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP63o"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="8"/>
 	</object>
-	<object access-modifier="private" name="ValveVP59_1" display-name="ValveVP59_1" uuid="170c7056-ef22-4c84-aec7-4efa6cb8e21f" base-type="Valve_hor_Circle" base-type-id="5c2394da-aa7f-4b65-a09c-0c395179ae7b" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ValveVP59_1" display-name="ValveVP59_1" uuid="170c7056-ef22-4c84-aec7-4efa6cb8e21f" base-type="Valve_hor_Circle_PAZ" base-type-id="11c6fd07-6037-4c6c-9385-8fdc89479a63" ver="5" description="" cardinal="1">
 		<designed target="X" value="1338" ver="5"/>
 		<designed target="Y" value="638" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -5958,6 +5983,8 @@
 		<init target="_init_NameEn" ver="5" value="PAZ_ValveVP59o"/>
 		<init target="_init_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
 		<init target="_init_FlagPaneEnable" ver="5" value="false"/>
+		<init target="_ApSourceForm" ver="5" ref="here.ApSourceForm"/>
+		<init target="_init_PanelNum" ver="5" value="7"/>
 	</object>
 	<object access-modifier="private" name="CallPanelCtrlConLoopPAZ_7" display-name="CallPanelCtrlConLoopPAZ_7" uuid="12270d38-a295-48b3-a90f-7beb193e0aa5" base-type="CallPanelCtrlConLoopPAZ_Valve" base-type-id="b766565a-f932-4854-b7bc-2f6434cbd216" ver="5" description="" cardinal="1">
 		<designed target="X" value="445" ver="5"/>

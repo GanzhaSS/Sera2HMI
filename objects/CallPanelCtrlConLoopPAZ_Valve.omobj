@@ -169,8 +169,9 @@ unit.Global_Property.PanelNumHover = -10;]]>
 	</do-trace>
 	<do-on access-modifier="private" name="SetSelectAndWidth" display-name="SetSelectAndWidth" ver="5" event="MouseEnter">
 		<body kind="om">
-			<![CDATA[PenWidth = 4;
-PenStyle = 1;
+			<![CDATA[//PenWidth = 4;
+//PenStyle = 1;
+
 unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 		</body>
 	</do-on>
@@ -223,7 +224,7 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 	<do-trace access-modifier="private" target="PenColor" ver="5">
 		<conditional-expr>
 			<condition>
-				<![CDATA[unit.Global_Property.PanelNumActive == here._init_PanelNum && unit.Global_Property.PanelNumHover != here._init_PanelNum]]>
+				<![CDATA[(unit.Global_Property.PanelNumActive == here._init_PanelNum && unit.Global_Property.PanelNumHover != here._init_PanelNum)]]>
 			</condition>
 			<expr>
 				<![CDATA[0xff9d9d9d]]>
@@ -231,7 +232,7 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 		</conditional-expr>
 		<conditional-expr>
 			<condition>
-				<![CDATA[unit.Global_Property.PanelNumHover == here._init_PanelNum || unit.Global_Property.PanelNumActive != here._init_PanelNum]]>
+				<![CDATA[(unit.Global_Property.PanelNumHover == here._init_PanelNum || unit.Global_Property.PanelNumActive != here._init_PanelNum)]]>
 			</condition>
 			<expr>
 				<![CDATA[0xff000000]]>
@@ -262,7 +263,7 @@ unit.Global_Property.PanelNumHover = here._init_PanelNum;]]>
 		<init target="Visible" ver="5" value="false"/>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<body>
-				<![CDATA[(ApStatus & 0x0002) == 0x0002]]>
+				<![CDATA[here._init_Visible && (ApStatus & 0x0002) == 0x0002]]>
 			</body>
 		</do-trace>
 		<init target="BrushColor" ver="5" ref="unit.Global_ColorSettings.ColorAlr"/>
@@ -294,5 +295,6 @@ if (! unit.Global_WinCtrl.FlagWinOpening) {
 	<init target="_DeviceNameEn" ver="5" value="ValveNN"/>
 	<object access-modifier="private" name="_ApSourceForm" display-name="_ApSourceForm" uuid="70402128-3f23-4b8e-b314-5eb90be28ce6" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
 	<param access-modifier="private" name="_init_ApSourceForm" display-name="_init_ApSourceForm" uuid="08f707c5-ffd4-4982-8c85-7f3ec936962b" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<init target="PenColor" ver="5" value="0xff000000"/>
 </type>
 

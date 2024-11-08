@@ -97,5 +97,7 @@
 	<object file="Управление_контуром_HLA_3.omobj" filter="Панели управления"/>
 	<object file="HLA_3.omobj" filter="Buttons"/>
 	<object file="CallPanelCtrlConLoopHLA_3.omobj" filter="Panels"/>
+	<object file="Valve_hor_Circle_PAZ.omobj" filter="Valves"/>
+	<object file="CallPanelCtrlValve_PAZ.omobj" filter="Panels"/>
 </unit>
 
